@@ -1,0 +1,74 @@
+{
+  "uid" : "ecda221f08fe53e2",
+  "name" : "NovoRegistroRemessa",
+  "fullName" : "Financeiro.IntegracaoBancaria.IntegracaoBancaria.NovoRegistroRemessa",
+  "historyId" : "c44acbc6e14faaaf6f45733e3b919f63",
+  "time" : {
+    "start" : 1653963141070,
+    "stop" : 1653963154972,
+    "duration" : 13902
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "6188bd52943550df",
+      "name" : "Screenshot",
+      "source" : "6188bd52943550df.png",
+      "type" : "image/png",
+      "size" : 64207
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.IntegracaoBancaria"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.IntegracaoBancaria.IntegracaoBancaria"
+  }, {
+    "name" : "testMethod",
+    "value" : "NovoRegistroRemessa"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.IntegracaoBancaria.IntegracaoBancaria"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "7312@DESKTOP-Q4CVPEU.pool-1-thread-4(16)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ecda221f08fe53e2.json",
+  "parameterValues" : [ ]
+}

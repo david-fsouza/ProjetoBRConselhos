@@ -1,0 +1,74 @@
+{
+  "uid" : "13c20281d5aa651d",
+  "name" : "ContatosResponsaveis",
+  "fullName" : "Financeiro.Cedentes.Cedentes.ContatosResponsaveis",
+  "historyId" : "28ae628ed011c4f76319ae1f645a9401",
+  "time" : {
+    "start" : 1653963439491,
+    "stop" : 1653963456294,
+    "duration" : 16803
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "dea8ec14cc95968",
+      "name" : "Screenshot",
+      "source" : "dea8ec14cc95968.png",
+      "type" : "image/png",
+      "size" : 60207
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.Cedentes"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.Cedentes.Cedentes"
+  }, {
+    "name" : "testMethod",
+    "value" : "ContatosResponsaveis"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.Cedentes.Cedentes"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "7312@DESKTOP-Q4CVPEU.pool-1-thread-4(16)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "13c20281d5aa651d.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,184 @@
+{
+  "uid" : "6a64996156c8bdcb",
+  "name" : "AlterarSituacaoComplemento",
+  "fullName" : "Financeiro.ContasAReceber.ContasReceber.AlterarSituacaoComplemento",
+  "historyId" : "2818217d81809366190ab814b7420c2d",
+  "time" : {
+    "start" : 1655692544192,
+    "stop" : 1655692558594,
+    "duration" : 14402
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 7,
+  "retriesStatusChange" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ec5d89fc656fdc97",
+      "name" : "Screenshot",
+      "source" : "ec5d89fc656fdc97.png",
+      "type" : "image/png",
+      "size" : 75956
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.ContasAReceber"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.ContasAReceber.ContasReceber"
+  }, {
+    "name" : "testMethod",
+    "value" : "AlterarSituacaoComplemento"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.ContasAReceber.ContasReceber"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "4500@DESKTOP-Q4CVPEU.pool-1-thread-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "6fc5283cbbe1d8c9",
+      "status" : "broken",
+      "statusDetails" : "java.util.concurrent.TimeoutException\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [06cbe7492909368f958bc298fb83241c, screenshot {}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\\Windows\\TEMP\\scoped_dir8...}, goog:chromeOptions: {debuggerAddress: localhost:52026}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52026/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 06cbe7492909368f958bc298fb83241c",
+      "time" : {
+        "start" : 1655688309681,
+        "stop" : 1655688849721,
+        "duration" : 540040
+      }
+    }, {
+      "uid" : "df836c95be1df956",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654962320809,
+        "stop" : 1654962336089,
+        "duration" : 15280
+      }
+    }, {
+      "uid" : "a405ab6a9b22d35c",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[text()='Alterar Situação/Complemento']\"}\n  (Session info: chrome=102.0.5005.61)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [ba947e77182fe883eefcd8274d4a6dab, findElement {using=xpath, value=//*[text()='Alterar Situação/Complemento']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\\Users\\David\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50049}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50049/devtoo..., se:cdpVersion: 102.0.5005.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: ba947e77182fe883eefcd8274d4a6dab",
+      "time" : {
+        "start" : 1653962878849,
+        "stop" : 1653962893554,
+        "duration" : 14705
+      }
+    }, {
+      "uid" : "82dc24b379395b3a",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[text()='Alterar Situação/Complemento']\"}\n  (Session info: chrome=102.0.5005.61)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [dfc03b433a7dae0736280b3057df4597, findElement {using=xpath, value=//*[text()='Alterar Situação/Complemento']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\\Users\\David\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53512}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53512/devtoo..., se:cdpVersion: 102.0.5005.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: dfc03b433a7dae0736280b3057df4597",
+      "time" : {
+        "start" : 1653869476628,
+        "stop" : 1653869492092,
+        "duration" : 15464
+      }
+    }, {
+      "uid" : "a4760ff0fee147b9",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[text()='Alterar Situação/Complemento']\"}\n  (Session info: chrome=102.0.5005.61)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [ece70405d9814dddafca94bf04fe1ff7, findElement {using=xpath, value=//*[text()='Alterar Situação/Complemento']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\\Users\\David\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49991}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49991/devtoo..., se:cdpVersion: 102.0.5005.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: ece70405d9814dddafca94bf04fe1ff7",
+      "time" : {
+        "start" : 1653868241101,
+        "stop" : 1653868271626,
+        "duration" : 30525
+      }
+    }, {
+      "uid" : "3717062ab47a65ae",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[text()='Alterar Situação/Complemento']\"}\n  (Session info: chrome=102.0.5005.61)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [2f14e95b515a48ddcb52c01377a30188, findElement {using=xpath, value=//*[text()='Alterar Situação/Complemento']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\\Users\\David\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62501}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62501/devtoo..., se:cdpVersion: 102.0.5005.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 2f14e95b515a48ddcb52c01377a30188",
+      "time" : {
+        "start" : 1653867836208,
+        "stop" : 1653867857413,
+        "duration" : 21205
+      }
+    }, {
+      "uid" : "b6ab92c4497b7538",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[text()='Alterar Situação/Complemento']\"}\n  (Session info: chrome=102.0.5005.61)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [91ebf8aa1e0aeac6d08edd6b34d1fb0d, findElement {using=xpath, value=//*[text()='Alterar Situação/Complemento']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\\Users\\David\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57915}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57915/devtoo..., se:cdpVersion: 102.0.5005.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 91ebf8aa1e0aeac6d08edd6b34d1fb0d",
+      "time" : {
+        "start" : 1653865605867,
+        "stop" : 1653865621502,
+        "duration" : 15635
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "11e85875b3d8dd74",
+        "status" : "passed",
+        "time" : {
+          "start" : 1654962320809,
+          "stop" : 1654962336089,
+          "duration" : 15280
+        }
+      }, {
+        "uid" : "7230f27cf50b6605",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[text()='Alterar Situação/Complemento']\"}\n  (Session info: chrome=102.0.5005.61)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [ba947e77182fe883eefcd8274d4a6dab, findElement {using=xpath, value=//*[text()='Alterar Situação/Complemento']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\\Users\\David\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50049}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50049/devtoo..., se:cdpVersion: 102.0.5005.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: ba947e77182fe883eefcd8274d4a6dab",
+        "time" : {
+          "start" : 1653962878849,
+          "stop" : 1653962893554,
+          "duration" : 14705
+        }
+      }, {
+        "uid" : "f195ea869039fb23",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[text()='Alterar Situação/Complemento']\"}\n  (Session info: chrome=102.0.5005.61)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [dfc03b433a7dae0736280b3057df4597, findElement {using=xpath, value=//*[text()='Alterar Situação/Complemento']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\\Users\\David\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53512}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53512/devtoo..., se:cdpVersion: 102.0.5005.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: dfc03b433a7dae0736280b3057df4597",
+        "time" : {
+          "start" : 1653869476628,
+          "stop" : 1653869492092,
+          "duration" : 15464
+        }
+      }, {
+        "uid" : "7c65f719feb9b2d8",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[text()='Alterar situação/complemento']\"}\n  (Session info: chrome=101.0.4951.67)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [60500a98c757fee5b9c7d8ef0fb189a0, findElement {using=xpath, value=//*[text()='Alterar situação/complemento']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\\Users\\David\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50312}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50312/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 60500a98c757fee5b9c7d8ef0fb189a0",
+        "time" : {
+          "start" : 1653060935511,
+          "stop" : 1653060948942,
+          "duration" : 13431
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "6a64996156c8bdcb.json",
+  "parameterValues" : [ ]
+}

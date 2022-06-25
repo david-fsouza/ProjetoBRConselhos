@@ -1,0 +1,74 @@
+{
+  "uid" : "efd9a6fe7c66ea35",
+  "name" : "ConsultaInstrucoesDeCobranca",
+  "fullName" : "Financeiro.InformacoesBancarias.InformacoesBancarias.ConsultaInstrucoesDeCobranca",
+  "historyId" : "a876928ebf9453b09e2fb7cafee6d568",
+  "time" : {
+    "start" : 1653963727588,
+    "stop" : 1653963742968,
+    "duration" : 15380
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "1c401f71079b3001",
+      "name" : "Screenshot",
+      "source" : "1c401f71079b3001.png",
+      "type" : "image/png",
+      "size" : 41743
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.InformacoesBancarias"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.InformacoesBancarias.InformacoesBancarias"
+  }, {
+    "name" : "testMethod",
+    "value" : "ConsultaInstrucoesDeCobranca"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.InformacoesBancarias.InformacoesBancarias"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "7312@DESKTOP-Q4CVPEU.pool-1-thread-4(16)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "efd9a6fe7c66ea35.json",
+  "parameterValues" : [ ]
+}

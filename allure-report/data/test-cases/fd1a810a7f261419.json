@@ -1,0 +1,74 @@
+{
+  "uid" : "fd1a810a7f261419",
+  "name" : "ConsultaRegistroTesouraria",
+  "fullName" : "Financeiro.Tesouraria.Tesouraria.ConsultaRegistroTesouraria",
+  "historyId" : "16232db2db1a2a366695bf5d2a7ef90c",
+  "time" : {
+    "start" : 1653867741087,
+    "stop" : 1653867782077,
+    "duration" : 40990
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "7bf5b1189b82be75",
+      "name" : "Screenshot",
+      "source" : "7bf5b1189b82be75.png",
+      "type" : "image/png",
+      "size" : 60656
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.Tesouraria"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.Tesouraria.Tesouraria"
+  }, {
+    "name" : "testMethod",
+    "value" : "ConsultaRegistroTesouraria"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.Tesouraria.Tesouraria"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "14856@DESKTOP-Q4CVPEU.pool-1-thread-6(18)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fd1a810a7f261419.json",
+  "parameterValues" : [ ]
+}

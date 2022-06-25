@@ -1,0 +1,74 @@
+{
+  "uid" : "76bb3fb24e02f04e",
+  "name" : "NovoPlanoCentroResultado",
+  "fullName" : "Financeiro.EstruturaFinanceira.EstruturaFinanceira.NovoPlanoCentroResultado",
+  "historyId" : "3fc00cecaaf0446826ff3161920d30a8",
+  "time" : {
+    "start" : 1653870801924,
+    "stop" : 1653870819498,
+    "duration" : 17574
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "8a43afbf9e1a880",
+      "name" : "Screenshot",
+      "source" : "8a43afbf9e1a880.png",
+      "type" : "image/png",
+      "size" : 39659
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.EstruturaFinanceira"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.EstruturaFinanceira.EstruturaFinanceira"
+  }, {
+    "name" : "testMethod",
+    "value" : "NovoPlanoCentroResultado"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.EstruturaFinanceira.EstruturaFinanceira"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "5452@DESKTOP-Q4CVPEU.pool-1-thread-3(15)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "76bb3fb24e02f04e.json",
+  "parameterValues" : [ ]
+}

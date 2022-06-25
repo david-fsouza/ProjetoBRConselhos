@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: Financeiro.CadastrosBasicos.CadastrosBasicos
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 96.808 s - in Financeiro.CadastrosBasicos.CadastrosBasicos

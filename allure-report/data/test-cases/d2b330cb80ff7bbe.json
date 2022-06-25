@@ -1,0 +1,74 @@
+{
+  "uid" : "d2b330cb80ff7bbe",
+  "name" : "Liquidacoes",
+  "fullName" : "Financeiro.TransacoesCartao.TransacoesCartao.Liquidacoes",
+  "historyId" : "1c514bb22e3614e80b208e4d02f1c332",
+  "time" : {
+    "start" : 1653865744476,
+    "stop" : 1653865762890,
+    "duration" : 18414
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "e24b412c1453f16",
+      "name" : "Screenshot",
+      "source" : "e24b412c1453f16.png",
+      "type" : "image/png",
+      "size" : 58856
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.TransacoesCartao"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.TransacoesCartao.TransacoesCartao"
+  }, {
+    "name" : "testMethod",
+    "value" : "Liquidacoes"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.TransacoesCartao.TransacoesCartao"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "6604@DESKTOP-Q4CVPEU.pool-1-thread-4(16)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d2b330cb80ff7bbe.json",
+  "parameterValues" : [ ]
+}

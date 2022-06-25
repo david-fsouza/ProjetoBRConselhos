@@ -1,0 +1,74 @@
+{
+  "uid" : "5106874b7de9ce20",
+  "name" : "ContasContabeis",
+  "fullName" : "Financeiro.EstruturaFinanceira.EstruturaFinanceira.ContasContabeis",
+  "historyId" : "9c4144b92c476af1a19e86dec774f67e",
+  "time" : {
+    "start" : 1653870729001,
+    "stop" : 1653870745512,
+    "duration" : 16511
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "3f7feef2db811c37",
+      "name" : "Screenshot",
+      "source" : "3f7feef2db811c37.png",
+      "type" : "image/png",
+      "size" : 76992
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.EstruturaFinanceira"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.EstruturaFinanceira.EstruturaFinanceira"
+  }, {
+    "name" : "testMethod",
+    "value" : "ContasContabeis"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.EstruturaFinanceira.EstruturaFinanceira"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "5452@DESKTOP-Q4CVPEU.pool-1-thread-3(15)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5106874b7de9ce20.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: Financeiro.ContasAReceber.ContasReceber
+-------------------------------------------------------------------------------
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 172.265 s - in Financeiro.ContasAReceber.ContasReceber

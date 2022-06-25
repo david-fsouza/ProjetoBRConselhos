@@ -1,0 +1,163 @@
+{
+  "uid" : "7d1bc47e0ae7b27f",
+  "name" : "ConsultaTiposDeDocumento",
+  "fullName" : "Financeiro.CadastrosBasicos.CadastrosBasicos.ConsultaTiposDeDocumento",
+  "historyId" : "c170dd6fbfcd422410816a845db6311",
+  "time" : {
+    "start" : 1655693863578,
+    "stop" : 1655693880077,
+    "duration" : 16499
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 5,
+  "retriesStatusChange" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "51896d00e07547ec",
+      "name" : "Screenshot",
+      "source" : "51896d00e07547ec.png",
+      "type" : "image/png",
+      "size" : 39208
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.CadastrosBasicos"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.CadastrosBasicos.CadastrosBasicos"
+  }, {
+    "name" : "testMethod",
+    "value" : "ConsultaTiposDeDocumento"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.CadastrosBasicos.CadastrosBasicos"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "4500@DESKTOP-Q4CVPEU.pool-1-thread-4(16)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "7e679e56c1365f95",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654963776562,
+        "stop" : 1654963795900,
+        "duration" : 19338
+      }
+    }, {
+      "uid" : "7cbfd63925bda8a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653964232900,
+        "stop" : 1653964248596,
+        "duration" : 15696
+      }
+    }, {
+      "uid" : "67df49c2cc51c1e",
+      "status" : "broken",
+      "statusDetails" : "stale element reference: element is not attached to the page document\n  (Session info: chrome=102.0.5005.61)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [44e06b92e771345017a92b508f27c704, clickElement {id=4247885f-d7e8-499a-9894-03f5c438948d}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\\Users\\David\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57336}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57336/devtoo..., se:cdpVersion: 102.0.5005.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on WINDOWS (44e06b92e771345017a92b508f27c704)] -> css selector: div[title='Financeiro']]\nSession ID: 44e06b92e771345017a92b508f27c704",
+      "time" : {
+        "start" : 1653871002228,
+        "stop" : 1653871024889,
+        "duration" : 22661
+      }
+    }, {
+      "uid" : "d0a81146c3e3068a",
+      "status" : "broken",
+      "statusDetails" : "Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, screenshot {}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\\Users\\David\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49877}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49877/devtoo..., se:cdpVersion: 102.0.5005.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}",
+      "time" : {
+        "start" : 1653868999659,
+        "stop" : 1653868999662,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "8accd6622df4119e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653867098790,
+        "stop" : 1653867115661,
+        "duration" : 16871
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "4e0a9192c1aef02e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1654963776562,
+          "stop" : 1654963795900,
+          "duration" : 19338
+        }
+      }, {
+        "uid" : "41a0d143d2befdb0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653964232900,
+          "stop" : 1653964248596,
+          "duration" : 15696
+        }
+      }, {
+        "uid" : "32a9a64e9c63ca67",
+        "status" : "broken",
+        "statusDetails" : "stale element reference: element is not attached to the page document\n  (Session info: chrome=102.0.5005.61)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [44e06b92e771345017a92b508f27c704, clickElement {id=4247885f-d7e8-499a-9894-03f5c438948d}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\\Users\\David\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57336}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57336/devtoo..., se:cdpVersion: 102.0.5005.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on WINDOWS (44e06b92e771345017a92b508f27c704)] -> css selector: div[title='Financeiro']]\nSession ID: 44e06b92e771345017a92b508f27c704",
+        "time" : {
+          "start" : 1653871002228,
+          "stop" : 1653871024889,
+          "duration" : 22661
+        }
+      }, {
+        "uid" : "3db74d4e86e5f2e7",
+        "status" : "broken",
+        "statusDetails" : "stale element reference: element is not attached to the page document\n  (Session info: chrome=101.0.4951.67)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [252619a5fcc000b7a23a580af308c1dc, clickElement {id=f8d513bf-d3d3-4788-b845-a22debf83be5}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\\Users\\David\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59190}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59190/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on WINDOWS (252619a5fcc000b7a23a580af308c1dc)] -> css selector: div[title='Financeiro']]\nSession ID: 252619a5fcc000b7a23a580af308c1dc",
+        "time" : {
+          "start" : 1653063183969,
+          "stop" : 1653063216375,
+          "duration" : 32406
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "7d1bc47e0ae7b27f.json",
+  "parameterValues" : [ ]
+}

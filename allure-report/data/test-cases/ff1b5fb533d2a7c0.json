@@ -1,0 +1,74 @@
+{
+  "uid" : "ff1b5fb533d2a7c0",
+  "name" : "GerarRelatorioDeCobranca",
+  "fullName" : "Financeiro.Cobranca.Cobranca.GerarRelatorioDeCobranca",
+  "historyId" : "d742ea2e3ba65923e7a0d3359187b6d6",
+  "time" : {
+    "start" : 1653963522330,
+    "stop" : 1653963535931,
+    "duration" : 13601
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "d0e35c551596ce47",
+      "name" : "Screenshot",
+      "source" : "d0e35c551596ce47.png",
+      "type" : "image/png",
+      "size" : 91341
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.Cobranca"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.Cobranca.Cobranca"
+  }, {
+    "name" : "testMethod",
+    "value" : "GerarRelatorioDeCobranca"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.Cobranca.Cobranca"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "7312@DESKTOP-Q4CVPEU.pool-1-thread-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ff1b5fb533d2a7c0.json",
+  "parameterValues" : [ ]
+}

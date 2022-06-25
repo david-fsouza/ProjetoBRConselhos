@@ -1,0 +1,74 @@
+{
+  "uid" : "d7c117a5c1b25bca",
+  "name" : "Configuracoes",
+  "fullName" : "Financeiro.InformacoesBancarias.InformacoesBancarias.Configuracoes",
+  "historyId" : "a57be5f760a4e8e645f7850b08bf2034",
+  "time" : {
+    "start" : 1654963184565,
+    "stop" : 1654963202951,
+    "duration" : 18386
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "300a89950ffda9b4",
+      "name" : "Screenshot",
+      "source" : "300a89950ffda9b4.png",
+      "type" : "image/png",
+      "size" : 62373
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.InformacoesBancarias"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.InformacoesBancarias.InformacoesBancarias"
+  }, {
+    "name" : "testMethod",
+    "value" : "Configuracoes"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.InformacoesBancarias.InformacoesBancarias"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "9172@DESKTOP-Q4CVPEU.pool-1-thread-3(15)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d7c117a5c1b25bca.json",
+  "parameterValues" : [ ]
+}

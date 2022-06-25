@@ -1,0 +1,74 @@
+{
+  "uid" : "29fa358f8ef558b3",
+  "name" : "NovoContaBancaria",
+  "fullName" : "Financeiro.InformacoesBancarias.InformacoesBancarias.NovoContaBancaria",
+  "historyId" : "94f6fc574284f35b64b6f567aa36682f",
+  "time" : {
+    "start" : 1653963736131,
+    "stop" : 1653963750502,
+    "duration" : 14371
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "2aa1c8747ba9fe5c",
+      "name" : "Screenshot",
+      "source" : "2aa1c8747ba9fe5c.png",
+      "type" : "image/png",
+      "size" : 62289
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.InformacoesBancarias"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.InformacoesBancarias.InformacoesBancarias"
+  }, {
+    "name" : "testMethod",
+    "value" : "NovoContaBancaria"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.InformacoesBancarias.InformacoesBancarias"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "7312@DESKTOP-Q4CVPEU.pool-1-thread-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "29fa358f8ef558b3.json",
+  "parameterValues" : [ ]
+}

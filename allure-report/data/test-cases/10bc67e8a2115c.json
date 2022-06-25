@@ -1,0 +1,74 @@
+{
+  "uid" : "10bc67e8a2115c",
+  "name" : "Receitas",
+  "fullName" : "Financeiro.ConfiguracaoDeRepassesAutomaticos.ConfiguracaoDeRepassesAutomaticos.Receitas",
+  "historyId" : "280297a1b923eda801cd60cb2e949560",
+  "time" : {
+    "start" : 1654962484347,
+    "stop" : 1654962502253,
+    "duration" : 17906
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "63a4f771f70f27c1",
+      "name" : "Screenshot",
+      "source" : "63a4f771f70f27c1.png",
+      "type" : "image/png",
+      "size" : 59645
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.ConfiguracaoDeRepassesAutomaticos"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.ConfiguracaoDeRepassesAutomaticos.ConfiguracaoDeRepassesAutomaticos"
+  }, {
+    "name" : "testMethod",
+    "value" : "Receitas"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.ConfiguracaoDeRepassesAutomaticos.ConfiguracaoDeRepassesAutomaticos"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "9172@DESKTOP-Q4CVPEU.pool-1-thread-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "10bc67e8a2115c.json",
+  "parameterValues" : [ ]
+}

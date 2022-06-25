@@ -1,0 +1,74 @@
+{
+  "uid" : "153c48e9674128a4",
+  "name" : "Movimentos",
+  "fullName" : "Financeiro.IntegracaoBancaria.IntegracaoBancaria.Movimentos",
+  "historyId" : "d77c8bbcf87410d30fa85e7904a4315d",
+  "time" : {
+    "start" : 1653963137710,
+    "stop" : 1653963155750,
+    "duration" : 18040
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "c182754c477fe639",
+      "name" : "Screenshot",
+      "source" : "c182754c477fe639.png",
+      "type" : "image/png",
+      "size" : 82347
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.IntegracaoBancaria"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.IntegracaoBancaria.IntegracaoBancaria"
+  }, {
+    "name" : "testMethod",
+    "value" : "Movimentos"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.IntegracaoBancaria.IntegracaoBancaria"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "7312@DESKTOP-Q4CVPEU.pool-1-thread-3(15)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "153c48e9674128a4.json",
+  "parameterValues" : [ ]
+}

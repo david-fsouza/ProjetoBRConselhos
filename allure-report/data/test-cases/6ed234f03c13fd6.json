@@ -1,0 +1,74 @@
+{
+  "uid" : "6ed234f03c13fd6",
+  "name" : "InformacoesLiquidacao",
+  "fullName" : "Financeiro.ContasAReceber.ContasReceber.InformacoesLiquidacao",
+  "historyId" : "4f8604889746ff34919761660010f4fa",
+  "time" : {
+    "start" : 1653868245880,
+    "stop" : 1653868280851,
+    "duration" : 34971
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "9e079d7fa4ff066c",
+      "name" : "Screenshot",
+      "source" : "9e079d7fa4ff066c.png",
+      "type" : "image/png",
+      "size" : 54521
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.ContasAReceber"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.ContasAReceber.ContasReceber"
+  }, {
+    "name" : "testMethod",
+    "value" : "InformacoesLiquidacao"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.ContasAReceber.ContasReceber"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "7076@DESKTOP-Q4CVPEU.pool-1-thread-6(18)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6ed234f03c13fd6.json",
+  "parameterValues" : [ ]
+}

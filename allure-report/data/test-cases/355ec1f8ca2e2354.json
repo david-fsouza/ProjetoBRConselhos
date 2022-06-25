@@ -1,0 +1,74 @@
+{
+  "uid" : "355ec1f8ca2e2354",
+  "name" : "NovoTiposDeDocumento",
+  "fullName" : "Financeiro.CadastrosBasicos.CadastrosBasicos.NovoTiposDeDocumento",
+  "historyId" : "5cbfb6339c8c1064bea176173b997b6c",
+  "time" : {
+    "start" : 1654963739840,
+    "stop" : 1654963759141,
+    "duration" : 19301
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "1ba30bcf557e7241",
+      "name" : "Screenshot",
+      "source" : "1ba30bcf557e7241.png",
+      "type" : "image/png",
+      "size" : 41312
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.CadastrosBasicos"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.CadastrosBasicos.CadastrosBasicos"
+  }, {
+    "name" : "testMethod",
+    "value" : "NovoTiposDeDocumento"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.CadastrosBasicos.CadastrosBasicos"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "9172@DESKTOP-Q4CVPEU.pool-1-thread-3(15)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "355ec1f8ca2e2354.json",
+  "parameterValues" : [ ]
+}

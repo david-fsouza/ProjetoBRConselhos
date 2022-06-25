@@ -1,0 +1,74 @@
+{
+  "uid" : "252fd20f26cd7988",
+  "name" : "ConsultaPlanoDePagamento",
+  "fullName" : "Financeiro.PlanosDePagamento.PlanosDePagamento.ConsultaPlanoDePagamento",
+  "historyId" : "72bbac7288ee5d840ae9caa6d3d36cc0",
+  "time" : {
+    "start" : 1653964133683,
+    "stop" : 1653964153923,
+    "duration" : 20240
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "5871945b91f1f1db",
+      "name" : "Screenshot",
+      "source" : "5871945b91f1f1db.png",
+      "type" : "image/png",
+      "size" : 73403
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.PlanosDePagamento"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.PlanosDePagamento.PlanosDePagamento"
+  }, {
+    "name" : "testMethod",
+    "value" : "ConsultaPlanoDePagamento"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.PlanosDePagamento.PlanosDePagamento"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "7312@DESKTOP-Q4CVPEU.pool-1-thread-3(15)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "252fd20f26cd7988.json",
+  "parameterValues" : [ ]
+}

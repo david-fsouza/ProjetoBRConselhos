@@ -1,0 +1,160 @@
+{
+  "uid" : "f4f448c07410f4d9",
+  "name" : "ConsultaRegistroRemessa",
+  "fullName" : "Financeiro.IntegracaoBancaria.IntegracaoBancaria.ConsultaRegistroRemessa",
+  "historyId" : "ebbf24561c11a0a709e2dcc61f162c21",
+  "time" : {
+    "start" : 1655692861764,
+    "stop" : 1655692877462,
+    "duration" : 15698
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 5,
+  "retriesStatusChange" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "969b11611375197",
+      "name" : "Screenshot",
+      "source" : "969b11611375197.png",
+      "type" : "image/png",
+      "size" : 57669
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.IntegracaoBancaria"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.IntegracaoBancaria.IntegracaoBancaria"
+  }, {
+    "name" : "testMethod",
+    "value" : "ConsultaRegistroRemessa"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.IntegracaoBancaria.IntegracaoBancaria"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "4500@DESKTOP-Q4CVPEU.pool-1-thread-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "3e0d61a3d303195d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654962629072,
+        "stop" : 1654962646171,
+        "duration" : 17099
+      }
+    }, {
+      "uid" : "d89a82c51eb04c2a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653963172825,
+        "stop" : 1653963188405,
+        "duration" : 15580
+      }
+    }, {
+      "uid" : "818ee8e15fbca058",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653869785821,
+        "stop" : 1653869805562,
+        "duration" : 19741
+      }
+    }, {
+      "uid" : "b521c7efaabfc0f8",
+      "status" : "broken",
+      "statusDetails" : "Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, screenshot {}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\\Users\\David\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49877}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49877/devtoo..., se:cdpVersion: 102.0.5005.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}",
+      "time" : {
+        "start" : 1653868361562,
+        "stop" : 1653868361567,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "25dde82dcbf3ddec",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653865925046,
+        "stop" : 1653865942122,
+        "duration" : 17076
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "465f977a65a69b64",
+        "status" : "passed",
+        "time" : {
+          "start" : 1654962629072,
+          "stop" : 1654962646171,
+          "duration" : 17099
+        }
+      }, {
+        "uid" : "89697cae893d833c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653963172825,
+          "stop" : 1653963188405,
+          "duration" : 15580
+        }
+      }, {
+        "uid" : "a62ee86826b5d15b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653869785821,
+          "stop" : 1653869805562,
+          "duration" : 19741
+        }
+      }, {
+        "uid" : "3c289c1da549d6f8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653061389881,
+          "stop" : 1653061404374,
+          "duration" : 14493
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "f4f448c07410f4d9.json",
+  "parameterValues" : [ ]
+}

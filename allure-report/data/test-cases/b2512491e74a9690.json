@@ -1,0 +1,74 @@
+{
+  "uid" : "b2512491e74a9690",
+  "name" : "ConsultaBancos",
+  "fullName" : "Financeiro.InformacoesBancarias.InformacoesBancarias.ConsultaBancos",
+  "historyId" : "70d4a82dd6f3826ca6ac6c906c516870",
+  "time" : {
+    "start" : 1653963808330,
+    "stop" : 1653963821590,
+    "duration" : 13260
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "d9ef09acbee4d057",
+      "name" : "Screenshot",
+      "source" : "d9ef09acbee4d057.png",
+      "type" : "image/png",
+      "size" : 60172
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.InformacoesBancarias"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.InformacoesBancarias.InformacoesBancarias"
+  }, {
+    "name" : "testMethod",
+    "value" : "ConsultaBancos"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.InformacoesBancarias.InformacoesBancarias"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "7312@DESKTOP-Q4CVPEU.pool-1-thread-4(16)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b2512491e74a9690.json",
+  "parameterValues" : [ ]
+}

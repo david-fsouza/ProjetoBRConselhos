@@ -1,0 +1,159 @@
+{
+  "uid" : "7adf078b533ac138",
+  "name" : "Conciliacao",
+  "fullName" : "Financeiro.ConciliacaoBancaria.ConciliacaoBancaria.Conciliacao",
+  "historyId" : "a8d499f3d8c4659ffdbe595803130635",
+  "time" : {
+    "start" : 1655693117985,
+    "stop" : 1655693132640,
+    "duration" : 14655
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 5,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "280cef069eda2dd",
+      "name" : "Screenshot",
+      "source" : "280cef069eda2dd.png",
+      "type" : "image/png",
+      "size" : 49747
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.ConciliacaoBancaria"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.ConciliacaoBancaria.ConciliacaoBancaria"
+  }, {
+    "name" : "testMethod",
+    "value" : "Conciliacao"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.ConciliacaoBancaria.ConciliacaoBancaria"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "4500@DESKTOP-Q4CVPEU.pool-1-thread-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "60f3015840f42753",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654962937073,
+        "stop" : 1654962953679,
+        "duration" : 16606
+      }
+    }, {
+      "uid" : "cd6d36269b0795d0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653963457028,
+        "stop" : 1653963471729,
+        "duration" : 14701
+      }
+    }, {
+      "uid" : "6a62897f5765d7cd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653870102980,
+        "stop" : 1653870119882,
+        "duration" : 16902
+      }
+    }, {
+      "uid" : "d8e4987a551fdd8a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653868582664,
+        "stop" : 1653868615589,
+        "duration" : 32925
+      }
+    }, {
+      "uid" : "e7222e6bdde20bfb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653866242830,
+        "stop" : 1653866258843,
+        "duration" : 16013
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "f05ab96051f27fba",
+        "status" : "passed",
+        "time" : {
+          "start" : 1654962937073,
+          "stop" : 1654962953679,
+          "duration" : 16606
+        }
+      }, {
+        "uid" : "375fd1f007413bc0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653963457028,
+          "stop" : 1653963471729,
+          "duration" : 14701
+        }
+      }, {
+        "uid" : "7d93cd148ed92ee2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653870102980,
+          "stop" : 1653870119882,
+          "duration" : 16902
+        }
+      }, {
+        "uid" : "b54110c02872eb90",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653061854883,
+          "stop" : 1653061867743,
+          "duration" : 12860
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "7adf078b533ac138.json",
+  "parameterValues" : [ ]
+}

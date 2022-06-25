@@ -1,0 +1,74 @@
+{
+  "uid" : "39e862978354f978",
+  "name" : "Movimentos",
+  "fullName" : "Financeiro.ContasAReceber.ContasReceber.Movimentos",
+  "historyId" : "1d3474d6710042105a8d521dca22f6c1",
+  "time" : {
+    "start" : 1653962909497,
+    "stop" : 1653962927786,
+    "duration" : 18289
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "31ce23837d0659be",
+      "name" : "Screenshot",
+      "source" : "31ce23837d0659be.png",
+      "type" : "image/png",
+      "size" : 80696
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.ContasAReceber"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.ContasAReceber.ContasReceber"
+  }, {
+    "name" : "testMethod",
+    "value" : "Movimentos"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.ContasAReceber.ContasReceber"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "7312@DESKTOP-Q4CVPEU.pool-1-thread-4(16)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "39e862978354f978.json",
+  "parameterValues" : [ ]
+}

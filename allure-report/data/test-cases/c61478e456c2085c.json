@@ -1,0 +1,74 @@
+{
+  "uid" : "c61478e456c2085c",
+  "name" : "FuncaoImpressaoRapida",
+  "fullName" : "Financeiro.ContasAReceber.ContasReceber.FuncaoImpressaoRapida",
+  "historyId" : "d74bad65bc6b602e0d3adb3479a0706f",
+  "time" : {
+    "start" : 1653962803659,
+    "stop" : 1653962833858,
+    "duration" : 30199
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "cfee71f894b220d3",
+      "name" : "Screenshot",
+      "source" : "cfee71f894b220d3.png",
+      "type" : "image/png",
+      "size" : 163806
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.ContasAReceber"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.ContasAReceber.ContasReceber"
+  }, {
+    "name" : "testMethod",
+    "value" : "FuncaoImpressaoRapida"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.ContasAReceber.ContasReceber"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "7312@DESKTOP-Q4CVPEU.pool-1-thread-3(15)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c61478e456c2085c.json",
+  "parameterValues" : [ ]
+}

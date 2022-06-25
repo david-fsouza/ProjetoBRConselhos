@@ -1,0 +1,159 @@
+{
+  "uid" : "6ccd2df0754d2f6c",
+  "name" : "NovoIndiceseMoedas",
+  "fullName" : "Financeiro.IndiceseMoedas.IndiceseMoedas.NovoIndiceseMoedas",
+  "historyId" : "274a6bd9c652c4485081616876213028",
+  "time" : {
+    "start" : 1655693493866,
+    "stop" : 1655693507857,
+    "duration" : 13991
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 5,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "53af81cbf9c290e5",
+      "name" : "Screenshot",
+      "source" : "53af81cbf9c290e5.png",
+      "type" : "image/png",
+      "size" : 51224
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.IndiceseMoedas"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.IndiceseMoedas.IndiceseMoedas"
+  }, {
+    "name" : "testMethod",
+    "value" : "NovoIndiceseMoedas"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.IndiceseMoedas.IndiceseMoedas"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "4500@DESKTOP-Q4CVPEU.pool-1-thread-4(16)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "3b4d8c3b2fb6f67d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654963387998,
+        "stop" : 1654963405258,
+        "duration" : 17260
+      }
+    }, {
+      "uid" : "8661138cf510d01a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653963855773,
+        "stop" : 1653963869370,
+        "duration" : 13597
+      }
+    }, {
+      "uid" : "25a03bdf7efcc292",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653870569726,
+        "stop" : 1653870591106,
+        "duration" : 21380
+      }
+    }, {
+      "uid" : "6bb57ff7acbd5ea6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653868874125,
+        "stop" : 1653868898541,
+        "duration" : 24416
+      }
+    }, {
+      "uid" : "c0d300ddb48d475f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653866679216,
+        "stop" : 1653866696754,
+        "duration" : 17538
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "4a95cca0f76960cc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1654963387998,
+          "stop" : 1654963405258,
+          "duration" : 17260
+        }
+      }, {
+        "uid" : "9d9fdba595ae5a73",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653963855773,
+          "stop" : 1653963869370,
+          "duration" : 13597
+        }
+      }, {
+        "uid" : "a1d0829cc81112c9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653870569726,
+          "stop" : 1653870591106,
+          "duration" : 21380
+        }
+      }, {
+        "uid" : "3d027652c267ef08",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653062519661,
+          "stop" : 1653062531481,
+          "duration" : 11820
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "6ccd2df0754d2f6c.json",
+  "parameterValues" : [ ]
+}

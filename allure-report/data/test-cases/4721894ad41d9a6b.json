@@ -1,0 +1,74 @@
+{
+  "uid" : "4721894ad41d9a6b",
+  "name" : "ConsultaTiposDePagamento",
+  "fullName" : "Financeiro.CadastrosBasicos.CadastrosBasicos.ConsultaTiposDePagamento",
+  "historyId" : "504d1eb4156b1e0259bab714ced8a5d2",
+  "time" : {
+    "start" : 1653867069472,
+    "stop" : 1653867098784,
+    "duration" : 29312
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ed9ef32c7a959c2",
+      "name" : "Screenshot",
+      "source" : "ed9ef32c7a959c2.png",
+      "type" : "image/png",
+      "size" : 40016
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.CadastrosBasicos"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.CadastrosBasicos.CadastrosBasicos"
+  }, {
+    "name" : "testMethod",
+    "value" : "ConsultaTiposDePagamento"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.CadastrosBasicos.CadastrosBasicos"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "6604@DESKTOP-Q4CVPEU.pool-1-thread-4(16)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4721894ad41d9a6b.json",
+  "parameterValues" : [ ]
+}

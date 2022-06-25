@@ -1,0 +1,74 @@
+{
+  "uid" : "eadaf816c677ae9c",
+  "name" : "ItensLiquidacao",
+  "fullName" : "Financeiro.PagamentoAutomatizado.PagamentoAutomatizado.ItensLiquidacao",
+  "historyId" : "a86d5217db599f0439b4b9bbff304e72",
+  "time" : {
+    "start" : 1653868388857,
+    "stop" : 1653868424365,
+    "duration" : 35508
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "3dfbe2ff01bfd8d7",
+      "name" : "Screenshot",
+      "source" : "3dfbe2ff01bfd8d7.png",
+      "type" : "image/png",
+      "size" : 57752
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.PagamentoAutomatizado"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.PagamentoAutomatizado.PagamentoAutomatizado"
+  }, {
+    "name" : "testMethod",
+    "value" : "ItensLiquidacao"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.PagamentoAutomatizado.PagamentoAutomatizado"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "7076@DESKTOP-Q4CVPEU.pool-1-thread-8(61)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "eadaf816c677ae9c.json",
+  "parameterValues" : [ ]
+}

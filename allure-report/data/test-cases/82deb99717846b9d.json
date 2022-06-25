@@ -1,0 +1,74 @@
+{
+  "uid" : "82deb99717846b9d",
+  "name" : "LancamentosContabeis",
+  "fullName" : "Financeiro.ContasAReceber.ContasReceber.LancamentosContabeis",
+  "historyId" : "f5c17fb7dd5b988c2303dbda00e752af",
+  "time" : {
+    "start" : 1653867801472,
+    "stop" : 1653867849978,
+    "duration" : 48506
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "5209c44213d634d5",
+      "name" : "Screenshot",
+      "source" : "5209c44213d634d5.png",
+      "type" : "image/png",
+      "size" : 72280
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.ContasAReceber"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.ContasAReceber.ContasReceber"
+  }, {
+    "name" : "testMethod",
+    "value" : "LancamentosContabeis"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.ContasAReceber.ContasReceber"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "14856@DESKTOP-Q4CVPEU.pool-1-thread-7(19)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "82deb99717846b9d.json",
+  "parameterValues" : [ ]
+}

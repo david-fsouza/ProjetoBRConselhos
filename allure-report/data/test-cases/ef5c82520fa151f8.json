@@ -1,0 +1,160 @@
+{
+  "uid" : "ef5c82520fa151f8",
+  "name" : "ConsultaFormasLiquidacao",
+  "fullName" : "Financeiro.CadastrosBasicos.CadastrosBasicos.ConsultaFormasLiquidacao",
+  "historyId" : "1bc192b68577500609f6cc8ab1f552a4",
+  "time" : {
+    "start" : 1655693828872,
+    "stop" : 1655693845712,
+    "duration" : 16840
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 5,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "e124221520f2824",
+      "name" : "Screenshot",
+      "source" : "e124221520f2824.png",
+      "type" : "image/png",
+      "size" : 49896
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.CadastrosBasicos"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.CadastrosBasicos.CadastrosBasicos"
+  }, {
+    "name" : "testMethod",
+    "value" : "ConsultaFormasLiquidacao"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.CadastrosBasicos.CadastrosBasicos"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "4500@DESKTOP-Q4CVPEU.pool-1-thread-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "c40d5614a9d19fcd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654963739840,
+        "stop" : 1654963758109,
+        "duration" : 18269
+      }
+    }, {
+      "uid" : "2cc7d15081813fc3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653964197564,
+        "stop" : 1653964213860,
+        "duration" : 16296
+      }
+    }, {
+      "uid" : "575345b36204c6d1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653870950370,
+        "stop" : 1653870974157,
+        "duration" : 23787
+      }
+    }, {
+      "uid" : "38694720ac592e2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653868993852,
+        "stop" : 1653869031442,
+        "duration" : 37590
+      }
+    }, {
+      "uid" : "282bd33986cdf1b4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653867047267,
+        "stop" : 1653867068936,
+        "duration" : 21669
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "7674d79db4bb2e0c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1654963739840,
+          "stop" : 1654963758109,
+          "duration" : 18269
+        }
+      }, {
+        "uid" : "beeddca0925c8268",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653964197564,
+          "stop" : 1653964213860,
+          "duration" : 16296
+        }
+      }, {
+        "uid" : "2c26eb6649e5f06a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653870950370,
+          "stop" : 1653870974157,
+          "duration" : 23787
+        }
+      }, {
+        "uid" : "188a382bfa34bac7",
+        "status" : "broken",
+        "statusDetails" : "stale element reference: element is not attached to the page document\n  (Session info: chrome=101.0.4951.67)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [080ceda5b2762eb11be462d4072f09f2, clickElement {id=8c6d95ca-7e69-4a67-acad-9ca4327d1754}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\\Users\\David\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59052}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59052/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on WINDOWS (080ceda5b2762eb11be462d4072f09f2)] -> css selector: div[title='Baixa bancária']]\nSession ID: 080ceda5b2762eb11be462d4072f09f2",
+        "time" : {
+          "start" : 1653063042521,
+          "stop" : 1653063067983,
+          "duration" : 25462
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "ef5c82520fa151f8.json",
+  "parameterValues" : [ ]
+}

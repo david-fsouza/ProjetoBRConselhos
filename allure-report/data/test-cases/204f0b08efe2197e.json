@@ -1,0 +1,74 @@
+{
+  "uid" : "204f0b08efe2197e",
+  "name" : "ItensLiquidacao",
+  "fullName" : "Financeiro.IntegracaoBancaria.IntegracaoBancaria.ItensLiquidacao",
+  "historyId" : "c5cf7bc5de6cc85e338ec1b3e49c615b",
+  "time" : {
+    "start" : 1654962624096,
+    "stop" : 1654962641948,
+    "duration" : 17852
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "e71dbda9147e5330",
+      "name" : "Screenshot",
+      "source" : "e71dbda9147e5330.png",
+      "type" : "image/png",
+      "size" : 85258
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.IntegracaoBancaria"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.IntegracaoBancaria.IntegracaoBancaria"
+  }, {
+    "name" : "testMethod",
+    "value" : "ItensLiquidacao"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.IntegracaoBancaria.IntegracaoBancaria"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "9172@DESKTOP-Q4CVPEU.pool-1-thread-3(15)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "204f0b08efe2197e.json",
+  "parameterValues" : [ ]
+}

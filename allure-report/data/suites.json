@@ -1,0 +1,3040 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Financeiro.Tesouraria.Tesouraria",
+    "children" : [ {
+      "name" : "ConsultaRegistroTesouraria",
+      "uid" : "8c621bff18cce3d3",
+      "parentUid" : "0979b74b55f7ef2d893f0ca08280ee42",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692423750,
+        "stop" : 1655692458477,
+        "duration" : 34727
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 11,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "NovoRegistroTesouraria",
+      "uid" : "892abbedf8b525bb",
+      "parentUid" : "0979b74b55f7ef2d893f0ca08280ee42",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692423750,
+        "stop" : 1655692465709,
+        "duration" : 41959
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 9,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "0979b74b55f7ef2d893f0ca08280ee42"
+  }, {
+    "name" : "Financeiro.PosicaoFinanceira.PosicaoFinanceira",
+    "children" : [ {
+      "name" : "NovoRegistroPosicaoFinanceira",
+      "uid" : "a8ffa925eb3a9bd4",
+      "parentUid" : "fcd66f690a2b45b0bfd556560d54714b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692465741,
+        "stop" : 1655692483215,
+        "duration" : 17474
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 9,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "ConsultaRegistroPosicaoFinanceira",
+      "uid" : "f6a4bd7c0cca349c",
+      "parentUid" : "fcd66f690a2b45b0bfd556560d54714b",
+      "status" : "broken",
+      "time" : {
+        "start" : 1655692465758,
+        "stop" : 1655692487335,
+        "duration" : 21577
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : true,
+      "retriesCount" : 9,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "fcd66f690a2b45b0bfd556560d54714b"
+  }, {
+    "name" : "Financeiro.ContasAReceber.ContasReceber",
+    "children" : [ {
+      "name" : "FuncaoImpressaoRapida",
+      "uid" : "b86d7bd71fa44e50",
+      "parentUid" : "ef25b99d0c6a22198179316a28f592fc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692487346,
+        "stop" : 1655692503317,
+        "duration" : 15971
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 8,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "DocumentosGED",
+      "uid" : "d37dda56fdd88dcf",
+      "parentUid" : "ef25b99d0c6a22198179316a28f592fc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692487346,
+        "stop" : 1655692505170,
+        "duration" : 17824
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 8,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "FuncaoRecebimentos",
+      "uid" : "dcc288f1c58f7528",
+      "parentUid" : "ef25b99d0c6a22198179316a28f592fc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692503324,
+        "stop" : 1655692519236,
+        "duration" : 15912
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 7,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "SaldosUtilizados",
+      "uid" : "3d4539e066541558",
+      "parentUid" : "ef25b99d0c6a22198179316a28f592fc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692505175,
+        "stop" : 1655692525429,
+        "duration" : 20254
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 8,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "LancamentosContabeis",
+      "uid" : "1eac9474e105e4ae",
+      "parentUid" : "ef25b99d0c6a22198179316a28f592fc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692519242,
+        "stop" : 1655692540139,
+        "duration" : 20897
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 7,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "InstrucoesBancarias",
+      "uid" : "86cc37b6a184177d",
+      "parentUid" : "ef25b99d0c6a22198179316a28f592fc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692525436,
+        "stop" : 1655692544185,
+        "duration" : 18749
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 8,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "Geral",
+      "uid" : "1d656f7048c03a06",
+      "parentUid" : "ef25b99d0c6a22198179316a28f592fc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692540143,
+        "stop" : 1655692586274,
+        "duration" : 46131
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 8,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "AlterarSituacaoComplemento",
+      "uid" : "6a64996156c8bdcb",
+      "parentUid" : "ef25b99d0c6a22198179316a28f592fc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692544192,
+        "stop" : 1655692558594,
+        "duration" : 14402
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 7,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "InformacoesLiquidacao",
+      "uid" : "ba8a97d72b1e9b3f",
+      "parentUid" : "ef25b99d0c6a22198179316a28f592fc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692558603,
+        "stop" : 1655692586400,
+        "duration" : 27797
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 6,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "HistoricoDeContatos",
+      "uid" : "eace5fe42a464f7c",
+      "parentUid" : "ef25b99d0c6a22198179316a28f592fc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692586284,
+        "stop" : 1655692618087,
+        "duration" : 31803
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 6,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "Movimentos",
+      "uid" : "1d2f7d3fff3105d",
+      "parentUid" : "ef25b99d0c6a22198179316a28f592fc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692586404,
+        "stop" : 1655692618689,
+        "duration" : 32285
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 6,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "ConsultaRegistroGeracao",
+      "uid" : "157c191cfd25080",
+      "parentUid" : "ef25b99d0c6a22198179316a28f592fc",
+      "status" : "broken",
+      "time" : {
+        "start" : 1655692618091,
+        "stop" : 1655692636727,
+        "duration" : 18636
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : true,
+      "retriesCount" : 6,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "AtualizacaoDeTitulos",
+      "uid" : "87c6cd2168ef84b3",
+      "parentUid" : "ef25b99d0c6a22198179316a28f592fc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692618692,
+        "stop" : 1655692633678,
+        "duration" : 14986
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 6,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "ConsultaRegistro",
+      "uid" : "6d9b46957918706e",
+      "parentUid" : "ef25b99d0c6a22198179316a28f592fc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692633686,
+        "stop" : 1655692651901,
+        "duration" : 18215
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 6,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "AlteracaoDeTitulos",
+      "uid" : "5554ac05173593fa",
+      "parentUid" : "ef25b99d0c6a22198179316a28f592fc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692636732,
+        "stop" : 1655692652426,
+        "duration" : 15694
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 6,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "FuncaoRenegociacao",
+      "uid" : "e67d11d2d08bf73f",
+      "parentUid" : "ef25b99d0c6a22198179316a28f592fc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692651905,
+        "stop" : 1655692666105,
+        "duration" : 14200
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 6,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "HistoricoDeSituacao",
+      "uid" : "8a970baeb306450c",
+      "parentUid" : "ef25b99d0c6a22198179316a28f592fc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692652431,
+        "stop" : 1655692670156,
+        "duration" : 17725
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 6,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "AcrescimoseDescontos",
+      "uid" : "ccb9ffad520b65e3",
+      "parentUid" : "ef25b99d0c6a22198179316a28f592fc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692666110,
+        "stop" : 1655692681355,
+        "duration" : 15245
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 6,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "Observacoes",
+      "uid" : "ffe9463a5d34f664",
+      "parentUid" : "ef25b99d0c6a22198179316a28f592fc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692670159,
+        "stop" : 1655692685230,
+        "duration" : 15071
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 6,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "EmitirBoleto",
+      "uid" : "9a1ef9f038b9439",
+      "parentUid" : "ef25b99d0c6a22198179316a28f592fc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692681363,
+        "stop" : 1655692695024,
+        "duration" : 13661
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 6,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "ef25b99d0c6a22198179316a28f592fc"
+  }, {
+    "name" : "Financeiro.TransacoesCartao.TransacoesCartao",
+    "children" : [ {
+      "name" : "Liquidacoes",
+      "uid" : "bf2a388df05761eb",
+      "parentUid" : "fe28a283ec5d40b7cc5ba28946952d9d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692695031,
+        "stop" : 1655692714697,
+        "duration" : 19666
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 6,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "ConsultaRegistroTransacoesCartao",
+      "uid" : "7808190661911f21",
+      "parentUid" : "fe28a283ec5d40b7cc5ba28946952d9d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692695031,
+        "stop" : 1655692712953,
+        "duration" : 17922
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 6,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Titulos",
+      "uid" : "f2a931b3caae7bdf",
+      "parentUid" : "fe28a283ec5d40b7cc5ba28946952d9d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692712959,
+        "stop" : 1655692729315,
+        "duration" : 16356
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 6,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "fe28a283ec5d40b7cc5ba28946952d9d"
+  }, {
+    "name" : "Financeiro.ConfiguracaoDeRepassesAutomaticos.ConfiguracaoDeRepassesAutomaticos",
+    "children" : [ {
+      "name" : "NovoRegistroRepassesAutomaticos",
+      "uid" : "c5cdac5d49d03ad",
+      "parentUid" : "1151cee713c88050072d9615bcc47f48",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692729327,
+        "stop" : 1655692744084,
+        "duration" : 14757
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 6,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "Receitas",
+      "uid" : "bece4346428db21b",
+      "parentUid" : "1151cee713c88050072d9615bcc47f48",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692729329,
+        "stop" : 1655692745156,
+        "duration" : 15827
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 6,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "InformacoesDeRepasse",
+      "uid" : "8869eeff3c6f3418",
+      "parentUid" : "1151cee713c88050072d9615bcc47f48",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692744088,
+        "stop" : 1655692760647,
+        "duration" : 16559
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 6,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "1151cee713c88050072d9615bcc47f48"
+  }, {
+    "name" : "Financeiro.IntegracaoDeReceitaRealizada.IntegracaoDeReceitaRealizada",
+    "children" : [ {
+      "name" : "ConsultaRegistroReceitaRealizada",
+      "uid" : "37c13d95221be166",
+      "parentUid" : "b5268269fba54743cf1082c7dc893292",
+      "status" : "broken",
+      "time" : {
+        "start" : 1655692760656,
+        "stop" : 1655692774320,
+        "duration" : 13664
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : true,
+      "retriesCount" : 6,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "AbaTitulos",
+      "uid" : "a9ddbc30e83f47e6",
+      "parentUid" : "b5268269fba54743cf1082c7dc893292",
+      "status" : "broken",
+      "time" : {
+        "start" : 1655692760657,
+        "stop" : 1655692775116,
+        "duration" : 14459
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : true,
+      "retriesCount" : 6,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "b5268269fba54743cf1082c7dc893292"
+  }, {
+    "name" : "Financeiro.GerecaoDeTitulos.GeracaoDeTitulos",
+    "children" : [ {
+      "name" : "TitulosGerados",
+      "uid" : "326c644bddc75877",
+      "parentUid" : "d2adcd6393df874422c0d48138e2f250",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692775125,
+        "stop" : 1655692794200,
+        "duration" : 19075
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "NovoRegistroGeracaoDeTitulos",
+      "uid" : "5aa3b306f7a1a3e6",
+      "parentUid" : "d2adcd6393df874422c0d48138e2f250",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692775125,
+        "stop" : 1655692793529,
+        "duration" : 18404
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 6,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "ConsultaRegistroGeracaoDeTitulos",
+      "uid" : "b66b4265b2bf0279",
+      "parentUid" : "d2adcd6393df874422c0d48138e2f250",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692793533,
+        "stop" : 1655692808419,
+        "duration" : 14886
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "d2adcd6393df874422c0d48138e2f250"
+  }, {
+    "name" : "Financeiro.IntegracaoBancaria.IntegracaoBancaria",
+    "children" : [ {
+      "name" : "ItensOutrosMovimentos",
+      "uid" : "67eb9669fc54a2b8",
+      "parentUid" : "998ecc19ba0766802476ee95999c9cb4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692808455,
+        "stop" : 1655692827934,
+        "duration" : 19479
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "Historico",
+      "uid" : "ab0087e73ce58d8e",
+      "parentUid" : "998ecc19ba0766802476ee95999c9cb4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692808455,
+        "stop" : 1655692831893,
+        "duration" : 23438
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Movimentos",
+      "uid" : "e53ecd108b6f8679",
+      "parentUid" : "998ecc19ba0766802476ee95999c9cb4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692827938,
+        "stop" : 1655692844602,
+        "duration" : 16664
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "NovoRegistroRemessa",
+      "uid" : "290d22a1cca9f57e",
+      "parentUid" : "998ecc19ba0766802476ee95999c9cb4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692831896,
+        "stop" : 1655692845683,
+        "duration" : 13787
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "NovoRegistroRetorno",
+      "uid" : "96f0668c26e371d1",
+      "parentUid" : "998ecc19ba0766802476ee95999c9cb4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692844607,
+        "stop" : 1655692861760,
+        "duration" : 17153
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "ItensLiquidacao",
+      "uid" : "53322d9039669186",
+      "parentUid" : "998ecc19ba0766802476ee95999c9cb4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692845688,
+        "stop" : 1655692862032,
+        "duration" : 16344
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "ConsultaRegistroRemessa",
+      "uid" : "f4f448c07410f4d9",
+      "parentUid" : "998ecc19ba0766802476ee95999c9cb4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692861764,
+        "stop" : 1655692877462,
+        "duration" : 15698
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "ConsultaRegistroRetorno",
+      "uid" : "b4b9daf02b65ca17",
+      "parentUid" : "998ecc19ba0766802476ee95999c9cb4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692862035,
+        "stop" : 1655692881171,
+        "duration" : 19136
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "998ecc19ba0766802476ee95999c9cb4"
+  }, {
+    "name" : "Financeiro.PagamentoAutomatizado.PagamentoAutomatizado",
+    "children" : [ {
+      "name" : "ConsultaRegistroPagamentoAutomatizado",
+      "uid" : "fb6a0a5b06b5dbd6",
+      "parentUid" : "3293363c38bffe5058db1b3811b93dc2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692881294,
+        "stop" : 1655692896396,
+        "duration" : 15102
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "ItensOutrosMovimentos",
+      "uid" : "fcc96b631f4a593e",
+      "parentUid" : "3293363c38bffe5058db1b3811b93dc2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692881309,
+        "stop" : 1655692899091,
+        "duration" : 17782
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "NovoRegistroPagementoAutomatizado",
+      "uid" : "68de35ee5740696",
+      "parentUid" : "3293363c38bffe5058db1b3811b93dc2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692896401,
+        "stop" : 1655692910204,
+        "duration" : 13803
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "ItensLiquidacao",
+      "uid" : "e7876754003ba763",
+      "parentUid" : "3293363c38bffe5058db1b3811b93dc2",
+      "status" : "broken",
+      "time" : {
+        "start" : 1655692899095,
+        "stop" : 1655692912236,
+        "duration" : 13141
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : true,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "3293363c38bffe5058db1b3811b93dc2"
+  }, {
+    "name" : "Financeiro.Sacados.Sacados",
+    "children" : [ {
+      "name" : "ConsultaRegistroSacados",
+      "uid" : "40b853fec5f564db",
+      "parentUid" : "7458903bc92ab57f997535426bd6bc4b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692912243,
+        "stop" : 1655692927560,
+        "duration" : 15317
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "LogRegistro",
+      "uid" : "53069b2f94deffbe",
+      "parentUid" : "7458903bc92ab57f997535426bd6bc4b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692912243,
+        "stop" : 1655692928513,
+        "duration" : 16270
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Historico",
+      "uid" : "4cc215efca1f7432",
+      "parentUid" : "7458903bc92ab57f997535426bd6bc4b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692927563,
+        "stop" : 1655692941485,
+        "duration" : 13922
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Enderecos",
+      "uid" : "2e718b524f447adc",
+      "parentUid" : "7458903bc92ab57f997535426bd6bc4b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692928517,
+        "stop" : 1655692942652,
+        "duration" : 14135
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "NovoRegistroScados",
+      "uid" : "966868e53c10635f",
+      "parentUid" : "7458903bc92ab57f997535426bd6bc4b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692941489,
+        "stop" : 1655692955104,
+        "duration" : 13615
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Contabilizacao",
+      "uid" : "e04eb3ccacc8e72",
+      "parentUid" : "7458903bc92ab57f997535426bd6bc4b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692942655,
+        "stop" : 1655692955328,
+        "duration" : 12673
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "7458903bc92ab57f997535426bd6bc4b"
+  }, {
+    "name" : "Financeiro.DividaAtiva.DividaAtiva",
+    "children" : [ {
+      "name" : "ImpressaoRapidaDividaAtiva",
+      "uid" : "3ebacd0ed6c523a6",
+      "parentUid" : "a5e8647257e27b4f092ac5feb45b4869",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692955359,
+        "stop" : 1655692968146,
+        "duration" : 12787
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "NovoRegistroDividaAtiva",
+      "uid" : "5ce1022c2524044e",
+      "parentUid" : "a5e8647257e27b4f092ac5feb45b4869",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692955361,
+        "stop" : 1655692969098,
+        "duration" : 13737
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "ConsultaDividaAtiva",
+      "uid" : "138a82e12b19bb30",
+      "parentUid" : "a5e8647257e27b4f092ac5feb45b4869",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692968151,
+        "stop" : 1655692979313,
+        "duration" : 11162
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "a5e8647257e27b4f092ac5feb45b4869"
+  }, {
+    "name" : "Financeiro.BorderosDeRecebimento.BorderosDeRecebimento",
+    "children" : [ {
+      "name" : "ConsultaBorderosDeRecebimento",
+      "uid" : "474b5805efffde8d",
+      "parentUid" : "35efdd19b6f70c9566df03737592e1e3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692979323,
+        "stop" : 1655692993059,
+        "duration" : 13736
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "NovoRegistroBorderosDeRecebimento",
+      "uid" : "f6f82ec8ea8ae7a2",
+      "parentUid" : "35efdd19b6f70c9566df03737592e1e3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692979323,
+        "stop" : 1655692995387,
+        "duration" : 16064
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "NovoRegistroItens",
+      "uid" : "27492dc1f1b21781",
+      "parentUid" : "35efdd19b6f70c9566df03737592e1e3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655692993064,
+        "stop" : 1655693006077,
+        "duration" : 13013
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "35efdd19b6f70c9566df03737592e1e3"
+  }, {
+    "name" : "Financeiro.Cedentes.Cedentes",
+    "children" : [ {
+      "name" : "Enderecos",
+      "uid" : "3dc0c93ea80419c7",
+      "parentUid" : "8b8e57ca025aa5e31268939ff69eb71a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693006087,
+        "stop" : 1655693021480,
+        "duration" : 15393
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Telefones",
+      "uid" : "daa500be95bffb5a",
+      "parentUid" : "8b8e57ca025aa5e31268939ff69eb71a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693006091,
+        "stop" : 1655693021895,
+        "duration" : 15804
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Geral",
+      "uid" : "e45b831b790e0ede",
+      "parentUid" : "8b8e57ca025aa5e31268939ff69eb71a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693021487,
+        "stop" : 1655693036314,
+        "duration" : 14827
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "InfComplementares",
+      "uid" : "e5b5875d76d1e7e",
+      "parentUid" : "8b8e57ca025aa5e31268939ff69eb71a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693021899,
+        "stop" : 1655693038833,
+        "duration" : 16934
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "ConsultaCedentes",
+      "uid" : "cbe30738b518d95f",
+      "parentUid" : "8b8e57ca025aa5e31268939ff69eb71a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693036317,
+        "stop" : 1655693051855,
+        "duration" : 15538
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "AbaContabilizacao",
+      "uid" : "10fea495fc8477ff",
+      "parentUid" : "8b8e57ca025aa5e31268939ff69eb71a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693038838,
+        "stop" : 1655693054161,
+        "duration" : 15323
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Ocorrencias",
+      "uid" : "cce681e2c7b0dac0",
+      "parentUid" : "8b8e57ca025aa5e31268939ff69eb71a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693051860,
+        "stop" : 1655693069313,
+        "duration" : 17453
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Documentos",
+      "uid" : "248eaa5d91d550c",
+      "parentUid" : "8b8e57ca025aa5e31268939ff69eb71a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693054165,
+        "stop" : 1655693071206,
+        "duration" : 17041
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Contabilizacao",
+      "uid" : "6ef0ddd9fcbb916b",
+      "parentUid" : "8b8e57ca025aa5e31268939ff69eb71a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693069318,
+        "stop" : 1655693083630,
+        "duration" : 14312
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "InfFinanceiras",
+      "uid" : "60156525439ac890",
+      "parentUid" : "8b8e57ca025aa5e31268939ff69eb71a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693071211,
+        "stop" : 1655693086151,
+        "duration" : 14940
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "AreasDeAtuacao",
+      "uid" : "1d326b76eb8643bd",
+      "parentUid" : "8b8e57ca025aa5e31268939ff69eb71a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693083635,
+        "stop" : 1655693100992,
+        "duration" : 17357
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "DocumentosDeHabilitacao",
+      "uid" : "7999cd573804b30e",
+      "parentUid" : "8b8e57ca025aa5e31268939ff69eb71a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693086154,
+        "stop" : 1655693103196,
+        "duration" : 17042
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "ContatosResponsaveis",
+      "uid" : "ee911a01f0fe8f1",
+      "parentUid" : "8b8e57ca025aa5e31268939ff69eb71a",
+      "status" : "broken",
+      "time" : {
+        "start" : 1655693100996,
+        "stop" : 1655693117979,
+        "duration" : 16983
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : true,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "NovoRegistroCedentes",
+      "uid" : "50dd2771d51442ff",
+      "parentUid" : "8b8e57ca025aa5e31268939ff69eb71a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693103201,
+        "stop" : 1655693117709,
+        "duration" : 14508
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "8b8e57ca025aa5e31268939ff69eb71a"
+  }, {
+    "name" : "Financeiro.ConciliacaoBancaria.ConciliacaoBancaria",
+    "children" : [ {
+      "name" : "Conciliacao",
+      "uid" : "7adf078b533ac138",
+      "parentUid" : "8edb38f51c1188e07a4fc9490410eab9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693117985,
+        "stop" : 1655693132640,
+        "duration" : 14655
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "ImportarExtrato",
+      "uid" : "ca1de45331f98ac2",
+      "parentUid" : "8edb38f51c1188e07a4fc9490410eab9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693117985,
+        "stop" : 1655693132368,
+        "duration" : 14383
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "ConsultaExtratosBancarios",
+      "uid" : "56331fea025b1100",
+      "parentUid" : "8edb38f51c1188e07a4fc9490410eab9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693132373,
+        "stop" : 1655693146619,
+        "duration" : 14246
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "NovoRegistroExtratosBancarios",
+      "uid" : "140bfd53d959895d",
+      "parentUid" : "8edb38f51c1188e07a4fc9490410eab9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693132646,
+        "stop" : 1655693147786,
+        "duration" : 15140
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Lancamentos",
+      "uid" : "a848706c59af02fe",
+      "parentUid" : "8edb38f51c1188e07a4fc9490410eab9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693146623,
+        "stop" : 1655693161989,
+        "duration" : 15366
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "8edb38f51c1188e07a4fc9490410eab9"
+  }, {
+    "name" : "Financeiro.Cobranca.Cobranca",
+    "children" : [ {
+      "name" : "Atualizacao",
+      "uid" : "b91e9524d32f7e3b",
+      "parentUid" : "e68aac44816d44d0cd3d1704ee8c6825",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693162029,
+        "stop" : 1655693185111,
+        "duration" : 23082
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "ImprimirBoleto",
+      "uid" : "14841a54b922eef0",
+      "parentUid" : "e68aac44816d44d0cd3d1704ee8c6825",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693162033,
+        "stop" : 1655693185296,
+        "duration" : 23263
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "GerarRelatorioDeCobranca",
+      "uid" : "a4e270291c69cd07",
+      "parentUid" : "e68aac44816d44d0cd3d1704ee8c6825",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693185114,
+        "stop" : 1655693198891,
+        "duration" : 13777
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "GerarContatosParaTodos",
+      "uid" : "f1bdaeed1ca9fbb0",
+      "parentUid" : "e68aac44816d44d0cd3d1704ee8c6825",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693185298,
+        "stop" : 1655693206482,
+        "duration" : 21184
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "ChamadaExternaContasReceber",
+      "uid" : "7bd27076649a8325",
+      "parentUid" : "e68aac44816d44d0cd3d1704ee8c6825",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693198895,
+        "stop" : 1655693224688,
+        "duration" : 25793
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "PesquisaInadimplentes",
+      "uid" : "aaf0b6000c287c30",
+      "parentUid" : "e68aac44816d44d0cd3d1704ee8c6825",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693206485,
+        "stop" : 1655693228175,
+        "duration" : 21690
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "GerarContatos",
+      "uid" : "e45962475ee5e531",
+      "parentUid" : "e68aac44816d44d0cd3d1704ee8c6825",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693224692,
+        "stop" : 1655693241661,
+        "duration" : 16969
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Renegociacao",
+      "uid" : "92637e22c6ec45e3",
+      "parentUid" : "e68aac44816d44d0cd3d1704ee8c6825",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693228178,
+        "stop" : 1655693248932,
+        "duration" : 20754
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "ConsultarHistoricosDeContatos",
+      "uid" : "e36e7bbb08caa107",
+      "parentUid" : "e68aac44816d44d0cd3d1704ee8c6825",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693241665,
+        "stop" : 1655693259329,
+        "duration" : 17664
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "e68aac44816d44d0cd3d1704ee8c6825"
+  }, {
+    "name" : "Financeiro.HistoricoDeContatos.HistoricoDeContatos",
+    "children" : [ {
+      "name" : "DocumentosGED",
+      "uid" : "f1364d9de11e1b2d",
+      "parentUid" : "b3de418a80f698589da032b044e703bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693259355,
+        "stop" : 1655693278979,
+        "duration" : 19624
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "ImpressaoRapida",
+      "uid" : "7909e1e27ef3f1dc",
+      "parentUid" : "b3de418a80f698589da032b044e703bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693259355,
+        "stop" : 1655693273356,
+        "duration" : 14001
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "ConsultaHistoricoDeContatos",
+      "uid" : "766d0c38a38fe1bb",
+      "parentUid" : "b3de418a80f698589da032b044e703bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693273361,
+        "stop" : 1655693287264,
+        "duration" : 13903
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "NovoRegistroHistoricoDeContatos",
+      "uid" : "a0ff8e07409abfeb",
+      "parentUid" : "b3de418a80f698589da032b044e703bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693278984,
+        "stop" : 1655693290775,
+        "duration" : 11791
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Documentos",
+      "uid" : "e385a9b6af58baf1",
+      "parentUid" : "b3de418a80f698589da032b044e703bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693287268,
+        "stop" : 1655693302124,
+        "duration" : 14856
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "ConsultaEnvioDeBoletos",
+      "uid" : "9782e0d54a260548",
+      "parentUid" : "b3de418a80f698589da032b044e703bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693290779,
+        "stop" : 1655693305563,
+        "duration" : 14784
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : true,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "ContasaReceber",
+      "uid" : "7c319e419864c0b0",
+      "parentUid" : "b3de418a80f698589da032b044e703bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693302128,
+        "stop" : 1655693316266,
+        "duration" : 14138
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : true,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "b3de418a80f698589da032b044e703bd"
+  }, {
+    "name" : "Financeiro.InformacoesBancarias.InformacoesBancarias",
+    "children" : [ {
+      "name" : "ChequesProprios",
+      "uid" : "502ae17650f5deb4",
+      "parentUid" : "9307bfe7bdcf3d748e5728973a109a12",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693316309,
+        "stop" : 1655693330859,
+        "duration" : 14550
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "ContasBancarias",
+      "uid" : "c2ff345bafabd817",
+      "parentUid" : "9307bfe7bdcf3d748e5728973a109a12",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693316341,
+        "stop" : 1655693333274,
+        "duration" : 16933
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "NovoOcorrenciaBancaria",
+      "uid" : "6923503d860b0a8b",
+      "parentUid" : "9307bfe7bdcf3d748e5728973a109a12",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693330863,
+        "stop" : 1655693343372,
+        "duration" : 12509
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Configuracoes",
+      "uid" : "18c9da097fe49a37",
+      "parentUid" : "9307bfe7bdcf3d748e5728973a109a12",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693333280,
+        "stop" : 1655693348811,
+        "duration" : 15531
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "ConsultaCarteirasDeCobranca",
+      "uid" : "b702114c60dbe734",
+      "parentUid" : "9307bfe7bdcf3d748e5728973a109a12",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693343378,
+        "stop" : 1655693355996,
+        "duration" : 12618
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Instrucoes",
+      "uid" : "2bd0316896566806",
+      "parentUid" : "9307bfe7bdcf3d748e5728973a109a12",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693348816,
+        "stop" : 1655693362682,
+        "duration" : 13866
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "NovoAgencia",
+      "uid" : "3c7dc76adf849bf0",
+      "parentUid" : "9307bfe7bdcf3d748e5728973a109a12",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693356000,
+        "stop" : 1655693368904,
+        "duration" : 12904
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "NovoCarteirasDeCobranca",
+      "uid" : "a50931a955480760",
+      "parentUid" : "9307bfe7bdcf3d748e5728973a109a12",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693362685,
+        "stop" : 1655693377462,
+        "duration" : 14777
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "ConsultaContaBancaria",
+      "uid" : "6f66421f626d233a",
+      "parentUid" : "9307bfe7bdcf3d748e5728973a109a12",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693368909,
+        "stop" : 1655693381314,
+        "duration" : 12405
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "ConsultaInstrucoesDeCobranca",
+      "uid" : "14b5aeeb5acddc50",
+      "parentUid" : "9307bfe7bdcf3d748e5728973a109a12",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693377466,
+        "stop" : 1655693390371,
+        "duration" : 12905
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "NovoContaBancaria",
+      "uid" : "1d59e4cc35dbed1a",
+      "parentUid" : "9307bfe7bdcf3d748e5728973a109a12",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693381317,
+        "stop" : 1655693394308,
+        "duration" : 12991
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "ConfiguracaoPorBancos",
+      "uid" : "3d11aa2247752df4",
+      "parentUid" : "9307bfe7bdcf3d748e5728973a109a12",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693390376,
+        "stop" : 1655693405500,
+        "duration" : 15124
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "NovoBancos",
+      "uid" : "398ff389e12fb63d",
+      "parentUid" : "9307bfe7bdcf3d748e5728973a109a12",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693394311,
+        "stop" : 1655693407781,
+        "duration" : 13470
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "NovoInstrucoesDeCobranca",
+      "uid" : "405804ae6b106b2d",
+      "parentUid" : "9307bfe7bdcf3d748e5728973a109a12",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693405505,
+        "stop" : 1655693417701,
+        "duration" : 12196
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Movimentos",
+      "uid" : "8d1a14edf22974b8",
+      "parentUid" : "9307bfe7bdcf3d748e5728973a109a12",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693407786,
+        "stop" : 1655693422046,
+        "duration" : 14260
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "CarteiraDeCobranca",
+      "uid" : "9b1c409383452afb",
+      "parentUid" : "9307bfe7bdcf3d748e5728973a109a12",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693417706,
+        "stop" : 1655693432423,
+        "duration" : 14717
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "ConsultaAgencia",
+      "uid" : "12866631fa72eb0b",
+      "parentUid" : "9307bfe7bdcf3d748e5728973a109a12",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693422050,
+        "stop" : 1655693434866,
+        "duration" : 12816
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Compartilhamento",
+      "uid" : "a246c2d823ff1d1a",
+      "parentUid" : "9307bfe7bdcf3d748e5728973a109a12",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693432427,
+        "stop" : 1655693447260,
+        "duration" : 14833
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Agencias",
+      "uid" : "234d0b038e1e83f0",
+      "parentUid" : "9307bfe7bdcf3d748e5728973a109a12",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693434869,
+        "stop" : 1655693449932,
+        "duration" : 15063
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "ConsultaBancos",
+      "uid" : "b8344b9a36fc99da",
+      "parentUid" : "9307bfe7bdcf3d748e5728973a109a12",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693447264,
+        "stop" : 1655693459894,
+        "duration" : 12630
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "9307bfe7bdcf3d748e5728973a109a12"
+  }, {
+    "name" : "Financeiro.CondicaoDeRecebimento.CondicaoDeRecebimento",
+    "children" : [ {
+      "name" : "ConsultaCondicaoDeRecebimento",
+      "uid" : "a718062454102b29",
+      "parentUid" : "aa762158ff017e7e855413094721cb91",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693459946,
+        "stop" : 1655693474384,
+        "duration" : 14438
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Instrucoes",
+      "uid" : "48a63c177a0cb456",
+      "parentUid" : "aa762158ff017e7e855413094721cb91",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693459947,
+        "stop" : 1655693477998,
+        "duration" : 18051
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "NovoCondicaoDeRecebimento",
+      "uid" : "f209139aed6703b7",
+      "parentUid" : "aa762158ff017e7e855413094721cb91",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693474388,
+        "stop" : 1655693487741,
+        "duration" : 13353
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "FormasLiquid",
+      "uid" : "7c61a7662b61e7e7",
+      "parentUid" : "aa762158ff017e7e855413094721cb91",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693478001,
+        "stop" : 1655693493854,
+        "duration" : 15853
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "aa762158ff017e7e855413094721cb91"
+  }, {
+    "name" : "Financeiro.IndiceseMoedas.IndiceseMoedas",
+    "children" : [ {
+      "name" : "ConsultaIndiceseMoedas",
+      "uid" : "d3ea8f490d2938ce",
+      "parentUid" : "54946915b1b52299794d4bea2cb02d91",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693493866,
+        "stop" : 1655693510847,
+        "duration" : 16981
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : true,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "NovoIndiceseMoedas",
+      "uid" : "6ccd2df0754d2f6c",
+      "parentUid" : "54946915b1b52299794d4bea2cb02d91",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693493866,
+        "stop" : 1655693507857,
+        "duration" : 13991
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Cotacoes",
+      "uid" : "9b5f83a9217b5009",
+      "parentUid" : "54946915b1b52299794d4bea2cb02d91",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693507862,
+        "stop" : 1655693524400,
+        "duration" : 16538
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : true,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "PeriodoDeSuspensao",
+      "uid" : "5dfbe20d5984cd1d",
+      "parentUid" : "54946915b1b52299794d4bea2cb02d91",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693510852,
+        "stop" : 1655693526930,
+        "duration" : 16078
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : true,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "Faixas",
+      "uid" : "b27964e46d3fba14",
+      "parentUid" : "54946915b1b52299794d4bea2cb02d91",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693524406,
+        "stop" : 1655693540511,
+        "duration" : 16105
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "54946915b1b52299794d4bea2cb02d91"
+  }, {
+    "name" : "Financeiro.TabelaDePrecoServicos.TabelaDePrecoServicos",
+    "children" : [ {
+      "name" : "NovoTabelaDePrecoServicos",
+      "uid" : "baa3de562858357b",
+      "parentUid" : "4e988efe7d908f51940c5f4b05c062b9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693540532,
+        "stop" : 1655693557574,
+        "duration" : 17042
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Servicos",
+      "uid" : "d88c969073dad44f",
+      "parentUid" : "4e988efe7d908f51940c5f4b05c062b9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693540532,
+        "stop" : 1655693559531,
+        "duration" : 18999
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "ConsultaTabelaDePrecoServicos",
+      "uid" : "fa1f2573a5adfabe",
+      "parentUid" : "4e988efe7d908f51940c5f4b05c062b9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693557584,
+        "stop" : 1655693573103,
+        "duration" : 15519
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "4e988efe7d908f51940c5f4b05c062b9"
+  }, {
+    "name" : "Financeiro.GerarNumeroDocumento.GerarNumeroDocumento",
+    "children" : [ {
+      "name" : "NovoGerarNumeroDocumento",
+      "uid" : "a60c19d17c03679e",
+      "parentUid" : "4a8bed8ffac2d3b2010f659d245a40c4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693573113,
+        "stop" : 1655693587811,
+        "duration" : 14698
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "4a8bed8ffac2d3b2010f659d245a40c4"
+  }, {
+    "name" : "Financeiro.TiposDeLancamento.TiposDeLancamento",
+    "children" : [ {
+      "name" : "ConsultaTiposDeLacamento",
+      "uid" : "f2991a2722c2b20c",
+      "parentUid" : "10e1abd2003bbff7b5c632b5401b95bc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693587823,
+        "stop" : 1655693606486,
+        "duration" : 18663
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "NovoTiposDeLancamento",
+      "uid" : "5a6366934d8a4f25",
+      "parentUid" : "10e1abd2003bbff7b5c632b5401b95bc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693587823,
+        "stop" : 1655693603641,
+        "duration" : 15818
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "10e1abd2003bbff7b5c632b5401b95bc"
+  }, {
+    "name" : "Financeiro.EstruturaFinanceira.EstruturaFinanceira",
+    "children" : [ {
+      "name" : "CriteriosCentroResultado",
+      "uid" : "346388d8504837ae",
+      "parentUid" : "833feb2b9a12c1864cab414bc5579c21",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693606494,
+        "stop" : 1655693623257,
+        "duration" : 16763
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : true,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "NovoPlanoFinanceiro",
+      "uid" : "3d7c277aa8c1717f",
+      "parentUid" : "833feb2b9a12c1864cab414bc5579c21",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693606495,
+        "stop" : 1655693622952,
+        "duration" : 16457
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "ConsultaPlanoFinanceiro",
+      "uid" : "d557f75777b88e57",
+      "parentUid" : "833feb2b9a12c1864cab414bc5579c21",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693622956,
+        "stop" : 1655693637091,
+        "duration" : 14135
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "ContasContabeis",
+      "uid" : "798cdffa200f3c19",
+      "parentUid" : "833feb2b9a12c1864cab414bc5579c21",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693623262,
+        "stop" : 1655693640593,
+        "duration" : 17331
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "ConsultaPlanoContabil",
+      "uid" : "644f69180191f5e1",
+      "parentUid" : "833feb2b9a12c1864cab414bc5579c21",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693637097,
+        "stop" : 1655693653040,
+        "duration" : 15943
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "NovoPlanoContabil",
+      "uid" : "8f3d31e2c096669e",
+      "parentUid" : "833feb2b9a12c1864cab414bc5579c21",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693640597,
+        "stop" : 1655693655517,
+        "duration" : 14920
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "ContasFinanceiras",
+      "uid" : "880bde384934bf15",
+      "parentUid" : "833feb2b9a12c1864cab414bc5579c21",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693653045,
+        "stop" : 1655693671251,
+        "duration" : 18206
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "NovoCriteriosDeRateio",
+      "uid" : "909f4f20b3f60de9",
+      "parentUid" : "833feb2b9a12c1864cab414bc5579c21",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693655520,
+        "stop" : 1655693671109,
+        "duration" : 15589
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "ConsultaPlanoCentroResultado",
+      "uid" : "b0eb59579742ded6",
+      "parentUid" : "833feb2b9a12c1864cab414bc5579c21",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693671112,
+        "stop" : 1655693685906,
+        "duration" : 14794
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : true,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "ConsultaCriteriosDeRateio",
+      "uid" : "5a8214753aad5c9e",
+      "parentUid" : "833feb2b9a12c1864cab414bc5579c21",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693671254,
+        "stop" : 1655693686431,
+        "duration" : 15177
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "CentrosDeResultado",
+      "uid" : "addc36ca3bea9aa0",
+      "parentUid" : "833feb2b9a12c1864cab414bc5579c21",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693685910,
+        "stop" : 1655693701299,
+        "duration" : 15389
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "NovoPlanoCentroResultado",
+      "uid" : "8fc2f5e8ed142f7c",
+      "parentUid" : "833feb2b9a12c1864cab414bc5579c21",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693686434,
+        "stop" : 1655693700867,
+        "duration" : 14433
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "833feb2b9a12c1864cab414bc5579c21"
+  }, {
+    "name" : "Financeiro.RenegociacaoSimplificada.RenegociacaoSimplificada",
+    "children" : [ {
+      "name" : "NovoRenegociacaoSimplificada",
+      "uid" : "889b16d8bb26fd24",
+      "parentUid" : "cdb4087f8dde46e7a9dce002224b3e86",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693701337,
+        "stop" : 1655693731073,
+        "duration" : 29736
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "cdb4087f8dde46e7a9dce002224b3e86"
+  }, {
+    "name" : "Financeiro.RenegociacaoSimulacao.RenegociacaoSimulacao",
+    "children" : [ {
+      "name" : "NovoRenegociacaoSimulacao",
+      "uid" : "faaebd8e164e8172",
+      "parentUid" : "3a916e686d7725144031081beff45395",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693731078,
+        "stop" : 1655693750377,
+        "duration" : 19299
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "ConsultaRenegociacaoSimulacao",
+      "uid" : "54c7ce46fe6af24f",
+      "parentUid" : "3a916e686d7725144031081beff45395",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693731078,
+        "stop" : 1655693749794,
+        "duration" : 18716
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "3a916e686d7725144031081beff45395"
+  }, {
+    "name" : "Financeiro.PlanosDePagamento.PlanosDePagamento",
+    "children" : [ {
+      "name" : "FiltroPessoa",
+      "uid" : "827da3de2bcd980b",
+      "parentUid" : "cd4caaa58a0ad1122b46cb8bf15162a8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693750383,
+        "stop" : 1655693772682,
+        "duration" : 22299
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "FiltroTitulo",
+      "uid" : "d5158789b58604ca",
+      "parentUid" : "cd4caaa58a0ad1122b46cb8bf15162a8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693750385,
+        "stop" : 1655693773125,
+        "duration" : 22740
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "NovoPlanosDePagamento",
+      "uid" : "448874499899960d",
+      "parentUid" : "cd4caaa58a0ad1122b46cb8bf15162a8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693772687,
+        "stop" : 1655693790443,
+        "duration" : 17756
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "ConsultaPlanoDePagamento",
+      "uid" : "851261e9f70d55ce",
+      "parentUid" : "cd4caaa58a0ad1122b46cb8bf15162a8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693773129,
+        "stop" : 1655693793382,
+        "duration" : 20253
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "Permissoes",
+      "uid" : "664c18a22fb5c07c",
+      "parentUid" : "cd4caaa58a0ad1122b46cb8bf15162a8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693790448,
+        "stop" : 1655693810981,
+        "duration" : 20533
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "cd4caaa58a0ad1122b46cb8bf15162a8"
+  }, {
+    "name" : "Financeiro.EmitirDocumento.EmitirDocumento",
+    "children" : [ {
+      "name" : "ConsultaEmitirDocumento",
+      "uid" : "1a905e44a6ae791e",
+      "parentUid" : "5e954ceacf5ab2ed18be576d2111d26a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693811022,
+        "stop" : 1655693828866,
+        "duration" : 17844
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "5e954ceacf5ab2ed18be576d2111d26a"
+  }, {
+    "name" : "Financeiro.CadastrosBasicos.CadastrosBasicos",
+    "children" : [ {
+      "name" : "ConsultaFormasLiquidacao",
+      "uid" : "ef5c82520fa151f8",
+      "parentUid" : "7ae5f4792870a732f5286eefa72efa9d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693828872,
+        "stop" : 1655693845712,
+        "duration" : 16840
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "NovoTiposDeDocumento",
+      "uid" : "8bd08eb128e6fca0",
+      "parentUid" : "7ae5f4792870a732f5286eefa72efa9d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693828873,
+        "stop" : 1655693847852,
+        "duration" : 18979
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "NovoTiposDeCobranca",
+      "uid" : "9f5ece836fd151a5",
+      "parentUid" : "7ae5f4792870a732f5286eefa72efa9d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693845716,
+        "stop" : 1655693862341,
+        "duration" : 16625
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "ConsultaTiposDePagamento",
+      "uid" : "90df171ae957b8a1",
+      "parentUid" : "7ae5f4792870a732f5286eefa72efa9d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693847856,
+        "stop" : 1655693863575,
+        "duration" : 15719
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "NovoFormasLiquidacao",
+      "uid" : "afe4ba6f80cb0a1b",
+      "parentUid" : "7ae5f4792870a732f5286eefa72efa9d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693862349,
+        "stop" : 1655693877458,
+        "duration" : 15109
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "ConsultaTiposDeDocumento",
+      "uid" : "7d1bc47e0ae7b27f",
+      "parentUid" : "7ae5f4792870a732f5286eefa72efa9d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693863578,
+        "stop" : 1655693880077,
+        "duration" : 16499
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "ConsultaTiposDeCobranca",
+      "uid" : "2d72e819758f5e6",
+      "parentUid" : "7ae5f4792870a732f5286eefa72efa9d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693877463,
+        "stop" : 1655693895730,
+        "duration" : 18267
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "NovoHistoricos",
+      "uid" : "f10991b7c4641dd6",
+      "parentUid" : "7ae5f4792870a732f5286eefa72efa9d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693880081,
+        "stop" : 1655693896755,
+        "duration" : 16674
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "ConsultaTiposDeContato",
+      "uid" : "1f2e55dde21fb2d6",
+      "parentUid" : "7ae5f4792870a732f5286eefa72efa9d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693895734,
+        "stop" : 1655693913187,
+        "duration" : 17453
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "NovoTiposDeContato",
+      "uid" : "dc2c010bed7c0dff",
+      "parentUid" : "7ae5f4792870a732f5286eefa72efa9d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693896761,
+        "stop" : 1655693913903,
+        "duration" : 17142
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "ConsultaHistoricos",
+      "uid" : "eac558ea28441911",
+      "parentUid" : "7ae5f4792870a732f5286eefa72efa9d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693913190,
+        "stop" : 1655693929667,
+        "duration" : 16477
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "NovoTiposDePagamento",
+      "uid" : "f6fd7394003bc3c5",
+      "parentUid" : "7ae5f4792870a732f5286eefa72efa9d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693913907,
+        "stop" : 1655693930461,
+        "duration" : 16554
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "7ae5f4792870a732f5286eefa72efa9d"
+  }, {
+    "name" : "Financeiro.FluxoDeCaixa.FluxoDeCaixa",
+    "children" : [ {
+      "name" : "ConsultaFluxoDeCaixa",
+      "uid" : "c86bb0325dc663c",
+      "parentUid" : "4c13503f015f9f35f879c5f44c548ce3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693930492,
+        "stop" : 1655693946460,
+        "duration" : 15968
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : true,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "NovoFluxoDeCaixa",
+      "uid" : "3a8ef57d201ce451",
+      "parentUid" : "4c13503f015f9f35f879c5f44c548ce3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693930492,
+        "stop" : 1655693946746,
+        "duration" : 16254
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "4c13503f015f9f35f879c5f44c548ce3"
+  }, {
+    "name" : "Financeiro.ConfiguracoesRecebimentoRecorrente.ConfiguracoesRecebimentoRecorrente",
+    "children" : [ {
+      "name" : "ConsultaConfiguracoesDeRecebimentoRecorrente",
+      "uid" : "d5df609cfebef68c",
+      "parentUid" : "31adf23ec2e50b530b516206fccf6722",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693946759,
+        "stop" : 1655693961797,
+        "duration" : 15038
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : true,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "NovoConfiguracoesDeRecebimentoRecorrente",
+      "uid" : "c8554cd385341ce4",
+      "parentUid" : "31adf23ec2e50b530b516206fccf6722",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693946759,
+        "stop" : 1655693964203,
+        "duration" : 17444
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "31adf23ec2e50b530b516206fccf6722"
+  }, {
+    "name" : "Financeiro.DocumentosFiscais.DocumentosFiscais",
+    "children" : [ {
+      "name" : "DocumentosGED",
+      "uid" : "ac6e5ce868b3ae94",
+      "parentUid" : "54c4acae75753690583b4e7a4601e045",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693964219,
+        "stop" : 1655693985321,
+        "duration" : 21102
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Liquidacoes",
+      "uid" : "3aa3a00cb84e4b18",
+      "parentUid" : "54c4acae75753690583b4e7a4601e045",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693964219,
+        "stop" : 1655693985461,
+        "duration" : 21242
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "NovoDocumentosFiscais",
+      "uid" : "ec6559c46aca8cd",
+      "parentUid" : "54c4acae75753690583b4e7a4601e045",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693985325,
+        "stop" : 1655694000602,
+        "duration" : 15277
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "ConsultaDocumentosFiscais",
+      "uid" : "cc4372b687eff4bd",
+      "parentUid" : "54c4acae75753690583b4e7a4601e045",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655693985464,
+        "stop" : 1655694003600,
+        "duration" : 18136
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "54c4acae75753690583b4e7a4601e045"
+  }, {
+    "name" : "Financeiro.Relatorios.Relatorios",
+    "children" : [ {
+      "name" : "ConsultaRelatorios",
+      "uid" : "cdb917708aec73c6",
+      "parentUid" : "a56778e1b940a831f87c1a5eaa0f98c0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655694003617,
+        "stop" : 1655694019459,
+        "duration" : 15842
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : true,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "a56778e1b940a831f87c1a5eaa0f98c0"
+  } ]
+}

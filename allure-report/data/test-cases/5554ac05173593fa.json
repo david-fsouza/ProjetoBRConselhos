@@ -1,0 +1,169 @@
+{
+  "uid" : "5554ac05173593fa",
+  "name" : "AlteracaoDeTitulos",
+  "fullName" : "Financeiro.ContasAReceber.ContasReceber.AlteracaoDeTitulos",
+  "historyId" : "91d025a6e155cfdec142a291e48ef75e",
+  "time" : {
+    "start" : 1655692636732,
+    "stop" : 1655692652426,
+    "duration" : 15694
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 6,
+  "retriesStatusChange" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "59fdfd4b8432da03",
+      "name" : "Screenshot",
+      "source" : "59fdfd4b8432da03.png",
+      "type" : "image/png",
+      "size" : 100417
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.ContasAReceber"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.ContasAReceber.ContasReceber"
+  }, {
+    "name" : "testMethod",
+    "value" : "AlteracaoDeTitulos"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.ContasAReceber.ContasReceber"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "4500@DESKTOP-Q4CVPEU.pool-1-thread-3(15)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "c3384c9fa258c4bb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654962385612,
+        "stop" : 1654962401944,
+        "duration" : 16332
+      }
+    }, {
+      "uid" : "7cabe186235d22e9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653962943604,
+        "stop" : 1653962958733,
+        "duration" : 15129
+      }
+    }, {
+      "uid" : "f87c954d8733dc71",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653869543805,
+        "stop" : 1653869560222,
+        "duration" : 16417
+      }
+    }, {
+      "uid" : "7115d95c4d8cf04",
+      "status" : "broken",
+      "statusDetails" : "Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, screenshot {}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\\Users\\David\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49877}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49877/devtoo..., se:cdpVersion: 102.0.5005.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}",
+      "time" : {
+        "start" : 1653868264328,
+        "stop" : 1653868264332,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "c3f03e1ab3b7947e",
+      "status" : "broken",
+      "statusDetails" : "chrome not reachable\n  (Session info: chrome=102.0.5005.61)\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [24938cdf9a85760b0c8f6550c13fd94c, screenshot {}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\\Users\\David\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62350}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62350/devtoo..., se:cdpVersion: 102.0.5005.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 24938cdf9a85760b0c8f6550c13fd94c",
+      "time" : {
+        "start" : 1653867900332,
+        "stop" : 1653867939308,
+        "duration" : 38976
+      }
+    }, {
+      "uid" : "502c533925f7e620",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653865685896,
+        "stop" : 1653865703896,
+        "duration" : 18000
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "3cdde0424fa5f8d2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1654962385612,
+          "stop" : 1654962401944,
+          "duration" : 16332
+        }
+      }, {
+        "uid" : "c10617e4ed12b69e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653962943604,
+          "stop" : 1653962958733,
+          "duration" : 15129
+        }
+      }, {
+        "uid" : "171244eb0cf503f3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653869543805,
+          "stop" : 1653869560222,
+          "duration" : 16417
+        }
+      }, {
+        "uid" : "accfed6230842efb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653061039011,
+          "stop" : 1653061052413,
+          "duration" : 13402
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "5554ac05173593fa.json",
+  "parameterValues" : [ ]
+}

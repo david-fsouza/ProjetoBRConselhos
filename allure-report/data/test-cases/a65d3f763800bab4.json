@@ -1,0 +1,74 @@
+{
+  "uid" : "a65d3f763800bab4",
+  "name" : "AtualizacaoDeTitulos",
+  "fullName" : "Financeiro.ContasAReceber.ContasReceber.AtualizacaoDeTitulos",
+  "historyId" : "4d3cedc21b15a9e35680346520b8a0d5",
+  "time" : {
+    "start" : 1654962369941,
+    "stop" : 1654962385607,
+    "duration" : 15666
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "6cc75c6a5dcec00a",
+      "name" : "Screenshot",
+      "source" : "6cc75c6a5dcec00a.png",
+      "type" : "image/png",
+      "size" : 123799
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.ContasAReceber"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.ContasAReceber.ContasReceber"
+  }, {
+    "name" : "testMethod",
+    "value" : "AtualizacaoDeTitulos"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.ContasAReceber.ContasReceber"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "9172@DESKTOP-Q4CVPEU.pool-1-thread-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a65d3f763800bab4.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,74 @@
+{
+  "uid" : "b6f28f62a11bcb38",
+  "name" : "Permissoes",
+  "fullName" : "Financeiro.PlanosDePagamento.PlanosDePagamento.Permissoes",
+  "historyId" : "9afe46581869a85b1d24e04aa16a98ef",
+  "time" : {
+    "start" : 1653870899094,
+    "stop" : 1653870922359,
+    "duration" : 23265
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "6169c5527c13f699",
+      "name" : "Screenshot",
+      "source" : "6169c5527c13f699.png",
+      "type" : "image/png",
+      "size" : 50043
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.PlanosDePagamento"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.PlanosDePagamento.PlanosDePagamento"
+  }, {
+    "name" : "testMethod",
+    "value" : "Permissoes"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.PlanosDePagamento.PlanosDePagamento"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "5452@DESKTOP-Q4CVPEU.pool-1-thread-4(16)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b6f28f62a11bcb38.json",
+  "parameterValues" : [ ]
+}

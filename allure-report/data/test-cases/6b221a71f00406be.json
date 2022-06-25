@@ -1,0 +1,74 @@
+{
+  "uid" : "6b221a71f00406be",
+  "name" : "NovoRegistroBorderosDeRecebimento",
+  "fullName" : "Financeiro.BorderosDeRecebimento.BorderosDeRecebimento.NovoRegistroBorderosDeRecebimento",
+  "historyId" : "1ccac6e8f6ba28c8ced88285cb54ec94",
+  "time" : {
+    "start" : 1653868467583,
+    "stop" : 1653868502495,
+    "duration" : 34912
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a2ba12ab30037d41",
+      "name" : "Screenshot",
+      "source" : "a2ba12ab30037d41.png",
+      "type" : "image/png",
+      "size" : 39106
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.BorderosDeRecebimento"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.BorderosDeRecebimento.BorderosDeRecebimento"
+  }, {
+    "name" : "testMethod",
+    "value" : "NovoRegistroBorderosDeRecebimento"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.BorderosDeRecebimento.BorderosDeRecebimento"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "7076@DESKTOP-Q4CVPEU.pool-1-thread-6(18)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6b221a71f00406be.json",
+  "parameterValues" : [ ]
+}

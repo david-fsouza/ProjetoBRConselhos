@@ -1,0 +1,74 @@
+{
+  "uid" : "1b8dd1101afdfbea",
+  "name" : "Ocorrencias",
+  "fullName" : "Financeiro.Cedentes.Cedentes.Ocorrencias",
+  "historyId" : "771a139fd28dba1b82ecacbffbdd37b6",
+  "time" : {
+    "start" : 1654962859045,
+    "stop" : 1654962877987,
+    "duration" : 18942
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "26c88baf3b43c475",
+      "name" : "Screenshot",
+      "source" : "26c88baf3b43c475.png",
+      "type" : "image/png",
+      "size" : 67002
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.Cedentes"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.Cedentes.Cedentes"
+  }, {
+    "name" : "testMethod",
+    "value" : "Ocorrencias"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.Cedentes.Cedentes"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "9172@DESKTOP-Q4CVPEU.pool-1-thread-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1b8dd1101afdfbea.json",
+  "parameterValues" : [ ]
+}

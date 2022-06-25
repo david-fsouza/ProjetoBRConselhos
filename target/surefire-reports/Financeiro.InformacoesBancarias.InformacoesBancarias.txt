@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: Financeiro.InformacoesBancarias.InformacoesBancarias
+-------------------------------------------------------------------------------
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 153.367 s - in Financeiro.InformacoesBancarias.InformacoesBancarias

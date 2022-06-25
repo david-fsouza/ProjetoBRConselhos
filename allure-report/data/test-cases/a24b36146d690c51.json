@@ -1,0 +1,74 @@
+{
+  "uid" : "a24b36146d690c51",
+  "name" : "ConsultaRenegociacaoSimulacao",
+  "fullName" : "Financeiro.RenegociacaoSimulacao.RenegociacaoSimulacao.ConsultaRenegociacaoSimulacao",
+  "historyId" : "34c8cc0155b3bb278beead562db9a2ac",
+  "time" : {
+    "start" : 1654963639508,
+    "stop" : 1654963660913,
+    "duration" : 21405
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "2517d33416e58d0",
+      "name" : "Screenshot",
+      "source" : "2517d33416e58d0.png",
+      "type" : "image/png",
+      "size" : 84327
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.RenegociacaoSimulacao"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.RenegociacaoSimulacao.RenegociacaoSimulacao"
+  }, {
+    "name" : "testMethod",
+    "value" : "ConsultaRenegociacaoSimulacao"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.RenegociacaoSimulacao.RenegociacaoSimulacao"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "9172@DESKTOP-Q4CVPEU.pool-1-thread-3(15)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a24b36146d690c51.json",
+  "parameterValues" : [ ]
+}

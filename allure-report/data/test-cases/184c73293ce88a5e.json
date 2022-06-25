@@ -1,0 +1,74 @@
+{
+  "uid" : "184c73293ce88a5e",
+  "name" : "NovoRegistroPosicaoFinanceira",
+  "fullName" : "Financeiro.PosicaoFinanceira.PosicaoFinanceira.NovoRegistroPosicaoFinanceira",
+  "historyId" : "6cc5fcc84c28d98680c5c43581ced778",
+  "time" : {
+    "start" : 1653962778120,
+    "stop" : 1653962803641,
+    "duration" : 25521
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "beaf641d383d9eb6",
+      "name" : "Screenshot",
+      "source" : "beaf641d383d9eb6.png",
+      "type" : "image/png",
+      "size" : 65095
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.PosicaoFinanceira"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.PosicaoFinanceira.PosicaoFinanceira"
+  }, {
+    "name" : "testMethod",
+    "value" : "NovoRegistroPosicaoFinanceira"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.PosicaoFinanceira.PosicaoFinanceira"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "7312@DESKTOP-Q4CVPEU.pool-1-thread-4(16)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "184c73293ce88a5e.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,74 @@
+{
+  "uid" : "c4538dec5c5b8766",
+  "name" : "Liquidacoes",
+  "fullName" : "Financeiro.DocumentosFiscais.DocumentosFiscais.Liquidacoes",
+  "historyId" : "a92f02fbcde5a148f2ae8d48fc755f70",
+  "time" : {
+    "start" : 1653871151651,
+    "stop" : 1653871179552,
+    "duration" : 27901
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "39deab3ccd5b00ae",
+      "name" : "Screenshot",
+      "source" : "39deab3ccd5b00ae.png",
+      "type" : "image/png",
+      "size" : 53478
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.DocumentosFiscais"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.DocumentosFiscais.DocumentosFiscais"
+  }, {
+    "name" : "testMethod",
+    "value" : "Liquidacoes"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.DocumentosFiscais.DocumentosFiscais"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "5452@DESKTOP-Q4CVPEU.pool-1-thread-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c4538dec5c5b8766.json",
+  "parameterValues" : [ ]
+}

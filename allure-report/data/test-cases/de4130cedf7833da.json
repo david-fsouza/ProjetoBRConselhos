@@ -1,0 +1,74 @@
+{
+  "uid" : "de4130cedf7833da",
+  "name" : "ConsultaDividaAtiva",
+  "fullName" : "Financeiro.DividaAtiva.DividaAtiva.ConsultaDividaAtiva",
+  "historyId" : "57d53750b1948227d219b760cadc6306",
+  "time" : {
+    "start" : 1653868433946,
+    "stop" : 1653868467572,
+    "duration" : 33626
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "dae25f0314099795",
+      "name" : "Screenshot",
+      "source" : "dae25f0314099795.png",
+      "type" : "image/png",
+      "size" : 14525
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.DividaAtiva"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.DividaAtiva.DividaAtiva"
+  }, {
+    "name" : "testMethod",
+    "value" : "ConsultaDividaAtiva"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.DividaAtiva.DividaAtiva"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "7076@DESKTOP-Q4CVPEU.pool-1-thread-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "de4130cedf7833da.json",
+  "parameterValues" : [ ]
+}

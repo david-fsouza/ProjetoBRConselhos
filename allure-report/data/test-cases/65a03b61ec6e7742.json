@@ -1,0 +1,74 @@
+{
+  "uid" : "65a03b61ec6e7742",
+  "name" : "NovoConfiguracoesDeRecebimentoRecorrente",
+  "fullName" : "Financeiro.ConfiguracoesRecebimentoRecorrente.ConfiguracoesRecebimentoRecorrente.NovoConfiguracoesDeRecebimentoRecorrente",
+  "historyId" : "c8575fd31fe460004ec7162be3dc6a65",
+  "time" : {
+    "start" : 1653869031492,
+    "stop" : 1653869063792,
+    "duration" : 32300
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b45800f32bd3423c",
+      "name" : "Screenshot",
+      "source" : "b45800f32bd3423c.png",
+      "type" : "image/png",
+      "size" : 44579
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.ConfiguracoesRecebimentoRecorrente"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.ConfiguracoesRecebimentoRecorrente.ConfiguracoesRecebimentoRecorrente"
+  }, {
+    "name" : "testMethod",
+    "value" : "NovoConfiguracoesDeRecebimentoRecorrente"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.ConfiguracoesRecebimentoRecorrente.ConfiguracoesRecebimentoRecorrente"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "7076@DESKTOP-Q4CVPEU.pool-1-thread-4(16)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "65a03b61ec6e7742.json",
+  "parameterValues" : [ ]
+}

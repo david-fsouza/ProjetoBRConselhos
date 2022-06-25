@@ -1,0 +1,161 @@
+{
+  "uid" : "eac558ea28441911",
+  "name" : "ConsultaHistoricos",
+  "fullName" : "Financeiro.CadastrosBasicos.CadastrosBasicos.ConsultaHistoricos",
+  "historyId" : "bc42686ace07c622a155fc352ecc13be",
+  "time" : {
+    "start" : 1655693913190,
+    "stop" : 1655693929667,
+    "duration" : 16477
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 5,
+  "retriesStatusChange" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a526347dc8835eea",
+      "name" : "Screenshot",
+      "source" : "a526347dc8835eea.png",
+      "type" : "image/png",
+      "size" : 42190
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.CadastrosBasicos"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.CadastrosBasicos.CadastrosBasicos"
+  }, {
+    "name" : "testMethod",
+    "value" : "ConsultaHistoricos"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.CadastrosBasicos.CadastrosBasicos"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "4500@DESKTOP-Q4CVPEU.pool-1-thread-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "c618a343d1397a9d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654963832379,
+        "stop" : 1654963852779,
+        "duration" : 20400
+      }
+    }, {
+      "uid" : "6445571256c4c3ea",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653964280261,
+        "stop" : 1653964296076,
+        "duration" : 15815
+      }
+    }, {
+      "uid" : "b8027690a3da03e7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653871070041,
+        "stop" : 1653871095469,
+        "duration" : 25428
+      }
+    }, {
+      "uid" : "18e91155677d2fb2",
+      "status" : "broken",
+      "statusDetails" : "Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, screenshot {}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\\Users\\David\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49877}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49877/devtoo..., se:cdpVersion: 102.0.5005.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}",
+      "time" : {
+        "start" : 1653868999788,
+        "stop" : 1653868999792,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "de7f5a8d550fc25c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653867142998,
+        "stop" : 1653867162643,
+        "duration" : 19645
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "59325ab1a1ada4da",
+        "status" : "passed",
+        "time" : {
+          "start" : 1654963832379,
+          "stop" : 1654963852779,
+          "duration" : 20400
+        }
+      }, {
+        "uid" : "8d3fa30a5d0165de",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653964280261,
+          "stop" : 1653964296076,
+          "duration" : 15815
+        }
+      }, {
+        "uid" : "7b931050f194ccae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653871070041,
+          "stop" : 1653871095469,
+          "duration" : 25428
+        }
+      }, {
+        "uid" : "f80a15b89384f3b4",
+        "status" : "broken",
+        "statusDetails" : "stale element reference: element is not attached to the page document\n  (Session info: chrome=101.0.4951.67)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [882412edcee883c0ba2a09e3df291f8c, clickElement {id=f9a7ba39-ca1e-45a0-bfdd-402a0b0ff834}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\\Users\\David\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59376}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59376/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on WINDOWS (882412edcee883c0ba2a09e3df291f8c)] -> css selector: div[title='Baixa Automática']]\nSession ID: 882412edcee883c0ba2a09e3df291f8c",
+        "time" : {
+          "start" : 1653063341320,
+          "stop" : 1653063375857,
+          "duration" : 34537
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "eac558ea28441911.json",
+  "parameterValues" : [ ]
+}

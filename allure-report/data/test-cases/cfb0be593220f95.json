@@ -1,0 +1,74 @@
+{
+  "uid" : "cfb0be593220f95",
+  "name" : "NovoPlanoContabil",
+  "fullName" : "Financeiro.EstruturaFinanceira.EstruturaFinanceira.NovoPlanoContabil",
+  "historyId" : "c36b6e94c92b81d55b5add59001b4be3",
+  "time" : {
+    "start" : 1653870748865,
+    "stop" : 1653870764997,
+    "duration" : 16132
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "3acd657d3006a8a3",
+      "name" : "Screenshot",
+      "source" : "3acd657d3006a8a3.png",
+      "type" : "image/png",
+      "size" : 39574
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.EstruturaFinanceira"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.EstruturaFinanceira.EstruturaFinanceira"
+  }, {
+    "name" : "testMethod",
+    "value" : "NovoPlanoContabil"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.EstruturaFinanceira.EstruturaFinanceira"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "5452@DESKTOP-Q4CVPEU.pool-1-thread-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "cfb0be593220f95.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,74 @@
+{
+  "uid" : "7ef4b287313a7fbb",
+  "name" : "NovoCriteriosDeRateio",
+  "fullName" : "Financeiro.EstruturaFinanceira.EstruturaFinanceira.NovoCriteriosDeRateio",
+  "historyId" : "881ba0613e186063227bf005348a7214",
+  "time" : {
+    "start" : 1653870765000,
+    "stop" : 1653870783418,
+    "duration" : 18418
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ebbafc6f866b90b",
+      "name" : "Screenshot",
+      "source" : "ebbafc6f866b90b.png",
+      "type" : "image/png",
+      "size" : 40021
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.EstruturaFinanceira"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.EstruturaFinanceira.EstruturaFinanceira"
+  }, {
+    "name" : "testMethod",
+    "value" : "NovoCriteriosDeRateio"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.EstruturaFinanceira.EstruturaFinanceira"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "5452@DESKTOP-Q4CVPEU.pool-1-thread-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7ef4b287313a7fbb.json",
+  "parameterValues" : [ ]
+}

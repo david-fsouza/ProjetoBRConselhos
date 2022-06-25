@@ -1,0 +1,74 @@
+{
+  "uid" : "c84701cf0f85cd0",
+  "name" : "ContasaReceber",
+  "fullName" : "Financeiro.HistoricoDeContatos.HistoricoDeContatos.ContasaReceber",
+  "historyId" : "d37d048b307c9094a75ebea13f50ab57",
+  "time" : {
+    "start" : 1653963644780,
+    "stop" : 1653963660163,
+    "duration" : 15383
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "d69e82e0c44e492",
+      "name" : "Screenshot",
+      "source" : "d69e82e0c44e492.png",
+      "type" : "image/png",
+      "size" : 62113
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.HistoricoDeContatos"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.HistoricoDeContatos.HistoricoDeContatos"
+  }, {
+    "name" : "testMethod",
+    "value" : "ContasaReceber"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.HistoricoDeContatos.HistoricoDeContatos"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "7312@DESKTOP-Q4CVPEU.pool-1-thread-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c84701cf0f85cd0.json",
+  "parameterValues" : [ ]
+}

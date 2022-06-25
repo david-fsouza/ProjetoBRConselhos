@@ -1,0 +1,159 @@
+{
+  "uid" : "afe4ba6f80cb0a1b",
+  "name" : "NovoFormasLiquidacao",
+  "fullName" : "Financeiro.CadastrosBasicos.CadastrosBasicos.NovoFormasLiquidacao",
+  "historyId" : "775a2d9500f622bd8384e76d94ca4eab",
+  "time" : {
+    "start" : 1655693862349,
+    "stop" : 1655693877458,
+    "duration" : 15109
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 5,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ed6ef8e6415561d",
+      "name" : "Screenshot",
+      "source" : "ed6ef8e6415561d.png",
+      "type" : "image/png",
+      "size" : 47410
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.CadastrosBasicos"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.CadastrosBasicos.CadastrosBasicos"
+  }, {
+    "name" : "testMethod",
+    "value" : "NovoFormasLiquidacao"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.CadastrosBasicos.CadastrosBasicos"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "4500@DESKTOP-Q4CVPEU.pool-1-thread-2(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "b957648f898cb74a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654963776356,
+        "stop" : 1654963792387,
+        "duration" : 16031
+      }
+    }, {
+      "uid" : "72300f6c95f04618",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653964231036,
+        "stop" : 1653964248310,
+        "duration" : 17274
+      }
+    }, {
+      "uid" : "2f816d9d554715",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653870996056,
+        "stop" : 1653871018654,
+        "duration" : 22598
+      }
+    }, {
+      "uid" : "ee621b6c8319f474",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653868999659,
+        "stop" : 1653869031411,
+        "duration" : 31752
+      }
+    }, {
+      "uid" : "84a51dbeba9f95b3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653867089665,
+        "stop" : 1653867109808,
+        "duration" : 20143
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "c81d82225a6a1090",
+        "status" : "passed",
+        "time" : {
+          "start" : 1654963776356,
+          "stop" : 1654963792387,
+          "duration" : 16031
+        }
+      }, {
+        "uid" : "79ea86b68bac19d6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653964231036,
+          "stop" : 1653964248310,
+          "duration" : 17274
+        }
+      }, {
+        "uid" : "67cc833f355bcbe5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653870996056,
+          "stop" : 1653871018654,
+          "duration" : 22598
+        }
+      }, {
+        "uid" : "b2a7dbdbb5b0d76d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653063142348,
+          "stop" : 1653063183964,
+          "duration" : 41616
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "afe4ba6f80cb0a1b.json",
+  "parameterValues" : [ ]
+}

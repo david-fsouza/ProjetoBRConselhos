@@ -1,0 +1,74 @@
+{
+  "uid" : "e198ba225327e73d",
+  "name" : "AbaTitulos",
+  "fullName" : "Financeiro.IntegracaoDeReceitaRealizada.IntegracaoDeReceitaRealizada.AbaTitulos",
+  "historyId" : "81a5052d36041bee9d1ee9c9528eb867",
+  "time" : {
+    "start" : 1653868012246,
+    "stop" : 1653868029344,
+    "duration" : 17098
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "126f19b8c38629fb",
+      "name" : "Screenshot",
+      "source" : "126f19b8c38629fb.png",
+      "type" : "image/png",
+      "size" : 53892
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Financeiro.IntegracaoDeReceitaRealizada"
+  }, {
+    "name" : "testClass",
+    "value" : "Financeiro.IntegracaoDeReceitaRealizada.IntegracaoDeReceitaRealizada"
+  }, {
+    "name" : "testMethod",
+    "value" : "AbaTitulos"
+  }, {
+    "name" : "suite",
+    "value" : "Financeiro.IntegracaoDeReceitaRealizada.IntegracaoDeReceitaRealizada"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-Q4CVPEU"
+  }, {
+    "name" : "thread",
+    "value" : "14856@DESKTOP-Q4CVPEU.pool-1-thread-4(16)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e198ba225327e73d.json",
+  "parameterValues" : [ ]
+}
