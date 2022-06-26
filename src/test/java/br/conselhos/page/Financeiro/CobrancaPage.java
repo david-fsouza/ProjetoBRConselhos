@@ -25,7 +25,8 @@ public class CobrancaPage extends BasePage {
 	//********************** Consultar Históricos de Contatos *****************************************************************************//
 	
 	
-	public void selecionarCheckBoxRegistro(String numerodalinha) {
+	public void selecionarCheckBoxRegistro(String numerodalinha) throws InterruptedException {
+		esperaFixa(1000);
 		clicarCheck(By.xpath("//*[contains(@class, 'x-grid-row x-grid-row') and contains(@index, '" + numerodalinha + "')]/td/div"));		
 	}
 	

@@ -167,6 +167,21 @@ public class MenuPage extends BasePage {
 		escreverXpath("//input[contains(@name, 'mainCt:middleCt:leftCt:Pages:AccordionWithSearch:')]", "Relatórios" + Keys.ENTER);
 		esperaFixa(1000);
 		clicarLink("Relatórios");
-	}	
+	}
+	
+	/*************************
+	 * MÓDULO GESTÃO CONTÁBIL
+	 * **********************/
+	
+    public void GestaoContabil() {
+    	clicarBotaoID("modGestaoContabil");
+    }
+    
+    public void EntidadeContabil() {
+    	clicarLink("Entidade Contábil");
+    	
+    }
+	
+	
 		
 }

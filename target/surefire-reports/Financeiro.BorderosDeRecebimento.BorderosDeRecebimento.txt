@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Financeiro.BorderosDeRecebimento.BorderosDeRecebimento
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 24.66 s - in Financeiro.BorderosDeRecebimento.BorderosDeRecebimento
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 29.082 s - in Financeiro.BorderosDeRecebimento.BorderosDeRecebimento

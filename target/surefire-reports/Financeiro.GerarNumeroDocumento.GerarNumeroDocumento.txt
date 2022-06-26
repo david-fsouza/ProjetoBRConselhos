@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Financeiro.GerarNumeroDocumento.GerarNumeroDocumento
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.993 s - in Financeiro.GerarNumeroDocumento.GerarNumeroDocumento
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.807 s - in Financeiro.GerarNumeroDocumento.GerarNumeroDocumento

@@ -1,1 +1,1 @@
-[ ]
+[{"name":"Jenkins","type":"jenkins","url":"http://localhost:8080/automacao/","buildOrder":31,"buildName":"FINANCEIRO #31","buildUrl":"http://localhost:8080/automacao/job/FINANCEIRO/31/","reportName":"AllureReport","reportUrl":"http://localhost:8080/automacao/job/FINANCEIRO/31/allure"}]
