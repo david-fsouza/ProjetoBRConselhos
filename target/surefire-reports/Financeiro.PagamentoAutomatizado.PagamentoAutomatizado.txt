@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Financeiro.PagamentoAutomatizado.PagamentoAutomatizado
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 44.142 s - in Financeiro.PagamentoAutomatizado.PagamentoAutomatizado
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 32.734 s - in Financeiro.PagamentoAutomatizado.PagamentoAutomatizado

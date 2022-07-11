@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Financeiro.GerecaoDeTitulos.GeracaoDeTitulos
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 33.183 s - in Financeiro.GerecaoDeTitulos.GeracaoDeTitulos
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 28.592 s - in Financeiro.GerecaoDeTitulos.GeracaoDeTitulos

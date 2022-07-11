@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Financeiro.IndiceseMoedas.IndiceseMoedas
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 59.579 s - in Financeiro.IndiceseMoedas.IndiceseMoedas
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 42.158 s - in Financeiro.IndiceseMoedas.IndiceseMoedas

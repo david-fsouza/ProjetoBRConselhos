@@ -174,7 +174,7 @@ public class MenuPage extends BasePage {
 	 * **********************/
 	
     public void GestaoContabil() {
-    	clicarBotaoID("modGestaoContabil");
+    	clicarLink("Gestão Contábil");
     }
     
     public void EntidadeContabil() {

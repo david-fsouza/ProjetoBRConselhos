@@ -57,7 +57,7 @@ public class DSL {
 	
 	 // Verificar (obter) campo por "ID
 	
-	public String obterValorCampoId(String id) {	                              
+	public String obterValorCampoId(String id) {
 		return getDriver().findElement(By.id(id)).getAttribute("title");	
 	}
 	
@@ -144,25 +144,29 @@ public class DSL {
 	
 	// Clicar botão Selector
 	
-	public void clicarBotaoSelector(String cssSelector) {                              
+	public void clicarBotaoSelector(String cssSelector) {
+		esperaExplicita(cssSelector);
 		getDriver().findElement(By.cssSelector(cssSelector)).click();			
 	}
 	
 	 // Clicar botão por "Name"
 		
-	public void clicarBotao(String name) {                                          
+	public void clicarBotao(String name) {  
+		espera(name);
         getDriver().findElement(By.name(name)).click();
 	}
 	
 	// Clicar botão por "ID"
 	
-	public void clicarBotaoID(String id) {                                         
+	public void clicarBotaoID(String id) {
+        esperaExplicitaID(id);
 		getDriver().findElement(By.id(id)).click();
 	}
 	
 	// Clicar por Xpath
 		
-	public void clicarBotaoXpath(String xpath) {                                  
+	public void clicarBotaoXpath(String xpath) {
+		esperaExplicitaXpath(xpath);
 		getDriver().findElement(By.xpath(xpath)).click();	
 	}
 	
@@ -196,13 +200,15 @@ public class DSL {
 	
 	// Obter texto por "Name"
 	
-	public String obterTexto(String name) {                                         
+	public String obterTexto(String name) {
+		espera(name);
         return obterTexto(By.name(name));
 	}
 	
 	// Obter texto por "ID"
 	
 	public String obterTextoID(String id) {
+		esperaExplicitaID(id);
 		return getDriver().findElement(By.id(id)).getText();
 	}
 	
@@ -301,13 +307,19 @@ public class DSL {
 		
     @SuppressWarnings("deprecation")
 	public void esperaExplicitaXpath(String xpath) {                                  
-		WebDriverWait wait = new WebDriverWait(getDriver(), 5);
+		WebDriverWait wait = new WebDriverWait(getDriver(), 30);
 	    wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)));		
 	}
     
     @SuppressWarnings("deprecation")
+	public void esperaExplicitaID(String id) {                                  
+		WebDriverWait wait = new WebDriverWait(getDriver(), 30);
+	    wait.until(ExpectedConditions.presenceOfElementLocated(By.id(id)));		
+	}
+    
+    @SuppressWarnings("deprecation")
 	public void esperaExplicitaLink(String link) {                                  
-		WebDriverWait wait = new WebDriverWait(getDriver(), 5);
+		WebDriverWait wait = new WebDriverWait(getDriver(), 30);
 	    wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText(link)));		
 	}
     

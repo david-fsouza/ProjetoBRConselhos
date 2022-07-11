@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Financeiro.RenegociacaoSimplificada.RenegociacaoSimplificada
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 32.848 s - in Financeiro.RenegociacaoSimplificada.RenegociacaoSimplificada
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 30.512 s - in Financeiro.RenegociacaoSimplificada.RenegociacaoSimplificada
