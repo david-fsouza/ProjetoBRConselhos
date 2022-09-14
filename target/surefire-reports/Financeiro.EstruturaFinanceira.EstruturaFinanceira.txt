@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Financeiro.EstruturaFinanceira.EstruturaFinanceira
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 101.961 s - in Financeiro.EstruturaFinanceira.EstruturaFinanceira
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 102.454 s - in Financeiro.EstruturaFinanceira.EstruturaFinanceira

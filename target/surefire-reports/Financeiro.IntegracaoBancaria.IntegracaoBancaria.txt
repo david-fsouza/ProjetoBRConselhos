@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Financeiro.IntegracaoBancaria.IntegracaoBancaria
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 72.674 s - in Financeiro.IntegracaoBancaria.IntegracaoBancaria
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.224 s - in Financeiro.IntegracaoBancaria.IntegracaoBancaria

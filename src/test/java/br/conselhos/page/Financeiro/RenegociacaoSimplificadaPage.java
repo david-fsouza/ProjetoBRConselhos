@@ -7,12 +7,15 @@ import br.conselhos.page.FramesPage;
 
 public class RenegociacaoSimplificadaPage extends BasePage {
 	private FramesPage frame = new FramesPage();
-	//********************** Novo Renegociação Simplificada ****************************************************************//
 	
-	public void campoPessoaFisica() throws InterruptedException {
-		escreverID("lkPessoaEdt", "ZURIELI DE OLIVEIRA SILVEIRA MACHADO" + Keys.ENTER);
+	//****** Efetuar Renegociacao Simplificada ******//
+	
+	public void campoPessoaFisica(String texto) throws InterruptedException {
+		clicarBotaoID("lkPessoaEdt");
+		escreverID("lkPessoaEdt", texto + Keys.ENTER);
 		esperaFixa(5000);
 		digitaTeclaId("lkPessoaEdt", Keys.TAB);
+		esperaFixa(2000);
 	}
 	
 	public void campoTipoDeInscricao() throws InterruptedException {
@@ -43,16 +46,7 @@ public class RenegociacaoSimplificadaPage extends BasePage {
 		frame.frameDireita();
 		frame.frameDireita2();
 		esperaFixa(2000);
-	}
-	
-	public void botaoLocalizar() throws InterruptedException {
-		clicarBotaoID("btLocalizar");
-		esperaFixa(2000);
 	}	
-	
-	public void avancar() {
-		clicarBotaoID("btAvancar");
-	}
 	
 	public String obterTextoNovoRenegociacaoSimplificada() {
 		return obterTextoXpath("//*[text()='Informações da renegociação']");

@@ -7,101 +7,76 @@ import br.conselhos.core.BasePage;
 
 public class CobrancaPage extends BasePage {
 	
-	/************************* TELA PRINCIPAL cobrançaS ***********************************************************************************/
-	
-	//************************* Pesquisa Inadimplentes ***********************************************************************************//
+    /**
+     * OBJETOS COMUNS
+     */
 	
 	public void campoTipoLancamento(String texto) throws InterruptedException {
 		clicarBotaoID("m_cbTiposLancamentoEdt");
 		esperaFixa(1000);
 		sairFrame();
-		clicarBotaoSelector("div[title='ANUIDADE PJ']");
-	}
-	
-	public String obterTextoPesquisaInadimplentes() {
-		return obterTextoXpath("//*[text()='Permite consultar os títulos do inadimplente.']");
-	}
-	
-	//********************** Consultar Históricos de Contatos *****************************************************************************//
-	
-	
-	public void selecionarCheckBoxRegistro(String numerodalinha) throws InterruptedException {
-		esperaFixa(1000);
-		clicarCheck(By.xpath("//*[contains(@class, 'x-grid-row x-grid-row') and contains(@index, '" + numerodalinha + "')]/td/div"));		
+		clicarBotaoSelector("div[title='ANUIDADE PJ']");	
 	}
 	
 	public void consultaHistoricoDeContatos() {
 		clicarBotaoSelector("div[title='Consultar Históricos de Contato']");
 	}
 	
-	public String obterTextoHistoricoDeContatos() {
-		return obterTextoXpath("//*[text()='Permite consultar os históricos do contato.']");
+	//******* Geração de Contato Simples ********//
+	
+	public void campoSacado(String texto) throws InterruptedException {
+		clicarBotaoID("m_lkpSacadoEdt");
+		escreverID("m_lkpSacadoEdt", texto);
+		esperaFixa(1000);
+		digitaTeclaId("m_lkpSacadoEdt", Keys.ENTER);
 	}
 	
-	//****************************** Gerar Contatos ************************************************************************************//
-	
-	public void gerarContatos() {
+	public void gerarContato() {
 		clicarBotaoSelector("div[title='Gerar Contato']");		
 	}
 	
-	public String obterTextoGerarContatos() {
-		return obterTextoXpath("//*[text()='Permite gerar contatos.']");
-	}
-
-	//************************* Gerar Contatos Para Todos ****************************************************************************//
-	
-	public void gerarContatosParaTodos() {
-		clicarBotaoSelector("div[title='Gerar Contato para Todos']");
+	public void campoTipoDeContato(String texto) throws InterruptedException {
+		escreverID("m_cbTipoContatoEdt", texto + Keys.ENTER);
+		esperaFixa(1000);
 	}
 	
-	public String obterTextoGerarContatosParaTodos() {
-		return obterTextoXpath("//*[text()='Permite gerar contatos.']");
+	public String validarTextoGeracaoContatoSimples() {
+		sairFrame();
+		return obterTexto("Atenção");
 	}
 	
-	//************************ Gerar Relatório de cobrança ***************************************************************************//
+	//******* Geração de Contatos com Envio de Boletos em Anexo ********//
 	
-	public String obterTextoRelatorioDeCobranca() {
-		return obterTextoXpath("//*[text()='Gerar Relatório de Cobrança']");
+	public String validarTextoGeracaoEnvioBoletos() {
+		sairFrame();
+		return obterTexto("Atenção");	
 	}
 	
-	
-	/************************ TELA DETALHES DO INADIMPLENTE **************************************************************************/
-	
-	//******************************* Atualização ***********************************************************************************//
-	
-	public void atualizacao() {
-		clicarBotaoSelector("div[title='Atualização.']");
+	public String validarTextoHistoricoDeContatoGeradoEnvioBoleto() {
+		return obterTexto("Contato cobrança inicial (gera atualização, gera boleto e envia boleto)");	
 	}
 	
-	public String obterTextoAtualizacao() {
-		return obterTextoXpath("//*[text()='Atualização de Titulos de Recebimento']");
+	//****** Geração de Contatos Com Agendamento *******//
+	
+	public void campoData() throws InterruptedException {
+		esperaFixa(2000);
+		dataFuturaComHora("m_dtDataContatoEdt", 10);
 	}
 	
-	//****************************** Renegociação *******************************************************************************************************//
-	
-	public void renegociacao() {
-		clicarBotaoSelector("div[title='Renegociação.']");		
+	public String validarTextoGerarContatoComAgendamento() {
+		return obterTexto("Carta de Cobrança Administrativa");
 	}
 	
-	public String obterTextoRenegociacao() {
-		return obterTextoXpath("//*[text()='Títulos de origem']");
+	//****** Gerar Relatórios de Cobrança ******//
+	
+	public void gerarRelatorioDeCobranca() {
+		clicarBotaoSelector("div[title='Gerar Relatório de Cobrança']");	
 	}
 	
-	//***************************** Imprimir Boleto ****************************************************************************************************//
+	//****** Gerar Contato de Recobrança *******//
 	
-	public void imprimirBoleto() {
-		clicarBotaoSelector("div[title='Imprimir boleto.']");		
-	}
-	
-	public String obterTextoImprimirBoleto() {
-		return obterTextoXpath("//*[text()='Permite selecionar a carteira de cobrança.']");
-	}
-	
-		
-	//********************** Chamada Externa Contas a Receber ****************************************************************************//
-	
-	public String obterTextoChamadaExternaContasReceber() {
-		return obterTextoXpath("//*[text()='ANUIDADE PJ - ZURIELI DE OLIVEIRA SILVEIRA MACHADO - Contas a Receber nº 003575']");
+	public String validarTextoGerarContatoDeCobranca() {
+		return obterTexto("Processo de geração dos contatos criado com sucesso!");
 	}
 
 }

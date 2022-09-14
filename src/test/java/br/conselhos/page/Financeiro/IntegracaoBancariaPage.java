@@ -9,90 +9,48 @@ public class IntegracaoBancariaPage extends BasePage {
 	
 	/*******************  TELA INICIAL Integração bancária RETORNO ***********************************/
 	
-	//********************** Novo Registro Integração bancária **************************************//
 	
+	/**
+	 * TELA INICICAL REMESSA
+	 */
 	
-	public void botaoNovo() {
-		clicarBotaoXpath("/html/body/form/div/div[2]/div[2]/div/div/div/div/div[1]/div/div[1]/div/div/div[7]/em/button/span[1]");
-	}
-	public String obterTextoNovoRegistroRetorno() {
-		return obterTextoXpath("//*[text()='Integração Bancária de Retorno ou Remessa']");
-	}
-	
-	//************************** Consulta Registro Remessa ***********************************************//
-	
-	public void selecionarReultadoBusca(String texto) {
-		clicarBotaoSelector("div[title='" + texto + "']");
-	}
-	
-	public String obterTextoRegistroRetorno() {
-		return obterTextoXpath("//*[text()='Informações do Arquivo']");
-	}
-	
-	//******************************* Itens Liquidação ***************************************************//
-	
-	public void abaItens() {
-		clicarLink("Itens");
-		entrarFrame("#panelcategory1>iframe");	
-	}
-	
-	public String obterTextoItensLiquidacao() {
-		return obterTextoCss("div[title='Título está com situação Pago.']");
-	}
-	
-	//***************************** Itens Outros Movimentos *********************************************//
-	
-	public void outrosMovimentos() {
-		clicarBotaoXpath("//*[text()='Outros movimentos']");
-	}
-	
-	public String obterTextoOutrosMovimentos() {
-		return obterTextoCss("div[title='Confirmação de Entrada de Título']");
-	}
-	
-	/*******************  TELA INICIAL Integração bancária REMESSA **************************************/
-	
-	//****************** Novo Registro Integração bancária Remessa *************************************//
+	//****** Geração Arquivo Remessa ********//
 	
 	public void remessa() {
 		clicarBotaoXpath("//*[text()='Remessa']");
 	}
 	
-	public String obterTextoRemessa() {
-		return obterTextoXpath("//*[text()='Permite gerar arquivo de texto com as informações do sistema.']");
+	public void campoTipo(String texto) throws InterruptedException {
+		esperaFixa(1000);
+		escreverID("cbTipoEdt", texto);
+		esperaFixa(1000);
+		digitaTeclaId("cbTipoEdt", Keys.ENTER);
 	}
 	
-	//********************** Consulta Registro Integração Remessa **************************************//
-	
-	public void inserirCampoFiltrarRemessa(String texto) {
-		escreverXpath("//input[contains(@id,'filterTBX_gridpanel') and contains(@name, 'tabCt_1')]", texto + Keys.ENTER);
+	public void campoCategoria(String texto) {
+		clicarBotaoID("cbCategoriaEdt");
+		sairFrame();
+		clicarBotaoSelector("div[title='" + texto + "']");
 	}
 	
-	public String obterTextoRegistroRemessa() {
-		return obterTextoXpath("//*[text()='Total de registros']");
+	public void campoCarteiraDeCobranca(String texto) throws InterruptedException {
+		escreverID("cbCarteiraCobrancaEdt", texto + Keys.ENTER);
+		esperaFixa(1000);			
 	}
 	
-	//*********************************** Movimentos ****************************************************//
-	
-	public void abaMovimentos() {
-		clicarLink("Movimentos");
-		entrarFrame("#panelcategory1>iframe");		
+	public void campoNossoNumero(String texto) throws InterruptedException {
+		escreverID("cbNossoNumeroEdt", texto + Keys.ENTER);
+		esperaFixa(1000);		
 	}
 	
-	public String obterTextoMovimentos() {
-		return obterTextoCss("div[title='Geração de nosso número']");
+	public void campoMaxRegistrosArquivo(String texto) throws InterruptedException {
+		escreverID("numMaxRegistrosEdt", texto + Keys.ENTER);
+		esperaFixa(1000);	
 	}
 	
-	//************************************ Histórico ****************************************************//
-	
-	public void historico() {
-		clicarBotaoID("historytbtn_IntegracaoBancariaRemessa");
+	public String validarTextoGeracaoArquivoRemessa() {
+		sairFrame();
+		return obterTexto("Arquivo gerado.");
 	}
 	
-	public String obterTextoHistorico() {
-		return obterTextoXpath("//*[text()='Histórico']");
-	}
-	
-	
-
 }

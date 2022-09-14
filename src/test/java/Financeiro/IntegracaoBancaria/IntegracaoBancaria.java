@@ -9,15 +9,19 @@ import org.apache.commons.io.FileUtils;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.FixMethodOrder;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TestName;
+import org.junit.runners.MethodSorters;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
+import Financeiro.PosicaoFinanceira.PosicaoFinanceira;
 import br.conselhos.core.BaseTest;
 import br.conselhos.page.Financeiro.IntegracaoBancariaPage;
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class IntegracaoBancaria extends BaseTest {
 	private IntegracaoBancariaPage integracaobancaria = new IntegracaoBancariaPage();
 	
@@ -29,103 +33,30 @@ public class IntegracaoBancaria extends BaseTest {
 		frame.frameDireita();
 	}
 	
-	/*********************  TELA INICIAL Integração bancária RETORNO ***********************************/
+	/**
+	 * TELA INICICAL REMESSA
+	 */
 	
 	@Test
-	public void NovoRegistroRetorno() throws InterruptedException {
-		
-		page.esperar3segundos();
-		integracaobancaria.botaoNovo();
-		frame.frameTelaSobreposta();
-		Assert.assertEquals("Integração Bancária de Retorno ou Remessa", integracaobancaria.obterTextoNovoRegistroRetorno());
-	}
-	
-	@Test
-	public void ConsultaRegistroRetorno() throws InterruptedException {
-		
-	    page.esperar3segundos();
-		page.inserirCampoFiltrar("0", "Retorno.ret");
-		page.esperar1segundo();
-		integracaobancaria.selecionarReultadoBusca("Conta B.Brasil");
-		frame.frameTelaSobreposta();
-		Assert.assertEquals("Informações do Arquivo", integracaobancaria.obterTextoRegistroRetorno());				
-	}
-	
-	@Test
-	public void ItensLiquidacao() throws InterruptedException {
-		
-		page.inserirCampoFiltrar("0", "Retorno.ret");
-		page.esperar1segundo();
-		integracaobancaria.selecionarReultadoBusca("Conta B.Brasil");
-		frame.frameTelaSobreposta();
-		integracaobancaria.abaItens();
-		Assert.assertEquals("Título está com situação Pago.", integracaobancaria.obterTextoItensLiquidacao());		
-	}
-	
-	@Test
-	public void ItensOutrosMovimentos() throws InterruptedException {
-		
-		page.inserirCampoFiltrar("0", "CBR6437331611201821427.ret");
-		page.esperar1segundo();
-		integracaobancaria.selecionarReultadoBusca("Conta B.Brasil");
-		frame.frameTelaSobreposta();
-		integracaobancaria.abaItens();
-		integracaobancaria.outrosMovimentos();
-		Assert.assertEquals("Confirmação de Entrada de Título", integracaobancaria.obterTextoOutrosMovimentos());		
-	}
-	
-	/*******************  TELA INICIAL Integração bancária REMESSA ***********************************/
-	
-	@Test
-	public void NovoRegistroRemessa() {
+	public void T010_GeracaoArquivoRemessa() throws InterruptedException {
 		
 		integracaobancaria.remessa();
 		page.botaoNovo();
-		frame.frameTelaSobreposta();
-		Assert.assertEquals("Permite gerar arquivo de texto com as informações do sistema.", integracaobancaria.obterTextoRemessa());		
+		frame.TelaSobreposta();
+		integracaobancaria.campoTipo("Carnê");
+		integracaobancaria.campoCategoria("TÉCNICO DE ENFERMAGEM");
+		frame.TelaSobreposta();
+		page.esperar2segundos();
+		frame.TelaSobreposta();
+		integracaobancaria.campoCarteiraDeCobranca("Carteira - Banco do Brasil");
+		integracaobancaria.campoNossoNumero("Gerar novo quando não possuir para carteira selecionada");
+		integracaobancaria.campoMaxRegistrosArquivo("1");
+		page.esperar2segundos();
+		page.botaoGerar();
+		page.botaoGerar();
+		Assert.assertEquals("Arquivo gerado.", integracaobancaria.validarTextoGeracaoArquivoRemessa());		
 	}
-	
-	@Test
-	public void ConsultaRegistroRemessa() throws InterruptedException {
-		
-		integracaobancaria.remessa();
-		integracaobancaria.inserirCampoFiltrarRemessa("RemessaCorreio0071.REM");
-		page.esperar1segundo();
-		integracaobancaria.selecionarReultadoBusca("Conta B.Brasil");
-		frame.frameTelaSobreposta();
-		Assert.assertEquals("Total de registros", integracaobancaria.obterTextoRegistroRemessa());		
-	}
-	
-	@Test
-	public void Movimentos() throws InterruptedException {
-		
-		integracaobancaria.remessa();
-		integracaobancaria.inserirCampoFiltrarRemessa("RemessaCorreio0071.REM");
-		page.esperar1segundo();
-		integracaobancaria.selecionarReultadoBusca("Conta B.Brasil");
-		frame.frameTelaSobreposta();
-		integracaobancaria.abaMovimentos();
-		Assert.assertEquals("Geração de nosso número", integracaobancaria.obterTextoMovimentos());		
-	}
-	
-	@Test
-	public void Historico() throws InterruptedException {
-		
-		integracaobancaria.remessa();
-		integracaobancaria.inserirCampoFiltrarRemessa("RemessaCorreio0071.REM");
-		page.esperar1segundo();
-		integracaobancaria.selecionarReultadoBusca("Conta B.Brasil");
-		frame.frameTelaSobreposta();
-		integracaobancaria.historico();
-		esperaFixa(6000);
-		sairFrame();
-		frame.frameTelaSobreposta();
-		Assert.assertEquals("Histórico", integracaobancaria.obterTextoHistorico());
-		
-		
-		
-	}
-	
+
 	
 	@Rule
     public TestName testNome = new TestName();

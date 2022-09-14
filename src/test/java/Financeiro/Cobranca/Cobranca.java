@@ -9,15 +9,18 @@ import org.apache.commons.io.FileUtils;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.FixMethodOrder;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TestName;
+import org.junit.runners.MethodSorters;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
 import br.conselhos.core.BaseTest;
 import br.conselhos.page.Financeiro.CobrancaPage;
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class Cobranca extends BaseTest {
 	private CobrancaPage cobranca = new CobrancaPage();
 	
@@ -29,130 +32,99 @@ public class Cobranca extends BaseTest {
 		frame.frameDireita2();
 	}
 	
-	/************************* TELA PRINCIPAL cobrançaS ***********************************************************************************/
-	
 	@Test
-	public void PesquisaInadimplentes() throws InterruptedException {
+	public void T010_GeracaoDeContatosSimples() throws InterruptedException {
 		
-		cobranca.campoTipoLancamento("ANUIDADE PJ");
+		cobranca.campoSacado("AMANDA BERTOLINI ALVES PEREIRA");
 		frame.frameDireita();
 		frame.frameDireita2();
 		page.botaoLocalizar();
-		page.selecionarRegistro("ABDOM MURILO BARBOSA SANCHEZ");
-        frame.chamadaExternContasReceber();
-		Assert.assertEquals("Permite consultar os títulos do inadimplente.", cobranca.obterTextoPesquisaInadimplentes());
+		page.selecionarCheckBoxGrid("0");
+		cobranca.gerarContato();
+		frame.contato();
+		cobranca.campoTipoDeContato("Carta de Cobrança Administrativa");
+		page.botaoAvancar();
+		page.botaoAvancar();
+		Assert.assertEquals("Atenção", cobranca.validarTextoGeracaoContatoSimples());		
 	}
 	
 	@Test
-	public void ConsultarHistoricosDeContatos() throws InterruptedException {
+	public void T020_GeracaoDeContatoEnvioDeBoletoAnexo() throws InterruptedException {
 		
-		cobranca.campoTipoLancamento("ANUIDADE PJ");
+		cobranca.campoSacado("ACENALDO FERREIRA LIMA");
 		frame.frameDireita();
 		frame.frameDireita2();
 		page.botaoLocalizar();
-		cobranca.selecionarCheckBoxRegistro("1");
+		page.selecionarCheckBoxGrid("0");
+		cobranca.gerarContato();
+		frame.contato();
+		cobranca.campoTipoDeContato("Contato cobrança inicial (gera atualização, gera boleto e envia boleto)");
+		page.botaoAvancar();
+		page.botaoAvancar();
+		Assert.assertEquals("Atenção", cobranca.validarTextoGeracaoEnvioBoletos());
+		page.OK();
+		frame.frameDireita();
+		frame.frameDireita2();
+		page.selecionarCheckBoxGrid("0");
 		cobranca.consultaHistoricoDeContatos();
 		frame.historicoDeContatos();
-		Assert.assertEquals("Permite consultar os históricos do contato.", cobranca.obterTextoHistoricoDeContatos());
+		Assert.assertEquals("Contato cobrança inicial (gera atualização, gera boleto e envia boleto)", cobranca.validarTextoHistoricoDeContatoGeradoEnvioBoleto());
 	}
 	
 	@Test
-	public void GerarContatos() throws InterruptedException {
+	public void T030_GerarContatoComAgendamento() throws InterruptedException {
 		
-		cobranca.campoTipoLancamento("ANUIDADE PJ");
+		cobranca.campoSacado("AGATHA LARISSA CZARNESKI");
 		frame.frameDireita();
 		frame.frameDireita2();
 		page.botaoLocalizar();
-		cobranca.selecionarCheckBoxRegistro("1");
-		cobranca.gerarContatos();
+		page.selecionarCheckBoxGrid("0");
+		cobranca.gerarContato();
 		frame.contato();
-		Assert.assertEquals("Permite gerar contatos.", cobranca.obterTextoGerarContatos());				
+		cobranca.campoData();
+		cobranca.campoTipoDeContato("Carta de Cobrança Administrativa");
+		page.botaoAvancar();
+		page.botaoAvancar();
+		sairFrame();
+		page.OK();
+		frame.frameDireita();
+		frame.frameDireita2();
+		page.selecionarCheckBoxGrid("0");
+		cobranca.consultaHistoricoDeContatos();
+		frame.historicoDeContatos();
+		Assert.assertEquals("Carta de Cobrança Administrativa", cobranca.validarTextoGerarContatoComAgendamento());		
 	}
 	
 	@Test
-	public void GerarContatosParaTodos() throws InterruptedException {
+	public void T040_GerarRelatoriodeCobranca() throws InterruptedException {
 		
-		cobranca.campoTipoLancamento("ANUIDADE PJ");
+		cobranca.campoSacado("ABDOM MURILO BARBOSA SANCHEZ");
 		frame.frameDireita();
 		frame.frameDireita2();
 		page.botaoLocalizar();
-		cobranca.selecionarCheckBoxRegistro("1");
-		cobranca.gerarContatosParaTodos();
+		page.selecionarCheckBoxGrid("0");
+		cobranca.gerarRelatorioDeCobranca();
+		page.validarDownloadArquivo("RelatorioR086C000000.pdf");
+		page.esperar3segundos();	
+	}
+	
+	@Test
+	public void T050_GerarContatoDeRecobranca() throws InterruptedException {
+		
+		cobranca.campoSacado("ABDOM MURILO BARBOSA SANCHEZ");
+		frame.frameDireita();
+		frame.frameDireita2();
+		page.botaoLocalizar();
+		page.selecionarCheckBoxGrid("0");
+		cobranca.gerarContato();
 		frame.contato();
-		Assert.assertEquals("Permite gerar contatos.", cobranca.obterTextoGerarContatosParaTodos());		
+		cobranca.campoTipoDeContato("Recobrança");
+		page.botaoAvancar();
+		page.botaoAvancar();
+		sairFrame();
+		Assert.assertEquals("Processo de geração dos contatos criado com sucesso!", cobranca.validarTextoGerarContatoDeCobranca());		
 	}
-	
-	@Test
-	public void GerarRelatorioDeCobranca() {
-		
-		Assert.assertEquals("Gerar Relatório de Cobrança", cobranca.obterTextoRelatorioDeCobranca());	
-	}
-	
-	/********************** TELA DETALHES DO INADIMPLENTE *****************************************************************************************************/
-	
-	@Test
-	public void Atualizacao() throws InterruptedException {
-		
-		cobranca.campoTipoLancamento("ANUIDADE PJ");
-		frame.frameDireita();
-		frame.frameDireita2();
-		page.botaoLocalizar();
-		page.selecionarRegistro("ABEL PENHACHEKI");
-        frame.chamadaExternContasReceber();
-        cobranca.selecionarCheckBoxRegistro("0");
-        cobranca.atualizacao();
-        sairFrame();
-        frame.consultaDetalheInadimplente();
-        Assert.assertEquals("Atualização de Titulos de Recebimento", cobranca.obterTextoAtualizacao());
-   	}
-	
-	@Test
-	public void Renegociacao() throws InterruptedException {
-		
-		cobranca.campoTipoLancamento("ANUIDADE PJ");
-		frame.frameDireita();
-		frame.frameDireita2();
-		page.botaoLocalizar();
-		page.selecionarRegistro("ABEL PENHACHEKI");
-        frame.chamadaExternContasReceber();
-        cobranca.selecionarCheckBoxRegistro("0");
-        cobranca.renegociacao();
-        sairFrame();
-        frame.consultaDetalheInadimplente();
-        Assert.assertEquals("Títulos de origem", cobranca.obterTextoRenegociacao());
-	}
-	
-	@Test
-	public void ImprimirBoleto() throws InterruptedException {
-		
-		cobranca.campoTipoLancamento("ANUIDADE PJ");
-		frame.frameDireita();
-		frame.frameDireita2();
-		page.botaoLocalizar();
-		page.selecionarRegistro("ABEL PENHACHEKI");
-        frame.chamadaExternContasReceber();
-        cobranca.selecionarCheckBoxRegistro("0");
-        cobranca.imprimirBoleto();
-        sairFrame();
-        frame.consultaDetalheInadimplente();
-        Assert.assertEquals("Permite selecionar a carteira de cobrança.", cobranca.obterTextoImprimirBoleto());
-	}
-	
-	@Test
-	public void ChamadaExternaContasReceber() throws InterruptedException {
-		
-		cobranca.campoTipoLancamento("ANUIDADE PJ");
-		frame.frameDireita();
-		frame.frameDireita2();
-		page.botaoLocalizar();
-		page.selecionarRegistro("ZURIELI DE OLIVEIRA SILVEIRA MACHADO");
-        frame.chamadaExternContasReceber();
-        page.selecionarRegistro("28/02/2022");
-        sairFrame();
-        page.esperar2segundos();
-        Assert.assertEquals("ANUIDADE PJ - ZURIELI DE OLIVEIRA SILVEIRA MACHADO - Contas a Receber nº 003575", cobranca.obterTextoChamadaExternaContasReceber());
-   	 }
-	
+
 	 
 	
 	 @Rule

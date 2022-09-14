@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Financeiro.EmitirDocumento.EmitirDocumento
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.665 s - in Financeiro.EmitirDocumento.EmitirDocumento
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.377 s - in Financeiro.EmitirDocumento.EmitirDocumento

@@ -1,5 +1,7 @@
 package br.conselhos.page;
 
+import java.io.File;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -27,7 +29,7 @@ public class IndexPage extends BasePage {
 	}
 	
 		
-	/********************************Bot√£es Padr√£o *******************************/
+	/********************************Botıes Padrıes *******************************/
 		
 	public void botaoNovo() {
 		clicarBotaoXpath("//*[text()='Novo']");
@@ -38,18 +40,66 @@ public class IndexPage extends BasePage {
 	}
 	
 	public void botaoNovoTabela(String numerotabela) {
-		clicarBotaoXpath("//*[@id='tabCt_" + numerotabela + "']/div/div/div/div/div/div/div/div/div/div[7]");
+		clicarBotaoXpath("//div[@id='tabCt_" + numerotabela + "']/div/div/div/div/div/div/div/div/div/div[7]");
 		
 	}
 	
 	public void botaoLocalizar() throws InterruptedException {
-		clicarBotaoSelector("div[title='Localizar']");
+		clicarBotaoXpath("//*[text()='Localizar']");
 		esperar1segundo();
 	}
 	
 	public void botaoFuncoes0() {
 		clicarBotaoXpath("//div[@id='tabCt_0']/div/div/div/div/div/div/div/div/div/div");
 	}
+	
+	public void botaoFuncoes1() {
+		clicarBotaoXpath("//div[@id='tabCt_1']/div/div/div/div/div/div/div/div/div/div");
+	}
+	
+	public void salvareFechar() {
+		clicarBotaoXpath("//*[text()='Salvar e Fechar']");
+	}
+	
+	public void salvar() {
+		clicarBotaoXpath("//*[text()='Salvar']");
+	}
+	
+	public void botaoAdicionar() {		
+		clicarBotaoXpath("//*[text()='Adicionar']");
+	}
+	
+	public void excluir() {
+		clicarBotaoXpath("//*[text()='Excluir']");
+	}
+	
+	public void clicarBotaoGenerico(String nomebotao) {
+		clicarBotaoXpath("//*[text()='" + nomebotao + "']");
+	}
+	
+	public void botaoSim() {
+		clicarBotaoXpath("//*[text()='Sim']");
+	}
+	
+	public void botaoAvancar() {
+		clicarBotaoXpath("//*[text()='AvanÁar']");
+	}
+	
+	public void botaoConcluir() {
+		clicarBotaoXpath("//*[text()='Concluir']");
+	}
+	
+	public void botaoGerar() {
+		clicarBotaoXpath("//*[text()='Gerar']");
+	}
+	
+	public void OK() {
+		clicarBotaoXpath("//*[text()='OK']");
+	}
+	
+	public void Ok() {
+		clicarBotaoXpath("//*[text()='Ok']");
+	}	
 
 	
 	/******************************* Campos Filtrar ******************************/
@@ -66,9 +116,9 @@ public class IndexPage extends BasePage {
 	
 	public void inserirCampoFiltrar(String tabela, String texto) throws InterruptedException {
 		escreverXpath("//input[contains(@id,'filterTBX_gridpanel') and contains(@name, 'tabCt_" + tabela + "')]", texto + Keys.ENTER);
-		esperaFixa(1000);
-		
+		esperaFixa(1000);		
 	}
+
 	
 	/***************************** Selecionar Registros **************************/
 	
@@ -78,6 +128,7 @@ public class IndexPage extends BasePage {
 	}
 	
 	public void selecionarCheckBoxGrid(String numerodalinha) {
+		esperaExplicitaXpath("//*[contains(@class, 'x-grid-row x-grid-row') and contains(@index, '" + numerodalinha + "')]/td/div");
 		clicarCheck(By.xpath("//*[contains(@class, 'x-grid-row x-grid-row') and contains(@index, '" + numerodalinha + "')]/td/div"));		
 	}
 	
@@ -93,5 +144,11 @@ public class IndexPage extends BasePage {
 		return obterTextoCss("div[title='" + texto + "']");
 	}
 	
-
+	/****** Verficar Download de Arquivos *****/
+	
+	public void validarDownloadArquivo(String nomearquivo) {
+		validarDownloadArquivoNoDiretorio("C:\\Users\\David\\Downloads\\"+ nomearquivo +"");
+	}
+	    	    	    
 }
+

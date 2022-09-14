@@ -1,23 +1,36 @@
 package br.conselhos.core;
+import org.junit.Assert;
 import org.openqa.selenium.By;
+
+import br.conselhos.SQL.Conexao;
+import br.conselhos.SQL.JavaApplicationConexaoSQL;
 import br.conselhos.core.DriverFactory;
 import static br.conselhos.core.DriverFactory.getDriver;
+import static org.junit.Assert.assertFalse;
 
+import java.io.File;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Iterator;
+import java.util.Set;
 
 import org.openqa.selenium.By.ById;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.google.inject.Key;
+
 public class DSL {
-	
 	
 	/********** TextField e TextArea *******************************************************************************************************/
 
@@ -30,25 +43,29 @@ public class DSL {
 	
 	// Escrever utilizando atributo "Name"
 	
-	public void escrever(String name, String texto) {                                          
+	public void escrever(String name, String texto) {    
+		esperaExplicitaName(name);
 		escrever(By.name(name), texto);
 	}
 	
 	// Escrever utilizando atributo "ID"
 	
-	public void escreverID(String id, String texto) {                                                 
+	public void escreverID(String id, String texto) {
+		esperaExplicitaID(id);
 		escrever(By.id(id), texto);
 	}
 	
 	// Escrever utilizando "CSS"
 	
-	public void escreverCss(String cssSelector, String texto) {                      
+	public void escreverCss(String cssSelector, String texto) {  
+		esperaExplicita(cssSelector);
 		escrever(By.cssSelector(cssSelector), texto);		
 	}
 	
 	//Escrever utiliando "Xpath"
 	
-	public void escreverXpath(String xpath, String texto) {                          
+	public void escreverXpath(String xpath, String texto) {    
+		esperaExplicitaXpath(xpath);
 		escrever(By.xpath(xpath), texto);
     }
 	
@@ -96,7 +113,7 @@ public class DSL {
 	
 	 // Clicar em CheckBox
 	
-	public void clicarCheck(By by) {                                                
+	public void clicarCheck(By by) {
 		getDriver().findElement(by).click();
 	}
 	
@@ -142,21 +159,21 @@ public class DSL {
 		clicarBotao(by);
 	}
 	
-	// Clicar botÃ£o Selector
+	// Clicar botão Selector
 	
 	public void clicarBotaoSelector(String cssSelector) {
 		esperaExplicita(cssSelector);
 		getDriver().findElement(By.cssSelector(cssSelector)).click();			
 	}
 	
-	 // Clicar botÃ£o por "Name"
+	 // Clicar botão por "Name"
 		
 	public void clicarBotao(String name) {  
-		espera(name);
+		esperaExplicitaName(name);
         getDriver().findElement(By.name(name)).click();
 	}
 	
-	// Clicar botÃ£o por "ID"
+	// Clicar botão por "ID"
 	
 	public void clicarBotaoID(String id) {
         esperaExplicitaID(id);
@@ -168,6 +185,21 @@ public class DSL {
 	public void clicarBotaoXpath(String xpath) {
 		esperaExplicitaXpath(xpath);
 		getDriver().findElement(By.xpath(xpath)).click();	
+	}
+	
+	public void clicarBotaoDireito(String texto) {
+		
+        WebElement clickable = getDriver().findElement(By.xpath("//*[text()='" + texto +  "']"));
+        new Actions(getDriver())
+                .contextClick(clickable)
+                .perform();
+	}
+	
+	public void doisCliques(String texto) {
+        WebElement clickable = getDriver().findElement(By.xpath("//*[text()='" + texto +  "']"));
+        new Actions(getDriver())
+                .doubleClick(clickable)
+                .perform();
 	}
 	
 	
@@ -192,18 +224,15 @@ public class DSL {
 	
 	/******************** Texto *************************************************************************************************************************/
 	
-	// Obter texto por (ID, Name, CSS e xpath)
-	
-	public String obterTexto(By by) {
-        return getDriver().findElement(by).getText();
+	// Obter texto por XPath(Escrever apenas o texto desejado no teste)
+     
+	public String obterTexto(String texto) {
+		
+	    WebDriverWait wait = new WebDriverWait(getDriver(), 30);
+	    wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[text()='" + texto + "']")));	
+	    return getDriver().findElement(By.xpath("//*[text()='" + texto + "']")).getText();
 	}
-	
-	// Obter texto por "Name"
-	
-	public String obterTexto(String name) {
-		espera(name);
-        return obterTexto(By.name(name));
-	}
+	   
 	
 	// Obter texto por "ID"
 	
@@ -226,6 +255,12 @@ public class DSL {
 		return getDriver().findElement(By.cssSelector(cssSelector)).getText();
 	}
 	
+	// Obeter texto por "Value"
+	
+	public String obterTextoValue(String texto) {
+	    return getDriver().findElement(By.cssSelector("input[value='" + texto + "']")).getAttribute("value");
+	}
+	
 	
 	/***************** Frames e Janelas ******************************************************************************************************************/
 	
@@ -243,7 +278,8 @@ public class DSL {
 	
 	// Entrar Frame Diretamente por "CSS" (Sem Default)
 	
-	public void entrarFrame(String Css) {                                       
+	public void entrarFrame(String Css) {
+		esperaExplicita(Css);
 		getDriver().switchTo().frame(getDriver().findElement(By.cssSelector(Css)));	
 	}
 	
@@ -260,12 +296,47 @@ public class DSL {
 		getDriver().switchTo().defaultContent();
 	}
 	
+	public String JanelaP = getDriver().getWindowHandle();
+	
 	//Trocar Janela
 	
-	public void trocarJanela(String id) {                                           
-		getDriver().switchTo().window(id);
+	public void trocarJanela() {
+		
+		// It will return the parent window name as a String
+		 String parent=getDriver().getWindowHandle();
+
+		 Set<String>s=getDriver().getWindowHandles();
+
+		 // Now iterate using Iterator
+		 Iterator<String> I1= s.iterator();
+
+		 while(I1.hasNext())
+		 {
+
+		 String child_window=I1.next();
+
+		 if(!parent.equals(child_window))
+		 {
+		 getDriver().switchTo().window(child_window);
+      
+		 }
+	   }
 	}
 	
+	// Sair da Janela Sobreposta
+	
+	public void sairJanela() {
+		
+		getDriver().close();
+	}
+	
+	// Volta a Janela Anterior	
+	
+	public void retornarJanela(String janelaPrincipal) throws InterruptedException {
+		 
+	    getDriver().switchTo().window(janelaPrincipal);		 
+	}		 	 
+	     
 	
 	/**************** Enviar Teclas ***********************************************************************************************************************/
 	
@@ -291,7 +362,7 @@ public class DSL {
 	    wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(cssSelector)));
 	}
     
-	public void espera(String name) {                                  
+	public void esperaExplicitaName(String name) {                                  
         @SuppressWarnings("deprecation")
 		WebDriverWait wait = new WebDriverWait(getDriver(), 30);
 	    wait.until(ExpectedConditions.presenceOfElementLocated(By.name(name)));
@@ -323,20 +394,22 @@ public class DSL {
 	    wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText(link)));		
 	}
     
-    // Espera Fixa a variÃ£vel Time recebe o valor em milisegundos
+    // Espera Fixa a variável Time recebe o valor em milisegundos
     
     public void esperaFixa(long Time) throws InterruptedException {                    
     	Thread.sleep(Time);	
     }
     
-    /******************* Datas  *****************************************************************************************************************************/
+    //******* DATAS *******//
   
     // Inserir Data atual por "Name"
-    public void inserirDataAtual(String datadeagora) throws InterruptedException {
-        DateFormat dateFormat = new SimpleDateFormat("dd");
+    public void inserirDataAtual(String name) throws InterruptedException {
+        DateFormat dateFormat = new SimpleDateFormat("ddMMyyyy");
         Date date = new Date();
         String date1= dateFormat.format(date);
-        getDriver().findElement(By.name(datadeagora)).getAttribute(date1);
+    	getDriver().findElement(By.name(name)).clear();
+    	getDriver().findElement(By.name(name)).sendKeys(date1 + Keys.TAB);
+        //getDriver().findElement(By.name(datadeagora)).getAttribute(date1); // Método que usei inicialmente, mas depois foi aperfeiçoado
         esperaFixa(2000); 
     }
     
@@ -350,17 +423,79 @@ public class DSL {
          esperaFixa(2000);        
     }
     
-    public static Date obterDataComDiferencaDias(int dias) {
-    	Calendar calendar = Calendar.getInstance(); //Esta linha jÃ£ traz uma instancia com a data atual
-    	calendar.add(Calendar.DAY_OF_MONTH, dias);
-    	return calendar.getTime();   	
-    }
-    
     public static String obterDataFormatada(Date data) {
     	DateFormat format = new SimpleDateFormat("dd/MM/YYY");
     	return format.format(data);
     }
-
+    
+    public void dataFutura(String id, int dias) throws InterruptedException {
+    	
+    	Date today = new Date();               
+    	SimpleDateFormat formattedDate = new SimpleDateFormat("yyyyMMdd");            
+    	Calendar c = Calendar.getInstance();        
+    	c.add(Calendar.DATE, dias);  // Número de dias para adicionar no futuro, na variável "dias"    
+    	String futuro = (String)(formattedDate.format(c.getTime()));
+    	getDriver().findElement(By.id(id)).clear();
+    	getDriver().findElement(By.id(id)).sendKeys(futuro + Keys.TAB);
+    	esperaFixa(3000);
+    }
+    
+    public void dataFuturaName(String name, int dias) throws InterruptedException {
+    	
+    	Date today = new Date();               
+    	SimpleDateFormat formattedDate = new SimpleDateFormat("yyyyMMdd");            
+    	Calendar c = Calendar.getInstance();        
+    	c.add(Calendar.DATE, dias);  // Número de dias para adicionar no futuro, na variável "dias"    
+    	String futuro = (String)(formattedDate.format(c.getTime()));
+    	getDriver().findElement(By.name(name)).clear();
+    	getDriver().findElement(By.name(name)).sendKeys(futuro + Keys.TAB);
+    	esperaFixa(3000);
+    }	
+    
+    public void dataFuturaComHora(String id, int dias) throws InterruptedException {
+    	
+    	Date today = new Date();               
+    	SimpleDateFormat formattedDate = new SimpleDateFormat("ddMMyyyy HH:mm");            
+    	Calendar c = Calendar.getInstance();        
+    	c.add(Calendar.DATE, dias);  // Número de dias para adicionar no futuro, na variável "dias"    
+    	String futuro = (String)(formattedDate.format(c.getTime()));
+    	getDriver().findElement(By.id(id)).clear();
+    	getDriver().findElement(By.id(id)).sendKeys(futuro + Keys.TAB);
+    	esperaFixa(3000);
+    }
+    
+	//******* Método para verificar arquivo baixado *******//
+	
+	public void validarDownloadArquivoNoDiretorio(String caminhoarquivo) {
+	    File f = new File(caminhoarquivo); 
+	    if (f.exists()) {
+	    	    System.out.println("Download realizado com sucesso.");
+	    	    f.delete();
+	    	    
+	    } else
+	    	    System.out.println("Download não encontrado.");
+	}
+	
+	//******* Método Para Fazer Upload de Arquivo *******//
+	
+	public void uploadArquivo(String ID, String nomearquivo) {
+	    escreverID(ID, "C:\\Users\\David\\eclipse-workspace\\ProjetoBRConselhos\\target\\Arquivos Upload\\"+nomearquivo+"");
+	}
+	
+	//******** Executar Query SQLServer *********//
+	
+	public static void executarQuerySQL(String query) throws SQLException, InterruptedException {
+	
+	Thread.sleep(15000);
+	Conexao con = new Conexao();
+	Statement st = con.conexao.createStatement();
+	
+	st.executeQuery(query);	
+	ResultSet rs = st.getResultSet();
+	while(rs.next()) {
+		System.out.println(rs.getString("Nome") + "," +rs.getString("ID"));
+	}
+  }  
 }  
    
 	

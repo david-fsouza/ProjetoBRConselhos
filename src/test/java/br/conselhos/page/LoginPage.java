@@ -2,13 +2,16 @@ package br.conselhos.page;
 
 import static br.conselhos.core.DriverFactory.getDriver;
 
+import java.io.IOException;
+
 import br.conselhos.core.BasePage;
 import br.conselhos.core.DSL;
+import net.sourceforge.tess4j.TesseractException;
 
 public class LoginPage extends BasePage {
 
 	public void acessarTelaInicial() {
-		getDriver().get("http://186.250.186.214/QLD_BRC_Main_Automacao/login/main2.aspx");
+		getDriver().get("https://qualidade.brctotal.com/QLD_BRC_Main_Automacao/login/main2.aspx");
 	}
 
 	public void setLogin(String login) {
@@ -23,8 +26,28 @@ public class LoginPage extends BasePage {
 		clicarBotaoID("q-comp-15");
 	}
 
-	public void esperarLogin() {
-		esperaExplicita("#q-comp-39");
+	
+	/********* Login com Captcha *********/
+	
+	public void acessarTelaInicialCaptcha() {		
+		getDriver().get("https://qualidade.brctotal.com/QLD_BRC_Main/login/LoginBoleto.aspx");		
 	}
+		
+	@SuppressWarnings("unlikely-arg-type")	
+	public void campoTipoDeCategoria(String texto)throws InterruptedException, IOException, TesseractException {
+		selecionarCombo("slTipoCategoria", texto);
+	}
+	
+	public void campoCPF(String texto) {		
+		escreverID("txtCPFCNPJ", texto);
+	}	
+	
+	public void acessarTelaInicialRequerimentoOnline() {
+	    getDriver().get("https://qualidade.brctotal.com/QLD_BRC_Main/pgsRequerimento/SelecionaRequerimento.aspx");
+	}
+	
+	
+	
+	
 
 }

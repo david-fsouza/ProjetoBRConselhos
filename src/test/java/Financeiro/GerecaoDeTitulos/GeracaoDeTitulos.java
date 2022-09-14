@@ -10,16 +10,18 @@ import org.apache.commons.io.FileUtils;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.FixMethodOrder;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TestName;
+import org.junit.runners.MethodSorters;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
 import br.conselhos.core.BaseTest;
 import br.conselhos.page.Financeiro.GeracaoDeTitulosPage;
 
-
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class GeracaoDeTitulos extends BaseTest {
 	private GeracaoDeTitulosPage geracaotitulos = new GeracaoDeTitulosPage();
 	
@@ -31,35 +33,47 @@ public class GeracaoDeTitulos extends BaseTest {
 		frame.frameDireita();
 	}
 	
-	/***********************  TELA INICIAL Geração DE títulos ***********************************/
 	
 	@Test
-	public void NovoRegistroGeracaoDeTitulos() {
+	public void T010_GeracaoDeTitulosSelecionados() throws InterruptedException {
 		
 		page.botaoNovo();
-		frame.frameTelaSobreposta();
-		Assert.assertEquals("Permite gerar títulos a receber.", geracaotitulos.obterTextoNovoRegistroGeracaodeTitulos());				
+		frame.TelaSobreposta();
+		geracaotitulos.campoAno("2022");
+		geracaotitulos.campoValor("100");
+		geracaotitulos.campoTipoLancamento("ANUIDADE");
+		geracaotitulos.campoCondicao("Anuidades - Cota Única");
+		geracaotitulos.campoVencimentoParcela();
+		geracaotitulos.campoPessoa("ZULEIDE MENDES");
+		page.botaoLocalizar();
+		page.selecionarRegistro("32750");
+		geracaotitulos.gerarParaSelecionados();			
+		Assert.assertEquals("Geração de títulos a receber concluída.", geracaotitulos.validarTextoGeracaoTitulosSelecionados());			
 	}
 	
 	@Test
-	public void ConsultaRegistroGeracaoDeTitulos() throws InterruptedException {
+	public void T020_GeracaoDeTitulosAgendamento() throws InterruptedException {
 		
-		geracaotitulos.inserirCampoFiltrar("BRConselhos");
-		page.esperar1segundo();
-		geracaotitulos.selecionarResultadoBusca("13/05/2021 15:04:16");
-		frame.frameTelaSobreposta();
-		Assert.assertEquals("Permite gerar e/ou consultar informações da geração automática de Títulos", geracaotitulos.obterTextoConsultaGeracaoTitulos());		
-	}
-	
-	@Test
-	public void TitulosGerados() throws InterruptedException {
-		
-		geracaotitulos.inserirCampoFiltrar("BRConselhos");
-		page.esperar1segundo();
-		geracaotitulos.selecionarResultadoBusca("13/05/2021 15:04:16");
-		frame.frameTelaSobreposta();
-		geracaotitulos.abaTitulosGerados();
-		Assert.assertEquals("545900", geracaotitulos.obterTextoTitulosGerados());	
+		page.botaoNovo();
+		frame.TelaSobreposta();
+		geracaotitulos.campoAno("2022");
+		geracaotitulos.campoValor("100");
+		geracaotitulos.campoTipoLancamento("ANUIDADE");
+		geracaotitulos.campoCondicao("Anuidades - Cota Única");
+		geracaotitulos.campoVencimentoParcela();
+		geracaotitulos.campoPessoa("ZULEIDE MENDES");
+		page.botaoLocalizar();
+		page.selecionarRegistro("32750");
+		geracaotitulos.agendarParaSelecionados();
+		page.esperar3segundos();
+		frame.TelaSobreposta();
+		geracaotitulos.iniciarExecucoes();
+		frame.TelaSobreposta2();
+		frame.GeracaoDeTitulosFrame2();
+		geracaotitulos.iniciar();
+		page.esperar3segundos();
+		frame.TelaSobreposta();
+		Assert.assertEquals("Em andamento", geracaotitulos.validarTextoGeracaoTitulosAgendamento());		
 	}
 	
 	

@@ -1,4 +1,47 @@
 -------------------------------------------------------------------------------
 Test set: Financeiro.Cobranca.Cobranca
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 87.968 s - in Financeiro.Cobranca.Cobranca
+Tests run: 5, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 100.049 s <<< FAILURE! - in Financeiro.Cobranca.Cobranca
+T010_GeracaoDeContatosSimples(Financeiro.Cobranca.Cobranca)  Time elapsed: 24.248 s  <<< ERROR!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element is not clickable at point (-14399, -14518)
+  (Session info: chrome=104.0.5112.102)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [369ae94ef274a874103ae27d76c51ee7, clickElement {id=4014257f-88a0-4663-91ad-c9ec1b7e0483}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:50399}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50399/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (369ae94ef274a874103ae27d76c51ee7)] -> xpath: //*[text()='Avançar']]
+Session ID: 369ae94ef274a874103ae27d76c51ee7
+	at Financeiro.Cobranca.Cobranca.T010_GeracaoDeContatosSimples(Cobranca.java:47)
+
+T040_GerarRelatoriodeCobranca(Financeiro.Cobranca.Cobranca)  Time elapsed: 48.201 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //*[contains(@class, 'x-grid-row x-grid-row') and contains(@index, '0')]/td/div (tried for 30 second(s) with 500 milliseconds interval)
+	at Financeiro.Cobranca.Cobranca.T040_GerarRelatoriodeCobranca(Cobranca.java:105)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(@class, 'x-grid-row x-grid-row') and contains(@index, '0')]/td/div"}
+  (Session info: chrome=104.0.5112.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [11c478bcbc8f36b7e2e567212ef5064a, findElement {using=xpath, value=//*[contains(@class, 'x-grid-row x-grid-row') and contains(@index, '0')]/td/div}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:50459}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50459/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 11c478bcbc8f36b7e2e567212ef5064a
+	at Financeiro.Cobranca.Cobranca.T040_GerarRelatoriodeCobranca(Cobranca.java:105)
+
+T050_GerarContatoDeRecobranca(Financeiro.Cobranca.Cobranca)  Time elapsed: 47.475 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //*[contains(@class, 'x-grid-row x-grid-row') and contains(@index, '0')]/td/div (tried for 30 second(s) with 500 milliseconds interval)
+	at Financeiro.Cobranca.Cobranca.T050_GerarContatoDeRecobranca(Cobranca.java:118)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(@class, 'x-grid-row x-grid-row') and contains(@index, '0')]/td/div"}
+  (Session info: chrome=104.0.5112.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [42fbc45a9560527ab93e1a33422fb0f1, findElement {using=xpath, value=//*[contains(@class, 'x-grid-row x-grid-row') and contains(@index, '0')]/td/div}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:50498}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50498/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 42fbc45a9560527ab93e1a33422fb0f1
+	at Financeiro.Cobranca.Cobranca.T050_GerarContatoDeRecobranca(Cobranca.java:118)
+

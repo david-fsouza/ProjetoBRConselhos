@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Financeiro.Relatorios.Relatorios
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.179 s - in Financeiro.Relatorios.Relatorios
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 56.506 s - in Financeiro.Relatorios.Relatorios

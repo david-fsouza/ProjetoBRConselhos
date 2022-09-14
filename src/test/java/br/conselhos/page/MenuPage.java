@@ -8,11 +8,11 @@ import br.conselhos.core.BasePage;
 public class MenuPage extends BasePage {
 	
 	public void botaoMenuIndex() {
-		clicarBotaoID("q-comp-39");
+		clicarBotaoID("q-comp-41");
 	}
 	
 	public void Financeiro() {
-		clicarBotaoXpath("/html/body/div[2]/div/div[24]/a/span[2]");
+		clicarBotaoID("modFinanceiro");
 	}	
 	
 	public void ContasReceber() {
@@ -181,7 +181,32 @@ public class MenuPage extends BasePage {
     	clicarLink("Entidade Contábil");
     	
     }
-	
-	
-		
+    
+    /*************
+     * CADASTROS
+     *************/
+    
+    public void Cadastros() {
+    	clicarBotaoID("modCadastro");
+    }
+    
+    public void Pessoas() {
+    	clicarLink("Pessoas");
+    }
+    
+    public void Sociedades() {
+    	clicarLink("Sociedades");
+    }
+    
+    public void RelatoriosCadastro() throws InterruptedException { 	
+		escreverXpath("//input[contains(@name, 'mainCt:middleCt:leftCt:Pages:AccordionWithSearch:')]", "Relatórios" + Keys.ENTER);
+		esperaFixa(1000);
+		clicarLink("Relatórios");  	
+    }
+    
+    public void EmitirDocumentoCadastro() throws InterruptedException {
+		escreverXpath("//input[contains(@name, 'mainCt:middleCt:leftCt:Pages:AccordionWithSearch:')]", "Emitir Documento" + Keys.ENTER);
+		esperaFixa(1000);
+		clicarLink("Emitir Documento");  	 	
+    }		
 }

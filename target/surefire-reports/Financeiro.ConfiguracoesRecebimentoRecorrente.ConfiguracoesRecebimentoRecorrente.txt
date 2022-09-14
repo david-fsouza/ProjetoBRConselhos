@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Financeiro.ConfiguracoesRecebimentoRecorrente.ConfiguracoesRecebimentoRecorrente
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.584 s - in Financeiro.ConfiguracoesRecebimentoRecorrente.ConfiguracoesRecebimentoRecorrente
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.917 s - in Financeiro.ConfiguracoesRecebimentoRecorrente.ConfiguracoesRecebimentoRecorrente

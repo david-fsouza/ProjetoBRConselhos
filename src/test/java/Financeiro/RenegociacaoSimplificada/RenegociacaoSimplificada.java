@@ -32,16 +32,18 @@ public class RenegociacaoSimplificada extends BaseTest {
 	}
 	
 	@Test
-	public void NovoRenegociacaoSimplificada() throws InterruptedException {
+	public void T010_EfetuarRenegociacaoSimplificada() throws InterruptedException {
 		
-		renegociacaosimplificada.campoPessoaFisica();
+		renegociacaosimplificada.campoPessoaFisica("ZURIELI DE OLIVEIRA SILVEIRA MACHADO");
 		renegociacaosimplificada.campoTipoDeInscricao();
 		renegociacaosimplificada.campoplanoDePagamento();
 		renegociacaosimplificada.campoQuantidadeDeParcelas();
-		renegociacaosimplificada.botaoLocalizar();
+		page.botaoLocalizar();
 		page.selecionarCheckBoxGrid("0");
-		renegociacaosimplificada.avancar();
-		frame.frameTelaSobreposta();
+		page.esperar2segundos();
+		page.botaoAvancar();
+		frame.TelaSobreposta();
+		page.botaoConcluir();
 		Assert.assertEquals("Informações da renegociação", renegociacaosimplificada.obterTextoNovoRenegociacaoSimplificada());		
 	}
 	

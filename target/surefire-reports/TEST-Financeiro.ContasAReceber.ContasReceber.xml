@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Financeiro.ContasAReceber.ContasReceber" time="158.285" tests="20" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Financeiro.ContasAReceber.ContasReceber" time="174.52" tests="13" errors="3" skipped="0" failures="0">
   <properties>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="JOB_NAME" value="FINANCEIRO"/>
-    <property name="RUN_TESTS_DISPLAY_URL" value="http://localhost:8080/automacao/job/FINANCEIRO/45/display/redirect?page=tests"/>
+    <property name="RUN_TESTS_DISPLAY_URL" value="http://localhost:8080/automacao/job/FINANCEIRO/61/display/redirect?page=tests"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="NUMBER_OF_PROCESSORS" value="4"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -12,7 +12,7 @@
     <property name="POM_ARTIFACTID" value="CursoSelenium"/>
     <property name="os.name" value="Windows 10"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_321\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_321\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_321\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_321\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_321\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_321\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_321\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_321\jre\classes"/>
-    <property name="EXECUTOR_NUMBER" value="1"/>
+    <property name="EXECUTOR_NUMBER" value="0"/>
     <property name="sun.desktop" value="windows"/>
     <property name="PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
@@ -25,10 +25,11 @@
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="CommonProgramW6432" value="C:\Program Files\Common Files"/>
     <property name="ProgramFiles" value="C:\Program Files"/>
+    <property name="TESSDATA_PREFIX" value="C:\Users\David\eclipse-workspace\ProjetoBRConselhos\tessdata"/>
     <property name="user.language" value="pt"/>
     <property name="JOB_BASE_NAME" value="FINANCEIRO"/>
-    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8080/automacao/job/FINANCEIRO/45/display/redirect?page=changes"/>
-    <property name="BUILD_DISPLAY_NAME" value="#45"/>
+    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8080/automacao/job/FINANCEIRO/61/display/redirect?page=changes"/>
+    <property name="BUILD_DISPLAY_NAME" value="#61"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_321\jre\bin"/>
     <property name="LOCALAPPDATA" value="C:\Windows\system32\config\systemprofile\AppData\Local"/>
     <property name="java.version" value="1.8.0_321"/>
@@ -38,7 +39,7 @@
     <property name="sun.arch.data.model" value="64"/>
     <property name="NODE_NAME" value="built-in"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_321\jre\lib\endorsed"/>
-    <property name="BUILD_ID" value="45"/>
+    <property name="BUILD_ID" value="61"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="file.encoding.pkg" value="sun.io"/>
@@ -52,10 +53,10 @@
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_321\jre"/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="os.version" value="10.0"/>
-    <property name="RUN_DISPLAY_URL" value="http://localhost:8080/automacao/job/FINANCEIRO/45/display/redirect"/>
+    <property name="RUN_DISPLAY_URL" value="http://localhost:8080/automacao/job/FINANCEIRO/61/display/redirect"/>
     <property name="POM_VERSION" value="0.0.1-SNAPSHOT"/>
     <property name="TMP" value="C:\Windows\TEMP"/>
-    <property name="RUN_ARTIFACTS_DISPLAY_URL" value="http://localhost:8080/automacao/job/FINANCEIRO/45/display/redirect?page=artifacts"/>
+    <property name="RUN_ARTIFACTS_DISPLAY_URL" value="http://localhost:8080/automacao/job/FINANCEIRO/61/display/redirect?page=artifacts"/>
     <property name="path.separator" value=";"/>
     <property name="java.vm.version" value="25.321-b07"/>
     <property name="user.variant" value=""/>
@@ -76,7 +77,7 @@
     <property name="VBOX_MSI_INSTALL_PATH" value="C:\Program Files\Oracle\VirtualBox\"/>
     <property name="user.home" value="C:\Windows\system32\config\systemprofile"/>
     <property name="PUBLIC" value="C:\Users\Public"/>
-    <property name="BUILD_TAG" value="jenkins-FINANCEIRO-45"/>
+    <property name="BUILD_TAG" value="jenkins-FINANCEIRO-61"/>
     <property name="JENKINS_SERVER_COOKIE" value="3d9b9914299fe66a"/>
     <property name="HUDSON_URL" value="http://localhost:8080/automacao/"/>
     <property name="ProgramData" value="C:\ProgramData"/>
@@ -88,10 +89,11 @@
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_321\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Maven\apache-maven-3.8.5/bin;C:\Program Files\Java\jdk1.8.0_321/bin;C:\Program Files\Java\jdk1.8.0_321/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\David\Documents\chromedriver;C:\Users\David\eclipse-workspace\ProjetoBRConselhos\drivers;C:\Usuários\David\Documentos\chromedriver;C:\Users\David\.m2\repository\allure-2.7.0\allure-2.7.0\bin;C:\Program Files\Maven\apache-maven-3.8.5\bin;C:\Program Files\PowerShell\7\;C:\Program Files\Java\jdk1.8.0_321\bin;C:\Users\David\AppData\Local\GitHubDesktop\GitHubDesktop;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;."/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="APPDATA" value="C:\Windows\system32\config\systemprofile\AppData\Roaming"/>
+    <property name="JMETER_HOME" value="C:\Users\David\apache-jmeter-5.4.3\apache-jmeter-5.4.3\"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="maven.home" value="C:\Program Files\Maven\apache-maven-3.8.5"/>
     <property name="java.class.path" value="C:\ProgramData\Jenkins\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-agent-1.13.jar;C:\Program Files\Maven\apache-maven-3.8.5\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\Maven\apache-maven-3.8.5/conf/logging"/>
-    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main C:\Program Files\Maven\apache-maven-3.8.5 C:\ProgramData\Jenkins\war\WEB-INF\lib\remoting-4.13.2.jar C:\ProgramData\Jenkins\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.13.jar C:\ProgramData\Jenkins\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.13.jar 65180"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main C:\Program Files\Maven\apache-maven-3.8.5 C:\ProgramData\Jenkins\war\WEB-INF\lib\remoting-4.13.3.jar C:\ProgramData\Jenkins\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.13.jar C:\ProgramData\Jenkins\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.13.jar 49521"/>
     <property name="Path" value="C:\Program Files\Java\jdk1.8.0_321/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\David\Documents\chromedriver;C:\Users\David\eclipse-workspace\ProjetoBRConselhos\drivers;C:\Usuários\David\Documentos\chromedriver;C:\Users\David\.m2\repository\allure-2.7.0\allure-2.7.0\bin;C:\Program Files\Maven\apache-maven-3.8.5\bin;C:\Program Files\PowerShell\7\;C:\Program Files\Java\jdk1.8.0_321\bin;C:\Users\David\AppData\Local\GitHubDesktop\GitHubDesktop;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="PROCESSOR_ARCHITECTURE" value="AMD64"/>
@@ -108,7 +110,7 @@
     <property name="HUDSON_HOME" value="C:\ProgramData\Jenkins\.jenkins"/>
     <property name="PATH+MAVEN" value="C:\Program Files\Maven\apache-maven-3.8.5/bin"/>
     <property name="ProgramFiles(x86)" value="C:\Program Files (x86)"/>
-    <property name="BUILD_URL" value="http://localhost:8080/automacao/job/FINANCEIRO/45/"/>
+    <property name="BUILD_URL" value="http://localhost:8080/automacao/job/FINANCEIRO/61/"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="MAVEN_OPTS" value=""/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
@@ -121,7 +123,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="MAVEN_HOME" value="C:\Program Files\Maven\apache-maven-3.8.5"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="BUILD_NUMBER" value="45"/>
+    <property name="BUILD_NUMBER" value="61"/>
     <property name="BASE" value="C:\Program Files\Jenkins"/>
     <property name="POWERSHELL_DISTRIBUTION_CHANNEL" value="MSI:Windows 10 Pro"/>
     <property name="JENKINS_URL" value="http://localhost:8080/automacao/"/>
@@ -139,24 +141,85 @@
     <property name="PSModulePath" value="C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules"/>
     <property name="DriverData" value="C:\Windows\System32\Drivers\DriverData"/>
   </properties>
-  <testcase name="DocumentosGED" classname="Financeiro.ContasAReceber.ContasReceber" time="17.235"/>
-  <testcase name="FuncaoImpressaoRapida" classname="Financeiro.ContasAReceber.ContasReceber" time="15.189"/>
-  <testcase name="FuncaoRecebimentos" classname="Financeiro.ContasAReceber.ContasReceber" time="14.82"/>
-  <testcase name="SaldosUtilizados" classname="Financeiro.ContasAReceber.ContasReceber" time="16.802"/>
-  <testcase name="LancamentosContabeis" classname="Financeiro.ContasAReceber.ContasReceber" time="16.123"/>
-  <testcase name="InstrucoesBancarias" classname="Financeiro.ContasAReceber.ContasReceber" time="17.132"/>
-  <testcase name="Geral" classname="Financeiro.ContasAReceber.ContasReceber" time="17.526"/>
-  <testcase name="AlterarSituacaoComplemento" classname="Financeiro.ContasAReceber.ContasReceber" time="16.563"/>
-  <testcase name="InformacoesLiquidacao" classname="Financeiro.ContasAReceber.ContasReceber" time="13.48"/>
-  <testcase name="HistoricoDeContatos" classname="Financeiro.ContasAReceber.ContasReceber" time="16.669"/>
-  <testcase name="Movimentos" classname="Financeiro.ContasAReceber.ContasReceber" time="16.927"/>
-  <testcase name="ConsultaRegistroGeracao" classname="Financeiro.ContasAReceber.ContasReceber" time="16.399"/>
-  <testcase name="AtualizacaoDeTitulos" classname="Financeiro.ContasAReceber.ContasReceber" time="15.253"/>
-  <testcase name="ConsultaRegistro" classname="Financeiro.ContasAReceber.ContasReceber" time="15.245"/>
-  <testcase name="AlteracaoDeTitulos" classname="Financeiro.ContasAReceber.ContasReceber" time="14.015"/>
-  <testcase name="FuncaoRenegociacao" classname="Financeiro.ContasAReceber.ContasReceber" time="14.895"/>
-  <testcase name="HistoricoDeSituacao" classname="Financeiro.ContasAReceber.ContasReceber" time="17.108"/>
-  <testcase name="AcrescimoseDescontos" classname="Financeiro.ContasAReceber.ContasReceber" time="13.719"/>
-  <testcase name="Observacoes" classname="Financeiro.ContasAReceber.ContasReceber" time="13.328"/>
-  <testcase name="EmitirBoleto" classname="Financeiro.ContasAReceber.ContasReceber" time="13.625"/>
+  <testcase name="T010_CadastroContasReceber" classname="Financeiro.ContasAReceber.ContasReceber" time="40.158"/>
+  <testcase name="T020_AlteracaoContasReceber" classname="Financeiro.ContasAReceber.ContasReceber" time="20.545"/>
+  <testcase name="T030_AlterarSituacaoComplemento" classname="Financeiro.ContasAReceber.ContasReceber" time="19.801"/>
+  <testcase name="T040_EmissaoDeBoleto" classname="Financeiro.ContasAReceber.ContasReceber" time="17.072"/>
+  <testcase name="T050_Recebimentos" classname="Financeiro.ContasAReceber.ContasReceber" time="27.696"/>
+  <testcase name="T060_EstornoRecebimento" classname="Financeiro.ContasAReceber.ContasReceber" time="20.311">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()=&apos;Recebimento&apos;]&quot;}&#10;  (Session info: chrome=104.0.5112.102)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;&#10;System info: host: &apos;DESKTOP-Q4CVPEU&apos;, ip: &apos;169.254.193.202&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_321&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [b6368b582f5b382931ed475b2165a1ba, findElement {using=xpath, value=//*[text()=&apos;Recebimento&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:49980}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49980/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: b6368b582f5b382931ed475b2165a1ba" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='Recebimento']"}
+  (Session info: chrome=104.0.5112.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b6368b582f5b382931ed475b2165a1ba, findElement {using=xpath, value=//*[text()='Recebimento']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:49980}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49980/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b6368b582f5b382931ed475b2165a1ba
+	at Financeiro.ContasAReceber.ContasReceber.T060_EstornoRecebimento(ContasReceber.java:150)
+</error>
+    <system-err><![CDATA[Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 57247Only local connections are allowed.Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.ChromeDriver was started successfully.[1661538603.837][WARNING]: This version of ChromeDriver has not been tested with Chrome version 104.ago 26, 2022 3:30:04 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMAÇÕES: Detected dialect: W3C
+ago 26, 2022 3:30:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTÊNCIA: Unable to find an exact match for CDP version 104, so returning the closest version found: a no-op implementation
+ago 26, 2022 3:30:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFORMAÇÕES: Unable to find CDP implementation matching 104.
+ago 26, 2022 3:30:04 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+ADVERTÊNCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="T070_DocumentosGEDInclusao" classname="Financeiro.ContasAReceber.ContasReceber" time="27.025"/>
+  <testcase name="T080_DocumentosGED_Alteracao" classname="Financeiro.ContasAReceber.ContasReceber" time="25.384">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input[value=&apos;2&apos;]&quot;}&#10;  (Session info: chrome=104.0.5112.102)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;&#10;System info: host: &apos;DESKTOP-Q4CVPEU&apos;, ip: &apos;169.254.193.202&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_321&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [0e2691697f009329ff96649b5ddbce0f, findElement {using=css selector, value=input[value=&apos;2&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:50036}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50036/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 0e2691697f009329ff96649b5ddbce0f" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"input[value='2']"}
+  (Session info: chrome=104.0.5112.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0e2691697f009329ff96649b5ddbce0f, findElement {using=css selector, value=input[value='2']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:50036}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50036/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0e2691697f009329ff96649b5ddbce0f
+	at Financeiro.ContasAReceber.ContasReceber.T080_DocumentosGED_Alteracao(ContasReceber.java:207)
+</error>
+    <system-err><![CDATA[Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 58255Only local connections are allowed.Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.ChromeDriver was started successfully.[1661538624.080][WARNING]: This version of ChromeDriver has not been tested with Chrome version 104.ago 26, 2022 3:30:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMAÇÕES: Detected dialect: W3C
+ago 26, 2022 3:30:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTÊNCIA: Unable to find an exact match for CDP version 104, so returning the closest version found: a no-op implementation
+ago 26, 2022 3:30:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFORMAÇÕES: Unable to find CDP implementation matching 104.
+ago 26, 2022 3:30:24 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+ADVERTÊNCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="T090_DocumentosGED_Exclusao" classname="Financeiro.ContasAReceber.ContasReceber" time="20.877"/>
+  <testcase name="T100_RecebimentosDeRenegociacoes" classname="Financeiro.ContasAReceber.ContasReceber" time="51.587">
+    <error message="Expected condition failed: waiting for presence of element located by: By.xpath: //*[text()=&apos;Renegociação gerada com sucesso.&apos;] (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //*[text()='Renegociação gerada com sucesso.'] (tried for 30 second(s) with 500 milliseconds interval)
+	at Financeiro.ContasAReceber.ContasReceber.T100_RecebimentosDeRenegociacoes(ContasReceber.java:242)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='Renegociação gerada com sucesso.']"}
+  (Session info: chrome=104.0.5112.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b4530cf9861e0bf123bb7ff405999a5c, findElement {using=xpath, value=//*[text()='Renegociação gerada com sucesso.']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Windows\TEMP\scoped_dir9...}, goog:chromeOptions: {debuggerAddress: localhost:50103}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50103/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b4530cf9861e0bf123bb7ff405999a5c
+	at Financeiro.ContasAReceber.ContasReceber.T100_RecebimentosDeRenegociacoes(ContasReceber.java:242)
+</error>
+    <system-err><![CDATA[Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 50327Only local connections are allowed.Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.ChromeDriver was started successfully.[1661538649.518][WARNING]: This version of ChromeDriver has not been tested with Chrome version 104.ago 26, 2022 3:30:49 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMAÇÕES: Detected dialect: W3C
+ago 26, 2022 3:30:49 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTÊNCIA: Unable to find an exact match for CDP version 104, so returning the closest version found: a no-op implementation
+ago 26, 2022 3:30:49 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFORMAÇÕES: Unable to find CDP implementation matching 104.
+ago 26, 2022 3:30:49 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+ADVERTÊNCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="T110_GeracaoEnvioDeBoletoEmailSelecionadas" classname="Financeiro.ContasAReceber.ContasReceber" time="30.319"/>
+  <testcase name="T120_GerecaoEnvioDeBoletosEmailTodos" classname="Financeiro.ContasAReceber.ContasReceber" time="23.916"/>
+  <testcase name="T130_GeracaoImpressaoDeBoletosSelecionadas" classname="Financeiro.ContasAReceber.ContasReceber" time="19.994"/>
 </testsuite>

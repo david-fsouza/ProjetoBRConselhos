@@ -1,45 +1,67 @@
 package br.conselhos.page.Financeiro;
 
+import org.junit.Assert;
 import org.openqa.selenium.Keys;
 
 import br.conselhos.core.BasePage;
 
 public class GeracaoDeTitulosPage extends BasePage {
 	
-	/***********************  TELA INICIAL Geração DE títulos ***********************************/
 	
-	//*********************** Novo Registro Geração de títulos *********************************//
+	//****** Geração de Títulos Selecionados *****//
 	
-	public String obterTextoNovoRegistroGeracaodeTitulos() {
-		return obterTextoXpath("//*[text()='Permite gerar títulos a receber.']");
+	public void campoAno(String texto) {
+        escreverID("m_nbAnoEdt", texto);
 	}
 	
-	//************************* Consulta Geração de títulos ***********************************//
-	
-	public void inserirCampoFiltrar(String texto) {
-		escreverXpath("/html/body/form/div/div[2]/div/div/div/div/div/div[1]/div/div[1]/div/div/div[5]/div/div[2]/input", texto + Keys.ENTER);
+	public void campoValor(String texto) {
+		escreverID("m_nbValorEdt", texto);
 	}
 	
-	public void selecionarResultadoBusca(String texto) {
-		
-		esperaExplicita("div[title='13/05/2021 15:04:16']");
-		clicarBotaoSelector("div[title='" + texto + "']");
+	public void campoTipoLancamento(String texto) throws InterruptedException {
+		escreverID("m_cbTipoLancamentoEdt", texto + Keys.ENTER);
+		esperaFixa(2000);
 	}
 	
-	public String obterTextoConsultaGeracaoTitulos() {
-		return obterTextoXpath("//*[text()='Permite gerar e/ou consultar informações da geração automática de Títulos']");		
+    public void campoCondicao(String texto) throws InterruptedException {
+	    escreverID("m_lkCondicaoEdt", texto + Keys.ENTER);
+	    esperaFixa(2000);
+    }
+    
+    public void campoVencimentoParcela() throws InterruptedException {
+    	dataFutura("m_dtVctoPrimeiraParcelaEdt", 20);
+    }
+    
+    public void campoPessoa(String texto) throws InterruptedException {
+    	escreverID("m_lkPessoaEdt", texto + Keys.ENTER);
+    	esperaFixa(2000);
+    }
+    
+    public void gerarParaSelecionados() {
+    	clicarBotaoSelector("div[title='Gerar para selecionados']");
+    }
+    
+	public String validarTextoGeracaoTitulosSelecionados() {
+		sairFrame();
+		return obterTexto("Geração de títulos a receber concluída.");
 	}
 	
-	//******************************* Titulos Gerados ******************************************//
+	//***** Geração de Títulos Agendamento ******//
 	
-	public void abaTitulosGerados() {
-		clicarLink("Títulos gerados");
-		entrarFrame("#panelcategory1>iframe");
+	public void agendarParaSelecionados() {
+	    clicarBotaoSelector("div[title='Agendar para selecionados']");
 	}
 	
-	public String obterTextoTitulosGerados() {
-		esperaExplicita("div[title='545900']");
-		return obterTextoCss("div[title='545900']");
+	public void iniciarExecucoes() {
+		clicarBotaoSelector("div[title='Iniciar execuções']");
 	}
-
+	
+	public void iniciar() {
+		clicarBotaoID("btnAgendar");
+	}
+	
+	public String validarTextoGeracaoTitulosAgendamento() {
+		return obterTexto("Em andamento");		
+	}
+	
 }

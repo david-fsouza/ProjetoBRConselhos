@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Financeiro.DocumentosFiscais.DocumentosFiscais
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 38.46 s - in Financeiro.DocumentosFiscais.DocumentosFiscais
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 35.862 s - in Financeiro.DocumentosFiscais.DocumentosFiscais

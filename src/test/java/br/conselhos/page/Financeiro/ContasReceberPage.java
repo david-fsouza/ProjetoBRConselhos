@@ -16,9 +16,25 @@ import br.conselhos.core.BasePage;
 
 public class ContasReceberPage extends BasePage {
 	
-	/**************************** TELA NOVO REGISTRO  ********************************/
 	
-	//********************************* Geral *************************************************************************************************************************************************/
+	/**
+	 * Objetos Gerais
+	 */
+	public void filtroSituacao(String texto) {
+		escreverXpath("//div[@id='tabCt_0']/div/div/div/div/div/div/div[2]/div/div/div/div/div/div[10]/div[3]/div/div/div/input", texto + Keys.ENTER);
+	}
+	
+	public void filtroSituacaoGeracao(String texto) {
+		escreverXpath("//div[@id='tabCt_1']/div/div/div/div/div/div/div[2]/div/div/div/div/div/div[9]/div[3]/div/div/div/input", texto + Keys.ENTER);	
+	}
+	
+	public void botaoFuncoes() {
+		clicarBotaoXpath("/html/body/form/div/div[2]/div[2]/div/div/div/div/div[1]/div/div[1]/div/div/div[1]/em/button/span[1]");		
+	}
+	
+	//***** TELA CONTAS A RECEBER *****//
+	
+	//***** Cadastro Contas a Receber *****/
 
 	public void campoSacado(String nome) throws InterruptedException {
 		escrever("Pessoa", nome);
@@ -43,15 +59,15 @@ public class ContasReceberPage extends BasePage {
 	    esperaFixa(2000);
 	}
 	
-	public void campoPacela(String parcela) throws InterruptedException {
+	public void campoParcela(String parcela) throws InterruptedException {
 		escrever("Parcela", parcela);
         esperaFixa(2000);
 	}
 	
-	public void campoDataMovimento(String data) throws InterruptedException {
-		escrever("DataMovimento", data);
+	public void campoVencimento() throws InterruptedException {
+		dataFuturaName("DataMovimento", 20);
 	    digitaTeclaName("DataMovimento", Keys.ENTER);
-	    esperaFixa(2000);
+	    esperaFixa(3000);
 	}
 	
 	public void campoValorBruto(String valor) throws InterruptedException {
@@ -61,178 +77,115 @@ public class ContasReceberPage extends BasePage {
 	    esperaFixa(2000);
 	}
 	
-	public void salvareFechar() {
-		clicarBotaoID("SaveAndClose_ContaReceberConselho");
-	}
 	
 	public void pesquisaSacado(String sacado ) {
 		escreverXpath("/html/body/form/div/div[2]/div[2]/div/div/div/div/div[1]/div/div[2]/div/div[1]/div/div/div/div[2]/div[3]/div/div/div/input", sacado + Keys.ENTER);
 	}
 	
-	public String obterValorBruto() {
-		return obterTextoXpath("//*[text()='Permite cadastrar/alterar informações de títulos a receber.']");
+	public String validarTextoCadastroContasReceber() {
+		return obterTexto("Permite cadastrar/alterar informações de títulos a receber.");
 	}
 	
-	//********************       Acréscimos e Descontos        ******************************************************************************************************************************/
+
 	
-	public void acrescimoseDescontos() {
-		clicarBotaoSelector("div[title='Acréscimos e Descontos']");
-	}
+	//***** TELA CONTAS A RECEBER - GERAÇÃO *****//
 	
-	public String obterValorAcrescimoseDescontos() {
-		return obterTextoCss("div[title='Acréscimos e Descontos']");
-	}
-	
-	//********************       Informacoes Liquidação        *******************************************************************************************************************************/
-	
-	public void abaInformacoesDaLiquidacao() {
-		clicarBotaoSelector("div[title='Informações da Liquidação']");
-    }
-	
-	public String obterValorInformacoesLiquidacao() {
-		return obterTextoCss("div[title='Informações da Liquidação']");
-	}
-	
-	//********************             Observações             ********************************************************************************************************************************/
-	
-	public void abaObservacoes() {
-		clicarBotaoSelector("div[title='Observações']");
-	}
-	
-	public String obterValorAbaObservacoes() {
-		return obterTextoCss("div[title='Observações']");
-	}
- 
-	/************************ CONSULTA REGISTROS EXISTENTES ********************************************************************************************************************/
-	
-	//***********************      Consulta Resgistros         ***************************************************************************************************************************/
-	
-	public void selecionarResultadoBusca(String resultadobusca) {  // Usado no Teste abaixo(Consulta Registro Geração) também
-		esperaExplicitaXpath("//div[text()='" + resultadobusca + "']");
-	    clicarBotaoXpath("//div[text()='" + resultadobusca + "']");
-	}
-	
-	public String obterTextoRegistro() {
-		return obterTextoXpath("//*[text()='ANUIDADE - KARINA FERREIRA HONORIO - Contas a Receber nº 000000377507']");
-	}
-	
-	//***********************    Consulta Registro Geração    *****************************************************************************************************************************/
+	//***** Contas Receber - Geração (Envio de Boleto Email Selecionadas******/
 	
 	public void abaContasReceberGeracao() {
 		clicarBotaoSelector("div[title='Contas a receber – Geração']");
 	}
 	
-	public String obterTextoNome() {
-		return obterValorCampoTextoCss("div[title='DANIELA SILVEIRA PEREIRA']");
+	public void gerarBoletosSelecionados() {
+		clicarBotaoXpath("//*[text()='Gerar boletos - Selecionados']");
+	}
+	
+	public void campoMotivoAlerta(String texto) throws InterruptedException {
+		escreverID("lkMotivoAlertaEdt", texto + Keys.ENTER);
+		esperaFixa(2000);
+	}
+	
+	public String validarTextoGeracaoEnvioBoletoEmailSelenionadas() {
+		return obterTexto("Alertas agendado com sucesso.");
     }
 	
-    /*********************** MENU LATERAL CONTAS A RECEBER ************************************************************************************************************************/
+	/***** Contas Receber - Geração (Envio de Boleto Email Todos *****/
 	
-    //*************************** Instrucões Bancarias ****************************************************************************************************************************/
-
-	public void abaInstrucoesBancarias() {
-		clicarLink("Instruções bancárias");
-		entrarFrame("#panelcategory1>iframe");		
+	public void gerarBoletosTodos() {
+		clicarBotaoXpath("//*[text()='Gerar boletos - Todos']");
 	}
 	
-	public String obterTextoInstrucoesBancarias() {
-		return obterTextoCss("div[title='Não receber após o vencimento']");
+	public void campoFiltroPersonalizado(String texto) throws InterruptedException {
+		escreverID("cbFiltrosEdt", texto + Keys.ENTER);
+		esperaFixa(2000);
 	}
 	
-	//***************************** Movimentos *********************************************************************************************************************************/
+	public String validarTextoGerecaoEnvioBoletoEmailTodos() {
+		return obterTexto("O processo de envio de boletos por e-mail foi agendada.");
+	}
+	
+	/***** Geração Impressão de Boletos - Selecionadas  *****/
+	
+	public void campoFuncao(String texto) throws InterruptedException {
+		escreverID("cbFuncaoEdt", texto + Keys.ENTER);
+		esperaFixa(2000);
+	}
+	
+	
+	//***** Estorno Recebimento ******/
 	
 	public void abaMovimentos() {
 		clicarLink("Movimentos");
 		entrarFrame("#panelcategory2>iframe");
 	}
 	
+	public void estornar() {
+		clicarBotaoXpath("//*[text()='Estornar']");
+	}
 	public String obterTextoMovimentos() {
-		return obterTextoCss("div[title='Reajuste de vencimento']");
+		return obterTexto("Estorno de recebimento");
 	}
+
 	
-	//************************* Histórico de Contatos **************************************************************************************************************************/
-    
-	public void abaHistoricoDeContatos() {
-		clicarLink("Histórico de Contatos");
-		entrarFrame("#panelcategory3>iframe");		
-	}
-	
-	public String obterTextoHistoricoDeContatos() {
-		return obterTextoXpath("//div[text()='Contato']");		
-	}
-	
-	//************************* Histórico de Situação **************************************************************************************************************************/
-	
-	public void abaHistoricoDeSituacao() {
-		clicarLink("Histórico de Situação");
-		entrarFrame("#panelcategory4>iframe");
-	}
-	
-	public String obterTextoHistoricoDeSituacao() {
-		return obterTextoXpath("//div[text()='Situação']");
-	}
-	
-	//***************************** Saldos Utilizados **************************************************************************************************************************/
-    
-	public void abaSaldosUtilizados() {
-		clicarLink("Saldos Utilizados");
-		entrarFrame("#panelcategory5>iframe");
-	}
-	
-	public String obterTextoSaldosUtilizados() {
-		return obterTextoXpath("//div[text()='Disponível em']");
-	}
-	
-	//****************************** Documentos GED ****************************************************************************************************************************/
+	//****** Documentos GED Inclusão ******/
 	
 	public void abaDocumentosGED() {
 		clicarLink("Documentos GED");
 		entrarFrame("#panelcategory6>iframe");
 	}
 	
-	public String obterTextoDocumentosGED() {
-		return obterTextoXpath("//div[text()='Documento']");
+	public void campoTipoDocumento(String texto) {
+		escreverID("m_cbTipoDocumentoEdt", texto );
+		digitaTeclaId("m_cbTipoDocumentoEdt", Keys.ENTER);
 	}
 	
-	//*************************** Lançamentos Contábeis ************************************************************************************************************************/
-	
-	public void abaLancamentosContabeis() {
-		clicarLink("Lançamentos Contábeis");
-		entrarFrame("#panelcategory7>iframe");
+	public void campoDocumento(String nomearquivo) {
+		uploadArquivo("file", nomearquivo);
 	}
 	
-	public String obterTextoLancamentosContabeis() {
-		return obterTextoXpath("//div[text()='Conta contábil']");
+	public String validarTextoDocumentoGED() {
+		return obterTexto("138528.pdf");
 	}
 	
-	//************************** Renegociação de Origem **********************************************************************************************************************/
+	//******Documentos GED Alteração*******//
 	
-	public void abaRenegociacaoDeOrigem() {
-		clicarLink("Renegociação de origem");
-		entrarFrame("#panelcategory9>iframe");
+	public void campoOrdem(String texto) {
+		escreverID("m_numOrdemEdt", texto);
 	}
 	
-	public String obterTextoRenegociacaoDeOrigem() {
-		return obterTextoXpath("//div[text()='Renegociação atual']");
+	public String validarTextoDocumentosGEDAlteracao() throws InterruptedException {
+		esperaFixa(3000);
+		return obterTextoValue("2");		
 	}
 	
-	/************************ MENU FUNçõES CONTAS A RECEBER ********************************************************************************************/
+	//******* Documentos GED Exclusao******//
 	
-	//*************************** Função Impressão rápida **********************************************************************************************//
-	
-	public void botaoFuncoes() {
-		clicarBotaoXpath("/html/body/form/div/div[2]/div[2]/div/div/div/div/div[1]/div/div[1]/div/div/div[1]/em/button/span[1]");		
+	public String validarTextoGEDExclusao() {
+		return obterTexto("Nenhum registro.");
 	}
 	
-	public void impressaoRapida() {
-		clicarBotaoXpath("//*[text()='Impressão rápida']");		
-	}
 	
-	public String obterTextoImpressaoRapida() {
-		return obterTextoXpath("//*[text()='Avançar']");
-	}
-	
-	//**************************** Função Recebimentos *************************************************************************************************//
+	//**** Recebimentos*****//
 	
 	public void checkboxRegistroGrid() {
 		clicarCheck(By.cssSelector("div[class='x-grid-checker-icon']"));
@@ -242,58 +195,84 @@ public class ContasReceberPage extends BasePage {
 		clicarBotaoXpath("//*[text()='Recebimentos...']");				
 	}
 	
-	public String obterTextoRecebimentos() {
-		return obterTextoXpath("//*[text()='Permite cadastrar as informações de recebimentos.']");
-	}	
+	public String validarTextoRecebimentos() {
+		return obterTexto("Permite cadastrar as informações de recebimentos.");
+	}
+	
+	public void campoConta(String texto) throws InterruptedException {
+		
+		escreverID("m_lkContaBancariaEdt", texto);
+		esperaFixa(2000);
+		digitaTeclaId("m_lkContaBancariaEdt", Keys.ENTER);
+	}
+	
+	public void campoHistorico(String texto) throws InterruptedException {
+		
+		escreverID("m_lkHistoricoEdt", texto);
+		esperaFixa(2000);
+		digitaTeclaId("m_lkHistoricoEdt", Keys.ENTER);
+	}
+	
+	public void campoFormaLiquidacao(String texto) throws InterruptedException {
+		
+		escreverID("m_lkFormaLiquidacaoEdt", texto);
+        esperaFixa(2000);
+		digitaTeclaId("m_lkFormaLiquidacaoEdt", Keys.ENTER);
+		esperaFixa(1000);		
+	}
 	
 	
-	//**************************** Função Renegociação ************************************************************************************************//
+	//**** Recebimento de Renegociações ****//
 	
 	public void renegociacao() {
 		clicarBotaoXpath("//*[text()='Renegociação...']");		
 	}
 	
-	public String obterTextoRenegociacao() {
-		return obterTextoXpath("//*[text()='Total renegociado']");
+	public void campoQuantidadeParcelas(String texto) {
+		escreverID("m_nbNumeroParcelaEdt", texto);
 	}
 	
-	//**************************** Função Emitir Boleto **********************************************************************************************//
+	public void vencimentoPrimeiraParcela() throws InterruptedException {
+		dataFutura("m_dtVctoPrimeiraParcelaEdt", 20);
+	}
+	
+	public void concluirRenegociacao() {
+		clicarBotaoSelector("div[title='Concluir renegociação']");
+	}
+	
+	public String validarTextoRenegociacao() {
+		sairFrame();
+		return obterTexto("Renegociação gerada com sucesso.");
+	}
+	
+	//******Emissão de Boleto ******//
 	
 	public void emitirBoleto() {
 		clicarBotaoXpath("//*[text()='Emitir boleto...']");		
 	}
 	
-	public String obterTextoEmitirBoleto() {
-		return obterTextoXpath("//*[text()='Permite selecionar a carteira de cobrança.']");
+	public String validarTextoEmitirBoleto() {
+		return obterTexto("Permite selecionar a carteira de cobrança.");
 	}
 	
-	//*************************** Função Alteração de títulos ****************************************************************************************//
-	
-	public void alteracaoDeTitulos() {
-		clicarBotaoXpath("//*[text()='Alteração de Títulos...']");
+	public void botaoGerar() {
+		clicarBotaoID("btnGerar");
 	}
+
 	
-	public String obterTextoAlteracaoDeTitulos() {
-		return obterTextoXpath("//*[text()='Permite alterar as informações dos títulos a receber.']");
-	}
-	
-	//*************************** Função Atualização de títulos *************************************************************************************//
-	
-	public void atualizacaoDeTitulos() {
-		clicarBotaoXpath("//*[text()='Atualização de Títulos...']");		
-	}
-	
-	public String obterTextoAtualizacaoDeTitulos() {
-		return obterTextoXpath("//*[text()='Atualização de Titulos de Recebimento']");
-	}
-	
-	//************************* Função Alterar Situação/Complemento *********************************************************************************//
+	//****** Alterar Situação/Complemento *****//
 	
 	public void alterarSituacaoComplemento() {
 		clicarBotaoXpath("//*[contains(@id, 'AlterarSituacaoComplemento_gridpanel')]");				
 	}
 	
-	public String obterTextoAlterarSituacaoComplemento() {
-		return obterTextoXpath("//*[text()='Alteração de Situação e/ou Complemento']");
+	public void campoSituacao(String texto) {
+		clicarBotaoID("cbSituacaoEdt");
+		sairFrame();
+		clicarBotaoXpath("//*[text()='" + texto + "']");
+	}
+	
+	public String validarTextoAlterarSituacaoComplemento() {
+		return obterTexto("Alteração de Situação e/ou Complemento");
 	}
 }	

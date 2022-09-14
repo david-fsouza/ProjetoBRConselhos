@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Financeiro.TabelaDePrecoServicos.TabelaDePrecoServicos
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 28.758 s - in Financeiro.TabelaDePrecoServicos.TabelaDePrecoServicos
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 29.204 s - in Financeiro.TabelaDePrecoServicos.TabelaDePrecoServicos

@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Financeiro.ConfiguracaoDeRepassesAutomaticos.ConfiguracaoDeRepassesAutomaticos
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 30.23 s - in Financeiro.ConfiguracaoDeRepassesAutomaticos.ConfiguracaoDeRepassesAutomaticos
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 32.486 s - in Financeiro.ConfiguracaoDeRepassesAutomaticos.ConfiguracaoDeRepassesAutomaticos

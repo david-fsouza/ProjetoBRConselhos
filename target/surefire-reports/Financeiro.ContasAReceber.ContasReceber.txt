@@ -1,4 +1,45 @@
 -------------------------------------------------------------------------------
 Test set: Financeiro.ContasAReceber.ContasReceber
 -------------------------------------------------------------------------------
-Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 158.285 s - in Financeiro.ContasAReceber.ContasReceber
+Tests run: 13, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 174.52 s <<< FAILURE! - in Financeiro.ContasAReceber.ContasReceber
+T060_EstornoRecebimento(Financeiro.ContasAReceber.ContasReceber)  Time elapsed: 20.311 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='Recebimento']"}
+  (Session info: chrome=104.0.5112.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b6368b582f5b382931ed475b2165a1ba, findElement {using=xpath, value=//*[text()='Recebimento']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:49980}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49980/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b6368b582f5b382931ed475b2165a1ba
+	at Financeiro.ContasAReceber.ContasReceber.T060_EstornoRecebimento(ContasReceber.java:150)
+
+T080_DocumentosGED_Alteracao(Financeiro.ContasAReceber.ContasReceber)  Time elapsed: 25.384 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"input[value='2']"}
+  (Session info: chrome=104.0.5112.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0e2691697f009329ff96649b5ddbce0f, findElement {using=css selector, value=input[value='2']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:50036}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50036/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0e2691697f009329ff96649b5ddbce0f
+	at Financeiro.ContasAReceber.ContasReceber.T080_DocumentosGED_Alteracao(ContasReceber.java:207)
+
+T100_RecebimentosDeRenegociacoes(Financeiro.ContasAReceber.ContasReceber)  Time elapsed: 51.587 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //*[text()='Renegociação gerada com sucesso.'] (tried for 30 second(s) with 500 milliseconds interval)
+	at Financeiro.ContasAReceber.ContasReceber.T100_RecebimentosDeRenegociacoes(ContasReceber.java:242)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='Renegociação gerada com sucesso.']"}
+  (Session info: chrome=104.0.5112.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b4530cf9861e0bf123bb7ff405999a5c, findElement {using=xpath, value=//*[text()='Renegociação gerada com sucesso.']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Windows\TEMP\scoped_dir9...}, goog:chromeOptions: {debuggerAddress: localhost:50103}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50103/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b4530cf9861e0bf123bb7ff405999a5c
+	at Financeiro.ContasAReceber.ContasReceber.T100_RecebimentosDeRenegociacoes(ContasReceber.java:242)
+

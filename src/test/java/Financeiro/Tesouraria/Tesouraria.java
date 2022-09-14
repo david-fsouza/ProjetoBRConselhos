@@ -27,34 +27,40 @@ public class Tesouraria extends BaseTest {
 	    frame.frameDireita2();
 	}
 	
-	/************************ TELA NOVO REGSITRO TESOURARIA *************************************************************/
 	
 	@Test
-	public void NovoRegistroTesouraria() throws InterruptedException {
+	public void T010_IncluirLancamentos() throws InterruptedException {
 		
 		page.botaoNovo();
 		sairFrame();
 		frame.frameNovoRegistroTesouraria();
-		tesourariaPage.campoLiquidacao("21/03/2023");
+		tesourariaPage.campoLiquidacao();
 		tesourariaPage.campoValor("2.000,00");
-		tesourariaPage.campoContaBancaria();
-		tesourariaPage.campoHistorico();
-		tesourariaPage.campoTipoDeDocumento();
-		tesourariaPage.campoDisponibilidade("21/03/2023");
-		tesourariaPage.campoFormaLiquidacao();
-		tesourariaPage.salvareFechar();				
+		tesourariaPage.campoContaBancaria("CAIXA FUNDO FIXO SEDE");
+		tesourariaPage.campoHistorico("Atualização/Aglutinação");
+		tesourariaPage.campoTipoDeDocumento("Boleto");
+		//tesourariaPage.campoDisponibilidade();
+		tesourariaPage.campoFormaLiquidacao("Baixa bancária");
+		page.salvareFechar();
+		page.esperar2segundos();
+		frame.frameDireita();
+		frame.frameDireita2();
+		tesourariaPage.campoDataInicialLiquidacao();
+		tesourariaPage.campoDataFinalLiquidacao();
+		page.botaoLocalizar();
+		Assert.assertEquals("Atualização/Aglutinação", tesourariaPage.validarTextoInclusaoLancamentosTesouraria());		
 	}
 	
 	@Test
-	public void ConsultaRegistroTesouraria() throws InterruptedException {
+	public void T020_ConsultaRegistroTesouraria() throws InterruptedException {
 		
 		tesourariaPage.campoDataLiquidacaoDataInicio("01/01/2021");
 		tesourariaPage.campoNumeroDocumento();
-		tesourariaPage.botaoLocalizar();
+		page.botaoLocalizar();
 		page.esperar3segundos();
 		tesourariaPage.selecionarResultadoBusca("44397");
 		sairFrame();
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		assertEquals("Lançamentos no caixa/banco", tesourariaPage.obterTexto("Lançamentos no caixa/banco"));
 	}
 	

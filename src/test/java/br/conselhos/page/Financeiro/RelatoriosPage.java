@@ -1,5 +1,7 @@
 package br.conselhos.page.Financeiro;
 
+import org.openqa.selenium.Keys;
+
 import br.conselhos.core.BasePage;
 
 public class RelatoriosPage extends BasePage {
@@ -7,18 +9,28 @@ public class RelatoriosPage extends BasePage {
     /**
      * TELA PRINCIPAL RELATÓRIOS
      */
-	// Consulta Relatórios
+	
+	//****** Relatório R086C000000 PDF ******//
 	
 	public void inserirFiltro(String texto) {
-		escreverID("m_InputProcurarEdt", texto);
+		escreverID("m_InputProcurarEdt", texto + Keys.ENTER);
 	}
 	
-	public void botaoAvancar() {
-		clicarBotaoSelector("div[title='Avançar']");
+	public void campoSacado(String texto) {
+		escreverID("m_lkPessoaEdt", texto + Keys.ENTER);
+		
+	}
+	public void gerarRelatorio() {
+		clicarBotaoSelector("div[title='Gerar Relatório']");
 	}
 	
-	public String obterTextoRelatorios() {
-		return obterTextoXpath("//*[text()='relatório pode ser visualizado localmente, se preferir salve e visualize-o depois']"); 
-	}	
-
+	//****** Relatório R086C000000 Excel ******//
+	
+	public void campoFormatoRelatorio(String texto) {
+		escreverID("cbFormatoRelatorioEdt", texto + Keys.ENTER);
+	}
+	
+	public void campoFormatoRelario_084(String texto) {
+		escreverID("cbFormatoEdt", texto + Keys.ENTER);			
+	}
 }

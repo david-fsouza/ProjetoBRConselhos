@@ -9,54 +9,54 @@ import br.conselhos.core.BasePage;
 public class TesourariaPage extends BasePage {
 
 
-	/************************ TELA NOVO REGISTRO TESOURARIA ******************************************************/
+    /******* Incluir Lançamentos *****/
 	
-	//***********************   Novo Registro Tesouraria    ********************************************************/
-	
-	public void campoLiquidacao(String texto) throws InterruptedException {   
-		escreverID("m_dtLiquidacaoEdt", texto );
+	public void campoLiquidacao() throws InterruptedException {   
+		dataFutura("m_dtLiquidacaoEdt", 20);
 	}
 	
 	public void campoValor(String texto) {
 		escreverID("m_numValorEdt", texto + Keys.ENTER);
 	}
 	
-	public void campoContaBancaria() throws InterruptedException {
-		clicarBotaoID("m_lkContaBancariaEdt");
-		esperaFixa(3000);
-		digitaTeclaId("m_lkContaBancariaEdt", Keys.ENTER);
-	}
-	
-	public void campoHistorico() throws InterruptedException {
-		clicarBotaoID("m_lkHistoricoEdt");
+	public void campoContaBancaria(String texto) throws InterruptedException {
+		escreverID("m_lkContaBancariaEdt", texto + Keys.ENTER);
 		esperaFixa(2000);
-		digitaTeclaId("m_lkHistoricoEdt", Keys.ENTER);		
 	}
 	
-	public void campoTipoDeDocumento() throws InterruptedException {
-		clicarBotaoID("m_lkTipoDocumentoEdt");
+	public void campoHistorico(String texto) throws InterruptedException {
+		escreverID("m_lkHistoricoEdt", texto + Keys.ENTER);
 		esperaFixa(2000);
-		digitaTeclaId("m_lkTipoDocumentoEdt", Keys.ENTER);
 	}
 	
-	public void campoDisponibilidade(String texto) throws InterruptedException {   
-		escreverID("m_dtDisponibilidadeEdt", texto);
-	}
-	
-	public void campoFormaLiquidacao() throws InterruptedException {
-		clicarBotaoID("m_lkFormaLiquidacaoEdt");
+	public void campoTipoDeDocumento(String texto) throws InterruptedException {
+		escreverID("m_lkTipoDocumentoEdt", texto + Keys.ENTER);
 		esperaFixa(2000);
-		digitaTeclaId("m_lkFormaLiquidacaoEdt", Keys.ENTER);		
 	}
 	
-	public void salvareFechar() {
-		clicarBotaoID("btnGerar");
+	public void campoDisponibilidade() throws InterruptedException {   
+		dataFutura("m_dtDisponibilidadeEdt", 20);
 	}
 	
-	public void botaoLocalizar() {
-		clicarBotaoID("m_btLocalizar");
+	public void campoFormaLiquidacao(String texto) throws InterruptedException {
+		escreverID("m_lkFormaLiquidacaoEdt", texto + Keys.ENTER);
+		esperaFixa(2000);
 	}
 	
+	public void campoDataInicialLiquidacao() throws InterruptedException {
+		dataFutura("m_dtLiquidacao_startDateEdt", 20);
+		esperaFixa(2000);
+	}
+	
+	public void campoDataFinalLiquidacao() throws InterruptedException {
+		dataFutura("m_dtLiquidacao_endDateEdt", 20);
+		esperaFixa(2000);
+	}
+	
+	public String validarTextoInclusaoLancamentosTesouraria() {
+		return obterTexto("Atualização/Aglutinação");
+	}
+		
 	
 	//************************ Consulta Registro Tesouraria *********************************//
 	
