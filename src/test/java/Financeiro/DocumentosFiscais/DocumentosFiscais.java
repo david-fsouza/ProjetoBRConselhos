@@ -37,7 +37,7 @@ public class DocumentosFiscais extends BaseTest {
     public void NovoDocumentosFiscais() {
     	
     	page.botaoNovoTabela("0");
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	Assert.assertEquals("Permite manter os documentos fiscais.", documentosfiscais.obterTextoNovoDocumentosFiscais());
     }
     
@@ -47,7 +47,7 @@ public class DocumentosFiscais extends BaseTest {
     	page.inserirCampoFiltrar("0", "Nome Teste Fornecedores");
     	page.esperar1segundo();
     	page.selecionarRegistro("Boleto");
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	Assert.assertEquals("Documentos Fiscais", documentosfiscais.obterTextoConsultaDocumentosFiscais());
     }
     
@@ -62,7 +62,7 @@ public class DocumentosFiscais extends BaseTest {
     	page.inserirCampoFiltrar("0", "Nome Teste Fornecedores");
     	page.esperar2segundos();
     	page.selecionarRegistro("Boleto");
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	documentosfiscais.abaLiquidacoes();
     	Assert.assertEquals("Valor documento", documentosfiscais.obterTextoLiquidacoes());
     }
@@ -73,7 +73,7 @@ public class DocumentosFiscais extends BaseTest {
     	page.inserirCampoFiltrar("0", "Nome Teste Fornecedores");
     	page.esperar1segundo();
     	page.selecionarRegistro("Boleto");
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	documentosfiscais.abaDocumentosGED();
     	Assert.assertEquals("Data de Vínculo", documentosfiscais.obterTextoDocumentosGED());
     	

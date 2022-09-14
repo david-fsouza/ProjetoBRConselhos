@@ -35,7 +35,7 @@ public class DividaAtiva extends BaseTest {
 	public void NovoRegistroDividaAtiva() {
 		
 		page.botaoNovo();
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Número da certidão", dividaAtiva.obterTextoNovoRegistroDividaAtiva());		
 	}
 	
@@ -52,7 +52,7 @@ public class DividaAtiva extends BaseTest {
 		dividaAtiva.funcoes();
 		sairFrame();
 		dividaAtiva.impressaoRapida();
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Avançar", dividaAtiva.obterTextoImpressaoRapida());	
 	}
 	

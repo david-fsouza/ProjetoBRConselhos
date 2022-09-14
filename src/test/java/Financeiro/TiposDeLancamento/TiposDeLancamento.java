@@ -33,7 +33,7 @@ public class TiposDeLancamento extends BaseTest {
 	public void NovoTiposDeLancamento() {
 		
 		page.botaoNovo();
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Permite cadastrar/alterar informações dos tipos de lançamento.", tipolancamento.obterTextoNovoTiposDeLancamento());
 	}
 	
@@ -42,7 +42,7 @@ public class TiposDeLancamento extends BaseTest {
 		
 		page.inserirCampoFiltrar0("ATUALIZAÇÃO");
 		page.selecionarRegistro("ATU");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 	}
 
 	@Rule

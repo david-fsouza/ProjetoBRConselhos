@@ -38,7 +38,7 @@ public class IntegracaoDeReceitaRealizada extends BaseTest {
 	    page.esperar1segundo();
 		page.selecionarRegistro("02/04/2022 15:46");
 		page.esperar1segundo();
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Integração de Receita Realizada", receitarealizada.obterTextoRegistroReceitaRealizada());				
 	}
 	
@@ -48,7 +48,7 @@ public class IntegracaoDeReceitaRealizada extends BaseTest {
 		page.esperar1segundo();
 		page.selecionarRegistro("02/04/2022 15:46");
 		page.esperar1segundo();
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		receitarealizada.titulos();
 		Assert.assertEquals("Nenhum registro.", receitarealizada.obterTextoTitulos());				
 	}

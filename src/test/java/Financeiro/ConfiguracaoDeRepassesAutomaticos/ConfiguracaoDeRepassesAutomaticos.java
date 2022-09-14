@@ -35,7 +35,7 @@ public class ConfiguracaoDeRepassesAutomaticos extends BaseTest {
 	public void NovoRegistroRepassesAutomaticos() {
 		
 		page.botaoNovo();
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		repassesautomaticos.campoNomeDoRepasse("Teste novo registro");
 		repassesautomaticos.salvareFechar();
 		sairFrame();
@@ -47,7 +47,7 @@ public class ConfiguracaoDeRepassesAutomaticos extends BaseTest {
 	public void InformacoesDeRepasse() throws InterruptedException {
 		
 		repassesautomaticos.selecionarRegistroRepasseAutomaticos();
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		repassesautomaticos.abaInformacoesDeRepasse();
 		page.esperar1segundo();
 		Assert.assertEquals("Nenhum registro.", repassesautomaticos.obterTextoInformacoesDeRepasse());		
@@ -57,7 +57,7 @@ public class ConfiguracaoDeRepassesAutomaticos extends BaseTest {
 	public void Receitas() throws InterruptedException {
 		
 		repassesautomaticos.selecionarRegistroRepasseAutomaticos();
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		repassesautomaticos.abaReceitas();
 		Assert.assertEquals("Nenhum registro.", repassesautomaticos.obterTextoReceitas());			
 	}

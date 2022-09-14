@@ -37,7 +37,7 @@ public class FluxoDeCaixa extends BaseTest {
    public void NovoFluxoDeCaixa() {
 	   
 	   page.botaoNovoTabela("0");
-	   frame.frameTelaSobreposta();
+	   frame.TelaSobreposta();
 	   Assert.assertEquals("Valor", fluxocaixa.obterTextoNovoFluxoDeCaixa());
    }
    
@@ -47,7 +47,7 @@ public class FluxoDeCaixa extends BaseTest {
 	   page.inserirCampoFiltrar("0", "Teste");
 	   page.esperar2segundos();
 	   page.selecionarRegistro("1.000,00");
-	   frame.frameTelaSobreposta();	
+	   frame.TelaSobreposta();	
 	   Assert.assertEquals("Data Vencimento", fluxocaixa.obterTextoConsultaFluxoDeCaixa());
    }
    

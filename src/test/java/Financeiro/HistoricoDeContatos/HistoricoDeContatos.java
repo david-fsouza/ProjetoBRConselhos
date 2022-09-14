@@ -34,7 +34,7 @@ public class HistoricoDeContatos extends BaseTest {
 	public void NovoRegistroHistoricoDeContatos() {
 		
 		page.botaoNovo();
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Representa o Histórico de Contato com uma Pessoa.", historicodecontatos.obterTextoNovoRegistroHistoricoDeContatos());
 	}
 	
@@ -43,7 +43,7 @@ public class HistoricoDeContatos extends BaseTest {
 		
 		page.inserirCampoFiltrar0("BEATRIZ DE FATIMA FANTIN");
 		page.selecionarRegistro("Notificação Extrajudicial");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Representa o Histórico de Contato com uma Pessoa.", historicodecontatos.obterTextoConsultaHistoricoDeContatos());
 	}
 	
@@ -76,7 +76,7 @@ public class HistoricoDeContatos extends BaseTest {
 		
 		page.inserirCampoFiltrar0("ACENALDO FERREIRA LIMA");
 		page.selecionarRegistro("Carta de Cobrança Administrativa");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		historicodecontatos.abaContasaReceber();
 		Assert.assertEquals("000000365618", historicodecontatos.obterTextoContasaReceber());		
 	}
@@ -86,11 +86,11 @@ public class HistoricoDeContatos extends BaseTest {
 		
 		page.inserirCampoFiltrar0("ACENALDO FERREIRA LIMA");
 		page.selecionarRegistro("Carta de Cobrança Administrativa");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		historicodecontatos.abaDocumentosGED();
 		page.selecionarRegistro("ACENALDO FERREIRA LIMA");
 		sairFrame();
-		frame.frameTelaSobreposta2();
+		frame.TelaSobreposta2();
 		Assert.assertEquals("Permite criar/alterar os Documentos GED", historicodecontatos.obterTextoDocumentosGED());				
 	}
 	
@@ -102,7 +102,7 @@ public class HistoricoDeContatos extends BaseTest {
 		historicodecontatos.envioDeBoletos();
 		page.inserirCampoFiltrar1("ANDRE JUNKES");
 		page.selecionarRegistro("17/11/2021 17:16:46");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Histórico de Contato", historicodecontatos.obterTextoEnvioDeBoletos());
 	}
 	

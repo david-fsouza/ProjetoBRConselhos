@@ -34,7 +34,7 @@ public class InformacoesBancarias extends BaseTest {
 	public void NovoContaBancaria() {
 		
 		page.botaoNovoTabela("0");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Permite cadastrar/alterar informações das contas bancárias.", infomacoesbancarias.obterTextoNovoRegistroContaBancaria());
 	}
 	
@@ -42,7 +42,7 @@ public class InformacoesBancarias extends BaseTest {
 	public void ConsultaContaBancaria() {
 		
 		page.selecionarRegistro("74.219");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Estrutura financeira", infomacoesbancarias.obterTextoConsultaContaBancaria());		
 	}
 	
@@ -52,7 +52,7 @@ public class InformacoesBancarias extends BaseTest {
 	public void CarteiraDeCobranca() {
 		
 		page.selecionarRegistro("74.219");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		infomacoesbancarias.abaCarteiraDeCobranca();
 		Assert.assertEquals("Carteira - Banco do Brasil", infomacoesbancarias.obterTextoCarteiraDeCobranca());		
 	}
@@ -61,7 +61,7 @@ public class InformacoesBancarias extends BaseTest {
 	public void ChequesProprios() {
 		
 		page.selecionarRegistro("74.219");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		infomacoesbancarias.abaChequesProprios();
 		Assert.assertEquals("Data da Situação", infomacoesbancarias.obterTextoChequesProprios());		
 	}
@@ -70,7 +70,7 @@ public class InformacoesBancarias extends BaseTest {
 	public void Compartilhamento() {
 		
 		page.selecionarRegistro("74.219");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		infomacoesbancarias.abaCompartilhamento();
 		Assert.assertEquals("25,0000", infomacoesbancarias.obterTextoCompartilhamento());		
 	}
@@ -82,7 +82,7 @@ public class InformacoesBancarias extends BaseTest {
 		
 		infomacoesbancarias.agencia();
 		page.botaoNovoTabela("1");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Permite cadastrar/alterar informações das agências bancárias.", infomacoesbancarias.obterTextoNovoAgencia());
 	}
 	
@@ -91,7 +91,7 @@ public class InformacoesBancarias extends BaseTest {
 		
 		infomacoesbancarias.agencia();
 		page.selecionarRegistro("CAIXA FUNDO FIXO");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Banco", infomacoesbancarias.obterTextoConsultaAgencia());	
 	}
 	
@@ -100,7 +100,7 @@ public class InformacoesBancarias extends BaseTest {
 		
 		infomacoesbancarias.agencia();
 		page.selecionarRegistro("CAIXA FUNDO FIXO");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		infomacoesbancarias.abaContasBancarias();
 		Assert.assertEquals("CAIXA FUNDO FIXO SEDE", infomacoesbancarias.obterTextoContasBancarias());
 	}
@@ -112,7 +112,7 @@ public class InformacoesBancarias extends BaseTest {
 		
 		infomacoesbancarias.bancos();
 		page.botaoNovoTabela("2");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Permite cadastrar/alterar informações de instituições financeiras.", infomacoesbancarias.obterTextoNovoBancos());
 	}
 	
@@ -121,7 +121,7 @@ public class InformacoesBancarias extends BaseTest {
 		
 		infomacoesbancarias.bancos();
 		page.selecionarRegistro("Banco do Brasil S.A.");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Código", infomacoesbancarias.obterTextoConsultaBancos());
 	}
 	
@@ -130,7 +130,7 @@ public class InformacoesBancarias extends BaseTest {
 		
 		infomacoesbancarias.bancos();
 		page.selecionarRegistro("Banco do Brasil S.A.");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		infomacoesbancarias.abaAgencias();
 		Assert.assertEquals("Agência B.Brasil", infomacoesbancarias.obterTextoAgencias());
 	}
@@ -142,7 +142,7 @@ public class InformacoesBancarias extends BaseTest {
 		
 		infomacoesbancarias.instrucoesDeCobranca();
 		page.botaoNovoTabela("3");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Permite cadastrar/alterar informações das instruções de cobrança.", infomacoesbancarias.obterTextoNovoInstrucoesDeCobranca());
 	}
 	
@@ -151,7 +151,7 @@ public class InformacoesBancarias extends BaseTest {
 		
 		infomacoesbancarias.instrucoesDeCobranca();
 		page.selecionarRegistro("{Complemento}");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Descrição", infomacoesbancarias.obterTextoConsultaInstrucoesDeCobranca());
 	}
 	
@@ -160,7 +160,7 @@ public class InformacoesBancarias extends BaseTest {
 		
 		infomacoesbancarias.instrucoesDeCobranca();
 		page.selecionarRegistro("Não receber após o vencimento");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		infomacoesbancarias.abaConfiguracaoPorBancos();
 		Assert.assertEquals("Banco do Brasil S.A.", infomacoesbancarias.obterTextoConfiguracaoPorBancos());		
 	}
@@ -172,7 +172,7 @@ public class InformacoesBancarias extends BaseTest {
 		
 		infomacoesbancarias.carteirasDeCobranca();
 		page.botaoNovoTabela("4");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Permitir cadastrar/alterar as informações da Carteira de Cobrança.", infomacoesbancarias.obterTextoNovoCarteirasDeCobranca());		
 	}
 	
@@ -181,7 +181,7 @@ public class InformacoesBancarias extends BaseTest {
 		
 		infomacoesbancarias.carteirasDeCobranca();
 		page.selecionarRegistro("Protesto em Cartório");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Numeração de Remessa Bancária", infomacoesbancarias.obterTextoConsultaCarteirasDeCobranca());		
 	}
 	
@@ -192,7 +192,7 @@ public class InformacoesBancarias extends BaseTest {
 		
 		infomacoesbancarias.carteirasDeCobranca();
 		page.selecionarRegistro("Protesto em Cartório");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		infomacoesbancarias.abaConfiguracoes();
 		Assert.assertEquals("Nosso número", infomacoesbancarias.obterTextoConfiguracoes());		
 	}
@@ -202,7 +202,7 @@ public class InformacoesBancarias extends BaseTest {
 		
 		infomacoesbancarias.carteirasDeCobranca();
 		page.selecionarRegistro("Protesto em Cartório");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		infomacoesbancarias.abaInstrucoes();
 		Assert.assertEquals("O valor deste boleto JÁ CONTEMPLA o desconto referente ao período", infomacoesbancarias.obterTextoInstrucoes());	
 	}
@@ -212,7 +212,7 @@ public class InformacoesBancarias extends BaseTest {
 		
 		infomacoesbancarias.carteirasDeCobranca();
 		page.selecionarRegistro("Protesto em Cartório");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		infomacoesbancarias.abaMovimentos();
 		Assert.assertEquals("Teste Movimentos Bancários", infomacoesbancarias.obterTextoMovimentos());
 	}
@@ -224,7 +224,7 @@ public class InformacoesBancarias extends BaseTest {
 		
 		infomacoesbancarias.ocorrenciaBancaria();
 		page.botaoNovoTabela("5");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Permite criar/editar Ocorrências Bancárias", infomacoesbancarias.obterTextoOcorrenciaBancaria());
 	}
 	

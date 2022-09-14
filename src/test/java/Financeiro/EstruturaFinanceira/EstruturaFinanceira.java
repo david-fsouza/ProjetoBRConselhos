@@ -35,7 +35,7 @@ public class EstruturaFinanceira extends BaseTest {
 	public void NovoPlanoFinanceiro() {
 		
 		page.botaoNovoTabela("0");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Permite cadastrar/alterar informações dos planos financeiros.", estruturafinanceira.obterTextoNovoPlanoFinanceiro());				
 	}
 	
@@ -43,7 +43,7 @@ public class EstruturaFinanceira extends BaseTest {
 	public void ConsultaPlanoFinanceiro() {
 		
 		page.selecionarRegistro("ORÇAMENTO");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Permite cadastrar/alterar informações dos planos financeiros.", estruturafinanceira.obterTextoConsultaPlanoFinanceiro());
 	}
 	
@@ -51,10 +51,10 @@ public class EstruturaFinanceira extends BaseTest {
 	public void ContasFinanceiras() {
 		
 		page.selecionarRegistro("ORÇAMENTO");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		estruturafinanceira.abaContasFinanceiras();
 		page.selecionarRegistro("EXECUÇÃO DO ORÇAMENTO");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Permite cadastrar/alterar informações dos planos financeiros.", estruturafinanceira.obterTextoContasFinanceiras());
 	}
 	
@@ -66,7 +66,7 @@ public class EstruturaFinanceira extends BaseTest {
 		
 		estruturafinanceira.planoCentroResultado();
 		page.botaoNovoTabela("1");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Permite cadastrar/alterar informações sobre os planos de centros de resultado.", estruturafinanceira.obterTextoNovoPlanoCentroResultado());
 
 	}
@@ -76,7 +76,7 @@ public class EstruturaFinanceira extends BaseTest {
 		
 		estruturafinanceira.planoCentroResultado();
 		page.selecionarRegistro("Padrão");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Vigência", estruturafinanceira.obterTextoConsultaPlanoCentroResultado());	
 	}
 	
@@ -85,7 +85,7 @@ public class EstruturaFinanceira extends BaseTest {
 		
 		estruturafinanceira.planoCentroResultado();
 		page.selecionarRegistro("Padrão");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		estruturafinanceira.abaCentrosDeResultado();
 		Assert.assertEquals("BRC", estruturafinanceira.obterTextoCentrosDeResultado() );
 	}
@@ -97,7 +97,7 @@ public class EstruturaFinanceira extends BaseTest {
 		
 		estruturafinanceira.planoContabil();
 		page.botaoNovoTabela("2");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Permite cadastrar/alterar informações do plano contábil.", estruturafinanceira.obterTextoNovoPlanoContabil());		
 	}
 	
@@ -106,7 +106,7 @@ public class EstruturaFinanceira extends BaseTest {
 		
 		estruturafinanceira.planoContabil();
 		page.selecionarRegistro("PLANO DE CONTAS");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Descrição", estruturafinanceira.obterTextoConsultaPlanoContabil());
 	}
 	
@@ -115,7 +115,7 @@ public class EstruturaFinanceira extends BaseTest {
 		
 		estruturafinanceira.planoContabil();
 		page.selecionarRegistro("PLANO DE CONTAS");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		estruturafinanceira.abaContasContabeis();
 		Assert.assertEquals("R68R", estruturafinanceira.obterTextoContasContabeis() );
 	}
@@ -127,7 +127,7 @@ public class EstruturaFinanceira extends BaseTest {
 		
 		estruturafinanceira.criteriosDeRateio();
 		page.botaoNovoTabela("3");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Permite cadastrar/alterar informações dos critérios utilizados para rateio de contas financeiras, centros de resultado e/ou projetos.", estruturafinanceira.obterTextoNovoCriteriosDeRateio());		
 	}
 	
@@ -136,7 +136,7 @@ public class EstruturaFinanceira extends BaseTest {
 		
 		estruturafinanceira.criteriosDeRateio();
 		page.selecionarRegistro("Padrão");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Cta. Financeira", estruturafinanceira.obterTextoConsultaCriteriosDeRateio());
 	}
 	
@@ -145,7 +145,7 @@ public class EstruturaFinanceira extends BaseTest {
 		
 		estruturafinanceira.criteriosDeRateio();
 		page.selecionarRegistro("Padrão");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		estruturafinanceira.abaCriteriosDeCentroDeResultado();
 		Assert.assertEquals("BRC", estruturafinanceira.obterTextoCriteriosCentroResultado());
 	}

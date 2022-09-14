@@ -34,7 +34,7 @@ public class TransacoesCartao extends BaseTest {
 	public void ConsultaRegistroTransacoesCartao() throws InterruptedException {
 		transacoescartao.inserirCampoFiltrar("1A986BFC-47E2-41FF-B6B4-120870730AB4");
 		transacoescartao.selecionarResultadoBusca("165,00");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Permite visualizar as transações envolvendo cartão de crédito", transacoescartao.obterTextoTransacoesCartao());			 
 	}
 	
@@ -44,7 +44,7 @@ public class TransacoesCartao extends BaseTest {
 	public void Liquidacoes() throws InterruptedException {
 		transacoescartao.inserirCampoFiltrar("1A986BFC-47E2-41FF-B6B4-120870730AB4");
 		transacoescartao.selecionarResultadoBusca("165,00");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		transacoescartao.abaLiquidacoes();
 		Assert.assertEquals("Quitado", transacoescartao.obterTextoLiquidacoes());		
 	}
@@ -55,7 +55,7 @@ public class TransacoesCartao extends BaseTest {
 		transacoescartao.inserirCampoFiltrar("1A986BFC-47E2-41FF-B6B4-120870730AB4");
 		//page.esperar3segundos();
 		transacoescartao.selecionarResultadoBusca("165,00");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 	    transacoescartao.abaTitulos();
 	    Assert.assertEquals("Nenhum registro.", transacoescartao.obterTextoTitulos());	    
 	}

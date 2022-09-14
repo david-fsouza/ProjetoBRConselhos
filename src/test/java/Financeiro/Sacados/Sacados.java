@@ -35,7 +35,7 @@ public class Sacados extends BaseTest {
     public void NovoRegistroScados() {
     	
     	page.botaoNovo();
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	Assert.assertEquals("Permite cadastrar/alterar informações de sacados.", sacados.obterTextoNovoRegistroSacados());  	
     }
     
@@ -43,7 +43,7 @@ public class Sacados extends BaseTest {
     public void Enderecos() {
     	
     	page.botaoNovo();
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	sacados.enderecos();
     	Assert.assertEquals("CEP", sacados.obterTextoEnderecos());    	
     }
@@ -52,7 +52,7 @@ public class Sacados extends BaseTest {
     public void Contabilizacao() {
     	
     	page.botaoNovo();
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	sacados.contabilizacao();
     	Assert.assertEquals("Cta. Financeira", sacados.obterTextoContabilizacao());    	
     }
@@ -63,7 +63,7 @@ public class Sacados extends BaseTest {
     	sacados.inserirCampoFiltrar("084.181.370-10");
     	page.esperar1segundo();
     	sacados.selecionarResultadoBusca("Paulo Cesar Pitz");
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	Assert.assertEquals("CPF", sacados.obterTextoConsultaRegistroSacados());   	
     }
     
@@ -73,7 +73,7 @@ public class Sacados extends BaseTest {
     	sacados.inserirCampoFiltrar("084.181.370-10");
     	page.esperar1segundo();
     	sacados.selecionarResultadoBusca("Paulo Cesar Pitz");
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	sacados.historico();
     	Assert.assertEquals("Histórico", sacados.obterTextoHistorico()); 	
     }
@@ -84,9 +84,9 @@ public class Sacados extends BaseTest {
     	sacados.inserirCampoFiltrar("084.181.370-10");
     	page.esperar1segundo();
     	sacados.selecionarResultadoBusca("Paulo Cesar Pitz");
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	sacados.log();
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	Assert.assertEquals("Log", sacados.obterTextoLogRegistro());   	
     }
     

@@ -37,7 +37,7 @@ public class ConfiguracoesRecebimentoRecorrente extends BaseTest {
     public void NovoConfiguracoesDeRecebimentoRecorrente() {
     	
     	page.botaoNovoTabela("0");
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	Assert.assertEquals("Permite criar recebimento recorrente.", configuracoesrecebimento.obterTextoNovoConfiguracoesDeRecebimentoRecorrente());
     }
     
@@ -47,7 +47,7 @@ public class ConfiguracoesRecebimentoRecorrente extends BaseTest {
     	page.inserirCampoFiltrar("0", "Teste Recebimento Recorrente");
     	page.esperar2segundos();
     	page.selecionarRegistro("Teste Recebimento Recorrente");
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	Assert.assertEquals("Recebimento Recorrente.", configuracoesrecebimento.obterTextoConsultaConfiguracoesDeRecebimentoRecorrente());
     }
     

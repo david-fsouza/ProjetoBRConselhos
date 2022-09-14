@@ -35,7 +35,7 @@ public class TabelaDePrecoServicos extends BaseTest {
 	public void NovoTabelaDePrecoServicos() {
 		
 		page.botaoNovo();
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Permite cadastrar/alterar informações de tabela de preço serviços solicitações.", tabelaprecoservico.obterTextoNovoTabelaDePrecoServicos());		
 	}
 	
@@ -44,7 +44,7 @@ public class TabelaDePrecoServicos extends BaseTest {
 		
 		page.inserirCampoFiltrar0("Tabela de preços 2014");
 		page.selecionarRegistro("01/01/2014");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Vigência", tabelaprecoservico.obterTextoConsultaTabelaDePrecoServico());
 	}
 	
@@ -53,7 +53,7 @@ public class TabelaDePrecoServicos extends BaseTest {
 		
 		page.inserirCampoFiltrar0("Tabela de preços 2014");
 		page.selecionarRegistro("01/01/2014");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		tabelaprecoservico.abaServicos();
 		Assert.assertEquals("PJ - Taxa de Registro", tabelaprecoservico.obterTextoServicos());
 		

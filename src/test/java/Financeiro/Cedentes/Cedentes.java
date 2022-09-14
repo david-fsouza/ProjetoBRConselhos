@@ -34,7 +34,7 @@ public class Cedentes extends BaseTest {
     public void NovoRegistroCedentes() {
     	
     	cendentes.novo();
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	Assert.assertEquals("Permite cadastrar/alterar informações de outros tipos de cedentes.", cendentes.obterTextoNovoRegistroCedentes());
     }
     
@@ -42,7 +42,7 @@ public class Cedentes extends BaseTest {
     public void Contabilizacao() {
     	
     	cendentes.novo();
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	cendentes.contabilizacao();
     	Assert.assertEquals("Cta. Financeira", cendentes.obterTextoContabilizacao());
     }
@@ -53,7 +53,7 @@ public class Cedentes extends BaseTest {
     	cendentes.inserirCampoFiltrarOutrosCedentes("Pessoa Teste");
     	page.esperar1segundo();
     	cendentes.selecionarReultadoBusca("Pessoa Teste");
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	Assert.assertEquals("Nome Completo", cendentes.obterTextoConsultaCedentes());
     }
     
@@ -68,7 +68,7 @@ public class Cedentes extends BaseTest {
     	cendentes.inserirCampoFiltrarFornecedores("Nome Teste Fornecedores");
     	page.esperar1segundo();
     	cendentes.selecionarReultadoBusca("333.098.850-97");
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	Assert.assertEquals("Código", cendentes.obterTextoGeral());
     }
     
@@ -79,7 +79,7 @@ public class Cedentes extends BaseTest {
     	cendentes.inserirCampoFiltrarFornecedores("Nome Teste Fornecedores");
     	page.esperar1segundo();
     	cendentes.selecionarReultadoBusca("333.098.850-97");
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	cendentes.abaAreasDeAtuacao();        
     	Assert.assertEquals("Área de Atuação 01", cendentes.obterTextoAreasDeAtuacao());    	
     }
@@ -91,7 +91,7 @@ public class Cedentes extends BaseTest {
     	cendentes.inserirCampoFiltrarFornecedores("Nome Teste Fornecedores");
     	page.esperar1segundo();
     	cendentes.selecionarReultadoBusca("333.098.850-97");
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	cendentes.abaDocumentosDeHabilitacao();
     	Assert.assertEquals("Teste Documentos Habitação", cendentes.obterTextoDocumentosHabilitacao());   	
     }
@@ -103,7 +103,7 @@ public class Cedentes extends BaseTest {
     	cendentes.inserirCampoFiltrarFornecedores("Nome Teste Fornecedores");
     	page.esperar1segundo();
     	cendentes.selecionarReultadoBusca("333.098.850-97");
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	cendentes.abaOcorrencias();
     	Assert.assertEquals("Teste Ocorrências", cendentes.obterTextoOcorrencias());    	
     }
@@ -115,7 +115,7 @@ public class Cedentes extends BaseTest {
     	cendentes.inserirCampoFiltrarFornecedores("Nome Teste Fornecedores");
     	page.esperar1segundo();
     	cendentes.selecionarReultadoBusca("333.098.850-97");
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	cendentes.abaContatosResponsaveis();
     	Assert.assertEquals("Teste Contatos Responsáveis", cendentes.obterTextoContatosResponsaveis());    	
     }
@@ -129,7 +129,7 @@ public class Cedentes extends BaseTest {
    	    cendentes.inserirCampoFiltrarFornecedores("Nome Teste Fornecedores");
    	    page.esperar1segundo();
    	    cendentes.selecionarReultadoBusca("333.098.850-97");
-   	    frame.frameTelaSobreposta();
+   	    frame.TelaSobreposta();
    	    cendentes.enderecos();
    	   Assert.assertEquals("CEP cx postal", cendentes.obterTextoEnderecos());
     }
@@ -141,7 +141,7 @@ public class Cedentes extends BaseTest {
     	cendentes.inserirCampoFiltrarFornecedores("Nome Teste Fornecedores");
         page.esperar1segundo();
     	cendentes.selecionarReultadoBusca("333.098.850-97");
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	cendentes.telefones();
     	Assert.assertEquals("Comercial", cendentes.obterTextoTelefones());
     }
@@ -153,7 +153,7 @@ public class Cedentes extends BaseTest {
     	cendentes.inserirCampoFiltrarFornecedores("Nome Teste Fornecedores");
         page.esperar1segundo();
     	cendentes.selecionarReultadoBusca("333.098.850-97");
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	cendentes.documentos();
     	Assert.assertEquals("RG", cendentes.obterTextoDocumentos());
     }
@@ -165,7 +165,7 @@ public class Cedentes extends BaseTest {
     	cendentes.inserirCampoFiltrarFornecedores("Nome Teste Fornecedores");
         page.esperar1segundo();
     	cendentes.selecionarReultadoBusca("333.098.850-97");
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	cendentes.infComplementares();
     	Assert.assertEquals("Email", cendentes.obterTextoInfComplementares());
     }
@@ -177,7 +177,7 @@ public class Cedentes extends BaseTest {
     	cendentes.inserirCampoFiltrarFornecedores("Nome Teste Fornecedores");
         page.esperar1segundo();
     	cendentes.selecionarReultadoBusca("333.098.850-97");
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	cendentes.infFinanceiras();
     	Assert.assertEquals("Banco", cendentes.obterTextoInfFinanceiras());
     }
@@ -189,7 +189,7 @@ public class Cedentes extends BaseTest {
     	cendentes.inserirCampoFiltrarFornecedores("Nome Teste Fornecedores");
         page.esperar1segundo();
     	cendentes.selecionarReultadoBusca("333.098.850-97");
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	cendentes.abaContabilizacao();
     }
     

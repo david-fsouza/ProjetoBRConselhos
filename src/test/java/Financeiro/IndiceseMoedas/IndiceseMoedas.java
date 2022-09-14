@@ -35,7 +35,7 @@ public class IndiceseMoedas extends BaseTest {
 	public void NovoIndiceseMoedas() throws InterruptedException {
 		
 		page.botaoNovoTabela("0");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Permite cadastrar/alterar informações de índices, moedas ou taxas.", indicesmoedas.obterTextoNovoIndiceseMoedas());	
 	}
 	
@@ -44,10 +44,10 @@ public class IndiceseMoedas extends BaseTest {
 		
 	    page.inserirCampoFiltrar0("ANUENF");
 	    page.selecionarRegistro("Enfermeiro - Anuidade");
-	    frame.frameTelaSobreposta();
+	    frame.TelaSobreposta();
 	    sairFrame();
 		clicarBotaoSelector("div[title='OK']");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 	    Assert.assertEquals("Sigla", indicesmoedas.obterTextoConsultaIndiceseMoedas());
 	}
 	
@@ -58,7 +58,7 @@ public class IndiceseMoedas extends BaseTest {
 		
 		page.inserirCampoFiltrar0("ANUENF");
 	    page.selecionarRegistro("Enfermeiro - Anuidade");
-	    frame.frameTelaSobreposta();
+	    frame.TelaSobreposta();
 	    indicesmoedas.abaCotacoes();
 	    Assert.assertEquals("Percentual/ Valor", indicesmoedas.obterTextoCotacoes());	
 	}
@@ -68,7 +68,7 @@ public class IndiceseMoedas extends BaseTest {
 		
 		page.inserirCampoFiltrar0("ANUENF");
 	    page.selecionarRegistro("Enfermeiro - Anuidade");
-	    frame.frameTelaSobreposta();
+	    frame.TelaSobreposta();
 	    indicesmoedas.abaPeriodoDeSuspensao();
 	    indicesmoedas.obterTextoPeriodoDeSuspensao();
 	}
@@ -81,7 +81,7 @@ public class IndiceseMoedas extends BaseTest {
 		indicesmoedas.IndiceseMoedasServicos();
 		page.inserirCampoFiltrar1("ANUENF");
 	    page.selecionarRegistro("Enfermeiro - Anuidade");
-	    frame.frameTelaSobreposta();
+	    frame.TelaSobreposta();
 	    indicesmoedas.abaFaixas();
 	    Assert.assertEquals("acima de", indicesmoedas.obterTextoFaixas());
 	}

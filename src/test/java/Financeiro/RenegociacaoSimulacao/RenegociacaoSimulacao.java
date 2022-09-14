@@ -34,7 +34,7 @@ public class RenegociacaoSimulacao extends BaseTest {
 	public void NovoRenegociacaoSimulacao() {
 		
 		page.botaoNovo();
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Permite visualizar as simulações / renegociações", renegociacaosimulacao.obterTextoNovoRenegocicaoSimulacao());
 	}
 	
@@ -43,7 +43,7 @@ public class RenegociacaoSimulacao extends BaseTest {
 		
 		renegociacaosimulacao.campoFiltrar("44.064.695");
 		page.selecionarRegistro("BRUNA CESTARI 23071529");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Títulos de origem", renegociacaosimulacao.obterTextoConsultaRenegocicaoSimulacao());
 	}
 	

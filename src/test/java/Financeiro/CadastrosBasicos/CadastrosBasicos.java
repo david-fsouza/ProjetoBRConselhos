@@ -35,7 +35,7 @@ public class CadastrosBasicos extends BaseTest {
     public void NovoHistoricos() {
     	
     	page.botaoNovoTabela("0");
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	Assert.assertEquals("Permite cadastrar/alterar informações de históricos.", page.verificarTextoXpath("Permite cadastrar/alterar informações de históricos."));
     }
     
@@ -44,7 +44,7 @@ public class CadastrosBasicos extends BaseTest {
     	
     	page.inserirCampoFiltrar("0", "Baixa Automática");
     	page.selecionarRegistro("Baixa Automática");
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	Assert.assertEquals("Histórico Contábil", page.verificarTextoXpath("Histórico Contábil"));
     }
     
@@ -55,7 +55,7 @@ public class CadastrosBasicos extends BaseTest {
     	
     	cadastrosbasicos.tiposDeContato();
     	page.botaoNovoTabela("1");
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	Assert.assertEquals("Permite cadastrar/alterar os tipos de contato", page.verificarTextoXpath("Permite cadastrar/alterar os tipos de contato"));
     }
     
@@ -65,7 +65,7 @@ public class CadastrosBasicos extends BaseTest {
         cadastrosbasicos.tiposDeContato();
     	page.inserirCampoFiltrar("1", "Notificação Extrajudicial");
     	page.selecionarRegistro("Notificação Extrajudicial");
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	Assert.assertEquals("Geração de Atualização", page.verificarTextoXpath("Geração de Atualização"));
     }
     
@@ -76,7 +76,7 @@ public class CadastrosBasicos extends BaseTest {
     	
     	cadastrosbasicos.tiposDeDocumento();
     	page.botaoNovoTabela("2");
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	Assert.assertEquals("Permite criar/editar Tipos de Documento", page.verificarTextoXpath("Permite criar/editar Tipos de Documento"));   	
     }
     
@@ -86,7 +86,7 @@ public class CadastrosBasicos extends BaseTest {
      	cadastrosbasicos.tiposDeDocumento();
     	page.inserirCampoFiltrar("2", "Boleto");
     	page.selecionarRegistro("Financeiro");
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	Assert.assertEquals("Módulo", page.verificarTextoXpath("Módulo"));
     }
     
@@ -97,7 +97,7 @@ public class CadastrosBasicos extends BaseTest {
     	
     	cadastrosbasicos.tiposDeCobranca();
     	page.botaoNovoTabela("3");
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	Assert.assertEquals("Permite cadastrar/alterar informações dos tipos de cobrança.", page.verificarTextoXpath("Permite cadastrar/alterar informações dos tipos de cobrança."));    	
     }
     
@@ -108,7 +108,7 @@ public class CadastrosBasicos extends BaseTest {
     	page.esperar2segundos();
     	page.inserirCampoFiltrar("3", "Teste Tipos de Cobrança");
     	page.selecionarRegistro("Teste Tipos de Cobrança");
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	Assert.assertEquals("Descrição", page.verificarTextoXpath("Descrição"));
     }
     
@@ -119,7 +119,7 @@ public class CadastrosBasicos extends BaseTest {
     	
     	cadastrosbasicos.tiposDePagamento();
     	page.botaoNovoTabela("4");
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	Assert.assertEquals("Permite criar/editar Tipos de Pagamento", page.verificarTextoXpath("Permite criar/editar Tipos de Pagamento"));
     }
     
@@ -129,7 +129,7 @@ public class CadastrosBasicos extends BaseTest {
     	cadastrosbasicos.tiposDePagamento();
     	page.inserirCampoFiltrar("4", "12345");
     	page.selecionarRegistro("Teste Tipos de Pagamento");
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	Assert.assertEquals("Código", page.verificarTextoXpath("Código"));
     }
     
@@ -140,7 +140,7 @@ public class CadastrosBasicos extends BaseTest {
     	
     	cadastrosbasicos.formasLiquidacao();
     	page.botaoNovoTabela("5");
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	Assert.assertEquals("Permite cadastrar/alterar informações das formas de liquidação.", page.verificarTextoXpath("Permite cadastrar/alterar informações das formas de liquidação."));  	
     }
     
@@ -150,7 +150,7 @@ public class CadastrosBasicos extends BaseTest {
     	cadastrosbasicos.formasLiquidacao();
     	page.inserirCampoFiltrar("5", "Baixa bancária");
     	page.selecionarRegistro("Baixa bancária");
-    	frame.frameTelaSobreposta();
+    	frame.TelaSobreposta();
     	Assert.assertEquals("Conta bancária padrão para recebimentos", page.verificarTextoXpath("Conta bancária padrão para recebimentos"));
     }
    

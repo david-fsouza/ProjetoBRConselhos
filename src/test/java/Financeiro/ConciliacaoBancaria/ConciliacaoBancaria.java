@@ -35,7 +35,7 @@ public class ConciliacaoBancaria extends BaseTest {
 	public void NovoRegistroExtratosBancarios() {
 		
 		page.BotaoNovo();
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Permite cadastrar/consultar informações dos extratos bancários", conciliacaobancaria.obterTextoNovoExtratosBancarios());		
 	}
 	
@@ -52,7 +52,7 @@ public class ConciliacaoBancaria extends BaseTest {
 		
 		page.inserirCampoFiltrar0("CAIXA FUNDO FIXO SEDE");
 		page.selecionarRegistro("CAIXA FUNDO FIXO SEDE");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		conciliacaobancaria.abaLancamentos();
 		Assert.assertEquals("Teste Lançamentos do extrato", conciliacaobancaria.obterTextoLancamentos());
 	}
@@ -63,7 +63,7 @@ public class ConciliacaoBancaria extends BaseTest {
 		conciliacaobancaria.funcoes();
 		sairFrame();
 		conciliacaobancaria.importarExtrato();
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Permite realizar a importação dos extratos bancários.", conciliacaobancaria.obterTextoImportarExtrato());
 	}
 	
@@ -74,7 +74,7 @@ public class ConciliacaoBancaria extends BaseTest {
 		
 		conciliacaobancaria.conciliacao();
 		page.botaoNovo();
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Permite efetuar/consultar a conciliação bancária.", conciliacaobancaria.obterTextoConciliacao());
 	}
 	 	 

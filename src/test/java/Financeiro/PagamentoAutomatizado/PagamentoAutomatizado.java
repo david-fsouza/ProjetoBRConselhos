@@ -46,7 +46,7 @@ public class PagamentoAutomatizado extends BaseTest {
 	public void NovoRegistroPagementoAutomatizado() {
 
 		page.botaoNovo();
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Pagamento Automatizado de Retorno ou Remessa",
 				pagamentoautomatizado.obterTextoPagamentoAutomatizadoRetorno());
 	}
@@ -57,7 +57,7 @@ public class PagamentoAutomatizado extends BaseTest {
 		pagamentoautomatizado.inserirCampoFiltrar("docteste.txt");
 		page.esperar1segundo();
 		page.selecionarRegistro("28/12/2021");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Informações do Arquivo", pagamentoautomatizado.obterTextoConsultaPagamentoAutomatizado());
 	}
 
@@ -66,7 +66,7 @@ public class PagamentoAutomatizado extends BaseTest {
 
 		pagamentoautomatizado.inserirCampoFiltrar("docteste.txt");
 		pagamentoautomatizado.selecionarResultadoBusca("29/12/2021");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		pagamentoautomatizado.abaItens();
 		Assert.assertEquals("Nenhum registro.", pagamentoautomatizado.obterTextoItensLiquidacao());
 	}
@@ -77,7 +77,7 @@ public class PagamentoAutomatizado extends BaseTest {
 		pagamentoautomatizado.inserirCampoFiltrar("docteste.txt");
 		page.esperar1segundo();
 		pagamentoautomatizado.selecionarResultadoBusca("28/12/2021");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		pagamentoautomatizado.abaItens();
 		pagamentoautomatizado.outrosMovimentos();
 		Assert.assertEquals("Nenhum registro.", pagamentoautomatizado.obterTextoItensOutrosMovimentos());

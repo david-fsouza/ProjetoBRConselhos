@@ -35,7 +35,7 @@ public class CondicaoDeRecebimento extends BaseTest {
 	public void NovoCondicaoDeRecebimento() {
 		
 		page.botaoNovo();
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Permite cadastrar/alterar as configurações das condições para pagamento/recebimento.", condicaorecebimento.obterTextoNovoCondicaoDeRecebimento());
 	}
 	
@@ -44,7 +44,7 @@ public class CondicaoDeRecebimento extends BaseTest {
 		
 		page.inserirCampoFiltrar0("Condição Taxas");
 		page.selecionarRegistro("Condição Taxas");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Organização", condicaorecebimento.obterTextoConsultaCondicaoDeRecebimento());
 	}
 	
@@ -53,7 +53,7 @@ public class CondicaoDeRecebimento extends BaseTest {
 		
 		page.inserirCampoFiltrar0("Condição Taxas");
 		page.selecionarRegistro("Condição Taxas");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		condicaorecebimento.abaFormasLiquid();
 		Assert.assertEquals("Recebimento manual", condicaorecebimento.obterTextoFormasLiquid());
 	}
@@ -63,7 +63,7 @@ public class CondicaoDeRecebimento extends BaseTest {
 		
 		page.inserirCampoFiltrar0("Condição Taxas");
 		page.selecionarRegistro("Condição Taxas");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		condicaorecebimento.abaInstrucoes();
 		Assert.assertEquals("Não receber após o vencimento", condicaorecebimento.obterTextoInstrucoes());	
 	}

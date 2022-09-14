@@ -37,7 +37,7 @@ public class BorderosDeRecebimento extends BaseTest {
 	public void NovoRegistroBorderosDeRecebimento() {
 		
 		borderosrecebimento.Novo();
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Permite visualizar os borderôs de recebimento", borderosrecebimento.obterTextoNovoRegistroBorderosRecebimento());				
 	}
 	
@@ -52,7 +52,7 @@ public class BorderosDeRecebimento extends BaseTest {
 	public void NovoRegistroItens() throws InterruptedException {
 		
 		borderosrecebimento.selecionarReultadoBusca("15");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		borderosrecebimento.Itens();
 		page.botaoNovo();
 		Assert.assertEquals("Titular", borderosrecebimento.obterTextoNovoRegistroItens());		                        			

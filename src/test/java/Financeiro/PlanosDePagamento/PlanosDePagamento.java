@@ -34,7 +34,7 @@ public class PlanosDePagamento extends BaseTest {
 	public void NovoPlanosDePagamento() {
 		
 		page.botaoNovo();
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Permitir selecionar títulos a renegociar", planospagamento.obterTextoNovoPlanoDePagamento());
 	}
 	
@@ -43,7 +43,7 @@ public class PlanosDePagamento extends BaseTest {
 		
 		page.inserirCampoFiltrar0("Renegociação Débitos em Dívida Ativa");
 		page.selecionarRegistro("01/01/2019");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		Assert.assertEquals("Opção de parcelamento", planospagamento.obterTextoConsultaPlanosPagamento());		
 	}
 	
@@ -52,7 +52,7 @@ public class PlanosDePagamento extends BaseTest {
 		
 		page.inserirCampoFiltrar0("Renegociação Débitos em Dívida Ativa");
 		page.selecionarRegistro("01/01/2019");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		planospagamento.filtroPessoa();
 		Assert.assertEquals("Filtro SQL de restrição de pessoas", planospagamento.obterTextoFiltroPessoa());		
 	}
@@ -62,7 +62,7 @@ public class PlanosDePagamento extends BaseTest {
 		
 		page.inserirCampoFiltrar0("Renegociação Débitos em Dívida Ativa");
 		page.selecionarRegistro("01/01/2019");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		planospagamento.filtroTitulo();
 		Assert.assertEquals("Tipos de lançamentos", planospagamento.obterTextoFiltroTitulo());
 	}
@@ -72,7 +72,7 @@ public class PlanosDePagamento extends BaseTest {
 		
 		page.inserirCampoFiltrar0("Renegociação Débitos em Dívida Ativa");
 		page.selecionarRegistro("01/01/2019");
-		frame.frameTelaSobreposta();
+		frame.TelaSobreposta();
 		planospagamento.abaPermissoes();
 		Assert.assertEquals("Administradores do sistema", planospagamento.obterTextoPermissoes());
 	}
