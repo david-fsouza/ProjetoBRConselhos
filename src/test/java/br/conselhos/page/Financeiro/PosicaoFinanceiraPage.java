@@ -15,7 +15,7 @@ public class PosicaoFinanceiraPage extends BasePage {
 	//****** Novo Contas a Receber *******//
 	
 	public String validarTextoNovoContasReceberPosicaoFinanceira() {
-		return obterTexto("BIANCA RODRIGUES DOS SANTOS DE LIMA");
+		return obterTexto("ANUPJ");
 	}
 	
 	//******* Consulta Registro Posição Financeira *******//

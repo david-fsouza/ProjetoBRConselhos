@@ -63,8 +63,8 @@ public class PosicaoFinanceira extends BaseTest {
 	    posicaofinanceira.campoSacado("BIANCA RODRIGUES DOS SANTOS DE LIMA");
 		page.botaoLocalizar();
 		page.esperar3segundos();
-		Assert.assertEquals("BIANCA RODRIGUES DOS SANTOS DE LIMA",
-				posicaofinanceira.obterTexto("BIANCA RODRIGUES DOS SANTOS DE LIMA"));
+		Assert.assertEquals("ANUPJ",
+				posicaofinanceira.validarTextoNovoContasReceberPosicaoFinanceira());
 	}
 
 	@Test

@@ -1,4 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: Financeiro.RenegociacaoSimplificada.RenegociacaoSimplificada
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 32.876 s - in Financeiro.RenegociacaoSimplificada.RenegociacaoSimplificada
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 11.53 s <<< FAILURE! - in Financeiro.RenegociacaoSimplificada.RenegociacaoSimplificada
+T010_EfetuarRenegociacaoSimplificada(Financeiro.RenegociacaoSimplificada.RenegociacaoSimplificada)  Time elapsed: 11.53 s  <<< ERROR!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=105.0.5195.125)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [40bfe733016f138b830dba88602dc0eb, clickElement {id=db57e869-3683-4c09-93b6-52ce4f1bf81f}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Windows\TEMP\scoped_dir5...}, goog:chromeOptions: {debuggerAddress: localhost:59500}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59500/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (40bfe733016f138b830dba88602dc0eb)] -> id: modFinanceiro]
+Session ID: 40bfe733016f138b830dba88602dc0eb
+	at Financeiro.RenegociacaoSimplificada.RenegociacaoSimplificada.InicializaRenegociacaoSimplificada(RenegociacaoSimplificada.java:28)
+

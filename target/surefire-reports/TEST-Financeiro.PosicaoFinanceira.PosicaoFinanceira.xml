@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Financeiro.PosicaoFinanceira.PosicaoFinanceira" time="100.681" tests="7" errors="7" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Financeiro.PosicaoFinanceira.PosicaoFinanceira" time="61.912" tests="10" errors="10" skipped="0" failures="0">
   <properties>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="JOB_NAME" value="FINANCEIRO"/>
-    <property name="RUN_TESTS_DISPLAY_URL" value="http://localhost:8080/automacao/job/FINANCEIRO/61/display/redirect?page=tests"/>
+    <property name="RUN_TESTS_DISPLAY_URL" value="http://localhost:8080/automacao/job/FINANCEIRO/65/display/redirect?page=tests"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="NUMBER_OF_PROCESSORS" value="4"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -12,7 +12,7 @@
     <property name="POM_ARTIFACTID" value="CursoSelenium"/>
     <property name="os.name" value="Windows 10"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_321\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_321\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_321\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_321\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_321\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_321\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_321\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_321\jre\classes"/>
-    <property name="EXECUTOR_NUMBER" value="0"/>
+    <property name="EXECUTOR_NUMBER" value="1"/>
     <property name="sun.desktop" value="windows"/>
     <property name="PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
@@ -28,8 +28,8 @@
     <property name="TESSDATA_PREFIX" value="C:\Users\David\eclipse-workspace\ProjetoBRConselhos\tessdata"/>
     <property name="user.language" value="pt"/>
     <property name="JOB_BASE_NAME" value="FINANCEIRO"/>
-    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8080/automacao/job/FINANCEIRO/61/display/redirect?page=changes"/>
-    <property name="BUILD_DISPLAY_NAME" value="#61"/>
+    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8080/automacao/job/FINANCEIRO/65/display/redirect?page=changes"/>
+    <property name="BUILD_DISPLAY_NAME" value="#65"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_321\jre\bin"/>
     <property name="LOCALAPPDATA" value="C:\Windows\system32\config\systemprofile\AppData\Local"/>
     <property name="java.version" value="1.8.0_321"/>
@@ -39,7 +39,7 @@
     <property name="sun.arch.data.model" value="64"/>
     <property name="NODE_NAME" value="built-in"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_321\jre\lib\endorsed"/>
-    <property name="BUILD_ID" value="61"/>
+    <property name="BUILD_ID" value="65"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="file.encoding.pkg" value="sun.io"/>
@@ -53,10 +53,10 @@
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_321\jre"/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="os.version" value="10.0"/>
-    <property name="RUN_DISPLAY_URL" value="http://localhost:8080/automacao/job/FINANCEIRO/61/display/redirect"/>
+    <property name="RUN_DISPLAY_URL" value="http://localhost:8080/automacao/job/FINANCEIRO/65/display/redirect"/>
     <property name="POM_VERSION" value="0.0.1-SNAPSHOT"/>
     <property name="TMP" value="C:\Windows\TEMP"/>
-    <property name="RUN_ARTIFACTS_DISPLAY_URL" value="http://localhost:8080/automacao/job/FINANCEIRO/61/display/redirect?page=artifacts"/>
+    <property name="RUN_ARTIFACTS_DISPLAY_URL" value="http://localhost:8080/automacao/job/FINANCEIRO/65/display/redirect?page=artifacts"/>
     <property name="path.separator" value=";"/>
     <property name="java.vm.version" value="25.321-b07"/>
     <property name="user.variant" value=""/>
@@ -77,7 +77,7 @@
     <property name="VBOX_MSI_INSTALL_PATH" value="C:\Program Files\Oracle\VirtualBox\"/>
     <property name="user.home" value="C:\Windows\system32\config\systemprofile"/>
     <property name="PUBLIC" value="C:\Users\Public"/>
-    <property name="BUILD_TAG" value="jenkins-FINANCEIRO-61"/>
+    <property name="BUILD_TAG" value="jenkins-FINANCEIRO-65"/>
     <property name="JENKINS_SERVER_COOKIE" value="3d9b9914299fe66a"/>
     <property name="HUDSON_URL" value="http://localhost:8080/automacao/"/>
     <property name="ProgramData" value="C:\ProgramData"/>
@@ -86,15 +86,15 @@
     <property name="USERPROFILE" value="C:\Windows\system32\config\systemprofile"/>
     <property name="CLASSPATH" value=""/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_321\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Maven\apache-maven-3.8.5/bin;C:\Program Files\Java\jdk1.8.0_321/bin;C:\Program Files\Java\jdk1.8.0_321/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\David\Documents\chromedriver;C:\Users\David\eclipse-workspace\ProjetoBRConselhos\drivers;C:\Usuários\David\Documentos\chromedriver;C:\Users\David\.m2\repository\allure-2.7.0\allure-2.7.0\bin;C:\Program Files\Maven\apache-maven-3.8.5\bin;C:\Program Files\PowerShell\7\;C:\Program Files\Java\jdk1.8.0_321\bin;C:\Users\David\AppData\Local\GitHubDesktop\GitHubDesktop;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_321\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Maven\apache-maven-3.8.5/bin;C:\Program Files\Java\jdk1.8.0_321/bin;C:\Program Files\Java\jdk1.8.0_321/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\David\Documents\chromedriver;C:\Users\David\eclipse-workspace\ProjetoBRConselhos\drivers;C:\Usuários\David\Documentos\chromedriver;C:\Users\David\.m2\repository\allure-2.7.0\allure-2.7.0\bin;C:\Program Files\Maven\apache-maven-3.8.5\bin;C:\Program Files\PowerShell\7\;C:\Program Files\Java\jdk1.8.0_321\bin;C:\Users\David\AppData\Local\GitHubDesktop\GitHubDesktop;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;."/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="APPDATA" value="C:\Windows\system32\config\systemprofile\AppData\Roaming"/>
     <property name="JMETER_HOME" value="C:\Users\David\apache-jmeter-5.4.3\apache-jmeter-5.4.3\"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="maven.home" value="C:\Program Files\Maven\apache-maven-3.8.5"/>
     <property name="java.class.path" value="C:\ProgramData\Jenkins\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-agent-1.13.jar;C:\Program Files\Maven\apache-maven-3.8.5\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\Maven\apache-maven-3.8.5/conf/logging"/>
-    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main C:\Program Files\Maven\apache-maven-3.8.5 C:\ProgramData\Jenkins\war\WEB-INF\lib\remoting-4.13.3.jar C:\ProgramData\Jenkins\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.13.jar C:\ProgramData\Jenkins\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.13.jar 49521"/>
-    <property name="Path" value="C:\Program Files\Java\jdk1.8.0_321/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\David\Documents\chromedriver;C:\Users\David\eclipse-workspace\ProjetoBRConselhos\drivers;C:\Usuários\David\Documentos\chromedriver;C:\Users\David\.m2\repository\allure-2.7.0\allure-2.7.0\bin;C:\Program Files\Maven\apache-maven-3.8.5\bin;C:\Program Files\PowerShell\7\;C:\Program Files\Java\jdk1.8.0_321\bin;C:\Users\David\AppData\Local\GitHubDesktop\GitHubDesktop;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main C:\Program Files\Maven\apache-maven-3.8.5 C:\ProgramData\Jenkins\war\WEB-INF\lib\remoting-4.13.3.jar C:\ProgramData\Jenkins\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.13.jar C:\ProgramData\Jenkins\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.13.jar 58429"/>
+    <property name="Path" value="C:\Program Files\Java\jdk1.8.0_321/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\David\Documents\chromedriver;C:\Users\David\eclipse-workspace\ProjetoBRConselhos\drivers;C:\Usuários\David\Documentos\chromedriver;C:\Users\David\.m2\repository\allure-2.7.0\allure-2.7.0\bin;C:\Program Files\Maven\apache-maven-3.8.5\bin;C:\Program Files\PowerShell\7\;C:\Program Files\Java\jdk1.8.0_321\bin;C:\Users\David\AppData\Local\GitHubDesktop\GitHubDesktop;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="PROCESSOR_ARCHITECTURE" value="AMD64"/>
     <property name="jansi.mode" value="strip"/>
@@ -110,7 +110,7 @@
     <property name="HUDSON_HOME" value="C:\ProgramData\Jenkins\.jenkins"/>
     <property name="PATH+MAVEN" value="C:\Program Files\Maven\apache-maven-3.8.5/bin"/>
     <property name="ProgramFiles(x86)" value="C:\Program Files (x86)"/>
-    <property name="BUILD_URL" value="http://localhost:8080/automacao/job/FINANCEIRO/61/"/>
+    <property name="BUILD_URL" value="http://localhost:8080/automacao/job/FINANCEIRO/65/"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="MAVEN_OPTS" value=""/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
@@ -123,7 +123,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="MAVEN_HOME" value="C:\Program Files\Maven\apache-maven-3.8.5"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="BUILD_NUMBER" value="61"/>
+    <property name="BUILD_NUMBER" value="65"/>
     <property name="BASE" value="C:\Program Files\Jenkins"/>
     <property name="POWERSHELL_DISTRIBUTION_CHANNEL" value="MSI:Windows 10 Pro"/>
     <property name="JENKINS_URL" value="http://localhost:8080/automacao/"/>
@@ -141,164 +141,233 @@
     <property name="PSModulePath" value="C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules"/>
     <property name="DriverData" value="C:\Windows\System32\Drivers\DriverData"/>
   </properties>
-  <testcase name="T020_ConsultaRegistroPosicaoFinanceira" classname="Financeiro.PosicaoFinanceira.PosicaoFinanceira" time="27.825">
-    <error message="element click intercepted: Element &lt;span class=&quot;x-btn-inner&quot;&gt;...&lt;/span&gt; is not clickable at point (807, 222). Other element would receive the click: &lt;div id=&quot;XIDEE9B4C4F&quot; class=&quot;x-btn x-borderbox x-btn-small x-btn-small-icon-left x-flex-item x-flex-item-hbox x-btn-center x-btn-noface x-border&quot; title=&quot;Imprimir Boleto&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=104.0.5112.102)&#10;Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;&#10;System info: host: &apos;DESKTOP-Q4CVPEU&apos;, ip: &apos;169.254.193.202&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_321&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [b93e3af163ed3a12a16fcf6783a5dc38, clickElement {id=2bfe8eb7-fb5f-42c2-bc21-88e429719ab8}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Windows\TEMP\scoped_dir6...}, goog:chromeOptions: {debuggerAddress: localhost:49627}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49627/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (b93e3af163ed3a12a16fcf6783a5dc38)] -&gt; xpath: //*[text()=&apos;Localizar&apos;]]&#10;Session ID: b93e3af163ed3a12a16fcf6783a5dc38" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <span class="x-btn-inner">...</span> is not clickable at point (807, 222). Other element would receive the click: <div id="XIDEE9B4C4F" class="x-btn x-borderbox x-btn-small x-btn-small-icon-left x-flex-item x-flex-item-hbox x-btn-center x-btn-noface x-border" title="Imprimir Boleto">...</div>
-  (Session info: chrome=104.0.5112.102)
+  <testcase name="T010_NovoContasReceber" classname="Financeiro.PosicaoFinanceira.PosicaoFinanceira" time="12.705">
+    <error message="element not interactable&#10;  (Session info: chrome=105.0.5195.125)&#10;Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;&#10;System info: host: &apos;DESKTOP-Q4CVPEU&apos;, ip: &apos;169.254.193.202&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_321&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [0f6a213bef59074d0bbda56b6183cc54, clickElement {id=75aa1a35-2b95-4f85-8b9f-c659507e4c9a}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Windows\TEMP\scoped_dir3...}, goog:chromeOptions: {debuggerAddress: localhost:58548}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58548/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (0f6a213bef59074d0bbda56b6183cc54)] -&gt; id: modFinanceiro]&#10;Session ID: 0f6a213bef59074d0bbda56b6183cc54" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=105.0.5195.125)
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
 System info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b93e3af163ed3a12a16fcf6783a5dc38, clickElement {id=2bfe8eb7-fb5f-42c2-bc21-88e429719ab8}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Windows\TEMP\scoped_dir6...}, goog:chromeOptions: {debuggerAddress: localhost:49627}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49627/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (b93e3af163ed3a12a16fcf6783a5dc38)] -> xpath: //*[text()='Localizar']]
-Session ID: b93e3af163ed3a12a16fcf6783a5dc38
-	at Financeiro.PosicaoFinanceira.PosicaoFinanceira.T020_ConsultaRegistroPosicaoFinanceira(PosicaoFinanceira.java:71)
-]]></error>
-    <system-err><![CDATA[Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 52747Only local connections are allowed.Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.ChromeDriver was started successfully.[1661538446.275][WARNING]: This version of ChromeDriver has not been tested with Chrome version 104.ago 26, 2022 3:27:26 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Command: [0f6a213bef59074d0bbda56b6183cc54, clickElement {id=75aa1a35-2b95-4f85-8b9f-c659507e4c9a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Windows\TEMP\scoped_dir3...}, goog:chromeOptions: {debuggerAddress: localhost:58548}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58548/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (0f6a213bef59074d0bbda56b6183cc54)] -> id: modFinanceiro]
+Session ID: 0f6a213bef59074d0bbda56b6183cc54
+	at Financeiro.PosicaoFinanceira.PosicaoFinanceira.InicializaPosicaoFinanceira(PosicaoFinanceira.java:35)
+</error>
+    <system-err><![CDATA[Starting ChromeDriver 105.0.5195.19 (b9c217c128c16f53d12f9a02933fcfdec1bf49af-refs/branch-heads/5195@{#176}) on port 64077Only local connections are allowed.Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.ChromeDriver was started successfully.set 14, 2022 9:43:29 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMAÇÕES: Detected dialect: W3C
-ago 26, 2022 3:27:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTÊNCIA: Unable to find an exact match for CDP version 104, so returning the closest version found: a no-op implementation
-ago 26, 2022 3:27:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-INFORMAÇÕES: Unable to find CDP implementation matching 104.
-ago 26, 2022 3:27:26 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+set 14, 2022 9:43:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTÊNCIA: Unable to find an exact match for CDP version 105, so returning the closest version found: a no-op implementation
+set 14, 2022 9:43:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFORMAÇÕES: Unable to find CDP implementation matching 105.
+set 14, 2022 9:43:29 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
 ADVERTÊNCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="T030_ConsultaFiltrosAvancados" classname="Financeiro.PosicaoFinanceira.PosicaoFinanceira" time="30.957">
-    <error message="element click intercepted: Element &lt;span class=&quot;x-btn-inner&quot;&gt;...&lt;/span&gt; is not clickable at point (807, 222). Other element would receive the click: &lt;div id=&quot;XIDEE9B4C4F&quot; class=&quot;x-btn x-borderbox x-btn-small x-btn-small-icon-left x-flex-item x-flex-item-hbox x-btn-center x-btn-noface x-border&quot; title=&quot;Imprimir Boleto&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=104.0.5112.102)&#10;Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;&#10;System info: host: &apos;DESKTOP-Q4CVPEU&apos;, ip: &apos;169.254.193.202&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_321&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [b4b7dbc69a5cc96ab6c9c5c6b6c00239, clickElement {id=7791114a-70af-474d-a1cb-3c2caada3b7d}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:49647}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49647/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (b4b7dbc69a5cc96ab6c9c5c6b6c00239)] -&gt; xpath: //*[text()=&apos;Localizar&apos;]]&#10;Session ID: b4b7dbc69a5cc96ab6c9c5c6b6c00239" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <span class="x-btn-inner">...</span> is not clickable at point (807, 222). Other element would receive the click: <div id="XIDEE9B4C4F" class="x-btn x-borderbox x-btn-small x-btn-small-icon-left x-flex-item x-flex-item-hbox x-btn-center x-btn-noface x-border" title="Imprimir Boleto">...</div>
-  (Session info: chrome=104.0.5112.102)
+  <testcase name="T020_ConsultaRegistroPosicaoFinanceira" classname="Financeiro.PosicaoFinanceira.PosicaoFinanceira" time="13.266">
+    <error message="element not interactable&#10;  (Session info: chrome=105.0.5195.125)&#10;Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;&#10;System info: host: &apos;DESKTOP-Q4CVPEU&apos;, ip: &apos;169.254.193.202&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_321&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [922f7b7e45302fafc56b6b6d6fc1bde4, clickElement {id=81cb68b2-f08a-4e37-bf86-6b7c22d837e5}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Windows\TEMP\scoped_dir4...}, goog:chromeOptions: {debuggerAddress: localhost:58568}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58568/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (922f7b7e45302fafc56b6b6d6fc1bde4)] -&gt; id: modFinanceiro]&#10;Session ID: 922f7b7e45302fafc56b6b6d6fc1bde4" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=105.0.5195.125)
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
 System info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b4b7dbc69a5cc96ab6c9c5c6b6c00239, clickElement {id=7791114a-70af-474d-a1cb-3c2caada3b7d}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:49647}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49647/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (b4b7dbc69a5cc96ab6c9c5c6b6c00239)] -> xpath: //*[text()='Localizar']]
-Session ID: b4b7dbc69a5cc96ab6c9c5c6b6c00239
-	at Financeiro.PosicaoFinanceira.PosicaoFinanceira.T030_ConsultaFiltrosAvancados(PosicaoFinanceira.java:92)
-]]></error>
-    <system-err><![CDATA[Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 58883Only local connections are allowed.Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.ChromeDriver was started successfully.[1661538447.958][WARNING]: This version of ChromeDriver has not been tested with Chrome version 104.ago 26, 2022 3:27:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Command: [922f7b7e45302fafc56b6b6d6fc1bde4, clickElement {id=81cb68b2-f08a-4e37-bf86-6b7c22d837e5}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Windows\TEMP\scoped_dir4...}, goog:chromeOptions: {debuggerAddress: localhost:58568}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58568/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (922f7b7e45302fafc56b6b6d6fc1bde4)] -> id: modFinanceiro]
+Session ID: 922f7b7e45302fafc56b6b6d6fc1bde4
+	at Financeiro.PosicaoFinanceira.PosicaoFinanceira.InicializaPosicaoFinanceira(PosicaoFinanceira.java:35)
+</error>
+    <system-err><![CDATA[Starting ChromeDriver 105.0.5195.19 (b9c217c128c16f53d12f9a02933fcfdec1bf49af-refs/branch-heads/5195@{#176}) on port 59728Only local connections are allowed.Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.ChromeDriver was started successfully.set 14, 2022 9:43:31 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMAÇÕES: Detected dialect: W3C
-ago 26, 2022 3:27:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTÊNCIA: Unable to find an exact match for CDP version 104, so returning the closest version found: a no-op implementation
-ago 26, 2022 3:27:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-INFORMAÇÕES: Unable to find CDP implementation matching 104.
-ago 26, 2022 3:27:28 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+set 14, 2022 9:43:31 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTÊNCIA: Unable to find an exact match for CDP version 105, so returning the closest version found: a no-op implementation
+set 14, 2022 9:43:31 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFORMAÇÕES: Unable to find CDP implementation matching 105.
+set 14, 2022 9:43:31 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
 ADVERTÊNCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="T040_AlteracaoSituracaoComplementoContasAReceber" classname="Financeiro.PosicaoFinanceira.PosicaoFinanceira" time="24.758">
-    <error message="element click intercepted: Element &lt;span class=&quot;x-btn-inner&quot;&gt;...&lt;/span&gt; is not clickable at point (807, 222). Other element would receive the click: &lt;div id=&quot;XIDEE9B4C4F&quot; class=&quot;x-btn x-borderbox x-btn-small x-btn-small-icon-left x-flex-item x-flex-item-hbox x-btn-center x-btn-noface x-border&quot; title=&quot;Imprimir Boleto&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=104.0.5112.102)&#10;Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;&#10;System info: host: &apos;DESKTOP-Q4CVPEU&apos;, ip: &apos;169.254.193.202&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_321&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [862b0c6c517d042ab99aaa9427c97d4b, clickElement {id=6ae2051f-b541-425b-9bba-d56d61fbd211}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Windows\TEMP\scoped_dir5...}, goog:chromeOptions: {debuggerAddress: localhost:49691}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49691/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (862b0c6c517d042ab99aaa9427c97d4b)] -&gt; xpath: //*[text()=&apos;Localizar&apos;]]&#10;Session ID: 862b0c6c517d042ab99aaa9427c97d4b" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <span class="x-btn-inner">...</span> is not clickable at point (807, 222). Other element would receive the click: <div id="XIDEE9B4C4F" class="x-btn x-borderbox x-btn-small x-btn-small-icon-left x-flex-item x-flex-item-hbox x-btn-center x-btn-noface x-border" title="Imprimir Boleto">...</div>
-  (Session info: chrome=104.0.5112.102)
+  <testcase name="T030_ConsultaFiltrosAvancados" classname="Financeiro.PosicaoFinanceira.PosicaoFinanceira" time="11.028">
+    <error message="element not interactable&#10;  (Session info: chrome=105.0.5195.125)&#10;Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;&#10;System info: host: &apos;DESKTOP-Q4CVPEU&apos;, ip: &apos;169.254.193.202&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_321&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [910e5ac9ad5a5cee18ed579bca147bee, clickElement {id=8a342911-cfea-46f9-ae0c-b00eb71224f7}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Windows\TEMP\scoped_dir3...}, goog:chromeOptions: {debuggerAddress: localhost:58609}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58609/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (910e5ac9ad5a5cee18ed579bca147bee)] -&gt; id: modFinanceiro]&#10;Session ID: 910e5ac9ad5a5cee18ed579bca147bee" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=105.0.5195.125)
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
 System info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [862b0c6c517d042ab99aaa9427c97d4b, clickElement {id=6ae2051f-b541-425b-9bba-d56d61fbd211}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Windows\TEMP\scoped_dir5...}, goog:chromeOptions: {debuggerAddress: localhost:49691}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49691/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (862b0c6c517d042ab99aaa9427c97d4b)] -> xpath: //*[text()='Localizar']]
-Session ID: 862b0c6c517d042ab99aaa9427c97d4b
-	at Financeiro.PosicaoFinanceira.PosicaoFinanceira.T040_AlteracaoSituracaoComplementoContasAReceber(PosicaoFinanceira.java:107)
-]]></error>
-    <system-err><![CDATA[Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 49745Only local connections are allowed.Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.ChromeDriver was started successfully.[1661538473.912][WARNING]: This version of ChromeDriver has not been tested with Chrome version 104.ago 26, 2022 3:27:54 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Command: [910e5ac9ad5a5cee18ed579bca147bee, clickElement {id=8a342911-cfea-46f9-ae0c-b00eb71224f7}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Windows\TEMP\scoped_dir3...}, goog:chromeOptions: {debuggerAddress: localhost:58609}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58609/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (910e5ac9ad5a5cee18ed579bca147bee)] -> id: modFinanceiro]
+Session ID: 910e5ac9ad5a5cee18ed579bca147bee
+	at Financeiro.PosicaoFinanceira.PosicaoFinanceira.InicializaPosicaoFinanceira(PosicaoFinanceira.java:35)
+</error>
+    <system-err><![CDATA[Starting ChromeDriver 105.0.5195.19 (b9c217c128c16f53d12f9a02933fcfdec1bf49af-refs/branch-heads/5195@{#176}) on port 57768Only local connections are allowed.Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.ChromeDriver was started successfully.set 14, 2022 9:43:42 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMAÇÕES: Detected dialect: W3C
-ago 26, 2022 3:27:54 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTÊNCIA: Unable to find an exact match for CDP version 104, so returning the closest version found: a no-op implementation
-ago 26, 2022 3:27:54 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-INFORMAÇÕES: Unable to find CDP implementation matching 104.
-ago 26, 2022 3:27:54 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+set 14, 2022 9:43:42 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTÊNCIA: Unable to find an exact match for CDP version 105, so returning the closest version found: a no-op implementation
+set 14, 2022 9:43:42 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFORMAÇÕES: Unable to find CDP implementation matching 105.
+set 14, 2022 9:43:42 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
 ADVERTÊNCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="T050_Recebimentos" classname="Financeiro.PosicaoFinanceira.PosicaoFinanceira" time="24.715">
-    <error message="element click intercepted: Element &lt;span class=&quot;x-btn-inner&quot;&gt;...&lt;/span&gt; is not clickable at point (807, 222). Other element would receive the click: &lt;div id=&quot;XIDEE9B4C4F&quot; class=&quot;x-btn x-borderbox x-btn-small x-btn-small-icon-left x-flex-item x-flex-item-hbox x-btn-center x-btn-noface x-border&quot; title=&quot;Imprimir Boleto&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=104.0.5112.102)&#10;Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;&#10;System info: host: &apos;DESKTOP-Q4CVPEU&apos;, ip: &apos;169.254.193.202&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_321&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [4aab1cc041e2cbe74b3709ef70a56526, clickElement {id=a95629d8-2715-4094-89aa-6acb502fb0ae}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Windows\TEMP\scoped_dir4...}, goog:chromeOptions: {debuggerAddress: localhost:49716}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49716/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (4aab1cc041e2cbe74b3709ef70a56526)] -&gt; xpath: //*[text()=&apos;Localizar&apos;]]&#10;Session ID: 4aab1cc041e2cbe74b3709ef70a56526" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <span class="x-btn-inner">...</span> is not clickable at point (807, 222). Other element would receive the click: <div id="XIDEE9B4C4F" class="x-btn x-borderbox x-btn-small x-btn-small-icon-left x-flex-item x-flex-item-hbox x-btn-center x-btn-noface x-border" title="Imprimir Boleto">...</div>
-  (Session info: chrome=104.0.5112.102)
+  <testcase name="T040_AlteracaoSituracaoComplementoContasAReceber" classname="Financeiro.PosicaoFinanceira.PosicaoFinanceira" time="13.339">
+    <error message="element not interactable&#10;  (Session info: chrome=105.0.5195.125)&#10;Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;&#10;System info: host: &apos;DESKTOP-Q4CVPEU&apos;, ip: &apos;169.254.193.202&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_321&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [96d0be2ef5fe2c84edd1cb3c1fa0ad05, clickElement {id=898d2330-8553-4ce3-9e75-672c5167300e}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Windows\TEMP\scoped_dir3...}, goog:chromeOptions: {debuggerAddress: localhost:58629}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58629/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (96d0be2ef5fe2c84edd1cb3c1fa0ad05)] -&gt; id: modFinanceiro]&#10;Session ID: 96d0be2ef5fe2c84edd1cb3c1fa0ad05" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=105.0.5195.125)
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
 System info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4aab1cc041e2cbe74b3709ef70a56526, clickElement {id=a95629d8-2715-4094-89aa-6acb502fb0ae}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Windows\TEMP\scoped_dir4...}, goog:chromeOptions: {debuggerAddress: localhost:49716}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49716/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (4aab1cc041e2cbe74b3709ef70a56526)] -> xpath: //*[text()='Localizar']]
-Session ID: 4aab1cc041e2cbe74b3709ef70a56526
-	at Financeiro.PosicaoFinanceira.PosicaoFinanceira.T050_Recebimentos(PosicaoFinanceira.java:126)
-]]></error>
-    <system-err><![CDATA[Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 54370Only local connections are allowed.Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.ChromeDriver was started successfully.[1661538476.905][WARNING]: This version of ChromeDriver has not been tested with Chrome version 104.ago 26, 2022 3:27:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Command: [96d0be2ef5fe2c84edd1cb3c1fa0ad05, clickElement {id=898d2330-8553-4ce3-9e75-672c5167300e}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Windows\TEMP\scoped_dir3...}, goog:chromeOptions: {debuggerAddress: localhost:58629}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58629/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (96d0be2ef5fe2c84edd1cb3c1fa0ad05)] -> id: modFinanceiro]
+Session ID: 96d0be2ef5fe2c84edd1cb3c1fa0ad05
+	at Financeiro.PosicaoFinanceira.PosicaoFinanceira.InicializaPosicaoFinanceira(PosicaoFinanceira.java:35)
+</error>
+    <system-err><![CDATA[Starting ChromeDriver 105.0.5195.19 (b9c217c128c16f53d12f9a02933fcfdec1bf49af-refs/branch-heads/5195@{#176}) on port 53560Only local connections are allowed.Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.ChromeDriver was started successfully.set 14, 2022 9:43:44 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMAÇÕES: Detected dialect: W3C
-ago 26, 2022 3:27:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTÊNCIA: Unable to find an exact match for CDP version 104, so returning the closest version found: a no-op implementation
-ago 26, 2022 3:27:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-INFORMAÇÕES: Unable to find CDP implementation matching 104.
-ago 26, 2022 3:27:57 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+set 14, 2022 9:43:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTÊNCIA: Unable to find an exact match for CDP version 105, so returning the closest version found: a no-op implementation
+set 14, 2022 9:43:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFORMAÇÕES: Unable to find CDP implementation matching 105.
+set 14, 2022 9:43:44 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
 ADVERTÊNCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="T080_ImprimirBoleto" classname="Financeiro.PosicaoFinanceira.PosicaoFinanceira" time="24.934">
-    <error message="element click intercepted: Element &lt;span class=&quot;x-btn-inner&quot;&gt;...&lt;/span&gt; is not clickable at point (807, 222). Other element would receive the click: &lt;div id=&quot;XIDEE9B4C4F&quot; class=&quot;x-btn x-borderbox x-btn-small x-btn-small-icon-left x-flex-item x-flex-item-hbox x-btn-center x-btn-noface x-border&quot; title=&quot;Imprimir Boleto&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=104.0.5112.102)&#10;Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;&#10;System info: host: &apos;DESKTOP-Q4CVPEU&apos;, ip: &apos;169.254.193.202&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_321&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [5838b605de7f3446b425f337c7e4be57, clickElement {id=196dfe95-0cfc-4243-b2d5-1e0986c7ffe0}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:49748}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49748/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (5838b605de7f3446b425f337c7e4be57)] -&gt; xpath: //*[text()=&apos;Localizar&apos;]]&#10;Session ID: 5838b605de7f3446b425f337c7e4be57" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <span class="x-btn-inner">...</span> is not clickable at point (807, 222). Other element would receive the click: <div id="XIDEE9B4C4F" class="x-btn x-borderbox x-btn-small x-btn-small-icon-left x-flex-item x-flex-item-hbox x-btn-center x-btn-noface x-border" title="Imprimir Boleto">...</div>
-  (Session info: chrome=104.0.5112.102)
+  <testcase name="T050_Recebimentos" classname="Financeiro.PosicaoFinanceira.PosicaoFinanceira" time="13.626">
+    <error message="element not interactable&#10;  (Session info: chrome=105.0.5195.125)&#10;Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;&#10;System info: host: &apos;DESKTOP-Q4CVPEU&apos;, ip: &apos;169.254.193.202&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_321&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [368c57f00edc1aa7d0d45691f80a5151, clickElement {id=389ddcac-1cf0-4407-819f-b199b380af0a}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Windows\TEMP\scoped_dir4...}, goog:chromeOptions: {debuggerAddress: localhost:58667}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58667/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (368c57f00edc1aa7d0d45691f80a5151)] -&gt; id: modFinanceiro]&#10;Session ID: 368c57f00edc1aa7d0d45691f80a5151" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=105.0.5195.125)
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
 System info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5838b605de7f3446b425f337c7e4be57, clickElement {id=196dfe95-0cfc-4243-b2d5-1e0986c7ffe0}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:49748}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49748/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (5838b605de7f3446b425f337c7e4be57)] -> xpath: //*[text()='Localizar']]
-Session ID: 5838b605de7f3446b425f337c7e4be57
-	at Financeiro.PosicaoFinanceira.PosicaoFinanceira.T080_ImprimirBoleto(PosicaoFinanceira.java:183)
-]]></error>
-    <system-err><![CDATA[Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 64668Only local connections are allowed.Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.ChromeDriver was started successfully.[1661538498.593][WARNING]: This version of ChromeDriver has not been tested with Chrome version 104.ago 26, 2022 3:28:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Command: [368c57f00edc1aa7d0d45691f80a5151, clickElement {id=389ddcac-1cf0-4407-819f-b199b380af0a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Windows\TEMP\scoped_dir4...}, goog:chromeOptions: {debuggerAddress: localhost:58667}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58667/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (368c57f00edc1aa7d0d45691f80a5151)] -> id: modFinanceiro]
+Session ID: 368c57f00edc1aa7d0d45691f80a5151
+	at Financeiro.PosicaoFinanceira.PosicaoFinanceira.InicializaPosicaoFinanceira(PosicaoFinanceira.java:35)
+</error>
+    <system-err><![CDATA[Starting ChromeDriver 105.0.5195.19 (b9c217c128c16f53d12f9a02933fcfdec1bf49af-refs/branch-heads/5195@{#176}) on port 62117Only local connections are allowed.Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.ChromeDriver was started successfully.set 14, 2022 9:43:53 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMAÇÕES: Detected dialect: W3C
-ago 26, 2022 3:28:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTÊNCIA: Unable to find an exact match for CDP version 104, so returning the closest version found: a no-op implementation
-ago 26, 2022 3:28:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-INFORMAÇÕES: Unable to find CDP implementation matching 104.
-ago 26, 2022 3:28:18 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+set 14, 2022 9:43:54 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTÊNCIA: Unable to find an exact match for CDP version 105, so returning the closest version found: a no-op implementation
+set 14, 2022 9:43:54 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFORMAÇÕES: Unable to find CDP implementation matching 105.
+set 14, 2022 9:43:54 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
 ADVERTÊNCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="T090_BoletoPorEmail" classname="Financeiro.PosicaoFinanceira.PosicaoFinanceira" time="26.559">
-    <error message="element click intercepted: Element &lt;span class=&quot;x-btn-inner&quot;&gt;...&lt;/span&gt; is not clickable at point (807, 222). Other element would receive the click: &lt;div id=&quot;XIDEE9B4C4F&quot; class=&quot;x-btn x-borderbox x-btn-small x-btn-small-icon-left x-flex-item x-flex-item-hbox x-btn-center x-btn-noface x-border&quot; title=&quot;Imprimir Boleto&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=104.0.5112.102)&#10;Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;&#10;System info: host: &apos;DESKTOP-Q4CVPEU&apos;, ip: &apos;169.254.193.202&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_321&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [15424a786852f7efff95827f86557de7, clickElement {id=3eb1acc5-7e17-441a-81d5-8bdf720d6195}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:49771}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49771/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (15424a786852f7efff95827f86557de7)] -&gt; xpath: //*[text()=&apos;Localizar&apos;]]&#10;Session ID: 15424a786852f7efff95827f86557de7" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <span class="x-btn-inner">...</span> is not clickable at point (807, 222). Other element would receive the click: <div id="XIDEE9B4C4F" class="x-btn x-borderbox x-btn-small x-btn-small-icon-left x-flex-item x-flex-item-hbox x-btn-center x-btn-noface x-border" title="Imprimir Boleto">...</div>
-  (Session info: chrome=104.0.5112.102)
+  <testcase name="T060_Renegociacao" classname="Financeiro.PosicaoFinanceira.PosicaoFinanceira" time="11.031">
+    <error message="element not interactable&#10;  (Session info: chrome=105.0.5195.125)&#10;Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;&#10;System info: host: &apos;DESKTOP-Q4CVPEU&apos;, ip: &apos;169.254.193.202&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_321&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [12722a80f3c7a2a9b63590d5b1188365, clickElement {id=6e8226f9-de48-49ff-9450-4a3f778b6c35}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Windows\TEMP\scoped_dir5...}, goog:chromeOptions: {debuggerAddress: localhost:58689}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58689/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (12722a80f3c7a2a9b63590d5b1188365)] -&gt; id: modFinanceiro]&#10;Session ID: 12722a80f3c7a2a9b63590d5b1188365" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=105.0.5195.125)
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
 System info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [15424a786852f7efff95827f86557de7, clickElement {id=3eb1acc5-7e17-441a-81d5-8bdf720d6195}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:49771}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49771/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (15424a786852f7efff95827f86557de7)] -> xpath: //*[text()='Localizar']]
-Session ID: 15424a786852f7efff95827f86557de7
-	at Financeiro.PosicaoFinanceira.PosicaoFinanceira.T090_BoletoPorEmail(PosicaoFinanceira.java:199)
-]]></error>
-    <system-err><![CDATA[Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 49254Only local connections are allowed.Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.ChromeDriver was started successfully.[1661538501.737][WARNING]: This version of ChromeDriver has not been tested with Chrome version 104.ago 26, 2022 3:28:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Command: [12722a80f3c7a2a9b63590d5b1188365, clickElement {id=6e8226f9-de48-49ff-9450-4a3f778b6c35}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Windows\TEMP\scoped_dir5...}, goog:chromeOptions: {debuggerAddress: localhost:58689}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58689/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (12722a80f3c7a2a9b63590d5b1188365)] -> id: modFinanceiro]
+Session ID: 12722a80f3c7a2a9b63590d5b1188365
+	at Financeiro.PosicaoFinanceira.PosicaoFinanceira.InicializaPosicaoFinanceira(PosicaoFinanceira.java:35)
+</error>
+    <system-err><![CDATA[Starting ChromeDriver 105.0.5195.19 (b9c217c128c16f53d12f9a02933fcfdec1bf49af-refs/branch-heads/5195@{#176}) on port 50444Only local connections are allowed.Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.ChromeDriver was started successfully.set 14, 2022 9:43:56 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMAÇÕES: Detected dialect: W3C
-ago 26, 2022 3:28:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTÊNCIA: Unable to find an exact match for CDP version 104, so returning the closest version found: a no-op implementation
-ago 26, 2022 3:28:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-INFORMAÇÕES: Unable to find CDP implementation matching 104.
-ago 26, 2022 3:28:22 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+set 14, 2022 9:43:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTÊNCIA: Unable to find an exact match for CDP version 105, so returning the closest version found: a no-op implementation
+set 14, 2022 9:43:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFORMAÇÕES: Unable to find CDP implementation matching 105.
+set 14, 2022 9:43:56 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
 ADVERTÊNCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="T100_EmissaoRelatorios" classname="Financeiro.PosicaoFinanceira.PosicaoFinanceira" time="23.144">
-    <error message="element click intercepted: Element &lt;span class=&quot;x-btn-inner&quot;&gt;...&lt;/span&gt; is not clickable at point (807, 222). Other element would receive the click: &lt;div id=&quot;XIDEE9B4C4F&quot; class=&quot;x-btn x-borderbox x-btn-small x-btn-small-icon-left x-flex-item x-flex-item-hbox x-btn-center x-btn-noface x-border&quot; title=&quot;Imprimir Boleto&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=104.0.5112.102)&#10;Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;&#10;System info: host: &apos;DESKTOP-Q4CVPEU&apos;, ip: &apos;169.254.193.202&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_321&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [3ddbaa946c4e34b43cb03ed60436626c, clickElement {id=4b233607-e0a5-44c3-8710-530c0651b1e2}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Windows\TEMP\scoped_dir9...}, goog:chromeOptions: {debuggerAddress: localhost:49806}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49806/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (3ddbaa946c4e34b43cb03ed60436626c)] -&gt; xpath: //*[text()=&apos;Localizar&apos;]]&#10;Session ID: 3ddbaa946c4e34b43cb03ed60436626c" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <span class="x-btn-inner">...</span> is not clickable at point (807, 222). Other element would receive the click: <div id="XIDEE9B4C4F" class="x-btn x-borderbox x-btn-small x-btn-small-icon-left x-flex-item x-flex-item-hbox x-btn-center x-btn-noface x-border" title="Imprimir Boleto">...</div>
-  (Session info: chrome=104.0.5112.102)
+  <testcase name="T070_Atualizacao" classname="Financeiro.PosicaoFinanceira.PosicaoFinanceira" time="10.076">
+    <error message="element not interactable&#10;  (Session info: chrome=105.0.5195.125)&#10;Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;&#10;System info: host: &apos;DESKTOP-Q4CVPEU&apos;, ip: &apos;169.254.193.202&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_321&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [22ad5599fa25d49d108ace67482763d1, clickElement {id=57a9f633-938c-4643-bf58-a6b33bfdbbbf}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Windows\TEMP\scoped_dir8...}, goog:chromeOptions: {debuggerAddress: localhost:58730}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58730/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (22ad5599fa25d49d108ace67482763d1)] -&gt; id: modFinanceiro]&#10;Session ID: 22ad5599fa25d49d108ace67482763d1" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=105.0.5195.125)
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
 System info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3ddbaa946c4e34b43cb03ed60436626c, clickElement {id=4b233607-e0a5-44c3-8710-530c0651b1e2}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Windows\TEMP\scoped_dir9...}, goog:chromeOptions: {debuggerAddress: localhost:49806}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49806/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (3ddbaa946c4e34b43cb03ed60436626c)] -> xpath: //*[text()='Localizar']]
-Session ID: 3ddbaa946c4e34b43cb03ed60436626c
-	at Financeiro.PosicaoFinanceira.PosicaoFinanceira.T100_EmissaoRelatorios(PosicaoFinanceira.java:216)
-]]></error>
-    <system-err><![CDATA[Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 58464Only local connections are allowed.Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.ChromeDriver was started successfully.[1661538523.488][WARNING]: This version of ChromeDriver has not been tested with Chrome version 104.ago 26, 2022 3:28:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Command: [22ad5599fa25d49d108ace67482763d1, clickElement {id=57a9f633-938c-4643-bf58-a6b33bfdbbbf}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Windows\TEMP\scoped_dir8...}, goog:chromeOptions: {debuggerAddress: localhost:58730}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58730/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (22ad5599fa25d49d108ace67482763d1)] -> id: modFinanceiro]
+Session ID: 22ad5599fa25d49d108ace67482763d1
+	at Financeiro.PosicaoFinanceira.PosicaoFinanceira.InicializaPosicaoFinanceira(PosicaoFinanceira.java:35)
+</error>
+    <system-err><![CDATA[Starting ChromeDriver 105.0.5195.19 (b9c217c128c16f53d12f9a02933fcfdec1bf49af-refs/branch-heads/5195@{#176}) on port 56948Only local connections are allowed.Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.ChromeDriver was started successfully.set 14, 2022 9:44:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMAÇÕES: Detected dialect: W3C
-ago 26, 2022 3:28:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTÊNCIA: Unable to find an exact match for CDP version 104, so returning the closest version found: a no-op implementation
-ago 26, 2022 3:28:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-INFORMAÇÕES: Unable to find CDP implementation matching 104.
-ago 26, 2022 3:28:43 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+set 14, 2022 9:44:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTÊNCIA: Unable to find an exact match for CDP version 105, so returning the closest version found: a no-op implementation
+set 14, 2022 9:44:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFORMAÇÕES: Unable to find CDP implementation matching 105.
+set 14, 2022 9:44:07 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+ADVERTÊNCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="T080_ImprimirBoleto" classname="Financeiro.PosicaoFinanceira.PosicaoFinanceira" time="14.449">
+    <error message="element not interactable&#10;  (Session info: chrome=105.0.5195.125)&#10;Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;&#10;System info: host: &apos;DESKTOP-Q4CVPEU&apos;, ip: &apos;169.254.193.202&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_321&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [cd4b3308ca57d8bfe28f75edf2c24c62, clickElement {id=e7151656-97bd-4469-8cfd-6a0775450a27}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Windows\TEMP\scoped_dir4...}, goog:chromeOptions: {debuggerAddress: localhost:58750}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58750/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (cd4b3308ca57d8bfe28f75edf2c24c62)] -&gt; id: modFinanceiro]&#10;Session ID: cd4b3308ca57d8bfe28f75edf2c24c62" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=105.0.5195.125)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cd4b3308ca57d8bfe28f75edf2c24c62, clickElement {id=e7151656-97bd-4469-8cfd-6a0775450a27}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Windows\TEMP\scoped_dir4...}, goog:chromeOptions: {debuggerAddress: localhost:58750}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58750/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (cd4b3308ca57d8bfe28f75edf2c24c62)] -> id: modFinanceiro]
+Session ID: cd4b3308ca57d8bfe28f75edf2c24c62
+	at Financeiro.PosicaoFinanceira.PosicaoFinanceira.InicializaPosicaoFinanceira(PosicaoFinanceira.java:35)
+</error>
+    <system-err><![CDATA[Starting ChromeDriver 105.0.5195.19 (b9c217c128c16f53d12f9a02933fcfdec1bf49af-refs/branch-heads/5195@{#176}) on port 55680Only local connections are allowed.Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.ChromeDriver was started successfully.set 14, 2022 9:44:08 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMAÇÕES: Detected dialect: W3C
+set 14, 2022 9:44:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTÊNCIA: Unable to find an exact match for CDP version 105, so returning the closest version found: a no-op implementation
+set 14, 2022 9:44:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFORMAÇÕES: Unable to find CDP implementation matching 105.
+set 14, 2022 9:44:08 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+ADVERTÊNCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="T090_BoletoPorEmail" classname="Financeiro.PosicaoFinanceira.PosicaoFinanceira" time="11.447">
+    <error message="element not interactable&#10;  (Session info: chrome=105.0.5195.125)&#10;Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;&#10;System info: host: &apos;DESKTOP-Q4CVPEU&apos;, ip: &apos;169.254.193.202&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_321&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [9950be80d353b7cd56aba67b42bfbd9e, clickElement {id=abedd295-659b-4d8d-b670-c4f89c1efebe}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Windows\TEMP\scoped_dir8...}, goog:chromeOptions: {debuggerAddress: localhost:58783}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58783/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (9950be80d353b7cd56aba67b42bfbd9e)] -&gt; id: modFinanceiro]&#10;Session ID: 9950be80d353b7cd56aba67b42bfbd9e" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=105.0.5195.125)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9950be80d353b7cd56aba67b42bfbd9e, clickElement {id=abedd295-659b-4d8d-b670-c4f89c1efebe}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Windows\TEMP\scoped_dir8...}, goog:chromeOptions: {debuggerAddress: localhost:58783}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58783/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (9950be80d353b7cd56aba67b42bfbd9e)] -> id: modFinanceiro]
+Session ID: 9950be80d353b7cd56aba67b42bfbd9e
+	at Financeiro.PosicaoFinanceira.PosicaoFinanceira.InicializaPosicaoFinanceira(PosicaoFinanceira.java:35)
+</error>
+    <system-err><![CDATA[Starting ChromeDriver 105.0.5195.19 (b9c217c128c16f53d12f9a02933fcfdec1bf49af-refs/branch-heads/5195@{#176}) on port 58685Only local connections are allowed.Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.ChromeDriver was started successfully.set 14, 2022 9:44:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMAÇÕES: Detected dialect: W3C
+set 14, 2022 9:44:17 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTÊNCIA: Unable to find an exact match for CDP version 105, so returning the closest version found: a no-op implementation
+set 14, 2022 9:44:17 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFORMAÇÕES: Unable to find CDP implementation matching 105.
+set 14, 2022 9:44:17 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+ADVERTÊNCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="T100_EmissaoRelatorios" classname="Financeiro.PosicaoFinanceira.PosicaoFinanceira" time="9.787">
+    <error message="element not interactable&#10;  (Session info: chrome=105.0.5195.125)&#10;Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;&#10;System info: host: &apos;DESKTOP-Q4CVPEU&apos;, ip: &apos;169.254.193.202&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_321&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [b80cf2c2d756d247588bf201658dc961, clickElement {id=2018b081-44e1-43e8-ac4c-8a9c0bbd9550}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Windows\TEMP\scoped_dir2...}, goog:chromeOptions: {debuggerAddress: localhost:58813}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58813/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (b80cf2c2d756d247588bf201658dc961)] -&gt; id: modFinanceiro]&#10;Session ID: b80cf2c2d756d247588bf201658dc961" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=105.0.5195.125)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b80cf2c2d756d247588bf201658dc961, clickElement {id=2018b081-44e1-43e8-ac4c-8a9c0bbd9550}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Windows\TEMP\scoped_dir2...}, goog:chromeOptions: {debuggerAddress: localhost:58813}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58813/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b80cf2c2d756d247588bf201658dc961)] -> id: modFinanceiro]
+Session ID: b80cf2c2d756d247588bf201658dc961
+	at Financeiro.PosicaoFinanceira.PosicaoFinanceira.InicializaPosicaoFinanceira(PosicaoFinanceira.java:35)
+</error>
+    <system-err><![CDATA[Starting ChromeDriver 105.0.5195.19 (b9c217c128c16f53d12f9a02933fcfdec1bf49af-refs/branch-heads/5195@{#176}) on port 55011Only local connections are allowed.Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.ChromeDriver was started successfully.set 14, 2022 9:44:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMAÇÕES: Detected dialect: W3C
+set 14, 2022 9:44:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTÊNCIA: Unable to find an exact match for CDP version 105, so returning the closest version found: a no-op implementation
+set 14, 2022 9:44:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFORMAÇÕES: Unable to find CDP implementation matching 105.
+set 14, 2022 9:44:21 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
 ADVERTÊNCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>

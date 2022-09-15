@@ -1,95 +1,134 @@
 -------------------------------------------------------------------------------
 Test set: Financeiro.PosicaoFinanceira.PosicaoFinanceira
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 100.681 s <<< FAILURE! - in Financeiro.PosicaoFinanceira.PosicaoFinanceira
-T020_ConsultaRegistroPosicaoFinanceira(Financeiro.PosicaoFinanceira.PosicaoFinanceira)  Time elapsed: 27.825 s  <<< ERROR!
-org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <span class="x-btn-inner">...</span> is not clickable at point (807, 222). Other element would receive the click: <div id="XIDEE9B4C4F" class="x-btn x-borderbox x-btn-small x-btn-small-icon-left x-flex-item x-flex-item-hbox x-btn-center x-btn-noface x-border" title="Imprimir Boleto">...</div>
-  (Session info: chrome=104.0.5112.102)
+Tests run: 10, Failures: 0, Errors: 10, Skipped: 0, Time elapsed: 61.912 s <<< FAILURE! - in Financeiro.PosicaoFinanceira.PosicaoFinanceira
+T010_NovoContasReceber(Financeiro.PosicaoFinanceira.PosicaoFinanceira)  Time elapsed: 12.705 s  <<< ERROR!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=105.0.5195.125)
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
 System info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b93e3af163ed3a12a16fcf6783a5dc38, clickElement {id=2bfe8eb7-fb5f-42c2-bc21-88e429719ab8}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Windows\TEMP\scoped_dir6...}, goog:chromeOptions: {debuggerAddress: localhost:49627}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49627/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (b93e3af163ed3a12a16fcf6783a5dc38)] -> xpath: //*[text()='Localizar']]
-Session ID: b93e3af163ed3a12a16fcf6783a5dc38
-	at Financeiro.PosicaoFinanceira.PosicaoFinanceira.T020_ConsultaRegistroPosicaoFinanceira(PosicaoFinanceira.java:71)
+Command: [0f6a213bef59074d0bbda56b6183cc54, clickElement {id=75aa1a35-2b95-4f85-8b9f-c659507e4c9a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Windows\TEMP\scoped_dir3...}, goog:chromeOptions: {debuggerAddress: localhost:58548}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58548/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (0f6a213bef59074d0bbda56b6183cc54)] -> id: modFinanceiro]
+Session ID: 0f6a213bef59074d0bbda56b6183cc54
+	at Financeiro.PosicaoFinanceira.PosicaoFinanceira.InicializaPosicaoFinanceira(PosicaoFinanceira.java:35)
 
-T030_ConsultaFiltrosAvancados(Financeiro.PosicaoFinanceira.PosicaoFinanceira)  Time elapsed: 30.957 s  <<< ERROR!
-org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <span class="x-btn-inner">...</span> is not clickable at point (807, 222). Other element would receive the click: <div id="XIDEE9B4C4F" class="x-btn x-borderbox x-btn-small x-btn-small-icon-left x-flex-item x-flex-item-hbox x-btn-center x-btn-noface x-border" title="Imprimir Boleto">...</div>
-  (Session info: chrome=104.0.5112.102)
+T020_ConsultaRegistroPosicaoFinanceira(Financeiro.PosicaoFinanceira.PosicaoFinanceira)  Time elapsed: 13.266 s  <<< ERROR!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=105.0.5195.125)
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
 System info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b4b7dbc69a5cc96ab6c9c5c6b6c00239, clickElement {id=7791114a-70af-474d-a1cb-3c2caada3b7d}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:49647}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49647/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (b4b7dbc69a5cc96ab6c9c5c6b6c00239)] -> xpath: //*[text()='Localizar']]
-Session ID: b4b7dbc69a5cc96ab6c9c5c6b6c00239
-	at Financeiro.PosicaoFinanceira.PosicaoFinanceira.T030_ConsultaFiltrosAvancados(PosicaoFinanceira.java:92)
+Command: [922f7b7e45302fafc56b6b6d6fc1bde4, clickElement {id=81cb68b2-f08a-4e37-bf86-6b7c22d837e5}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Windows\TEMP\scoped_dir4...}, goog:chromeOptions: {debuggerAddress: localhost:58568}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58568/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (922f7b7e45302fafc56b6b6d6fc1bde4)] -> id: modFinanceiro]
+Session ID: 922f7b7e45302fafc56b6b6d6fc1bde4
+	at Financeiro.PosicaoFinanceira.PosicaoFinanceira.InicializaPosicaoFinanceira(PosicaoFinanceira.java:35)
 
-T040_AlteracaoSituracaoComplementoContasAReceber(Financeiro.PosicaoFinanceira.PosicaoFinanceira)  Time elapsed: 24.758 s  <<< ERROR!
-org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <span class="x-btn-inner">...</span> is not clickable at point (807, 222). Other element would receive the click: <div id="XIDEE9B4C4F" class="x-btn x-borderbox x-btn-small x-btn-small-icon-left x-flex-item x-flex-item-hbox x-btn-center x-btn-noface x-border" title="Imprimir Boleto">...</div>
-  (Session info: chrome=104.0.5112.102)
+T030_ConsultaFiltrosAvancados(Financeiro.PosicaoFinanceira.PosicaoFinanceira)  Time elapsed: 11.028 s  <<< ERROR!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=105.0.5195.125)
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
 System info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [862b0c6c517d042ab99aaa9427c97d4b, clickElement {id=6ae2051f-b541-425b-9bba-d56d61fbd211}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Windows\TEMP\scoped_dir5...}, goog:chromeOptions: {debuggerAddress: localhost:49691}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49691/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (862b0c6c517d042ab99aaa9427c97d4b)] -> xpath: //*[text()='Localizar']]
-Session ID: 862b0c6c517d042ab99aaa9427c97d4b
-	at Financeiro.PosicaoFinanceira.PosicaoFinanceira.T040_AlteracaoSituracaoComplementoContasAReceber(PosicaoFinanceira.java:107)
+Command: [910e5ac9ad5a5cee18ed579bca147bee, clickElement {id=8a342911-cfea-46f9-ae0c-b00eb71224f7}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Windows\TEMP\scoped_dir3...}, goog:chromeOptions: {debuggerAddress: localhost:58609}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58609/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (910e5ac9ad5a5cee18ed579bca147bee)] -> id: modFinanceiro]
+Session ID: 910e5ac9ad5a5cee18ed579bca147bee
+	at Financeiro.PosicaoFinanceira.PosicaoFinanceira.InicializaPosicaoFinanceira(PosicaoFinanceira.java:35)
 
-T050_Recebimentos(Financeiro.PosicaoFinanceira.PosicaoFinanceira)  Time elapsed: 24.715 s  <<< ERROR!
-org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <span class="x-btn-inner">...</span> is not clickable at point (807, 222). Other element would receive the click: <div id="XIDEE9B4C4F" class="x-btn x-borderbox x-btn-small x-btn-small-icon-left x-flex-item x-flex-item-hbox x-btn-center x-btn-noface x-border" title="Imprimir Boleto">...</div>
-  (Session info: chrome=104.0.5112.102)
+T040_AlteracaoSituracaoComplementoContasAReceber(Financeiro.PosicaoFinanceira.PosicaoFinanceira)  Time elapsed: 13.339 s  <<< ERROR!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=105.0.5195.125)
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
 System info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4aab1cc041e2cbe74b3709ef70a56526, clickElement {id=a95629d8-2715-4094-89aa-6acb502fb0ae}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Windows\TEMP\scoped_dir4...}, goog:chromeOptions: {debuggerAddress: localhost:49716}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49716/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (4aab1cc041e2cbe74b3709ef70a56526)] -> xpath: //*[text()='Localizar']]
-Session ID: 4aab1cc041e2cbe74b3709ef70a56526
-	at Financeiro.PosicaoFinanceira.PosicaoFinanceira.T050_Recebimentos(PosicaoFinanceira.java:126)
+Command: [96d0be2ef5fe2c84edd1cb3c1fa0ad05, clickElement {id=898d2330-8553-4ce3-9e75-672c5167300e}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Windows\TEMP\scoped_dir3...}, goog:chromeOptions: {debuggerAddress: localhost:58629}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58629/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (96d0be2ef5fe2c84edd1cb3c1fa0ad05)] -> id: modFinanceiro]
+Session ID: 96d0be2ef5fe2c84edd1cb3c1fa0ad05
+	at Financeiro.PosicaoFinanceira.PosicaoFinanceira.InicializaPosicaoFinanceira(PosicaoFinanceira.java:35)
 
-T080_ImprimirBoleto(Financeiro.PosicaoFinanceira.PosicaoFinanceira)  Time elapsed: 24.934 s  <<< ERROR!
-org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <span class="x-btn-inner">...</span> is not clickable at point (807, 222). Other element would receive the click: <div id="XIDEE9B4C4F" class="x-btn x-borderbox x-btn-small x-btn-small-icon-left x-flex-item x-flex-item-hbox x-btn-center x-btn-noface x-border" title="Imprimir Boleto">...</div>
-  (Session info: chrome=104.0.5112.102)
+T050_Recebimentos(Financeiro.PosicaoFinanceira.PosicaoFinanceira)  Time elapsed: 13.626 s  <<< ERROR!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=105.0.5195.125)
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
 System info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5838b605de7f3446b425f337c7e4be57, clickElement {id=196dfe95-0cfc-4243-b2d5-1e0986c7ffe0}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:49748}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49748/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (5838b605de7f3446b425f337c7e4be57)] -> xpath: //*[text()='Localizar']]
-Session ID: 5838b605de7f3446b425f337c7e4be57
-	at Financeiro.PosicaoFinanceira.PosicaoFinanceira.T080_ImprimirBoleto(PosicaoFinanceira.java:183)
+Command: [368c57f00edc1aa7d0d45691f80a5151, clickElement {id=389ddcac-1cf0-4407-819f-b199b380af0a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Windows\TEMP\scoped_dir4...}, goog:chromeOptions: {debuggerAddress: localhost:58667}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58667/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (368c57f00edc1aa7d0d45691f80a5151)] -> id: modFinanceiro]
+Session ID: 368c57f00edc1aa7d0d45691f80a5151
+	at Financeiro.PosicaoFinanceira.PosicaoFinanceira.InicializaPosicaoFinanceira(PosicaoFinanceira.java:35)
 
-T090_BoletoPorEmail(Financeiro.PosicaoFinanceira.PosicaoFinanceira)  Time elapsed: 26.559 s  <<< ERROR!
-org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <span class="x-btn-inner">...</span> is not clickable at point (807, 222). Other element would receive the click: <div id="XIDEE9B4C4F" class="x-btn x-borderbox x-btn-small x-btn-small-icon-left x-flex-item x-flex-item-hbox x-btn-center x-btn-noface x-border" title="Imprimir Boleto">...</div>
-  (Session info: chrome=104.0.5112.102)
+T060_Renegociacao(Financeiro.PosicaoFinanceira.PosicaoFinanceira)  Time elapsed: 11.031 s  <<< ERROR!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=105.0.5195.125)
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
 System info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [15424a786852f7efff95827f86557de7, clickElement {id=3eb1acc5-7e17-441a-81d5-8bdf720d6195}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:49771}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49771/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (15424a786852f7efff95827f86557de7)] -> xpath: //*[text()='Localizar']]
-Session ID: 15424a786852f7efff95827f86557de7
-	at Financeiro.PosicaoFinanceira.PosicaoFinanceira.T090_BoletoPorEmail(PosicaoFinanceira.java:199)
+Command: [12722a80f3c7a2a9b63590d5b1188365, clickElement {id=6e8226f9-de48-49ff-9450-4a3f778b6c35}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Windows\TEMP\scoped_dir5...}, goog:chromeOptions: {debuggerAddress: localhost:58689}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58689/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (12722a80f3c7a2a9b63590d5b1188365)] -> id: modFinanceiro]
+Session ID: 12722a80f3c7a2a9b63590d5b1188365
+	at Financeiro.PosicaoFinanceira.PosicaoFinanceira.InicializaPosicaoFinanceira(PosicaoFinanceira.java:35)
 
-T100_EmissaoRelatorios(Financeiro.PosicaoFinanceira.PosicaoFinanceira)  Time elapsed: 23.144 s  <<< ERROR!
-org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <span class="x-btn-inner">...</span> is not clickable at point (807, 222). Other element would receive the click: <div id="XIDEE9B4C4F" class="x-btn x-borderbox x-btn-small x-btn-small-icon-left x-flex-item x-flex-item-hbox x-btn-center x-btn-noface x-border" title="Imprimir Boleto">...</div>
-  (Session info: chrome=104.0.5112.102)
+T070_Atualizacao(Financeiro.PosicaoFinanceira.PosicaoFinanceira)  Time elapsed: 10.076 s  <<< ERROR!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=105.0.5195.125)
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
 System info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3ddbaa946c4e34b43cb03ed60436626c, clickElement {id=4b233607-e0a5-44c3-8710-530c0651b1e2}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Windows\TEMP\scoped_dir9...}, goog:chromeOptions: {debuggerAddress: localhost:49806}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49806/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (3ddbaa946c4e34b43cb03ed60436626c)] -> xpath: //*[text()='Localizar']]
-Session ID: 3ddbaa946c4e34b43cb03ed60436626c
-	at Financeiro.PosicaoFinanceira.PosicaoFinanceira.T100_EmissaoRelatorios(PosicaoFinanceira.java:216)
+Command: [22ad5599fa25d49d108ace67482763d1, clickElement {id=57a9f633-938c-4643-bf58-a6b33bfdbbbf}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Windows\TEMP\scoped_dir8...}, goog:chromeOptions: {debuggerAddress: localhost:58730}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58730/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (22ad5599fa25d49d108ace67482763d1)] -> id: modFinanceiro]
+Session ID: 22ad5599fa25d49d108ace67482763d1
+	at Financeiro.PosicaoFinanceira.PosicaoFinanceira.InicializaPosicaoFinanceira(PosicaoFinanceira.java:35)
+
+T080_ImprimirBoleto(Financeiro.PosicaoFinanceira.PosicaoFinanceira)  Time elapsed: 14.449 s  <<< ERROR!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=105.0.5195.125)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cd4b3308ca57d8bfe28f75edf2c24c62, clickElement {id=e7151656-97bd-4469-8cfd-6a0775450a27}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Windows\TEMP\scoped_dir4...}, goog:chromeOptions: {debuggerAddress: localhost:58750}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58750/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (cd4b3308ca57d8bfe28f75edf2c24c62)] -> id: modFinanceiro]
+Session ID: cd4b3308ca57d8bfe28f75edf2c24c62
+	at Financeiro.PosicaoFinanceira.PosicaoFinanceira.InicializaPosicaoFinanceira(PosicaoFinanceira.java:35)
+
+T090_BoletoPorEmail(Financeiro.PosicaoFinanceira.PosicaoFinanceira)  Time elapsed: 11.447 s  <<< ERROR!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=105.0.5195.125)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9950be80d353b7cd56aba67b42bfbd9e, clickElement {id=abedd295-659b-4d8d-b670-c4f89c1efebe}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Windows\TEMP\scoped_dir8...}, goog:chromeOptions: {debuggerAddress: localhost:58783}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58783/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (9950be80d353b7cd56aba67b42bfbd9e)] -> id: modFinanceiro]
+Session ID: 9950be80d353b7cd56aba67b42bfbd9e
+	at Financeiro.PosicaoFinanceira.PosicaoFinanceira.InicializaPosicaoFinanceira(PosicaoFinanceira.java:35)
+
+T100_EmissaoRelatorios(Financeiro.PosicaoFinanceira.PosicaoFinanceira)  Time elapsed: 9.787 s  <<< ERROR!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=105.0.5195.125)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b80cf2c2d756d247588bf201658dc961, clickElement {id=2018b081-44e1-43e8-ac4c-8a9c0bbd9550}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Windows\TEMP\scoped_dir2...}, goog:chromeOptions: {debuggerAddress: localhost:58813}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58813/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b80cf2c2d756d247588bf201658dc961)] -> id: modFinanceiro]
+Session ID: b80cf2c2d756d247588bf201658dc961
+	at Financeiro.PosicaoFinanceira.PosicaoFinanceira.InicializaPosicaoFinanceira(PosicaoFinanceira.java:35)
 

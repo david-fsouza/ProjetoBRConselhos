@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Financeiro.IntegracaoBancaria.IntegracaoBancaria" time="25.224" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Financeiro.IntegracaoBancaria.IntegracaoBancaria" time="10.606" tests="1" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="JOB_NAME" value="FINANCEIRO"/>
-    <property name="RUN_TESTS_DISPLAY_URL" value="http://localhost:8080/automacao/job/FINANCEIRO/61/display/redirect?page=tests"/>
+    <property name="RUN_TESTS_DISPLAY_URL" value="http://localhost:8080/automacao/job/FINANCEIRO/65/display/redirect?page=tests"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="NUMBER_OF_PROCESSORS" value="4"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -12,7 +12,7 @@
     <property name="POM_ARTIFACTID" value="CursoSelenium"/>
     <property name="os.name" value="Windows 10"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_321\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_321\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_321\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_321\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_321\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_321\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_321\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_321\jre\classes"/>
-    <property name="EXECUTOR_NUMBER" value="0"/>
+    <property name="EXECUTOR_NUMBER" value="1"/>
     <property name="sun.desktop" value="windows"/>
     <property name="PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
@@ -28,8 +28,8 @@
     <property name="TESSDATA_PREFIX" value="C:\Users\David\eclipse-workspace\ProjetoBRConselhos\tessdata"/>
     <property name="user.language" value="pt"/>
     <property name="JOB_BASE_NAME" value="FINANCEIRO"/>
-    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8080/automacao/job/FINANCEIRO/61/display/redirect?page=changes"/>
-    <property name="BUILD_DISPLAY_NAME" value="#61"/>
+    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8080/automacao/job/FINANCEIRO/65/display/redirect?page=changes"/>
+    <property name="BUILD_DISPLAY_NAME" value="#65"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_321\jre\bin"/>
     <property name="LOCALAPPDATA" value="C:\Windows\system32\config\systemprofile\AppData\Local"/>
     <property name="java.version" value="1.8.0_321"/>
@@ -39,7 +39,7 @@
     <property name="sun.arch.data.model" value="64"/>
     <property name="NODE_NAME" value="built-in"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_321\jre\lib\endorsed"/>
-    <property name="BUILD_ID" value="61"/>
+    <property name="BUILD_ID" value="65"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="file.encoding.pkg" value="sun.io"/>
@@ -53,10 +53,10 @@
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_321\jre"/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="os.version" value="10.0"/>
-    <property name="RUN_DISPLAY_URL" value="http://localhost:8080/automacao/job/FINANCEIRO/61/display/redirect"/>
+    <property name="RUN_DISPLAY_URL" value="http://localhost:8080/automacao/job/FINANCEIRO/65/display/redirect"/>
     <property name="POM_VERSION" value="0.0.1-SNAPSHOT"/>
     <property name="TMP" value="C:\Windows\TEMP"/>
-    <property name="RUN_ARTIFACTS_DISPLAY_URL" value="http://localhost:8080/automacao/job/FINANCEIRO/61/display/redirect?page=artifacts"/>
+    <property name="RUN_ARTIFACTS_DISPLAY_URL" value="http://localhost:8080/automacao/job/FINANCEIRO/65/display/redirect?page=artifacts"/>
     <property name="path.separator" value=";"/>
     <property name="java.vm.version" value="25.321-b07"/>
     <property name="user.variant" value=""/>
@@ -77,7 +77,7 @@
     <property name="VBOX_MSI_INSTALL_PATH" value="C:\Program Files\Oracle\VirtualBox\"/>
     <property name="user.home" value="C:\Windows\system32\config\systemprofile"/>
     <property name="PUBLIC" value="C:\Users\Public"/>
-    <property name="BUILD_TAG" value="jenkins-FINANCEIRO-61"/>
+    <property name="BUILD_TAG" value="jenkins-FINANCEIRO-65"/>
     <property name="JENKINS_SERVER_COOKIE" value="3d9b9914299fe66a"/>
     <property name="HUDSON_URL" value="http://localhost:8080/automacao/"/>
     <property name="ProgramData" value="C:\ProgramData"/>
@@ -86,15 +86,15 @@
     <property name="USERPROFILE" value="C:\Windows\system32\config\systemprofile"/>
     <property name="CLASSPATH" value=""/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_321\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Maven\apache-maven-3.8.5/bin;C:\Program Files\Java\jdk1.8.0_321/bin;C:\Program Files\Java\jdk1.8.0_321/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\David\Documents\chromedriver;C:\Users\David\eclipse-workspace\ProjetoBRConselhos\drivers;C:\Usuários\David\Documentos\chromedriver;C:\Users\David\.m2\repository\allure-2.7.0\allure-2.7.0\bin;C:\Program Files\Maven\apache-maven-3.8.5\bin;C:\Program Files\PowerShell\7\;C:\Program Files\Java\jdk1.8.0_321\bin;C:\Users\David\AppData\Local\GitHubDesktop\GitHubDesktop;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_321\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Maven\apache-maven-3.8.5/bin;C:\Program Files\Java\jdk1.8.0_321/bin;C:\Program Files\Java\jdk1.8.0_321/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\David\Documents\chromedriver;C:\Users\David\eclipse-workspace\ProjetoBRConselhos\drivers;C:\Usuários\David\Documentos\chromedriver;C:\Users\David\.m2\repository\allure-2.7.0\allure-2.7.0\bin;C:\Program Files\Maven\apache-maven-3.8.5\bin;C:\Program Files\PowerShell\7\;C:\Program Files\Java\jdk1.8.0_321\bin;C:\Users\David\AppData\Local\GitHubDesktop\GitHubDesktop;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;."/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="APPDATA" value="C:\Windows\system32\config\systemprofile\AppData\Roaming"/>
     <property name="JMETER_HOME" value="C:\Users\David\apache-jmeter-5.4.3\apache-jmeter-5.4.3\"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="maven.home" value="C:\Program Files\Maven\apache-maven-3.8.5"/>
     <property name="java.class.path" value="C:\ProgramData\Jenkins\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-agent-1.13.jar;C:\Program Files\Maven\apache-maven-3.8.5\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\Maven\apache-maven-3.8.5/conf/logging"/>
-    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main C:\Program Files\Maven\apache-maven-3.8.5 C:\ProgramData\Jenkins\war\WEB-INF\lib\remoting-4.13.3.jar C:\ProgramData\Jenkins\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.13.jar C:\ProgramData\Jenkins\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.13.jar 49521"/>
-    <property name="Path" value="C:\Program Files\Java\jdk1.8.0_321/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\David\Documents\chromedriver;C:\Users\David\eclipse-workspace\ProjetoBRConselhos\drivers;C:\Usuários\David\Documentos\chromedriver;C:\Users\David\.m2\repository\allure-2.7.0\allure-2.7.0\bin;C:\Program Files\Maven\apache-maven-3.8.5\bin;C:\Program Files\PowerShell\7\;C:\Program Files\Java\jdk1.8.0_321\bin;C:\Users\David\AppData\Local\GitHubDesktop\GitHubDesktop;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main C:\Program Files\Maven\apache-maven-3.8.5 C:\ProgramData\Jenkins\war\WEB-INF\lib\remoting-4.13.3.jar C:\ProgramData\Jenkins\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.13.jar C:\ProgramData\Jenkins\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.13.jar 58429"/>
+    <property name="Path" value="C:\Program Files\Java\jdk1.8.0_321/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\David\Documents\chromedriver;C:\Users\David\eclipse-workspace\ProjetoBRConselhos\drivers;C:\Usuários\David\Documentos\chromedriver;C:\Users\David\.m2\repository\allure-2.7.0\allure-2.7.0\bin;C:\Program Files\Maven\apache-maven-3.8.5\bin;C:\Program Files\PowerShell\7\;C:\Program Files\Java\jdk1.8.0_321\bin;C:\Users\David\AppData\Local\GitHubDesktop\GitHubDesktop;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="PROCESSOR_ARCHITECTURE" value="AMD64"/>
     <property name="jansi.mode" value="strip"/>
@@ -110,7 +110,7 @@
     <property name="HUDSON_HOME" value="C:\ProgramData\Jenkins\.jenkins"/>
     <property name="PATH+MAVEN" value="C:\Program Files\Maven\apache-maven-3.8.5/bin"/>
     <property name="ProgramFiles(x86)" value="C:\Program Files (x86)"/>
-    <property name="BUILD_URL" value="http://localhost:8080/automacao/job/FINANCEIRO/61/"/>
+    <property name="BUILD_URL" value="http://localhost:8080/automacao/job/FINANCEIRO/65/"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="MAVEN_OPTS" value=""/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
@@ -123,7 +123,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="MAVEN_HOME" value="C:\Program Files\Maven\apache-maven-3.8.5"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="BUILD_NUMBER" value="61"/>
+    <property name="BUILD_NUMBER" value="65"/>
     <property name="BASE" value="C:\Program Files\Jenkins"/>
     <property name="POWERSHELL_DISTRIBUTION_CHANNEL" value="MSI:Windows 10 Pro"/>
     <property name="JENKINS_URL" value="http://localhost:8080/automacao/"/>
@@ -141,5 +141,27 @@
     <property name="PSModulePath" value="C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules"/>
     <property name="DriverData" value="C:\Windows\System32\Drivers\DriverData"/>
   </properties>
-  <testcase name="T010_GeracaoArquivoRemessa" classname="Financeiro.IntegracaoBancaria.IntegracaoBancaria" time="25.224"/>
+  <testcase name="T010_GeracaoArquivoRemessa" classname="Financeiro.IntegracaoBancaria.IntegracaoBancaria" time="10.606">
+    <error message="element not interactable&#10;  (Session info: chrome=105.0.5195.125)&#10;Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;&#10;System info: host: &apos;DESKTOP-Q4CVPEU&apos;, ip: &apos;169.254.193.202&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_321&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [c8643c68690efc82df6f3dd35ef859d8, clickElement {id=188d5a62-5d89-4df1-bfad-84c520fcb39a}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:59311}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59311/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (c8643c68690efc82df6f3dd35ef859d8)] -&gt; id: modFinanceiro]&#10;Session ID: c8643c68690efc82df6f3dd35ef859d8" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=105.0.5195.125)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-Q4CVPEU', ip: '169.254.193.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c8643c68690efc82df6f3dd35ef859d8, clickElement {id=188d5a62-5d89-4df1-bfad-84c520fcb39a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.19 (b9c217c128c1..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:59311}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59311/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (c8643c68690efc82df6f3dd35ef859d8)] -> id: modFinanceiro]
+Session ID: c8643c68690efc82df6f3dd35ef859d8
+	at Financeiro.IntegracaoBancaria.IntegracaoBancaria.InicializaGeracaoDeTitulos(IntegracaoBancaria.java:31)
+</error>
+    <system-err><![CDATA[Starting ChromeDriver 105.0.5195.19 (b9c217c128c16f53d12f9a02933fcfdec1bf49af-refs/branch-heads/5195@{#176}) on port 64614Only local connections are allowed.Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.ChromeDriver was started successfully.set 14, 2022 9:46:05 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMAÇÕES: Detected dialect: W3C
+set 14, 2022 9:46:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTÊNCIA: Unable to find an exact match for CDP version 105, so returning the closest version found: a no-op implementation
+set 14, 2022 9:46:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFORMAÇÕES: Unable to find CDP implementation matching 105.
+set 14, 2022 9:46:05 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+ADVERTÊNCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
 </testsuite>

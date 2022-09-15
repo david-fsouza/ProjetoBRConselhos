@@ -1,1 +1,1 @@
-[{"name":"Jenkins","type":"jenkins","url":"http://localhost:8080/automacao/","buildOrder":61,"buildName":"FINANCEIRO #61","buildUrl":"http://localhost:8080/automacao/job/FINANCEIRO/61/","reportName":"AllureReport","reportUrl":"http://localhost:8080/automacao/job/FINANCEIRO/61/allure"}]
+[{"name":"Jenkins","type":"jenkins","url":"http://localhost:8080/automacao/","buildOrder":65,"buildName":"FINANCEIRO #65","buildUrl":"http://localhost:8080/automacao/job/FINANCEIRO/65/","reportName":"AllureReport","reportUrl":"http://localhost:8080/automacao/job/FINANCEIRO/65/allure"}]
