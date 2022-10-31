@@ -11,7 +11,7 @@ import net.sourceforge.tess4j.TesseractException;
 public class LoginPage extends BasePage {
 
 	public void acessarTelaInicial() {
-		getDriver().get("https://qualidade.brctotal.com/QLD_BRC_Main_Automacao/login/main2.aspx");
+		getDriver().get("https://brc_hml.brctotal.com/QLD_AUTOM_MainImpl/login/main2.aspx");
 	}
 
 	public void setLogin(String login) {
@@ -26,7 +26,6 @@ public class LoginPage extends BasePage {
 		clicarBotaoID("q-comp-15");
 	}
 
-	
 	/********* Login com Captcha *********/
 	
 	public void acessarTelaInicialCaptcha() {		

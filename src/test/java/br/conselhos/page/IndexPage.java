@@ -65,6 +65,10 @@ public class IndexPage extends BasePage {
 		clicarBotaoXpath("//*[text()='Salvar']");
 	}
 	
+	public void fechar() {
+		clicarBotaoXpath("//*[text()='Fechar']");
+	}
+	
 	public void botaoAdicionar() {		
 		clicarBotaoXpath("//*[text()='Adicionar']");
 	}
@@ -115,7 +119,9 @@ public class IndexPage extends BasePage {
 	}
 	
 	public void inserirCampoFiltrar(String tabela, String texto) throws InterruptedException {
-		escreverXpath("//input[contains(@id,'filterTBX_gridpanel') and contains(@name, 'tabCt_" + tabela + "')]", texto + Keys.ENTER);
+		escreverXpath("//input[contains(@id,'filterTBX_gridpanel') and contains(@name, 'tabCt_" + tabela + "')]", texto);
+		esperaFixa(1000);
+		digitateclaXapath("//input[contains(@id,'filterTBX_gridpanel') and contains(@name, 'tabCt_" + tabela + "')]",  Keys.ENTER);
 		esperaFixa(1000);		
 	}
 

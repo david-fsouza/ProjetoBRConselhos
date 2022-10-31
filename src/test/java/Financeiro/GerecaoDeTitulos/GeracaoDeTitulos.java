@@ -64,14 +64,15 @@ public class GeracaoDeTitulos extends BaseTest {
 		geracaotitulos.campoPessoa("ZULEIDE MENDES");
 		page.botaoLocalizar();
 		page.selecionarRegistro("32750");
+		page.esperar2segundos();
 		geracaotitulos.agendarParaSelecionados();
-		page.esperar3segundos();
+		esperaFixa(10000);
 		frame.TelaSobreposta();
 		geracaotitulos.iniciarExecucoes();
 		frame.TelaSobreposta2();
 		frame.GeracaoDeTitulosFrame2();
 		geracaotitulos.iniciar();
-		page.esperar3segundos();
+	    esperaFixa(5000);
 		frame.TelaSobreposta();
 		Assert.assertEquals("Em andamento", geracaotitulos.validarTextoGeracaoTitulosAgendamento());		
 	}

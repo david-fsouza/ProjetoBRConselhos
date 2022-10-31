@@ -12,40 +12,34 @@ public class RenegociacaoSimplificadaPage extends BasePage {
 	
 	public void campoPessoaFisica(String texto) throws InterruptedException {
 		clicarBotaoID("lkPessoaEdt");
-		escreverID("lkPessoaEdt", texto + Keys.ENTER);
-		esperaFixa(5000);
+		escreverID("lkPessoaEdt", texto);
+		esperaFixa(3000);
 		digitaTeclaId("lkPessoaEdt", Keys.TAB);
-		esperaFixa(2000);
+		esperaFixa(3000);
 	}
 	
-	public void campoTipoDeInscricao() throws InterruptedException {
+	public void campoTipoDeInscricao(String texto) throws InterruptedException {
 		clicarBotaoID("cbTipoInscricaoEdt");
-		sairFrame();
-		esperaExplicita("div[title='INSCRIÇÃO DEFINITIVA PRINCIPAL (AUXILIAR DE ENFERMAGEM)']");
-		clicarBotaoSelector("div[title='INSCRIÇÃO DEFINITIVA PRINCIPAL (AUXILIAR DE ENFERMAGEM)']");
-		frame.frameDireita();
-		frame.frameDireita2();
-		esperaFixa(2000);	
+		escreverID("cbTipoInscricaoEdt", texto);
+		esperaFixa(1000);
+		digitaTeclaId("cbTipoInscricaoEdt", Keys.ENTER);
+        esperaFixa(1000);
 	}
 	
-	public void campoplanoDePagamento() throws InterruptedException {
+	public void campoplanoDePagamento(String texto) throws InterruptedException {
 		clicarBotaoID("cbPlanoPagamentoEdt");
-		sairFrame();
-		esperaExplicita("div[title='Parcelamento de Anuidades']");
-		clicarBotaoSelector("div[title='Parcelamento de Anuidades']");
-		frame.frameDireita();
-		frame.frameDireita2();
-		esperaFixa(2000);
+		escreverID("cbPlanoPagamentoEdt", texto);
+        esperaFixa(1000);
+		digitaTeclaId("cbPlanoPagamentoEdt", Keys.ENTER);
+        esperaFixa(1000);
 	}
 	
-	public void campoQuantidadeDeParcelas() throws InterruptedException {
+	public void campoQuantidadeDeParcelas(String texto) throws InterruptedException {
 		clicarBotaoID("cbParcelasEdt");
-		sairFrame();
-		esperaExplicita("div[title='3']");
-		clicarBotaoSelector("div[title='3']");
-		frame.frameDireita();
-		frame.frameDireita2();
-		esperaFixa(2000);
+		escreverID("cbParcelasEdt", texto);
+		esperaFixa(1000);
+	    digitaTeclaId("cbParcelasEdt", Keys.ENTER);
+		esperaFixa(1000);
 	}	
 	
 	public String obterTextoNovoRenegociacaoSimplificada() {

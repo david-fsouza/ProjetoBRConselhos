@@ -50,7 +50,7 @@ public class BaseTest extends DSL {
 		login.setLogin("brconselhos");
 		login.setSenha("a123");
 		login.entrar();	    
-	    //menu.botaoMenuIndex();
+	    menu.botaoMenuIndex();
 	}
 		
     @After

@@ -33,4 +33,18 @@ public class RelatoriosPage extends BasePage {
 	public void campoFormatoRelario_084(String texto) {
 		escreverID("cbFormatoEdt", texto + Keys.ENTER);			
 	}
+	
+	//******* Relatório R086C000000 Por Agendamento *******//
+	public void checkBoxAgendar() {
+		clicarBotaoID("ckAgendarEdt");
+	}
+	
+	public void campoIniciarEm() throws InterruptedException {
+		dataFutura("dtAgendamentoEdt", 2);
+	}
+	
+	public String validarTextoGerarRelatorioAgendamento() {
+		return obterTexto("A geração do relatório agendada.");
+	}
+	
 }

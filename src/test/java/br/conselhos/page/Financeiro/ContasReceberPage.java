@@ -32,6 +32,18 @@ public class ContasReceberPage extends BasePage {
 		clicarBotaoXpath("/html/body/form/div/div[2]/div[2]/div/div/div/div/div[1]/div/div[1]/div/div/div[1]/em/button/span[1]");		
 	}
 	
+	public void filtroBruto(String texto) {
+		escreverXpath("//div[@id='tabCt_0']/div/div/div/div/div/div/div[2]/div/div/div/div/div/div[6]/div[3]/div/div/div/input", texto + Keys.ENTER);
+	}
+	
+	public void filtroVencimento() throws InterruptedException {
+		dataFuturaXpath("//div[@id='tabCt_0']/div/div/div/div/div[1]/div/div[2]/div/div[1]/div/div/div/div[6]/div[3]/div[1]/div/div/input", 2);
+		
+		
+		
+	}
+	
+	
 	//***** TELA CONTAS A RECEBER *****//
 	
 	//***** Cadastro Contas a Receber *****/
@@ -65,7 +77,7 @@ public class ContasReceberPage extends BasePage {
 	}
 	
 	public void campoVencimento() throws InterruptedException {
-		dataFuturaName("DataMovimento", 20);
+		dataFuturaName("DataMovimento", 2);
 	    digitaTeclaName("DataMovimento", Keys.ENTER);
 	    esperaFixa(3000);
 	}
@@ -127,6 +139,8 @@ public class ContasReceberPage extends BasePage {
 	/***** Geração Impressão de Boletos - Selecionadas  *****/
 	
 	public void campoFuncao(String texto) throws InterruptedException {
+		clicarBotaoID("cbFuncaoEdt");
+		esperaFixa(1000);
 		escreverID("cbFuncaoEdt", texto + Keys.ENTER);
 		esperaFixa(2000);
 	}
@@ -169,13 +183,16 @@ public class ContasReceberPage extends BasePage {
 	
 	//******Documentos GED Alteração*******//
 	
-	public void campoOrdem(String texto) {
-		escreverID("m_numOrdemEdt", texto);
+	public void campoTipoAssunto(String texto) throws InterruptedException {
+		clicarBotaoID("m_lkTipoAssuntoEdt");
+		escreverID("m_lkTipoAssuntoEdt", texto);
+		esperaFixa(1000);
+		digitaTeclaId("m_lkTipoAssuntoEdt", Keys.ENTER);
 	}
 	
 	public String validarTextoDocumentosGEDAlteracao() throws InterruptedException {
 		esperaFixa(3000);
-		return obterTextoValue("2");		
+		return obterTexto("Permite criar/alterar os Documentos GED");		
 	}
 	
 	//******* Documentos GED Exclusao******//
@@ -214,7 +231,7 @@ public class ContasReceberPage extends BasePage {
 	}
 	
 	public void campoFormaLiquidacao(String texto) throws InterruptedException {
-		
+		clicarBotaoID("m_lkFormaLiquidacaoEdt");
 		escreverID("m_lkFormaLiquidacaoEdt", texto);
         esperaFixa(2000);
 		digitaTeclaId("m_lkFormaLiquidacaoEdt", Keys.ENTER);

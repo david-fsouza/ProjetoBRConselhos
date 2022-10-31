@@ -40,7 +40,7 @@ public class Tesouraria extends BaseTest {
 		tesourariaPage.campoHistorico("Atualização/Aglutinação");
 		tesourariaPage.campoTipoDeDocumento("Boleto");
 		//tesourariaPage.campoDisponibilidade();
-		tesourariaPage.campoFormaLiquidacao("Baixa bancária");
+		tesourariaPage.campoFormaLiquidacao("Recebimento manual");
 		page.salvareFechar();
 		page.esperar2segundos();
 		frame.frameDireita();

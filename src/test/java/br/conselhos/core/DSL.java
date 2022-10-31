@@ -351,6 +351,12 @@ public class DSL {
 		getDriver().findElement(By.id(id)).sendKeys(texto);
 	}
 	
+	// Enviar tecla por "xpath"
+	
+	public void digitateclaXapath(String xpath, Keys texto) {
+		getDriver().findElement(By.xpath(xpath)).sendKeys(texto);	
+	}
+	
 	
 	/*************** Espera de Tela (Wait) ****************************************************************************************************************/
 	
@@ -358,13 +364,13 @@ public class DSL {
 	
     @SuppressWarnings("deprecation")
 	public void esperaExplicita(String cssSelector) {                                  
-        WebDriverWait wait = new WebDriverWait(getDriver(), 30);
+        WebDriverWait wait = new WebDriverWait(getDriver(), 15);
 	    wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(cssSelector)));
 	}
     
 	public void esperaExplicitaName(String name) {                                  
         @SuppressWarnings("deprecation")
-		WebDriverWait wait = new WebDriverWait(getDriver(), 30);
+		WebDriverWait wait = new WebDriverWait(getDriver(), 15);
 	    wait.until(ExpectedConditions.presenceOfElementLocated(By.name(name)));
 	}
     
@@ -378,19 +384,19 @@ public class DSL {
 		
     @SuppressWarnings("deprecation")
 	public void esperaExplicitaXpath(String xpath) {                                  
-		WebDriverWait wait = new WebDriverWait(getDriver(), 30);
+		WebDriverWait wait = new WebDriverWait(getDriver(), 15);
 	    wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)));		
 	}
     
     @SuppressWarnings("deprecation")
 	public void esperaExplicitaID(String id) {                                  
-		WebDriverWait wait = new WebDriverWait(getDriver(), 30);
+		WebDriverWait wait = new WebDriverWait(getDriver(), 15);
 	    wait.until(ExpectedConditions.presenceOfElementLocated(By.id(id)));		
 	}
     
     @SuppressWarnings("deprecation")
 	public void esperaExplicitaLink(String link) {                                  
-		WebDriverWait wait = new WebDriverWait(getDriver(), 30);
+		WebDriverWait wait = new WebDriverWait(getDriver(), 15);
 	    wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText(link)));		
 	}
     
@@ -416,10 +422,12 @@ public class DSL {
     // Inserir Data atual por "ID"
     
     public void inserirDataAtualID(String id) throws InterruptedException {
-    	 DateFormat dateFormat = new SimpleDateFormat("dd");
+    	 DateFormat dateFormat = new SimpleDateFormat("ddMMyyyy");
          Date date = new Date();
          String date1= dateFormat.format(date);
-         getDriver().findElement(By.id(id)).getAttribute(date1);
+         getDriver().findElement(By.id(id)).clear();
+         getDriver().findElement(By.id(id)).sendKeys(date1 + Keys.TAB);
+         //getDriver().findElement(By.name(datadeagora)).getAttribute(date1); // Método que usei inicialmente, mas depois foi aperfeiçoado
          esperaFixa(2000);        
     }
     
@@ -451,6 +459,17 @@ public class DSL {
     	getDriver().findElement(By.name(name)).sendKeys(futuro + Keys.TAB);
     	esperaFixa(3000);
     }	
+    
+    public void dataFuturaXpath(String xpath, int dias) throws InterruptedException {
+    	Date today = new Date();               
+    	SimpleDateFormat formattedDate = new SimpleDateFormat("yyyyMMdd");            
+    	Calendar c = Calendar.getInstance();        
+    	c.add(Calendar.DATE, dias);  // Número de dias para adicionar no futuro, na variável "dias"    
+    	String futuro = (String)(formattedDate.format(c.getTime()));
+    	getDriver().findElement(By.xpath(xpath)).clear();
+    	getDriver().findElement(By.xpath(xpath)).sendKeys(futuro + Keys.TAB);
+    	esperaFixa(3000);
+    }
     
     public void dataFuturaComHora(String id, int dias) throws InterruptedException {
     	

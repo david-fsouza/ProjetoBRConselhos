@@ -8,11 +8,11 @@ import br.conselhos.core.BasePage;
 public class MenuPage extends BasePage {
 	
 	public void botaoMenuIndex() {
-		clicarBotaoID("q-comp-41");
+		clicarBotaoID("q-comp-42");
 	}
 	
 	public void Financeiro() {
-		clicarBotaoID("modFinanceiro");
+		clicarBotaoXpath("/html/body/div/div/div[25]/a/span[2]");
 	}	
 	
 	public void ContasReceber() {
@@ -187,7 +187,7 @@ public class MenuPage extends BasePage {
      *************/
     
     public void Cadastros() {
-    	clicarBotaoID("modCadastro");
+    	clicarBotaoXpath("/html/body/div/div/div[21]/a");
     }
     
     public void Pessoas() {
@@ -208,5 +208,70 @@ public class MenuPage extends BasePage {
 		escreverXpath("//input[contains(@name, 'mainCt:middleCt:leftCt:Pages:AccordionWithSearch:')]", "Emitir Documento" + Keys.ENTER);
 		esperaFixa(1000);
 		clicarLink("Emitir Documento");  	 	
-    }		
+    }
+    
+    /*********
+     * GED
+     ********/
+    
+    public void GED() {
+    	clicarBotaoXpath("//*[text()='GED']");	
+    }
+    
+    /**************
+     * FISCALIZAÇÃO
+     *************/
+    public void Fiscalizacao() {
+    	clicarBotaoXpath("//*[text()='Fiscalização']");	
+    }
+    
+    /************
+     * COMISSÕES
+     ***********/
+    public void Comissoes() {
+    	clicarBotaoXpath("//*[text()='Comissões']");	
+    }
+    
+    /***********
+     * JURÍDICO
+     **********/
+    public void Juridico() {
+    	clicarBotaoXpath("//*[text()='Jurídico']");	
+    }
+    
+    /************
+     * PROTOCOLO
+     ***********/
+    public void Protocolo() {
+    	clicarBotaoXpath("/html/body/div/div/div[16]/a/span[2]");	
+    }
+    
+    /*****************
+     * ADMINISTRATIVO
+     ****************/
+    public void Administrativo() {
+    	clicarBotaoXpath("/html/body/div/div/div[20]/a/span[2]");	
+    }
+    
+    public void PedidosPessoaFisica() {
+    	clicarLink("Pedidos Pessoa Física");
+    }
+    
+    /*****************
+     * CONSELHO PLENO
+     ****************/
+    public void ConselhoPleno() {
+    	clicarBotaoXpath("/html/body/div/div/div[19]/a/span[2]");	
+    }
+    
+    /*********************
+     * ÉTICA E DISCIPLINA
+     ********************/
+    public void EticaDisciplina() {
+    	clicarBotaoXpath("//*[text()='Ética e Disciplina']");	
+    }
+    
+    
+    
+    
 }

@@ -112,5 +112,19 @@ public class FramesPage extends BasePage {
 	    	entrarFrame(By.name("iFrameChild_01"));
 	    	entrarFrame("#iFrameMain_01_01");
 	    }
+	    
+	    /****************************
+	     * FRAMES ÉTICA E DISCIPLINA
+	     ***************************/
+	    public void processosInfracoesEticaDisciplina() {
+	    	entrarFrameDefault(By.xpath("//*[contains(@src, 'ProcessoInfracao')]"));
+	    }
+	    
+	    /**********************
+	     * FRAMES FISCALIZAÇÃO
+	     *********************/
+	    public void processosInfracoesFiscalizacao() {
+	    	entrarFrameDefault(By.xpath("//*[contains(@src, 'ProcessoInfracaoFiscalizacao')]"));
+	    }
 
 }

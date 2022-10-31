@@ -15,7 +15,7 @@ public class SociedadesPage extends BasePage {
 	
 	public void abaSocios() {
 		clicarLink("Sócios");
-		entrarFrame("#panelcategory3>iframe");
+		entrarFrame("#panelcategory2>iframe");
 	}
 	
 	public void campoSocio(String texto) throws InterruptedException {
@@ -76,7 +76,7 @@ public class SociedadesPage extends BasePage {
 	
 	public void abaHistoricoDeAlteracoesContratuais() {
 		clicarLink("Histórico de alterações contratuais");
-		entrarFrame("#panelcategory4>iframe");
+		entrarFrame("#panelcategory3>iframe");
 	}
 	
 	public String validarTextoRegistroDeAlteracoesContratuais() {

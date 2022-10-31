@@ -53,7 +53,7 @@ public class GeracaoDeTitulosPage extends BasePage {
 	}
 	
 	public void iniciarExecucoes() {
-		clicarBotaoSelector("div[title='Iniciar execuções']");
+		clicarBotaoXpath("//*[text()='Iniciar execuções']");
 	}
 	
 	public void iniciar() {

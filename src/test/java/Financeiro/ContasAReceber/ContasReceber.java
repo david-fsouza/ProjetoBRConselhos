@@ -59,16 +59,17 @@ public class ContasReceber extends BaseTest {
 	}
 	
 		
-	//******* TELA CONTAS A RECEBER ********//
-	
-	    
+   /*****************
+    * CONTAS RECEBER
+    ****************/
+    
 	@Test
 	public void T010_CadastroContasReceber() throws InterruptedException {
 	    
 		page.botaoNovo();  
 		frame.TelaSobreposta();
 		Assert.assertEquals("Permite cadastrar/alterar informações de títulos a receber.", contasreceber.validarTextoCadastroContasReceber());
-		contasreceber.campoSacado("ZULEIDE MENDES");	            	    
+		contasreceber.campoSacado("ACENALDO FERREIRA LIMA");	            	    
 	    contasreceber.campoTipoLancamento("ANUIDADE PJ");
         //contasreceber.campoDataEmissao();
         //contasreceber.campoInscricaoCategoria("INSCRIÇÃO DEFINITIVA PRINCIPAL");
@@ -76,14 +77,16 @@ public class ContasReceber extends BaseTest {
 	    contasreceber.campoValorBruto("1000");
 	    contasreceber.campoVencimento();
 	    page.salvareFechar();
+	    page.esperar2segundos();
 	}
 	
 	@Test
 	public void T020_AlteracaoContasReceber() throws InterruptedException {
 		
 		contasreceber.filtroSituacao("A receber");
-		page.inserirCampoFiltrar("0", "ZULEIDE MENDES");	
-		page.selecionarRegistro("ZULEIDE MENDES");
+		contasreceber.filtroBruto("1000");
+		page.inserirCampoFiltrar("0", "ACENALDO FERREIRA LIMA");
+		page.selecionarRegistro("ACENALDO FERREIRA LIMA");
 		frame.TelaSobreposta();
 		Assert.assertEquals("Permite cadastrar/alterar informações de títulos a receber.", contasreceber.validarTextoCadastroContasReceber());
 		contasreceber.campoParcela("9");
@@ -93,8 +96,10 @@ public class ContasReceber extends BaseTest {
 	@Test
 	public void T030_AlterarSituacaoComplemento() throws InterruptedException {
 		
+		page.esperar2segundos();
 		contasreceber.filtroSituacao("A receber");
-		page.inserirCampoFiltrar("0", "ZULEIDE MENDES");
+		contasreceber.filtroBruto("1000");
+		page.inserirCampoFiltrar("0", "ACENALDO FERREIRA LIMA");
 		page.selecionarCheckBoxGrid("0");
 		contasreceber.botaoFuncoes();
 		sairFrame();
@@ -110,7 +115,8 @@ public class ContasReceber extends BaseTest {
 	 public void T040_EmissaoDeBoleto() throws InterruptedException {
 		    
 		 contasreceber.filtroSituacao("A receber");
-	     page.inserirCampoFiltrar("0", "ZULEIDE MENDES");
+	     page.inserirCampoFiltrar("0", "ACENALDO FERREIRA LIMA");
+	     contasreceber.filtroBruto("1000");
 		 page.selecionarCheckBoxGrid("0");
 		 contasreceber.botaoFuncoes();
 		 sairFrame();
@@ -124,7 +130,8 @@ public class ContasReceber extends BaseTest {
 	 public void T050_Recebimentos() throws InterruptedException {
 		 
 		 contasreceber.filtroSituacao("A receber");
-		 page.inserirCampoFiltrar("0", "ZULEIDE MENDES");
+		 page.inserirCampoFiltrar("0", "ACENALDO FERREIRA LIMA");
+		 contasreceber.filtroBruto("1000");
 		 page.selecionarCheckBoxGrid("0");
 		 contasreceber.botaoFuncoes();
 		 sairFrame();
@@ -133,27 +140,30 @@ public class ContasReceber extends BaseTest {
 		 Assert.assertEquals("Permite cadastrar as informações de recebimentos.", contasreceber.validarTextoRecebimentos());
 		 contasreceber.campoConta("CAIXA FUNDO FIXO SEDE");
 		 contasreceber.campoHistorico("Atualização/Aglutinação");
-		 contasreceber.campoFormaLiquidacao("Boleto bancário");
+		 contasreceber.campoFormaLiquidacao("Retorno BB");
 		 page.botaoAdicionar();
 		 page.salvareFechar();
+		 page.esperar2segundos();
 	 }
 	 
 	 @Test
 	 public void T060_EstornoRecebimento() throws InterruptedException {
 		 
 		 contasreceber.filtroSituacao("Pago");
-		 page.inserirCampoFiltrar("0", "ZULEIDE MENDES");
-		 page.selecionarRegistro("ZULEIDE MENDES");
+		 page.inserirCampoFiltrar("0", "ACENALDO FERREIRA LIMA");
+		 contasreceber.filtroBruto("1000");
+		 page.selecionarRegistro("ACENALDO FERREIRA LIMA");
 		 frame.TelaSobreposta();  
 		 contasreceber.abaMovimentos();
 		 page.esperar2segundos();
-		 clicarBotaoDireito("Recebimento");
+		 clicarBotaoDireito("Não");
 		 contasreceber.estornar();
 		 page.esperar2segundos();
 		 frame.TelaSobreposta2();
 		 frame.mainFrame();
 		 page.botaoSim();
 		 frame.TelaSobreposta();
+		 page.esperar3segundos();
 		 contasreceber.abaMovimentos();
 		 Assert.assertEquals("Estorno de recebimento", contasreceber.obterTextoMovimentos());	  
 	 }
@@ -163,8 +173,9 @@ public class ContasReceber extends BaseTest {
      public void T070_DocumentosGEDInclusao() throws InterruptedException {
 			
 		 contasreceber.filtroSituacao("A receber");
-		 page.inserirCampoFiltrar("0", "ZULEIDE MENDES");
-		 page.selecionarRegistro("ZULEIDE MENDES");
+		 page.inserirCampoFiltrar("0", "ACENALDO FERREIRA LIMA");
+		 contasreceber.filtroBruto("1000");
+		 page.selecionarRegistro("ACENALDO FERREIRA LIMA");
 		 frame.TelaSobreposta();
 		 contasreceber.abaDocumentosGED();			 
 		 page.botaoNovo();
@@ -192,27 +203,30 @@ public class ContasReceber extends BaseTest {
 	 public void T080_DocumentosGED_Alteracao() throws InterruptedException {
 		 
 		 contasreceber.filtroSituacao("A receber");
-		 page.inserirCampoFiltrar("0", "ZULEIDE MENDES");
-		 page.selecionarRegistro("ZULEIDE MENDES");
+		 page.inserirCampoFiltrar("0", "ACENALDO FERREIRA LIMA");
+		 contasreceber.filtroBruto("1000");
+		 page.selecionarRegistro("ACENALDO FERREIRA LIMA");
 		 frame.TelaSobreposta();
 		 contasreceber.abaDocumentosGED();			 
 		 page.selecionarRegistro("138528.pdf");
 		 frame.TelaSobreposta2();
-		 contasreceber.campoOrdem("2");
+		 page.esperar2segundos();
+		 contasreceber.campoTipoAssunto("Alteração de Cadastro");
 		 page.salvareFechar();
 		 frame.TelaSobreposta();
 		 contasreceber.abaDocumentosGED();		 
 		 page.selecionarRegistro("138528.pdf");
 		 frame.TelaSobreposta2();
-		 Assert.assertEquals("2", contasreceber.validarTextoDocumentosGEDAlteracao());
+		 page.esperar2segundos();
 	 }
 	 
 	 @Test
 	 public void T090_DocumentosGED_Exclusao() throws InterruptedException {
 		 
 		 contasreceber.filtroSituacao("A receber");
-		 page.inserirCampoFiltrar("0", "ZULEIDE MENDES");
-		 page.selecionarRegistro("ZULEIDE MENDES");
+		 page.inserirCampoFiltrar("0", "ACENALDO FERREIRA LIMA");
+		 contasreceber.filtroBruto("1000");
+		 page.selecionarRegistro("ACENALDO FERREIRA LIMA");
 		 frame.TelaSobreposta();
 		 contasreceber.abaDocumentosGED();			 
 		 page.selecionarRegistro("138528.pdf");
@@ -229,7 +243,8 @@ public class ContasReceber extends BaseTest {
 	 public void T100_RecebimentosDeRenegociacoes() throws InterruptedException {
 		 
 		 contasreceber.filtroSituacao("A receber");
-		 page.inserirCampoFiltrar("0", "ZULEIDE MENDES");
+		 contasreceber.filtroVencimento();
+		 page.inserirCampoFiltrar("0", "ACENALDO FERREIRA LIMA");
 		 page.selecionarCheckBoxGrid("0");		 
 		 contasreceber.botaoFuncoes();
 		 sairFrame();
@@ -242,12 +257,16 @@ public class ContasReceber extends BaseTest {
          Assert.assertEquals("Renegociação gerada com sucesso.", contasreceber.validarTextoRenegociacao());    		 
 	 }
 	 
+	 /***************************
+	  * CONTAS RECEBER - GERAÇÃO
+	  **************************/
+	 
 	 @Test
 	 public void T110_GeracaoEnvioDeBoletoEmailSelecionadas() throws InterruptedException {
 		 
 		 contasreceber.abaContasReceberGeracao();
 		 contasreceber.filtroSituacaoGeracao("A receber");
-		 page.inserirCampoFiltrar("1", "ZULEIDE MENDES");
+		 page.inserirCampoFiltrar("1", "ACENALDO FERREIRA LIMA");
 		 page.selecionarCheckBoxGrid("0");
 		 page.botaoFuncoes1();
 		 sairFrame();
@@ -259,11 +278,12 @@ public class ContasReceber extends BaseTest {
 	 }
 	 
 	 @Test
-	 public void T120_GerecaoEnvioDeBoletosEmailTodos() throws InterruptedException {
+	 public void T120_GeracaoEnvioDeBoletosEmailTodos() throws InterruptedException {
 		 
 		 contasreceber.abaContasReceberGeracao();
+		 //contasreceber.selectVisualizarContasReceberGeracao("Todos");
 		 contasreceber.filtroSituacaoGeracao("A receber");
-		 page.inserirCampoFiltrar("1", "ZULEIDE MENDES");
+		 page.inserirCampoFiltrar("1", "ACENALDO FERREIRA LIMA");
 		 page.botaoFuncoes1();
 		 sairFrame();
 		 contasreceber.gerarBoletosTodos();
@@ -278,8 +298,9 @@ public class ContasReceber extends BaseTest {
 	 public void T130_GeracaoImpressaoDeBoletosSelecionadas() throws InterruptedException {
 		 
 		 contasreceber.abaContasReceberGeracao();
+		 //contasreceber.selectVisualizarContasReceberGeracao("Todos");
 		 contasreceber.filtroSituacaoGeracao("A receber");
-		 page.inserirCampoFiltrar("1", "ZULEIDE MENDES");
+		 page.inserirCampoFiltrar("1", "ACENALDO FERREIRA LIMA");
 		 page.selecionarCheckBoxGrid("0");
 		 page.botaoFuncoes1();
 		 sairFrame();

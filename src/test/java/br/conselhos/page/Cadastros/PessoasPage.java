@@ -15,26 +15,12 @@ public class PessoasPage extends BasePage {
 	 * Objetos Globais
 	 */
 	
-	//****** Incluir Nova Pessoa Física *******//
-	
-	public void campoTipo(String texto) throws InterruptedException {
-		clicarBotao("TipoPessoa");
-		sairFrame();
-		esperaFixa(1000);
-		doisCliques(texto);
-		esperaFixa(1000);
+	public void botaoSalvarEFechar() {
+		clicarBotaoXpath("/html/body/form/div/div/div[2]/div[1]/div/div[1]/div[2]");	
 	}
 	
-	public void campoNomeCompleto(String texto) {
-		escrever("Nome", texto);
-	}
-	
-	public void campoCapitalSocial(String texto) {
-		escrever("ValorCapitalSocial", texto);
-	}
-	
-	public void campoProcesso(String texto) {
-		escrever("NumeroProcesso", texto);
+	public void filtroColecaoPessoas(String texto) {
+		escreverXpath("//input[contains(@name, 'FormPanelMain:leftContainer:')]", texto + Keys.ENTER);
 	}
 	
 	public void abaEndProfissional() {
@@ -56,8 +42,67 @@ public class PessoasPage extends BasePage {
 		escrever("EmailComercial", texto);
 	}
 	
+	//CRIADO ESSE BOTÃO, NENHUM OUTRO PADRÃO FUNCIONOU NESTE PAINEL(PESSOAS, GERAL)
+	public void botaoNovoInscrito() {
+		clicarBotaoID("btNovoInscricao");
+	}
+	
+	
+	//****** Incluir Nova Pessoa Física ******//
+	public void campoCPF(String texto) throws InterruptedException {
+		escrever("CPFCNPJ", texto);
+		esperaFixa(2000);
+	}
+	
+	public void abaEndResidencial() {
+		clicarBotaoSelector("div[title='End. Residencial']");
+	}
+	
+	public void campoEmailResidencial(String texto) {
+		escrever("EmailResidencial", texto);
+	}
+	
+	public void abaOutrasInformacoes() {
+		clicarBotaoSelector("div[title='Outras informações']");
+	}
+	
+	public void campoSexo(String texto) {
+		escrever("Sexo", texto + Keys.ENTER);
+	}
+	
+	public String validarTextoIncluirPessoaFisica() {
+		return obterTexto("PATRICIA SILVA PIRES TESTE 3");
+	}
+	
+	//****** Nova Inscrição Pessoa Física ******//
+	public String validarTextoNovaInscricaoPessoaFisica() {
+		return obterTexto("INSCRIÇÃO DEFINITIVA PRINCIPAL");
+	}
+	
+	//****** Incluir Nova Pessoa Jurídica *******//
+	
+	public void campoTipo(String texto) throws InterruptedException {
+		clicarBotao("TipoPessoa");
+		sairFrame();
+		esperaFixa(1000);
+		doisCliques(texto);
+		esperaFixa(1000);
+	}
+	
+	public void campoNomeCompleto(String texto) {
+		escrever("Nome", texto);
+	}
+	
+	public void campoCapitalSocial(String texto) {
+		escrever("ValorCapitalSocial", texto);
+	}
+	
+	public void campoProcesso(String texto) {
+		escrever("NumeroProcesso", texto);
+	}
+	
 	public String validarTextoIncluirNovaPessoaJuridica() {
-		return obterTexto("PATRICIA SILVA PESSOA JURIDICA");
+		return obterTexto("PATRICIA SILVA JURIDICA TESTE 1");
 	}
 	
 	public void campoTipoInscricao(String texto) throws InterruptedException {
@@ -167,6 +212,12 @@ public class PessoasPage extends BasePage {
     
     public String validarTextoAlterarVinculoProfissional() {
     	return obterTexto("Enfermeiro");
+    }
+    
+    //******** Criar Vinculo Profissional ART ********//
+    
+    public void abaART() {
+    	clicarBotaoXpath("//*[contains(text(), 'ART')]");
     }
 	
 	public void apagarRegistroSQL() throws SQLException, InterruptedException {

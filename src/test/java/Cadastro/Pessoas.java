@@ -36,56 +36,87 @@ public class Pessoas extends BaseTest {
 	}
 	
 	@Test
+	public void T002_IncluirNovaPessoaFisica() throws InterruptedException, InstantiationException, IllegalAccessException, ClassNotFoundException, SQLException {
+		
+		page.botaoNovoTabela("0");
+		frame.TelaSobreposta();
+		pessoas.campoNomeCompleto("PATRICIA SILVA PIRES TESTE");
+		pessoas.campoCPF("22065736011");
+		pessoas.abaEndProfissional();
+		pessoas.campoCEP("89636000");
+		pessoas.campoNumero("10");
+		page.esperar3segundos();
+		pessoas.campoEmail("testepessoafisica@gmail.com");
+		pessoas.abaEndResidencial();
+		pessoas.campoEmailResidencial("teste@gmail.com");
+		pessoas.abaOutrasInformacoes();
+		pessoas.campoSexo("Feminino");
+		page.salvareFechar();
+		page.esperar2segundos();
+		sairFrame();
+		page.OK();
+		frame.TelaSobreposta();
+		page.fechar();
+		frame.frameDireita();
+		page.inserirCampoFiltrar("0", "220.657.360-11");
+		Assert.assertEquals("PATRICIA SILVA PIRES TESTE", pessoas.validarTextoIncluirPessoaFisica());
+	}
+	
+	//@Test
+	//public void T003
+	
+	@Test
 	public void T010_IncluirNovaPessoaJuridica() throws InterruptedException {
 		
 		page.botaoNovo();
 		frame.TelaSobreposta();
 		pessoas.campoTipo("Pessoa Jurídica");
 		frame.TelaSobreposta();
-		pessoas.campoNomeCompleto("PATRICIA SILVA PESSOA JURIDICA");
+		pessoas.campoNomeCompleto("PATRICIA SILVA JURIDICA TESTE");
+		esperaFixa(5000);
 		pessoas.campoCapitalSocial("5000");
 		pessoas.campoProcesso("123456789987654321");
 		pessoas.abaEndProfissional();
 		pessoas.campoCEP("88150000");
 		pessoas.campoNumero("20");
 		pessoas.campoEmail("juridico@gmail.com");
-		page.salvareFechar();
+		pessoas.botaoSalvarEFechar();
 		frame.frameDireita();
-		page.inserirCampoFiltrar("0", "PATRICIA SILVA PESSOA JURIDICA");
-		Assert.assertEquals("PATRICIA SILVA PESSOA JURIDICA", pessoas.validarTextoIncluirNovaPessoaJuridica());
-		page.selecionarRegistro("PATRICIA SILVA PESSOA JURIDICA");
-		frame.TelaSobreposta();
-		sairFrame();
-		page.esperar3segundos();
-		page.botaoNovo();
-		frame.inscricoes();
-		pessoas.campoTipoInscricao("REGISTRO DE EMPRESA");
-		page.salvareFechar();
-		frame.TelaSobreposta();
-		page.salvareFechar();
-		frame.frameDireita();
-		page.inserirCampoFiltrar("0", "PATRICIA SILVA PESSOA JURIDICA");
-		Assert.assertEquals("PATRICIA SILVA PESSOA JURIDICA", pessoas.validarTextoIncluirNovaPessoaJuridica());
+		page.inserirCampoFiltrar("0", "PATRICIA SILVA JURIDICA TESTE");
+		Assert.assertEquals("PATRICIA SILVA JURIDICA TESTE", pessoas.validarTextoIncluirNovaPessoaJuridica());
+	//	page.selecionarRegistro("PATRICIA SILVA PESSOA JURIDICA");
+	//	frame.TelaSobreposta();
+	//	page.esperar3segundos();
+    //	pessoas.botaoNovoEmpresa();
+    //	frame.inscricoes();
+    //	pessoas.campoTipoInscricao("REGISTRO DE EMPRESA");
+	//	pessoas.botaoSalvarEFechar();
+	//	page.esperar3segundos();
+	//	frame.TelaSobreposta();
+	//	page.salvareFechar();
+	//	frame.frameDireita();
+	//	page.inserirCampoFiltrar("0", "PATRICIA SILVA PESSOA JURIDICA");
+	//	Assert.assertEquals("PATRICIA SILVA PESSOA JURIDICA", pessoas.validarTextoIncluirNovaPessoaJuridica());
 	}
 	
 	@Test
     public void T020_AlterarPessoaJuridicaRecemCadastrada() throws InterruptedException {
 		
-		page.inserirCampoFiltrar("0", "PATRICIA SILVA PESSOA JURIDICA");
-		page.selecionarRegistro("PATRICIA SILVA PESSOA JURIDICA");
+		page.inserirCampoFiltrar("0", "PATRICIA SILVA JURIDICA TESTE");
+		page.selecionarRegistro("PATRICIA SILVA JURIDICA TESTE");
 		frame.TelaSobreposta();
 	    pessoas.campoSubsessao("Florianópolis");
 	    frame.TelaSobreposta();
 	    page.salvareFechar();
 	    frame.frameDireita();
-		page.inserirCampoFiltrar("0", "PATRICIA SILVA PESSOA JURIDICA");
+		page.inserirCampoFiltrar("0", "PATRICIA SILVA JURIDICA TESTE");
 		Assert.assertEquals("Florianópolis", pessoas.validarTextoAlterarPessoaJuridicaRecemCadastrada());
 	}
 	
 	//@Test
 	public void T030_AlterarSituacaoPessoaJuridica() throws InterruptedException {
 		
-		page.inserirCampoFiltrar("0", "PATRICIA SILVA PESSOA JURIDICA");
+		page.inserirCampoFiltrar("0", "PATRICIA SILVA JURIDICA TESTE");
 		page.selecionarCheckBoxGrid("0");
 		page.botaoFuncoes0();
 		pessoas.alterarSituacaoEmLote();
@@ -125,8 +156,8 @@ public class Pessoas extends BaseTest {
 	@Test
 	public void T050_CriarVinculoProfissionalRT() throws InterruptedException, SQLException {
 		
-		page.inserirCampoFiltrar("0", "PATRICIA SILVA PESSOA JURIDICA");
-		page.selecionarRegistro("PATRICIA SILVA PESSOA JURIDICA");
+		page.inserirCampoFiltrar("0", "PATRICIA SILVA JURIDICA TESTE");
+		page.selecionarRegistro("PATRICIA SILVA JURIDICA TESTE");
 		frame.TelaSobreposta();
 		pessoas.vinculosProfissionais();
 		page.esperar2segundos();
@@ -141,14 +172,13 @@ public class Pessoas extends BaseTest {
 		frame.TelaSobreposta();
         pessoas.vinculosProfissionais();
 		Assert.assertEquals("ABDOM MURILO BARBOSA SANCHEZ", pessoas.validarTextoIncluirVinculoProfissional());
-
 	}
 	
 	@Test
 	public void T060_AlterarUmVinculoProfissionalJaexistente() throws InterruptedException, SQLException {
 		
-		page.inserirCampoFiltrar("0", "PATRICIA SILVA PESSOA JURIDICA");
-		page.selecionarRegistro("PATRICIA SILVA PESSOA JURIDICA");
+		page.inserirCampoFiltrar("0", "PATRICIA SILVA JURIDICA TESTE");
+		page.selecionarRegistro("PATRICIA SILVA JURIDICA TESTE");
 		frame.TelaSobreposta();
 		pessoas.vinculosProfissionais();
 		page.esperar2segundos();
@@ -159,17 +189,19 @@ public class Pessoas extends BaseTest {
 		frame.TelaSobreposta();
         pessoas.vinculosProfissionais();
         Assert.assertEquals("Enfermeiro", pessoas.validarTextoAlterarVinculoProfissional());
-		pessoas.apagarRegistroSQL();			
+		//pessoas.apagarRegistroSQL();		
+		
+		// Tirar registro de outros endereços, para depois excluir o registro
 	}
 	
-	@Test
+	//@Test
 	public void T060_AlterarSituacaoPessoaJuridica() {
 		
 		
 	}
 	
 	//@Test
-	public void T070_CriarART() {
+	public void T080_CriarART() {
 		
 		
 	}

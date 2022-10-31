@@ -27,8 +27,9 @@ public class CobrancaPage extends BasePage {
 	public void campoSacado(String texto) throws InterruptedException {
 		clicarBotaoID("m_lkpSacadoEdt");
 		escreverID("m_lkpSacadoEdt", texto);
-		esperaFixa(1000);
+		esperaFixa(2000);
 		digitaTeclaId("m_lkpSacadoEdt", Keys.ENTER);
+		esperaFixa(2000);
 	}
 	
 	public void gerarContato() {

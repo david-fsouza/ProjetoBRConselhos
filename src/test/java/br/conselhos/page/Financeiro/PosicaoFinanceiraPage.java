@@ -28,7 +28,7 @@ public class PosicaoFinanceiraPage extends BasePage {
 	}
 	
 	public String validarTextoConsultaPosicaoFinanceira() {
-		return obterTexto("ANUIDADE - ADRIANA APARECIDA LUZETTI - Contas a Receber nº 000000365698");
+		return obterTexto("Permite cadastrar/alterar informações de títulos a receber.");
 	}
 	
 	//****** Consulta Registro Com Filtros Avançados ******//
@@ -37,12 +37,12 @@ public class PosicaoFinanceiraPage extends BasePage {
 		escreverID("txtNumeroEdt", texto);	
 	}
 	
-	public void campoEmissaoInicial(String texto) {
-		escreverID("dtEmissao_startDateEdt", texto);
+	public void campoEmissaoInicial() throws InterruptedException {
+		inserirDataAtualID("dtEmissao_startDateEdt");
 	}
 	
-	public void campoEmissaoFinal(String texto) {
-		escreverID("dtEmissao_endDateEdt", texto);
+	public void campoEmissaoFinal() throws InterruptedException {
+		inserirDataAtualID("dtEmissao_endDateEdt");
 	}
 	
 	public void campoVencimentoInicial(String texto) {
@@ -63,7 +63,7 @@ public class PosicaoFinanceiraPage extends BasePage {
 	}
 	
 	public String validarTextoConsultaPosicaoFinanceiraFiltrosAvancados() {
-		return obterTexto("ANUIDADE - ADRIANA APARECIDA LUZETTI - Contas a Receber nº 000000365696");
+		return obterTexto("CERTIDÕES DIVERSAS - ADRIANA APARECIDA LUZETTI - Contas a Receber nº 207997");
 	}
 	
 	//****** Alterar Situação Complemento Contas a Receber ******//

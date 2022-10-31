@@ -49,6 +49,8 @@ public class PessoasFisicas extends BaseTest{
 		frame.TelaSobreposta();
 		pessoasfisicas.campoProcesso("100981");
 		pessoasfisicas.campoInscricao("INSCRIÇÃO DEFINITIVA P/ TRANSFERÊNCIA");
+		page.esperar3segundos();
+		frame.TelaSobreposta();
 		pessoasfisicas.campoRegional("COREN/SC");
 		pessoasfisicas.campoNumeroInscricaoOrigem("12345678901234567890");
 		pessoasfisicas.campoInscricaoInformacaoRegionalOrigem("INSCRIÇÃO DEFINITIVA P/ TRANSFERÊNCIA");
@@ -56,8 +58,10 @@ public class PessoasFisicas extends BaseTest{
 		pessoasfisicas.abaEndResidencial();
 		pessoasfisicas.campoCEP("89636000");
 		pessoasfisicas.campoNumero("10");
+		page.esperar3segundos();
 		pessoasfisicas.checkBoxCorrespondencia();
 		pessoasfisicas.campoCelular("99999999999");
+		esperaFixa(5000);
 		pessoasfisicas.abainfPessoais();
 		pessoasfisicas.campoSexo("Feminino");
 		pessoasfisicas.campoCPF("22065736011");

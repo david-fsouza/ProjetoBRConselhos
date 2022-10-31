@@ -34,12 +34,13 @@ public class RenegociacaoSimplificada extends BaseTest {
 	@Test
 	public void T010_EfetuarRenegociacaoSimplificada() throws InterruptedException {
 		
-		renegociacaosimplificada.campoPessoaFisica("ZURIELI DE OLIVEIRA SILVEIRA MACHADO");
-		renegociacaosimplificada.campoTipoDeInscricao();
-		renegociacaosimplificada.campoplanoDePagamento();
-		renegociacaosimplificada.campoQuantidadeDeParcelas();
+		renegociacaosimplificada.campoPessoaFisica("ZULEIDE MENDES");
+		renegociacaosimplificada.campoTipoDeInscricao("INSCRIÇÃO DEFINITIVA PRINCIPAL (AUXILIAR DE ENFERMAGEM)");
+		renegociacaosimplificada.campoplanoDePagamento("Parcelamento de Anuidades");
+		renegociacaosimplificada.campoQuantidadeDeParcelas("3");
 		page.botaoLocalizar();
-		page.selecionarCheckBoxGrid("0");
+		//page.selecionarCheckBoxGrid("0");
+		page.clicarBotaoGenerico("1.000,00");
 		page.esperar2segundos();
 		page.botaoAvancar();
 		frame.TelaSobreposta();
