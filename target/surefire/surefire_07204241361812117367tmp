@@ -1,6 +1,0 @@
-#surefire_0
-#Sat Jun 25 20:15:27 BRT 2022
-user.dir=C\:\\Users\\David\\eclipse-workspace\\ProjetoBRConselhos
-localRepository=C\:\\Windows\\system32\\config\\systemprofile\\.m2\\repository
-basedir=C\:\\Users\\David\\eclipse-workspace\\ProjetoBRConselhos
-test=br.conselhos.suites.SuiteFinanceiroTest
