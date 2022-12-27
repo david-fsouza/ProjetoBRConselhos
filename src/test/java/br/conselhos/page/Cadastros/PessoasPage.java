@@ -71,13 +71,31 @@ public class PessoasPage extends BasePage {
 	}
 	
 	public String validarTextoIncluirPessoaFisica() {
-		return obterTexto("PATRICIA SILVA PIRES TESTE 3");
+		return obterTexto("PATRICIA SILVA PIRES TESTE");
 	}
+	
+	// Assert para o módulo cadastro não interferir no teste padrão
+	public String validarTextoIncluirPessoaFisicaCadastro() {
+		return obterTexto("PATRICIA SILVA PIRES TESTE CADASTRO");
+	}
+	
 	
 	//****** Nova Inscrição Pessoa Física ******//
 	public String validarTextoNovaInscricaoPessoaFisica() {
 		return obterTexto("INSCRIÇÃO DEFINITIVA PRINCIPAL");
 	}
+	
+	//******* Apagar Registro no Final da Bateria de Testes Padrão ********//
+	
+		public void apagarRegistroSQLPessoaaFisica() throws SQLException, InterruptedException {
+			executarQuerySQL("DECLARE @id_inscrito INT;\r\n" + "SELECT * FROM Pessoa\r\n"
+					+ "WHERE Nome = 'PATRICIA SILVA PIRES TESTE'\r\n"
+					+ "SELECT @id_inscrito = ID FROM Pessoa WHERE Nome = 'PATRICIA SILVA PIRES TESTE'\r\n" + "\r\n"
+					+ "DELETE FROM OutrosEnderecos\r\n" + "WHERE Pessoa = @id_inscrito\r\n" + "\r\n"
+					+ "DELETE FROM SituacaoTramite\r\n" + "WHERE Pessoa = @id_inscrito\r\n" + "\r\n"
+					+ "DELETE FROM HistoricoInadimplencia\r\n" + "WHERE Pessoa = @id_inscrito\r\n" + "\r\n"
+					+ "DELETE FROM Pessoa\r\n" + "WHERE Nome = 'PATRICIA SILVA PIRES TESTE'");
+		}
 	
 	//****** Incluir Nova Pessoa Jurídica *******//
 	
@@ -102,8 +120,26 @@ public class PessoasPage extends BasePage {
 	}
 	
 	public String validarTextoIncluirNovaPessoaJuridica() {
-		return obterTexto("PATRICIA SILVA JURIDICA TESTE 1");
+		return obterTexto("PATRICIA SILVA JURIDICA TESTE");
 	}
+	
+	// Assert para o módulo cadastro não interferir no teste padrão
+	public String validarTextoIncluirNovaPessoaJuridicaCadastro() {
+		return obterTexto("PATRICIA SILVA JURIDICA TESTE CADASTRO");
+	}
+	
+	//******* Apagar Registro no Final da Bateria Módulo Cadastro ********//
+	public void apagarRegistroSQLPessoaaFisicaCadastro() throws SQLException, InterruptedException {
+		executarQuerySQL("DECLARE @id_inscrito INT;\r\n" + "SELECT * FROM Pessoa\r\n"
+				+ "WHERE Nome = 'PATRICIA SILVA PIRES TESTE CADASTRO'\r\n"
+				+ "SELECT @id_inscrito = ID FROM Pessoa WHERE Nome = 'PATRICIA SILVA PIRES TESTE CADASTRO'\r\n" + "\r\n"
+				+ "DELETE FROM OutrosEnderecos\r\n" + "WHERE Pessoa = @id_inscrito\r\n" + "\r\n"
+				+ "DELETE FROM SituacaoTramite\r\n" + "WHERE Pessoa = @id_inscrito\r\n" + "\r\n"
+				+ "DELETE FROM HistoricoInadimplencia\r\n" + "WHERE Pessoa = @id_inscrito\r\n" + "\r\n"
+				+ "DELETE FROM Pessoa\r\n" + "WHERE Nome = 'PATRICIA SILVA PIRES TESTE CADASTRO'");
+	}
+	
+	
 	
 	public void campoTipoInscricao(String texto) throws InterruptedException {
 		clicarBotao("TipoInscricao");
@@ -179,9 +215,9 @@ public class PessoasPage extends BasePage {
     
     public void campoProfissional(String texto) throws InterruptedException {
     	escrever("Pessoa", texto);
-    	esperaFixa(1000);
+    	esperaFixa(3000);
     	digitaTeclaName("Pessoa", Keys.ENTER);
-    	esperaFixa(1000);
+    	esperaFixa(2000);
     }
     
     public void campoTipoDeVinculo(String texto) throws InterruptedException {
@@ -220,11 +256,13 @@ public class PessoasPage extends BasePage {
     	clicarBotaoXpath("//*[contains(text(), 'ART')]");
     }
 	
-	public void apagarRegistroSQL() throws SQLException, InterruptedException {
+    //******** Apagar Pessoa Jurídica no Final do Teste Padrão*********//
+    
+	public void apagarRegistroSQLPessoaJuridica() throws SQLException, InterruptedException {
 		executarQuerySQL("DECLARE @id_inscrito INT;\r\n"
 				+ "SELECT * FROM Pessoa\r\n"
-				+ "WHERE Nome = 'PATRICIA SILVA PESSOA JURIDICA'\r\n"
-				+ "SELECT @id_inscrito = ID FROM Pessoa WHERE Nome = 'PATRICIA SILVA PESSOA JURIDICA'\r\n"
+				+ "WHERE Nome = 'PATRICIA SILVA JURIDICA TESTE'\r\n"
+				+ "SELECT @id_inscrito = ID FROM Pessoa WHERE Nome = 'PATRICIA SILVA JURIDICA TESTE'\r\n"
 				+ "\r\n"
 				+ "DELETE FROM OutrosEnderecos\r\n"
 				+ "WHERE Pessoa = @id_inscrito\r\n"
@@ -239,7 +277,30 @@ public class PessoasPage extends BasePage {
 				+ "WHERE PessoaJuridica = @id_inscrito\r\n"
 				+ "\r\n"
 				+ "DELETE FROM Pessoa\r\n"
-				+ "WHERE Nome = 'PATRICIA SILVA PESSOA JURIDICA'");
+				+ "WHERE Nome = 'PATRICIA SILVA JURIDICA TESTE'");
+	}
+	
+    //******** Apagar Pessoa Jurídica no Final do Teste Módulo Cadastro*********//
+	public void apagarRegistroSQLPessoaJuridicaCadastro() throws SQLException, InterruptedException {
+		executarQuerySQL("DECLARE @id_inscrito INT;\r\n"
+				+ "SELECT * FROM Pessoa\r\n"
+				+ "WHERE Nome = 'PATRICIA SILVA JURIDICA TESTE CADASTRO'\r\n"
+				+ "SELECT @id_inscrito = ID FROM Pessoa WHERE Nome = 'PATRICIA SILVA JURIDICA TESTE CADASTRO'\r\n"
+				+ "\r\n"
+				+ "DELETE FROM OutrosEnderecos\r\n"
+				+ "WHERE Pessoa = @id_inscrito\r\n"
+				+ "\r\n"
+				+ "DELETE FROM SituacaoTramite\r\n"
+				+ "WHERE Pessoa = @id_inscrito\r\n"
+				+ "\r\n"
+				+ "DELETE FROM HistoricoInadimplencia\r\n"
+				+ "WHERE Pessoa = @id_inscrito\r\n"
+				+ "\r\n"
+				+ "DELETE FROM VinculoProfissional\r\n"
+				+ "WHERE PessoaJuridica = @id_inscrito\r\n"
+				+ "\r\n"
+				+ "DELETE FROM Pessoa\r\n"
+				+ "WHERE Nome = 'PATRICIA SILVA JURIDICA TESTE CADASTRO'");
 	}
 
 }

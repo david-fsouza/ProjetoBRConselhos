@@ -188,7 +188,7 @@ public class ContasReceber extends BaseTest {
          
          //Teste dentro da Janela Sobresposta
          contasreceber.campoDocumento("138528.pdf");       
-         page.esperar2segundos();
+         esperaFixa(15000);
          contasreceber.campoTipoDocumento("Boleto");
          page.salvareFechar();
          
@@ -196,7 +196,7 @@ public class ContasReceber extends BaseTest {
          retornarJanela(capturaJanelaPrincipal);         
          frame.TelaSobreposta();
 		 contasreceber.abaDocumentosGED();
-		 Assert.assertEquals("138528.pdf", contasreceber.validarTextoDocumentoGED());	 
+ 		 Assert.assertEquals("138528.pdf", contasreceber.validarTextoDocumentoGED());	 
 	 }
 	 
 	 @Test
@@ -229,11 +229,16 @@ public class ContasReceber extends BaseTest {
 		 page.selecionarRegistro("ACENALDO FERREIRA LIMA");
 		 frame.TelaSobreposta();
 		 contasreceber.abaDocumentosGED();			 
-		 page.selecionarRegistro("138528.pdf");
-		 frame.TelaSobreposta2();
+		 //page.selecionarRegistro("138528.pdf");
+		 page.clicarBotaoDireito("138528.pdf");
+		 //frame.TelaSobreposta2();
+		 //sairFrame();
 		 page.excluir();
-		 sairFrame();
-		 page.clicarBotaoGenerico("Ok");
+		 frame.TelaSobreposta();
+		 frame.TelaSobreposta2();
+		 frame.mainFrame();
+		 page.botaoSim();
+		 page.esperar2segundos();;
 		 frame.TelaSobreposta();
 		 contasreceber.abaDocumentosGED();
 		 Assert.assertEquals("Nenhum registro.", contasreceber.validarTextoGEDExclusao());		 
@@ -250,6 +255,7 @@ public class ContasReceber extends BaseTest {
 		 sairFrame();
 		 contasreceber.renegociacao();
 		 frame.TelaSobreposta();
+		 page.esperar5segundos();
 		 contasreceber.campoQuantidadeParcelas("2");
 		 contasreceber.vencimentoPrimeiraParcela();
          page.botaoAdicionar();

@@ -54,6 +54,7 @@ public class IntegracaoBancaria extends BaseTest {
 		page.esperar2segundos();
 		page.botaoGerar();
 		page.botaoGerar();
+		page.esperar10segundos();
 		Assert.assertEquals("Arquivo gerado.", integracaobancaria.validarTextoGeracaoArquivoRemessa());		
 	}
 

@@ -556,6 +556,77 @@ public class GED extends BaseTest{
 		ged.abaDocumentosGEDCadastros();
 		assertEquals("ArquivoGED.pdf", ged.validarTextoSalvandoDocumentoGEDCadastros());	
 	}
+	
+	@Test
+	public void T220_ExcluirDocumentoGEDCadastro() throws InterruptedException {
+		
+		menu.Cadastros();
+		menu.Pessoas();
+		frame.frameDireita();
+		page.inserirCampoFiltrar("0", "ADALGISA CAMPOS DE SOUZA PEREZ");
+		page.selecionarRegistro("098.481.939-87");
+		frame.TelaSobreposta();
+		ged.abaDocumentosGEDCadastros();
+		clicarBotaoDireito("ArquivoGED.pdf");
+		page.excluir();
+		frame.TelaSobreposta2();
+		frame.mainFrame();
+		page.botaoSim();
+		frame.TelaSobreposta();
+		ged.abaDocumentosGEDCadastros();
+		Assert.assertEquals("Nenhum registro.", ged.validarTextoExcluirDocumentoGEDCadastros());
+	}
+	
+	@Test
+	public void T230_SalvandoDocumentoGEDFinanceiro() throws InterruptedException {
+		
+		menu.Financeiro();
+		menu.ContasReceber();
+		frame.frameDireita();
+		page.inserirCampoFiltrar("0", "ADELSON LOPES DA SILVA");
+		page.selecionarRegistro("000000365655");
+		frame.TelaSobreposta();
+		ged.abaDocumentosGEDFinanceiro();
+		page.botaoNovo();
+		
+		// Captura da Janela Principal
+		String capturaJanelaPrincipal = getDriver().getWindowHandle();
+												 
+		// Entrar na Janela Sobreposta
+		trocarJanela();
+										        
+		//Teste dentro da Janela Sobresposta
+		ged.campoDocumento("ArquivoGED.pdf");
+		page.esperar2segundos();
+		ged.campoTipoDocumento("Boleto");
+		page.salvareFechar();
+										        
+		// Voltar para a Janela Principal
+		retornarJanela(capturaJanelaPrincipal);         
+		frame.TelaSobreposta();
+		ged.abaDocumentosGEDFinanceiro();
+		assertEquals("ArquivoGED.pdf", ged.validarTextoSalvandoDocumentoGEDFinanceiro());
+	}
+	
+	@Test
+	public void T240_ExcluirDocumentoGEDFinanceiro() throws InterruptedException {
+		
+		menu.Financeiro();
+		menu.ContasReceber();
+		frame.frameDireita();
+		page.inserirCampoFiltrar("0", "ADALGISA CAMPOS DE SOUZA PEREZ");
+		page.selecionarRegistro("098.481.939-87");
+		frame.TelaSobreposta();
+		ged.abaDocumentosGEDFinanceiro();
+		clicarBotaoDireito("ArquivoGED.pdf");
+		page.excluir();
+		frame.TelaSobreposta2();
+		frame.mainFrame();
+		page.botaoSim();
+		frame.TelaSobreposta();
+		ged.abaDocumentosGEDFinanceiro();
+		Assert.assertEquals("Nenhum registro.", ged.validarTextoExcluirDocumentoGEDFinanceiro());	
+	}
 		
 	
 	

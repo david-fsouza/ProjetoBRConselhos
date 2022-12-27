@@ -1,1 +1,1 @@
-{"uid":"98d3104e051c652961429bf95fa0b5d6","name":"suites","children":[{"name":"Financeiro.ContasAReceber.ContasReceber","children":[{"name":"ConsultaRegistroGeracao","uid":"f7071c671603e92e","parentUid":"ef25b99d0c6a22198179316a28f592fc","status":"passed","time":{"start":1656283672820,"stop":1656283704789,"duration":31969},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[]}],"uid":"ef25b99d0c6a22198179316a28f592fc"}]}
+{"uid":"98d3104e051c652961429bf95fa0b5d6","name":"suites","children":[]}

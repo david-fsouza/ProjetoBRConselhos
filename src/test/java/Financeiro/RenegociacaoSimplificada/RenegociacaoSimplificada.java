@@ -40,7 +40,7 @@ public class RenegociacaoSimplificada extends BaseTest {
 		renegociacaosimplificada.campoQuantidadeDeParcelas("3");
 		page.botaoLocalizar();
 		//page.selecionarCheckBoxGrid("0");
-		page.clicarBotaoGenerico("1.000,00");
+		page.clicarBotaoGenerico("100,00");
 		page.esperar2segundos();
 		page.botaoAvancar();
 		frame.TelaSobreposta();

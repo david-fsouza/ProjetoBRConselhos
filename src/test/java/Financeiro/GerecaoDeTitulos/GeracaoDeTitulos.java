@@ -43,6 +43,10 @@ public class GeracaoDeTitulos extends BaseTest {
 		geracaotitulos.campoValor("100");
 		geracaotitulos.campoTipoLancamento("ANUIDADE");
 		geracaotitulos.campoCondicao("Anuidades - Cota Única");
+		//sairFrame();
+		//page.OK();
+		page.esperar3segundos();
+		frame.TelaSobreposta();
 		geracaotitulos.campoVencimentoParcela();
 		geracaotitulos.campoPessoa("ZULEIDE MENDES");
 		page.botaoLocalizar();
@@ -60,6 +64,10 @@ public class GeracaoDeTitulos extends BaseTest {
 		geracaotitulos.campoValor("100");
 		geracaotitulos.campoTipoLancamento("ANUIDADE");
 		geracaotitulos.campoCondicao("Anuidades - Cota Única");
+		//sairFrame();
+		//page.OK();
+		page.esperar3segundos();
+		frame.TelaSobreposta();
 		geracaotitulos.campoVencimentoParcela();
 		geracaotitulos.campoPessoa("ZULEIDE MENDES");
 		page.botaoLocalizar();

@@ -12,7 +12,7 @@ public class MenuPage extends BasePage {
 	}
 	
 	public void Financeiro() {
-		clicarBotaoXpath("/html/body/div/div/div[25]/a/span[2]");
+		clicarBotaoXpath("/html/body/div/div/div[24]/a/span[2]");
 	}	
 	
 	public void ContasReceber() {
@@ -187,7 +187,7 @@ public class MenuPage extends BasePage {
      *************/
     
     public void Cadastros() {
-    	clicarBotaoXpath("/html/body/div/div/div[21]/a");
+    	clicarBotaoXpath("/html/body/div/div/div[20]/a");
     }
     
     public void Pessoas() {
@@ -243,14 +243,14 @@ public class MenuPage extends BasePage {
      * PROTOCOLO
      ***********/
     public void Protocolo() {
-    	clicarBotaoXpath("/html/body/div/div/div[16]/a/span[2]");	
+    	clicarBotaoXpath("/html/body/div/div/div[15]/a/span[2]");	
     }
     
     /*****************
      * ADMINISTRATIVO
      ****************/
     public void Administrativo() {
-    	clicarBotaoXpath("/html/body/div/div/div[20]/a/span[2]");	
+    	clicarBotaoXpath("/html/body/div/div/div[19]/a/span[2]");	
     }
     
     public void PedidosPessoaFisica() {
@@ -261,7 +261,7 @@ public class MenuPage extends BasePage {
      * CONSELHO PLENO
      ****************/
     public void ConselhoPleno() {
-    	clicarBotaoXpath("/html/body/div/div/div[19]/a/span[2]");	
+    	clicarBotaoXpath("/html/body/div/div/div[18]/a/span[2]");	
     }
     
     /*********************

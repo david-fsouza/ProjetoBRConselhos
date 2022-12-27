@@ -51,7 +51,7 @@ public class PosicaoFinanceira extends BaseTest {
 		frame.TelaSobreposta();
 		contasreceber.campoSacado("BIANCA RODRIGUES DOS SANTOS DE LIMA");
 		contasreceber.campoTipoLancamento("ANUIDADE PJ");
-		// contasreceber.campoInscricaoCategoria("INSCRIÇÃO DEFINITIVA PRINCIPAL");
+		//contasreceber.campoInscricaoCategoria("INSCRIÇÃO DEFINITIVA PRINCIPAL");
 		contasreceber.campoParcela("8");
 		contasreceber.campoValorBruto("1000");
 		contasreceber.campoVencimento();

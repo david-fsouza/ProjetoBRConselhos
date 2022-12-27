@@ -28,6 +28,14 @@ public class IndexPage extends BasePage {
 		esperaFixa(3000);
 	}
 	
+	public void esperar5segundos() throws InterruptedException {
+		esperaFixa(5000);
+	}
+	
+	public void esperar10segundos() throws InterruptedException {
+		esperaFixa(10000);
+	}
+	
 		
 	/********************************Botões Padrões *******************************/
 		

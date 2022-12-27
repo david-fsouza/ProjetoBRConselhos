@@ -183,5 +183,28 @@ public class GEDPage extends BasePage {
 		return obterTexto("ArquivoGED.pdf");
 	}
 	
+	// Excluir Documento GED Módulo Cadastros() {
+	public String validarTextoExcluirDocumentoGEDCadastros() {
+		return obterTexto("Nenhum registro.");
+	}
+	
+	/**
+	 * Fiancneiro
+	 */
+	public void abaDocumentosGEDFinanceiro() {
+			clicarLink("Documentos GED");
+			entrarFrame("#panelcategory6>iframe");
+	}
+	
+	// Salvando Documentos GED Módulo Financeiro
+	public String validarTextoSalvandoDocumentoGEDFinanceiro() {
+		return obterTexto("ArquivoGED.pdf");
+	}
+	
+	// Excluir Documento GED Módulo Cadastros
+	public String validarTextoExcluirDocumentoGEDFinanceiro() {
+		return obterTexto("Nenhum registro.");
+	}
+	
 		
 }

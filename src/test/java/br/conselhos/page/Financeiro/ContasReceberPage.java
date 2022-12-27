@@ -50,7 +50,7 @@ public class ContasReceberPage extends BasePage {
 
 	public void campoSacado(String nome) throws InterruptedException {
 		escrever("Pessoa", nome);
-		esperaFixa(2000);
+		esperaFixa(4000);
 		digitaTeclaName("Pessoa", Keys.ENTER);
 	}
 	

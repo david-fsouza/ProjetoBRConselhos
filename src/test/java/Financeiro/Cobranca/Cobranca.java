@@ -45,6 +45,7 @@ public class Cobranca extends BaseTest {
 		cobranca.campoTipoDeContato("Carta de Cobrança Administrativa");
 		page.botaoAvancar();
 		page.botaoAvancar();
+		page.esperar10segundos();
 		Assert.assertEquals("Atenção", cobranca.validarTextoGeracaoContatoSimples());		
 	}
 	

@@ -4,6 +4,7 @@
 	<artifactId>CursoSelenium</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
+
 	<dependencies>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
@@ -74,6 +75,8 @@
 
 	<properties>
 		<aspectj.version>1.8.10</aspectj.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 
 	<build>
@@ -83,10 +86,6 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.20</version>
 				<configuration>
-					<!-- Paralelismo-->
-					<parallel>all</parallel>
-					<threadCount>1</threadCount>
-					<!--Fim Paralelismo-->
 					<testFailureIgnore>false</testFailureIgnore>
 					<argLine>
                     -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"

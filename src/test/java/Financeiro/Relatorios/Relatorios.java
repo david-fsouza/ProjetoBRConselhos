@@ -10,6 +10,7 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.FixMethodOrder;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TestName;
@@ -42,19 +43,21 @@ public class Relatorios extends BaseTest {
 	 */
 
 	@Test
+	@Ignore
 	public void T010_Relatorio_086_pdf() throws InterruptedException {
 
 		relatorio.inserirFiltro("R086C000000");
 		page.selecionarRegistro("R086C000000");
 		frame.TelaSobreposta();
 		relatorio.campoSacado("ABEL WALTER DA SILVA");
-		page.esperar1segundo();
+		page.esperar10segundos();
 		relatorio.gerarRelatorio();
 		page.esperar3segundos();
 		page.validarDownloadArquivo("RelatorioR086C000000.pdf");
 	}
 	
 	@Test
+	@Ignore
 	public void T020_Relatorio_086_Excel() throws InterruptedException {
 		
 		relatorio.inserirFiltro("R086C000000");
@@ -62,13 +65,14 @@ public class Relatorios extends BaseTest {
 		frame.TelaSobreposta();
 		relatorio.campoFormatoRelatorio("Excel");
 		relatorio.campoSacado("ABEL WALTER DA SILVA");
-		page.esperar1segundo();
+		page.esperar10segundos();
 		relatorio.gerarRelatorio();
 		page.esperar3segundos();
 		page.validarDownloadArquivo("RelatorioR086C000000.xlsx");	
 	}
 	
 	@Test
+	@Ignore
 	public void T030_Relatorio_084_pdf() throws InterruptedException {
 		
 		relatorio.inserirFiltro("R084C000000");

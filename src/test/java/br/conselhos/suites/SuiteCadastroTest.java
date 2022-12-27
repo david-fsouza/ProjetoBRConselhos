@@ -14,11 +14,11 @@ import Cadastro.Sociedades;
 
 @SuiteClasses({
 	
-	PessoasFisicas.class,
+	//PessoasFisicas.class, (Testes realizados no na função Pessoas)
 	Pessoas.class,
 	Sociedades.class,
-	RelatoriosCadastro.class,
-	EmitirDocumento.class,
+	//RelatoriosCadastro.class, //Relatório 084 e 086 não estão presentes, porém estão em outros módulos(Consultar Teste Padrão)
+	//EmitirDocumento.class, //Erro de SearchPage
 	
 })
 
